@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArithmeticMagicCup_GamePage">
+            <connections>
+                <outlet property="bgImageView" destination="eFc-2B-eZb" id="QMG-er-Mhr"/>
+                <outlet property="bottomBall" destination="o9L-vo-nmP" id="ts5-u7-YDO"/>
+                <outlet property="bottomTip" destination="63J-5v-sqH" id="S8n-WZ-r00"/>
+                <outlet property="number" destination="dxn-g6-42s" id="GDN-UP-Bjj"/>
+                <outlet property="targetNumber" destination="lEV-ux-xOY" id="mWx-bV-C89"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eFc-2B-eZb">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEV-ux-xOY">
+                    <rect key="frame" x="246" y="44" width="175" height="27"/>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-g6-42s">
+                    <rect key="frame" x="319.5" y="86" width="28" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MgH-eO-2yb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="50"/>
+                    <color key="textColor" red="0.86274509803921573" green="0.15686274509803921" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choice a cup to open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63J-5v-sqH">
+                    <rect key="frame" x="240.5" y="340.5" width="186" height="24.5"/>
+                    <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9L-vo-nmP">
+                    <rect key="frame" x="318.5" y="310.5" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="SFD-D6-skz"/>
+                        <constraint firstAttribute="width" constant="30" id="twi-jy-zVw"/>
+                    </constraints>
+                    <state key="normal" title="0">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="63J-5v-sqH" secondAttribute="bottom" constant="10" id="3LH-wd-tGk"/>
+                <constraint firstAttribute="bottom" secondItem="eFc-2B-eZb" secondAttribute="bottom" id="6HW-nM-JaJ"/>
+                <constraint firstItem="dxn-g6-42s" firstAttribute="top" secondItem="lEV-ux-xOY" secondAttribute="bottom" constant="15" id="7jy-w3-T65"/>
+                <constraint firstItem="63J-5v-sqH" firstAttribute="top" secondItem="o9L-vo-nmP" secondAttribute="bottom" id="A4j-gS-Dqx"/>
+                <constraint firstItem="lEV-ux-xOY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="C7p-1u-x0b"/>
+                <constraint firstItem="63J-5v-sqH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L0q-YA-2on"/>
+                <constraint firstItem="eFc-2B-eZb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a7C-IA-3Yl"/>
+                <constraint firstItem="eFc-2B-eZb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cts-yb-Ek1"/>
+                <constraint firstAttribute="trailing" secondItem="eFc-2B-eZb" secondAttribute="trailing" id="fYM-Wi-b8a"/>
+                <constraint firstItem="lEV-ux-xOY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hAp-cE-5IS"/>
+                <constraint firstItem="o9L-vo-nmP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lau-p1-wHG"/>
+                <constraint firstItem="dxn-g6-42s" firstAttribute="centerX" secondItem="lEV-ux-xOY" secondAttribute="centerX" id="oyk-za-BI8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="667" height="375"/>
+    </resources>
+</document>

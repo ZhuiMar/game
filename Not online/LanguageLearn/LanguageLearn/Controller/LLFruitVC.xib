@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLFruitVC">
+            <connections>
+                <outlet property="bgView" destination="sa6-1q-y8y" id="MAC-q5-FPo"/>
+                <outlet property="topLayout" destination="ZAt-bc-Q3V" id="5J0-Qh-ftp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="KTY-kK-9wc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-1q-y8y">
+                    <rect key="frame" x="18.5" y="134" width="338" height="248"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="248" id="TFL-rr-cbG"/>
+                        <constraint firstAttribute="width" constant="338" id="UI1-xY-f5y"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-bV-VOw">
+                    <rect key="frame" x="40.5" y="422" width="110" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="Qd6-6m-Kua"/>
+                        <constraint firstAttribute="height" constant="82" id="XkO-43-iTH"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="english"/>
+                    <connections>
+                        <action selector="englishBtnAction:" destination="-1" eventType="touchUpInside" id="OYy-VD-f3E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-Zb-GuL">
+                    <rect key="frame" x="226.5" y="422" width="110" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="82" id="Fcg-xP-G92"/>
+                        <constraint firstAttribute="width" constant="110" id="KrX-dA-lyo"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="japanese"/>
+                    <connections>
+                        <action selector="japaneseAction:" destination="-1" eventType="touchUpInside" id="Kt9-00-v2p"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MVn-bV-VOw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-92" id="06F-qn-n0K"/>
+                <constraint firstItem="2Nx-Zb-GuL" firstAttribute="top" secondItem="MVn-bV-VOw" secondAttribute="top" id="CTa-cA-EZR"/>
+                <constraint firstAttribute="trailing" secondItem="KTY-kK-9wc" secondAttribute="trailing" id="GSS-2X-OvB"/>
+                <constraint firstItem="2Nx-Zb-GuL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="94" id="QZd-h2-ris"/>
+                <constraint firstItem="2Nx-Zb-GuL" firstAttribute="bottom" secondItem="MVn-bV-VOw" secondAttribute="bottom" id="QmE-ZH-mTA"/>
+                <constraint firstItem="KTY-kK-9wc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RGz-Uh-KEe"/>
+                <constraint firstItem="MVn-bV-VOw" firstAttribute="top" secondItem="sa6-1q-y8y" secondAttribute="bottom" constant="40" id="Wx6-22-Qn8"/>
+                <constraint firstItem="sa6-1q-y8y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="ZAt-bc-Q3V"/>
+                <constraint firstAttribute="bottom" secondItem="KTY-kK-9wc" secondAttribute="bottom" id="bkN-fc-mWK"/>
+                <constraint firstItem="sa6-1q-y8y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iob-Hv-QdR"/>
+                <constraint firstItem="KTY-kK-9wc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mzu-pn-AbQ"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="english" width="110.5" height="82"/>
+        <image name="japanese" width="110.5" height="82"/>
+    </resources>
+</document>

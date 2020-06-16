@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GHGameOver" customModule="GuessHouse" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="iN0-l3-epB" id="KZU-sX-F1L"/>
+                <outlet property="firstScoreNumber" destination="Sa5-63-n39" id="ZxV-90-O5x"/>
+                <outlet property="scoreNumber" destination="bPy-zC-SLN" id="OPT-Im-MeP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cYG-PI-MbG">
+                    <rect key="frame" x="319" y="66.5" width="258" height="260"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pz-oY-Dze">
+                            <rect key="frame" x="32" y="0.0" width="194" height="50"/>
+                            <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="40"/>
+                            <color key="textColor" red="0.96078431372549022" green="0.83137254901960778" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPy-zC-SLN">
+                            <rect key="frame" x="118" y="70" width="22.5" height="50"/>
+                            <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="40"/>
+                            <color key="textColor" red="1" green="0.42745098039215684" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-63-n39">
+                            <rect key="frame" x="105" y="140" width="48.5" height="50"/>
+                            <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.42745098039215684" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RHC-LA-mVk">
+                            <rect key="frame" x="0.0" y="210" width="258" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBn-4K-IMB">
+                                    <rect key="frame" x="0.0" y="0.0" width="114" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Wxj-xl-enp"/>
+                                        <constraint firstAttribute="width" constant="114" id="kPV-uT-QI2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="22"/>
+                                    <state key="normal" title="Again" backgroundImage="button3"/>
+                                    <connections>
+                                        <action selector="clickAgain:" destination="-1" eventType="touchUpInside" id="KPA-YZ-Ufq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45f-pl-YLQ">
+                                    <rect key="frame" x="144" y="0.0" width="114" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="8Lq-9c-W8g"/>
+                                        <constraint firstAttribute="width" constant="114" id="zBi-W4-phY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="22"/>
+                                    <state key="normal" title="Home" backgroundImage="button"/>
+                                    <connections>
+                                        <action selector="clickHome:" destination="-1" eventType="touchUpInside" id="MTw-B1-sX7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cYG-PI-MbG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mqh-oc-2fv"/>
+                <constraint firstItem="cYG-PI-MbG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="xOW-mY-11b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="75" y="97.101449275362327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button" width="113.5" height="49.5"/>
+        <image name="button3" width="113.5" height="50"/>
+    </resources>
+</document>

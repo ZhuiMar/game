@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cambridgeround-it.otf">
+            <string>CambridgeRound-It</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DEOverPage">
+            <connections>
+                <outlet property="scoreLabel" destination="2ke-Jc-ni5" id="1lp-uQ-wAw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpc-bU-yJq">
+                    <rect key="frame" x="194.5" y="259" width="118" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="IaE-QL-geU"/>
+                        <constraint firstAttribute="width" constant="118" id="KCY-OJ-VRk"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="aUk-Fn-Try"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-gl-BaV">
+                    <rect key="frame" x="354.5" y="259" width="118" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="118" id="dAH-7e-P9X"/>
+                        <constraint firstAttribute="height" constant="53" id="nLf-fv-GZL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="lyv-Hr-nLs"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_over" translatesAutoresizingMaskIntoConstraints="NO" id="DZT-u8-9c1">
+                    <rect key="frame" x="203.5" y="67" width="260.5" height="167"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-Jc-ni5">
+                    <rect key="frame" x="320.5" y="151.5" width="26" height="58"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="51"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="2ke-Jc-ni5" firstAttribute="centerY" secondItem="DZT-u8-9c1" secondAttribute="centerY" constant="30" id="KfS-hL-mmH"/>
+                <constraint firstItem="DZT-u8-9c1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WZP-Fj-O1R"/>
+                <constraint firstItem="jpc-bU-yJq" firstAttribute="top" secondItem="DZT-u8-9c1" secondAttribute="bottom" constant="25" id="aD1-Za-rRG"/>
+                <constraint firstItem="2ke-Jc-ni5" firstAttribute="centerX" secondItem="DZT-u8-9c1" secondAttribute="centerX" id="cya-OM-YDS"/>
+                <constraint firstItem="Irj-gl-BaV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="80" id="edj-IN-Dsb"/>
+                <constraint firstItem="DZT-u8-9c1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-37" id="gHc-bG-klx"/>
+                <constraint firstItem="jpc-bU-yJq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-80" id="lPf-9O-6yj"/>
+                <constraint firstItem="Irj-gl-BaV" firstAttribute="top" secondItem="jpc-bU-yJq" secondAttribute="top" id="mq7-nB-3WA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="again" width="118" height="53"/>
+        <image name="game_over" width="260.5" height="167"/>
+        <image name="home" width="118" height="53"/>
+    </resources>
+</document>

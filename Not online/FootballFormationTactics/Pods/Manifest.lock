@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManager (5.0.8)
+  - PGPickerView (1.3.8)
+  - Realm (5.0.0):
+    - Realm/Headers (= 5.0.0)
+  - Realm/Headers (5.0.0)
+
+DEPENDENCIES:
+  - IQKeyboardManager (= 5.0.8)
+  - PGPickerView
+  - Realm
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - IQKeyboardManager
+    - PGPickerView
+    - Realm
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
+  PGPickerView: 037acfb132a4c8054fb43aaa59a5ff50c7f747f5
+  Realm: 76066d333de26f97e9caedaa85ee3ff4a62ca265
+
+PODFILE CHECKSUM: 74360b2f0a803db608bcf36968409007d20c2f33
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonutNotes_GameViewController">
+            <connections>
+                <outlet property="imageBg" destination="MhQ-BN-yTp" id="ExA-vH-aAa"/>
+                <outlet property="starFour" destination="Aps-BK-hSg" id="lCd-Iw-pXQ"/>
+                <outlet property="starOne" destination="kyd-pO-B44" id="O8s-A1-NVY"/>
+                <outlet property="starThree" destination="soC-kT-lZQ" id="HzL-g3-y7e"/>
+                <outlet property="starTwo" destination="eDt-gA-arn" id="Nnv-YA-LAY"/>
+                <outlet property="textLabel" destination="qHb-lz-feX" id="7uC-2L-HTY"/>
+                <outlet property="topLayout" destination="j03-we-sAA" id="kcJ-Mt-YUa"/>
+                <outlet property="view" destination="DiR-ei-buu" id="sOL-kI-yTE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DiR-ei-buu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_home" translatesAutoresizingMaskIntoConstraints="NO" id="iZq-0C-RIG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="CiR-kO-wbf">
+                    <rect key="frame" x="52.5" y="106" width="270" height="270"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="270" id="WXw-Jh-u0t"/>
+                        <constraint firstAttribute="width" constant="270" id="Xx6-xM-e9v"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Aps-BK-hSg">
+                    <rect key="frame" x="251" y="324" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="Obg-fo-9lz"/>
+                        <constraint firstAttribute="height" constant="27" id="WkP-de-zhq"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="eDt-gA-arn">
+                    <rect key="frame" x="149" y="324" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="h1j-aw-iIs"/>
+                        <constraint firstAttribute="height" constant="27" id="ufp-cu-u9n"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhQ-BN-yTp">
+                    <rect key="frame" x="82.5" y="136" width="210" height="173"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="173" id="fOC-wh-AjR"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="kyd-pO-B44">
+                    <rect key="frame" x="97" y="324" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="95H-nq-6kL"/>
+                        <constraint firstAttribute="width" constant="27" id="sW1-Vh-mrr"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="soC-kT-lZQ">
+                    <rect key="frame" x="199" y="324" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="TYy-97-vk5"/>
+                        <constraint firstAttribute="height" constant="27" id="nif-0z-a2M"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHb-lz-feX">
+                    <rect key="frame" x="155" y="329" width="65.5" height="27"/>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="27"/>
+                    <color key="textColor" red="0.51372549020000002" green="0.1450980392" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="MhQ-BN-yTp" firstAttribute="top" secondItem="CiR-kO-wbf" secondAttribute="top" constant="30" id="2uT-Y3-iUw"/>
+                <constraint firstItem="eDt-gA-arn" firstAttribute="centerY" secondItem="kyd-pO-B44" secondAttribute="centerY" id="7Lg-eY-oR2"/>
+                <constraint firstItem="MhQ-BN-yTp" firstAttribute="leading" secondItem="CiR-kO-wbf" secondAttribute="leading" constant="30" id="AuJ-nO-biU"/>
+                <constraint firstItem="qHb-lz-feX" firstAttribute="centerX" secondItem="MhQ-BN-yTp" secondAttribute="centerX" id="HAP-o4-287"/>
+                <constraint firstItem="Aps-BK-hSg" firstAttribute="leading" secondItem="soC-kT-lZQ" secondAttribute="trailing" constant="25" id="Ls6-1m-FhA"/>
+                <constraint firstItem="iZq-0C-RIG" firstAttribute="top" secondItem="DiR-ei-buu" secondAttribute="top" id="Lym-9J-Jla"/>
+                <constraint firstItem="soC-kT-lZQ" firstAttribute="centerX" secondItem="MhQ-BN-yTp" secondAttribute="centerX" constant="25" id="MVe-sn-uVJ"/>
+                <constraint firstItem="kyd-pO-B44" firstAttribute="top" secondItem="MhQ-BN-yTp" secondAttribute="bottom" constant="15" id="MwL-1b-E6D"/>
+                <constraint firstItem="MhQ-BN-yTp" firstAttribute="trailing" secondItem="CiR-kO-wbf" secondAttribute="trailing" constant="-30" id="RHW-nW-vsV"/>
+                <constraint firstItem="eDt-gA-arn" firstAttribute="centerX" secondItem="MhQ-BN-yTp" secondAttribute="centerX" constant="-25" id="Rcw-vu-yKg"/>
+                <constraint firstItem="eDt-gA-arn" firstAttribute="leading" secondItem="kyd-pO-B44" secondAttribute="trailing" constant="25" id="SI1-Kp-Kk7"/>
+                <constraint firstItem="qHb-lz-feX" firstAttribute="top" secondItem="MhQ-BN-yTp" secondAttribute="bottom" constant="20" id="X5N-j1-fIb"/>
+                <constraint firstAttribute="bottom" secondItem="iZq-0C-RIG" secondAttribute="bottom" id="Xnd-PL-r1V"/>
+                <constraint firstItem="MhQ-BN-yTp" firstAttribute="centerX" secondItem="CiR-kO-wbf" secondAttribute="centerX" id="YFm-5n-xjd"/>
+                <constraint firstItem="iZq-0C-RIG" firstAttribute="leading" secondItem="DiR-ei-buu" secondAttribute="leading" id="YUk-Lw-x5Y"/>
+                <constraint firstItem="soC-kT-lZQ" firstAttribute="centerY" secondItem="kyd-pO-B44" secondAttribute="centerY" id="a2A-di-Qj4"/>
+                <constraint firstAttribute="trailing" secondItem="iZq-0C-RIG" secondAttribute="trailing" id="c2S-YN-Kkz"/>
+                <constraint firstItem="CiR-kO-wbf" firstAttribute="top" secondItem="DiR-ei-buu" secondAttribute="top" constant="106" id="j03-we-sAA"/>
+                <constraint firstItem="CiR-kO-wbf" firstAttribute="centerX" secondItem="DiR-ei-buu" secondAttribute="centerX" id="qNk-Vb-jwZ"/>
+                <constraint firstItem="Aps-BK-hSg" firstAttribute="centerY" secondItem="kyd-pO-B44" secondAttribute="centerY" id="yaM-FP-d5x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_home" width="375" height="667"/>
+        <image name="frame" width="261" height="261"/>
+        <image name="star" width="34" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLDifficultVC">
+            <connections>
+                <outlet property="contentView" destination="c6h-Dz-QMw" id="oWc-yb-c4F"/>
+                <outlet property="questionLabel" destination="LLM-X2-Hmx" id="4tK-XG-3fN"/>
+                <outlet property="topButtomLayout" destination="CqP-8G-Fhg" id="neI-FY-vJH"/>
+                <outlet property="topLayout" destination="cXk-VN-RgC" id="WGV-uh-Vcw"/>
+                <outlet property="view" destination="eFc-nr-sU7" id="Tsr-h4-Fy5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eFc-nr-sU7">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-3f-8h2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6h-Dz-QMw">
+                    <rect key="frame" x="70.5" y="86" width="234.5" height="41"/>
+                    <string key="text">Select the picture below 
+according to the pronunciation</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.92156862745098034" green="0.1764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-X2-Hmx">
+                    <rect key="frame" x="166.5" y="147" width="42.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.92156862750000001" green="0.1764705882" blue="0.33725490200000002" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LLM-X2-Hmx" firstAttribute="top" secondItem="c6h-Dz-QMw" secondAttribute="bottom" constant="20" id="CqP-8G-Fhg"/>
+                <constraint firstItem="vCK-3f-8h2" firstAttribute="top" secondItem="eFc-nr-sU7" secondAttribute="top" id="Nfc-pv-vTb"/>
+                <constraint firstItem="vCK-3f-8h2" firstAttribute="leading" secondItem="eFc-nr-sU7" secondAttribute="leading" id="RLM-B1-g6k"/>
+                <constraint firstItem="c6h-Dz-QMw" firstAttribute="top" secondItem="eFc-nr-sU7" secondAttribute="top" constant="86" id="cXk-VN-RgC"/>
+                <constraint firstAttribute="trailing" secondItem="vCK-3f-8h2" secondAttribute="trailing" id="eoF-Fk-QhY"/>
+                <constraint firstItem="c6h-Dz-QMw" firstAttribute="centerX" secondItem="eFc-nr-sU7" secondAttribute="centerX" id="jYz-Ll-cWG"/>
+                <constraint firstAttribute="bottom" secondItem="vCK-3f-8h2" secondAttribute="bottom" id="vlw-L0-j8a"/>
+                <constraint firstItem="LLM-X2-Hmx" firstAttribute="centerX" secondItem="eFc-nr-sU7" secondAttribute="centerX" id="yiJ-45-nCr"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>

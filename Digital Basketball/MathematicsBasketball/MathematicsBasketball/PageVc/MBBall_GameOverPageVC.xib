@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBBall_GameOverPageVC">
+            <connections>
+                <outlet property="scroeLbel" destination="kD5-6r-Je1" id="sX7-c1-Ds1"/>
+                <outlet property="tittle" destination="Pgm-cd-NDE" id="b0S-Rq-BNO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-xJ-JHi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REC-fQ-deh">
+                    <rect key="frame" x="106.5" y="427.5" width="162.5" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="PSz-dl-Xxc"/>
+                        <constraint firstAttribute="width" constant="162.5" id="vSE-kS-V1P"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="QmG-lS-gDy"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="bda-Bx-uiC">
+                    <rect key="frame" x="41.5" y="100" width="292.5" height="176.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="176.5" id="HTy-lm-eKW"/>
+                        <constraint firstAttribute="width" constant="292.5" id="YBR-bR-t1o"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0q-fr-ErN">
+                    <rect key="frame" x="106.5" y="329.5" width="162.5" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="162.5" id="ln1-Lw-jJo"/>
+                        <constraint firstAttribute="height" constant="55" id="oIh-9f-9ml"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="anK-l8-Gnd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-cd-NDE">
+                    <rect key="frame" x="72.5" y="130" width="230" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="X8E-xI-R0w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <color key="textColor" red="1" green="0.45098039215686275" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basketball" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-M7-Jul">
+                    <rect key="frame" x="294" y="90" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="aH3-Wa-lLv"/>
+                        <constraint firstAttribute="width" constant="50" id="aeZ-ER-FEB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD5-6r-Je1">
+                    <rect key="frame" x="169" y="185" width="37" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="WUG-g0-f8R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                    <color key="textColor" red="0.90588235294117647" green="0.18431372549019609" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kD5-6r-Je1" firstAttribute="top" secondItem="Pgm-cd-NDE" secondAttribute="bottom" constant="5" id="4pc-ND-0H6"/>
+                <constraint firstItem="bda-Bx-uiC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="5qi-R6-wff"/>
+                <constraint firstItem="Pgm-cd-NDE" firstAttribute="centerX" secondItem="bda-Bx-uiC" secondAttribute="centerX" id="6Fp-Sz-PFV"/>
+                <constraint firstItem="D0q-fr-ErN" firstAttribute="top" secondItem="bda-Bx-uiC" secondAttribute="bottom" constant="53" id="6zi-kA-q6b"/>
+                <constraint firstItem="kD5-6r-Je1" firstAttribute="centerX" secondItem="bda-Bx-uiC" secondAttribute="centerX" id="B5B-kv-hqD"/>
+                <constraint firstItem="REC-fQ-deh" firstAttribute="top" secondItem="D0q-fr-ErN" secondAttribute="bottom" constant="43" id="B5v-4F-MW9"/>
+                <constraint firstItem="bda-Bx-uiC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Efl-gv-PJW"/>
+                <constraint firstItem="Pgm-cd-NDE" firstAttribute="top" secondItem="bda-Bx-uiC" secondAttribute="top" constant="30" id="LPJ-dK-pIn"/>
+                <constraint firstAttribute="bottom" secondItem="K0H-xJ-JHi" secondAttribute="bottom" id="Mqw-Qc-AWQ"/>
+                <constraint firstItem="s8i-M7-Jul" firstAttribute="trailing" secondItem="bda-Bx-uiC" secondAttribute="trailing" constant="10" id="Z5C-Gr-yr6"/>
+                <constraint firstItem="D0q-fr-ErN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aMN-iG-8RL"/>
+                <constraint firstAttribute="trailing" secondItem="K0H-xJ-JHi" secondAttribute="trailing" id="drW-yF-kLv"/>
+                <constraint firstItem="K0H-xJ-JHi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eoc-OS-kNa"/>
+                <constraint firstItem="REC-fQ-deh" firstAttribute="centerX" secondItem="D0q-fr-ErN" secondAttribute="centerX" id="pE3-K2-KQo"/>
+                <constraint firstItem="s8i-M7-Jul" firstAttribute="top" secondItem="bda-Bx-uiC" secondAttribute="top" constant="-10" id="tbg-eJ-eNz"/>
+                <constraint firstItem="K0H-xJ-JHi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yyT-iE-Zv9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="146.98660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="again" width="162.5" height="55"/>
+        <image name="basketball" width="55.5" height="55.5"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="card" width="292.5" height="176.5"/>
+        <image name="home" width="162.5" height="55"/>
+    </resources>
+</document>

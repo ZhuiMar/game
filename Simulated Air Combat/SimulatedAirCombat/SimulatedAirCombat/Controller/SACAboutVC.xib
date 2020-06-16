@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SACAboutVC">
+            <connections>
+                <outlet property="bgView" destination="J2o-Jz-kp8" id="X8i-V0-MCE"/>
+                <outlet property="contentLabel" destination="Rpg-xf-BkA" id="3Nd-9B-Gau"/>
+                <outlet property="titileLabel" destination="YZ9-Xp-aMH" id="8k4-Nt-jn1"/>
+                <outlet property="view" destination="6Zj-rd-5Me" id="Fst-7S-G3K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6Zj-rd-5Me">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bjx" translatesAutoresizingMaskIntoConstraints="NO" id="MiD-cH-8OC">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulated Air Combat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ9-Xp-aMH">
+                    <rect key="frame" x="147.5" y="25" width="372.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" red="0.99607843137254903" green="0.82352941176470584" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2o-Jz-kp8">
+                    <rect key="frame" x="58.5" y="83" width="550" height="239"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-xf-BkA">
+                            <rect key="frame" x="30" y="30" width="490" height="179"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.99607843137254903" green="0.82352941176470584" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Rpg-xf-BkA" firstAttribute="top" secondItem="J2o-Jz-kp8" secondAttribute="top" constant="30" id="KJ8-A4-v1z"/>
+                        <constraint firstItem="Rpg-xf-BkA" firstAttribute="leading" secondItem="J2o-Jz-kp8" secondAttribute="leading" constant="30" id="KXe-oc-wyx"/>
+                        <constraint firstAttribute="width" constant="550" id="Leu-Ql-q6U"/>
+                        <constraint firstAttribute="bottom" secondItem="Rpg-xf-BkA" secondAttribute="bottom" constant="30" id="TXA-ER-ebd"/>
+                        <constraint firstAttribute="height" constant="239" id="dTf-iI-pwr"/>
+                        <constraint firstAttribute="trailing" secondItem="Rpg-xf-BkA" secondAttribute="trailing" constant="30" id="qEL-L6-BGx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIo-oe-D4X">
+                    <rect key="frame" x="15" y="31.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="UNh-oX-BCw"/>
+                        <constraint firstAttribute="width" constant="35" id="ilb-gK-0Ea"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="return"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="NuN-f8-2lW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rq-Xk-wyx">
+                    <rect key="frame" x="233.5" y="322" width="200" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Gtl-TN-bvi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="Privacy Policy">
+                        <color key="titleColor" red="0.99607843137254903" green="0.82352941176470584" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="privacyAction:" destination="-1" eventType="touchUpInside" id="cUL-Wx-LAl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J2o-Jz-kp8" firstAttribute="centerX" secondItem="6Zj-rd-5Me" secondAttribute="centerX" id="32H-RB-5zF"/>
+                <constraint firstAttribute="trailing" secondItem="MiD-cH-8OC" secondAttribute="trailing" id="3dt-Ek-64m"/>
+                <constraint firstItem="4rq-Xk-wyx" firstAttribute="centerX" secondItem="6Zj-rd-5Me" secondAttribute="centerX" id="8MT-Yb-k76"/>
+                <constraint firstItem="MiD-cH-8OC" firstAttribute="leading" secondItem="6Zj-rd-5Me" secondAttribute="leading" id="9TG-4t-NdP"/>
+                <constraint firstItem="YZ9-Xp-aMH" firstAttribute="centerY" secondItem="bIo-oe-D4X" secondAttribute="centerY" id="KNU-A9-EYH"/>
+                <constraint firstItem="J2o-Jz-kp8" firstAttribute="centerY" secondItem="6Zj-rd-5Me" secondAttribute="centerY" constant="15" id="Sum-97-Ls9"/>
+                <constraint firstItem="YZ9-Xp-aMH" firstAttribute="top" secondItem="6Zj-rd-5Me" secondAttribute="top" constant="25" id="Xrq-du-nK4"/>
+                <constraint firstItem="MiD-cH-8OC" firstAttribute="top" secondItem="6Zj-rd-5Me" secondAttribute="top" id="aQ5-vo-2h6"/>
+                <constraint firstItem="YZ9-Xp-aMH" firstAttribute="centerX" secondItem="6Zj-rd-5Me" secondAttribute="centerX" id="ddE-eF-kpU"/>
+                <constraint firstItem="4rq-Xk-wyx" firstAttribute="top" secondItem="J2o-Jz-kp8" secondAttribute="bottom" id="oZA-mg-XNw"/>
+                <constraint firstItem="bIo-oe-D4X" firstAttribute="leading" secondItem="7VA-Vz-UYK" secondAttribute="leading" constant="15" id="qvr-gh-Pgt"/>
+                <constraint firstItem="4rq-Xk-wyx" firstAttribute="bottom" secondItem="7VA-Vz-UYK" secondAttribute="bottom" constant="3" id="r2L-is-aXx"/>
+                <constraint firstAttribute="bottom" secondItem="MiD-cH-8OC" secondAttribute="bottom" id="wxF-L6-5CB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="7VA-Vz-UYK"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bjx" width="667" height="375"/>
+        <image name="return" width="35" height="35"/>
+    </resources>
+</document>

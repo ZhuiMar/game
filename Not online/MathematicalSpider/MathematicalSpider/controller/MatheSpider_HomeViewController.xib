@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatheSpider_HomeViewController">
+            <connections>
+                <outlet property="musicBtn" destination="a1b-gz-chg" id="6wt-Lh-ZEf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="2_bg_pic" translatesAutoresizingMaskIntoConstraints="NO" id="Y1m-Ww-gxI">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Num-cz-3vZ">
+                    <rect key="frame" x="163" y="248" width="131" height="97"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="97" id="dE9-VP-Prw"/>
+                        <constraint firstAttribute="width" constant="131" id="ihr-yu-95e"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Hard"/>
+                    <connections>
+                        <action selector="hardAction:" destination="-1" eventType="touchUpInside" id="Vgb-8c-3HM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvU-ko-4wT">
+                    <rect key="frame" x="302" y="170.5" width="113" height="114"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="DfJ-XO-XlX"/>
+                        <constraint firstAttribute="height" constant="114" id="cDx-Qh-1wq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Ranking"/>
+                    <connections>
+                        <action selector="rankAction:" destination="-1" eventType="touchUpInside" id="wRF-JX-qzs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsX-hH-oT9">
+                    <rect key="frame" x="59" y="185" width="104" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="ROg-lk-iW5"/>
+                        <constraint firstAttribute="width" constant="104" id="aC6-Td-uy1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Easy"/>
+                    <connections>
+                        <action selector="easyAction:" destination="-1" eventType="touchUpInside" id="URA-Tc-yTR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhB-BB-YmS">
+                    <rect key="frame" x="435" y="223.5" width="177" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="IqU-cP-xbR"/>
+                        <constraint firstAttribute="height" constant="146" id="OjE-hF-xce"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Description"/>
+                    <connections>
+                        <action selector="desAction:" destination="-1" eventType="touchUpInside" id="uBL-gc-kti"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-gz-chg">
+                    <rect key="frame" x="599" y="44" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="5aG-fv-VEt"/>
+                        <constraint firstAttribute="height" constant="28" id="hX3-1e-jnX"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="1_music_pre"/>
+                    <connections>
+                        <action selector="musicAction:" destination="-1" eventType="touchUpInside" id="Yty-lW-545"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="a1b-gz-chg" secondAttribute="trailing" constant="40" id="3mi-IW-5c5"/>
+                <constraint firstItem="Num-cz-3vZ" firstAttribute="leading" secondItem="LsX-hH-oT9" secondAttribute="trailing" id="5pp-SM-hDt"/>
+                <constraint firstItem="RvU-ko-4wT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="40" id="6Mj-av-spR"/>
+                <constraint firstItem="Y1m-Ww-gxI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7kX-3w-l8e"/>
+                <constraint firstAttribute="bottom" secondItem="Y1m-Ww-gxI" secondAttribute="bottom" id="Bs8-De-GcK"/>
+                <constraint firstAttribute="trailing" secondItem="Y1m-Ww-gxI" secondAttribute="trailing" id="MZR-7V-eA0"/>
+                <constraint firstItem="Y1m-Ww-gxI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qrs-zZ-ET6"/>
+                <constraint firstAttribute="bottom" secondItem="Num-cz-3vZ" secondAttribute="bottom" constant="30" id="TPC-oI-1cE"/>
+                <constraint firstItem="RvU-ko-4wT" firstAttribute="leading" secondItem="Num-cz-3vZ" secondAttribute="trailing" constant="8" id="YOD-TF-XIu"/>
+                <constraint firstItem="a1b-gz-chg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="e5b-I2-LZb"/>
+                <constraint firstItem="QhB-BB-YmS" firstAttribute="leading" secondItem="RvU-ko-4wT" secondAttribute="trailing" constant="20" id="fZt-T6-I8x"/>
+                <constraint firstItem="QhB-BB-YmS" firstAttribute="centerY" secondItem="Num-cz-3vZ" secondAttribute="centerY" id="nbE-fI-QIc"/>
+                <constraint firstItem="RvU-ko-4wT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="25" id="pR7-Eb-QCd"/>
+                <constraint firstItem="RvU-ko-4wT" firstAttribute="centerY" secondItem="LsX-hH-oT9" secondAttribute="centerY" id="z2c-nl-PnY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1_music_pre" width="28" height="28"/>
+        <image name="2_bg_pic" width="667" height="375"/>
+        <image name="Description" width="176.5" height="145.5"/>
+        <image name="Easy" width="103.5" height="85"/>
+        <image name="Hard" width="131" height="97"/>
+        <image name="Ranking" width="112.5" height="113.5"/>
+    </resources>
+</document>

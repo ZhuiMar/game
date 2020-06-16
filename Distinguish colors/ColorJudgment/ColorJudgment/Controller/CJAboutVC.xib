@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CJAboutVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="IXH-Ko-KzP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_text" translatesAutoresizingMaskIntoConstraints="NO" id="8UT-lI-tox">
+                    <rect key="frame" x="17.5" y="125" width="340" height="417"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="340" id="4Ds-Wy-OxV"/>
+                        <constraint firstAttribute="height" constant="417" id="Cbf-ct-Y0d"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IXH-Ko-KzP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FX7-fn-EKQ"/>
+                <constraint firstAttribute="trailing" secondItem="IXH-Ko-KzP" secondAttribute="trailing" id="J7o-AF-fJr"/>
+                <constraint firstItem="8UT-lI-tox" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KVO-td-Hw5"/>
+                <constraint firstItem="IXH-Ko-KzP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VlE-wE-Ibu"/>
+                <constraint firstAttribute="bottom" secondItem="IXH-Ko-KzP" secondAttribute="bottom" id="hiy-KY-Bn2"/>
+                <constraint firstItem="8UT-lI-tox" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uRn-ql-Fsk"/>
+            </constraints>
+            <point key="canvasLocation" x="52" y="100.29985007496252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_text" width="340" height="417"/>
+        <image name="background_0" width="375" height="667"/>
+    </resources>
+</document>

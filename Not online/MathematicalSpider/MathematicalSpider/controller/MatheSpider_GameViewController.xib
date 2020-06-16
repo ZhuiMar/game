@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="COMIC.TTF">
+            <string>ComicSansMS</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatheSpider_GameViewController">
+            <connections>
+                <outlet property="analogueStick" destination="kjy-dO-ofP" id="cHL-5b-ZZz"/>
+                <outlet property="bottomLeftLayout" destination="6AN-o1-zdZ" id="a1e-pa-vsY"/>
+                <outlet property="catchBtn" destination="r7q-Tk-bTL" id="Mwq-xq-9OT"/>
+                <outlet property="food1" destination="dTB-Cs-R8L" id="e6z-nw-RRn"/>
+                <outlet property="food2" destination="boa-yB-QlM" id="yqh-RW-IQy"/>
+                <outlet property="food3" destination="AaL-NV-lN0" id="bBp-DR-Afv"/>
+                <outlet property="food4" destination="ZpZ-gY-VIt" id="fqd-EO-zVg"/>
+                <outlet property="food5" destination="Klh-tE-7Tp" id="oCf-uS-yI7"/>
+                <outlet property="food6" destination="ljN-bt-jYE" id="15e-gx-3ft"/>
+                <outlet property="food7" destination="OlQ-oG-Tbv" id="PuZ-o5-cJX"/>
+                <outlet property="gonshilabel" destination="hQX-m4-YJK" id="hvm-FI-Nwn"/>
+                <outlet property="handleGbView" destination="kjy-dO-ofP" id="wYJ-F4-Zsz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_bg_Pic" translatesAutoresizingMaskIntoConstraints="NO" id="9kP-UH-UBq">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaL-NV-lN0">
+                    <rect key="frame" x="195" y="164" width="33" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="blp-dk-Ku6"/>
+                        <constraint firstAttribute="width" constant="33" id="fjG-6y-fkQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="3" backgroundImage="food_5">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klh-tE-7Tp">
+                    <rect key="frame" x="430.5" y="54.5" width="50" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="sHz-ks-g5k"/>
+                        <constraint firstAttribute="width" constant="50" id="ssZ-1L-P9S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="5" backgroundImage="food_4">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boa-yB-QlM">
+                    <rect key="frame" x="186.5" y="54.5" width="50" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="IOg-Ue-av7"/>
+                        <constraint firstAttribute="height" constant="54" id="hUm-wq-LqU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="2" backgroundImage="food_3">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpZ-gY-VIt">
+                    <rect key="frame" x="316.5" y="60" width="34" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Hib-iF-GWZ"/>
+                        <constraint firstAttribute="height" constant="43" id="q3V-XV-Rew"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="4" backgroundImage="food_2">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7q-Tk-bTL">
+                    <rect key="frame" x="551" y="277" width="71" height="71"/>
+                    <state key="normal" backgroundImage="3_Catch"/>
+                    <connections>
+                        <action selector="catchAction:" destination="-1" eventType="touchUpInside" id="RSN-0m-7Bb"/>
+                        <action selector="outcatchAction:" destination="-1" eventType="touchUpOutside" id="wnF-4r-aJl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjy-dO-ofP" customClass="JSAnalogueStick">
+                    <rect key="frame" x="27" y="217.5" width="127" height="127"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="127" id="9Hl-Yb-AVO"/>
+                        <constraint firstAttribute="height" constant="127" id="pcc-qP-fes"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?+?+?=?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-m4-YJK">
+                    <rect key="frame" x="273" y="295" width="121" height="35"/>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="30"/>
+                    <color key="textColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljN-bt-jYE">
+                    <rect key="frame" x="560.5" y="58.5" width="33" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="S97-p5-JPw"/>
+                        <constraint firstAttribute="height" constant="46" id="cYO-s1-ONx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="6" backgroundImage="food_1">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-Cs-R8L">
+                    <rect key="frame" x="72.5" y="60" width="34" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Nkd-5m-l0O"/>
+                        <constraint firstAttribute="width" constant="34" id="Zwi-Pp-IRR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="1" backgroundImage="food_1">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlQ-oG-Tbv">
+                    <rect key="frame" x="435" y="153" width="41" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="1Jn-PW-rml"/>
+                        <constraint firstAttribute="height" constant="57" id="yJd-g0-Wr0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
+                    <state key="normal" title="7" backgroundImage="food_6">
+                        <color key="titleColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZpZ-gY-VIt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Sh-sw-gdS"/>
+                <constraint firstItem="AaL-NV-lN0" firstAttribute="top" secondItem="boa-yB-QlM" secondAttribute="bottom" constant="55.5" id="2Kj-A3-FOt"/>
+                <constraint firstItem="ZpZ-gY-VIt" firstAttribute="leading" secondItem="boa-yB-QlM" secondAttribute="trailing" constant="80" id="2LO-Q6-kpr"/>
+                <constraint firstItem="ZpZ-gY-VIt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="2f9-7V-HaG"/>
+                <constraint firstItem="ljN-bt-jYE" firstAttribute="leading" secondItem="Klh-tE-7Tp" secondAttribute="trailing" constant="80" id="41J-WY-NMz"/>
+                <constraint firstItem="AaL-NV-lN0" firstAttribute="centerX" secondItem="boa-yB-QlM" secondAttribute="centerX" id="6AN-o1-zdZ"/>
+                <constraint firstAttribute="trailing" secondItem="r7q-Tk-bTL" secondAttribute="trailing" constant="45" id="9GW-pn-ypo"/>
+                <constraint firstItem="9kP-UH-UBq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A5A-Y1-u03"/>
+                <constraint firstAttribute="bottom" secondItem="9kP-UH-UBq" secondAttribute="bottom" id="A5m-Yh-Sjm"/>
+                <constraint firstItem="boa-yB-QlM" firstAttribute="leading" secondItem="dTB-Cs-R8L" secondAttribute="trailing" constant="80" id="BAi-nc-nX6"/>
+                <constraint firstItem="Klh-tE-7Tp" firstAttribute="leading" secondItem="ZpZ-gY-VIt" secondAttribute="trailing" constant="80" id="GXL-ob-Oat"/>
+                <constraint firstAttribute="trailing" secondItem="9kP-UH-UBq" secondAttribute="trailing" id="JJo-NK-fhp"/>
+                <constraint firstAttribute="bottom" secondItem="r7q-Tk-bTL" secondAttribute="bottom" constant="27" id="VUn-hc-92r"/>
+                <constraint firstItem="ZpZ-gY-VIt" firstAttribute="centerY" secondItem="dTB-Cs-R8L" secondAttribute="centerY" id="YgN-kS-kjW"/>
+                <constraint firstItem="Klh-tE-7Tp" firstAttribute="centerX" secondItem="OlQ-oG-Tbv" secondAttribute="centerX" id="ZPL-I8-hMp"/>
+                <constraint firstItem="boa-yB-QlM" firstAttribute="centerY" secondItem="dTB-Cs-R8L" secondAttribute="centerY" id="Zfo-iU-Eyc"/>
+                <constraint firstAttribute="bottom" secondItem="kjy-dO-ofP" secondAttribute="bottom" constant="30.5" id="fEc-8J-VB3"/>
+                <constraint firstItem="kjy-dO-ofP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="jLj-oU-M5u"/>
+                <constraint firstItem="9kP-UH-UBq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kF5-E8-UkH"/>
+                <constraint firstItem="ljN-bt-jYE" firstAttribute="centerY" secondItem="dTB-Cs-R8L" secondAttribute="centerY" id="lAc-bb-xYv"/>
+                <constraint firstItem="OlQ-oG-Tbv" firstAttribute="top" secondItem="Klh-tE-7Tp" secondAttribute="bottom" constant="44.5" id="mFK-v0-9zD"/>
+                <constraint firstItem="Klh-tE-7Tp" firstAttribute="centerY" secondItem="dTB-Cs-R8L" secondAttribute="centerY" id="sKv-DW-hGE"/>
+                <constraint firstItem="hQX-m4-YJK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tMj-by-71H"/>
+                <constraint firstItem="r7q-Tk-bTL" firstAttribute="centerY" secondItem="hQX-m4-YJK" secondAttribute="centerY" id="u4h-mM-g6j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="3_Catch" width="71" height="71"/>
+        <image name="3_bg_Pic" width="667" height="375"/>
+        <image name="food_1" width="40" height="51.5"/>
+        <image name="food_2" width="33" height="65"/>
+        <image name="food_3" width="33" height="46"/>
+        <image name="food_4" width="34" height="43"/>
+        <image name="food_5" width="49.5" height="54"/>
+        <image name="food_6" width="40.5" height="57"/>
+    </resources>
+</document>

@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B95BA7A4243EBCB500C8A39B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7A3243EBCB500C8A39B /* AppDelegate.m */; };
+		B95BA7A7243EBCB500C8A39B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7A6243EBCB500C8A39B /* SceneDelegate.m */; };
+		B95BA7AA243EBCB500C8A39B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7A9243EBCB500C8A39B /* ViewController.m */; };
+		B95BA7AD243EBCB500C8A39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7AB243EBCB500C8A39B /* Main.storyboard */; };
+		B95BA7AF243EBCB700C8A39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7AE243EBCB700C8A39B /* Assets.xcassets */; };
+		B95BA7B2243EBCB700C8A39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7B0243EBCB700C8A39B /* LaunchScreen.storyboard */; };
+		B95BA7B5243EBCB700C8A39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7B4243EBCB700C8A39B /* main.m */; };
+		B95BA7BD243EBD5700C8A39B /* BOLDER-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7BC243EBD5700C8A39B /* BOLDER-2.ttf */; };
+		B95BA7C5243EBE1300C8A39B /* GPSHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7C3243EBE1300C8A39B /* GPSHomePage.m */; };
+		B95BA7C6243EBE1300C8A39B /* GPSHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7C4243EBE1300C8A39B /* GPSHomePage.xib */; };
+		B95BA7C9243EBE4400C8A39B /* GPSNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7C8243EBE4400C8A39B /* GPSNavigation.m */; };
+		B95BA7CE243EBE8700C8A39B /* GPSAboutAppPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7CC243EBE8700C8A39B /* GPSAboutAppPage.m */; };
+		B95BA7CF243EBE8700C8A39B /* GPSAboutAppPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA7CD243EBE8700C8A39B /* GPSAboutAppPage.xib */; };
+		B95BA7D8243EBF0C00C8A39B /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7D1243EBF0C00C8A39B /* YCPresentationController.m */; };
+		B95BA7D9243EBF0C00C8A39B /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7D6243EBF0C00C8A39B /* YCPopoverAnimator.m */; };
+		B95BA7DA243EBF0C00C8A39B /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7D7243EBF0C00C8A39B /* UIViewController+YCPopover.m */; };
+		B95BA7DD243EBF8000C8A39B /* NSObject+helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7DC243EBF8000C8A39B /* NSObject+helpers.m */; };
+		B95BA7F8243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7E0243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B95BA7F9243EC00E00C8A39B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7E9243EC00E00C8A39B /* ViewController+MASAdditions.m */; };
+		B95BA7FA243EC00E00C8A39B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7ED243EC00E00C8A39B /* MASCompositeConstraint.m */; };
+		B95BA7FB243EC00E00C8A39B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7EE243EC00E00C8A39B /* MASConstraintMaker.m */; };
+		B95BA7FC243EC00E00C8A39B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7EF243EC00E00C8A39B /* MASLayoutConstraint.m */; };
+		B95BA7FD243EC00E00C8A39B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7F0243EC00E00C8A39B /* NSArray+MASAdditions.m */; };
+		B95BA7FE243EC00E00C8A39B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7F1243EC00E00C8A39B /* View+MASAdditions.m */; };
+		B95BA7FF243EC00E00C8A39B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7F4243EC00E00C8A39B /* MASConstraint.m */; };
+		B95BA800243EC00E00C8A39B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7F6243EC00E00C8A39B /* MASViewConstraint.m */; };
+		B95BA801243EC00E00C8A39B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA7F7243EC00E00C8A39B /* MASViewAttribute.m */; };
+		B95BA806243EC7FD00C8A39B /* GPSRcordPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA804243EC7FD00C8A39B /* GPSRcordPage.m */; };
+		B95BA807243EC7FD00C8A39B /* GPSRcordPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA805243EC7FD00C8A39B /* GPSRcordPage.xib */; };
+		B95BA80B243EC81500C8A39B /* GPSStartPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA809243EC81500C8A39B /* GPSStartPage.m */; };
+		B95BA80C243EC81500C8A39B /* GPSStartPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA80A243EC81500C8A39B /* GPSStartPage.xib */; };
+		B95BA816243ECC7E00C8A39B /* GPSGameOverPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA814243ECC7E00C8A39B /* GPSGameOverPage.m */; };
+		B95BA817243ECC7E00C8A39B /* GPSGameOverPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA815243ECC7E00C8A39B /* GPSGameOverPage.xib */; };
+		B95BA81B243ECCA100C8A39B /* GPSHowToPlayPage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA819243ECCA000C8A39B /* GPSHowToPlayPage.m */; };
+		B95BA81C243ECCA100C8A39B /* GPSHowToPlayPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA81A243ECCA000C8A39B /* GPSHowToPlayPage.xib */; };
+		B95BA820243ED1FA00C8A39B /* GPSChoosePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BA81E243ED1FA00C8A39B /* GPSChoosePage.m */; };
+		B95BA821243ED1FA00C8A39B /* GPSChoosePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95BA81F243ED1FA00C8A39B /* GPSChoosePage.xib */; };
+		B9A0047E2443FB050041D3EE /* gps_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9A0047B2443FB050041D3EE /* gps_right.mp3 */; };
+		B9A0047F2443FB050041D3EE /* gps_error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9A0047C2443FB050041D3EE /* gps_error.mp3 */; };
+		B9A004802443FB050041D3EE /* gps_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9A0047D2443FB050041D3EE /* gps_bg.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B95BA79F243EBCB500C8A39B /* Guess parking space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess parking space.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95BA7A2243EBCB500C8A39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B95BA7A3243EBCB500C8A39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B95BA7A5243EBCB500C8A39B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B95BA7A6243EBCB500C8A39B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B95BA7A8243EBCB500C8A39B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B95BA7A9243EBCB500C8A39B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B95BA7AC243EBCB500C8A39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B95BA7AE243EBCB700C8A39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B95BA7B1243EBCB700C8A39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B95BA7B3243EBCB700C8A39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95BA7B4243EBCB700C8A39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B95BA7BB243EBCCB00C8A39B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B95BA7BC243EBD5700C8A39B /* BOLDER-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BOLDER-2.ttf"; sourceTree = "<group>"; };
+		B95BA7C2243EBE1300C8A39B /* GPSHomePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSHomePage.h; sourceTree = "<group>"; };
+		B95BA7C3243EBE1300C8A39B /* GPSHomePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSHomePage.m; sourceTree = "<group>"; };
+		B95BA7C4243EBE1300C8A39B /* GPSHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSHomePage.xib; sourceTree = "<group>"; };
+		B95BA7C7243EBE4400C8A39B /* GPSNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSNavigation.h; sourceTree = "<group>"; };
+		B95BA7C8243EBE4400C8A39B /* GPSNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSNavigation.m; sourceTree = "<group>"; };
+		B95BA7CB243EBE8700C8A39B /* GPSAboutAppPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSAboutAppPage.h; sourceTree = "<group>"; };
+		B95BA7CC243EBE8700C8A39B /* GPSAboutAppPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSAboutAppPage.m; sourceTree = "<group>"; };
+		B95BA7CD243EBE8700C8A39B /* GPSAboutAppPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSAboutAppPage.xib; sourceTree = "<group>"; };
+		B95BA7D1243EBF0C00C8A39B /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B95BA7D2243EBF0C00C8A39B /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B95BA7D3243EBF0C00C8A39B /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B95BA7D4243EBF0C00C8A39B /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B95BA7D5243EBF0C00C8A39B /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B95BA7D6243EBF0C00C8A39B /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B95BA7D7243EBF0C00C8A39B /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B95BA7DB243EBF8000C8A39B /* NSObject+helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+helpers.h"; sourceTree = "<group>"; };
+		B95BA7DC243EBF8000C8A39B /* NSObject+helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+helpers.m"; sourceTree = "<group>"; };
+		B95BA7DF243EC00E00C8A39B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B95BA7E0243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B95BA7E1243EC00E00C8A39B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B95BA7E2243EC00E00C8A39B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B95BA7E3243EC00E00C8A39B /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B95BA7E4243EC00E00C8A39B /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B95BA7E5243EC00E00C8A39B /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B95BA7E6243EC00E00C8A39B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B95BA7E7243EC00E00C8A39B /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B95BA7E8243EC00E00C8A39B /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B95BA7E9243EC00E00C8A39B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B95BA7EA243EC00E00C8A39B /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B95BA7EB243EC00E00C8A39B /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B95BA7EC243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B95BA7ED243EC00E00C8A39B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B95BA7EE243EC00E00C8A39B /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B95BA7EF243EC00E00C8A39B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B95BA7F0243EC00E00C8A39B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B95BA7F1243EC00E00C8A39B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B95BA7F2243EC00E00C8A39B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B95BA7F3243EC00E00C8A39B /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B95BA7F4243EC00E00C8A39B /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B95BA7F5243EC00E00C8A39B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B95BA7F6243EC00E00C8A39B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B95BA7F7243EC00E00C8A39B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B95BA803243EC7FD00C8A39B /* GPSRcordPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSRcordPage.h; sourceTree = "<group>"; };
+		B95BA804243EC7FD00C8A39B /* GPSRcordPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSRcordPage.m; sourceTree = "<group>"; };
+		B95BA805243EC7FD00C8A39B /* GPSRcordPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSRcordPage.xib; sourceTree = "<group>"; };
+		B95BA808243EC81500C8A39B /* GPSStartPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSStartPage.h; sourceTree = "<group>"; };
+		B95BA809243EC81500C8A39B /* GPSStartPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSStartPage.m; sourceTree = "<group>"; };
+		B95BA80A243EC81500C8A39B /* GPSStartPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSStartPage.xib; sourceTree = "<group>"; };
+		B95BA813243ECC7E00C8A39B /* GPSGameOverPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSGameOverPage.h; sourceTree = "<group>"; };
+		B95BA814243ECC7E00C8A39B /* GPSGameOverPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSGameOverPage.m; sourceTree = "<group>"; };
+		B95BA815243ECC7E00C8A39B /* GPSGameOverPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSGameOverPage.xib; sourceTree = "<group>"; };
+		B95BA818243ECCA000C8A39B /* GPSHowToPlayPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSHowToPlayPage.h; sourceTree = "<group>"; };
+		B95BA819243ECCA000C8A39B /* GPSHowToPlayPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSHowToPlayPage.m; sourceTree = "<group>"; };
+		B95BA81A243ECCA000C8A39B /* GPSHowToPlayPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSHowToPlayPage.xib; sourceTree = "<group>"; };
+		B95BA81D243ED1FA00C8A39B /* GPSChoosePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSChoosePage.h; sourceTree = "<group>"; };
+		B95BA81E243ED1FA00C8A39B /* GPSChoosePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPSChoosePage.m; sourceTree = "<group>"; };
+		B95BA81F243ED1FA00C8A39B /* GPSChoosePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSChoosePage.xib; sourceTree = "<group>"; };
+		B9A0047B2443FB050041D3EE /* gps_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gps_right.mp3; sourceTree = "<group>"; };
+		B9A0047C2443FB050041D3EE /* gps_error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gps_error.mp3; sourceTree = "<group>"; };
+		B9A0047D2443FB050041D3EE /* gps_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gps_bg.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B95BA79C243EBCB500C8A39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B95BA796243EBCB500C8A39B = {
+			isa = PBXGroup;
+			children = (
+				B95BA7A1243EBCB500C8A39B /* GuessParkingSpace */,
+				B95BA7A0243EBCB500C8A39B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B95BA7A0243EBCB500C8A39B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA79F243EBCB500C8A39B /* Guess parking space.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B95BA7A1243EBCB500C8A39B /* GuessParkingSpace */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0047A2443FAF00041D3EE /* Resources */,
+				B95BA7CA243EBE5600C8A39B /* Category */,
+				B95BA7C1243EBDE400C8A39B /* View */,
+				B95BA7C0243EBDCA00C8A39B /* ThirdLib */,
+				B95BA7BF243EBDBB00C8A39B /* Controller */,
+				B95BA7BE243EBDAE00C8A39B /* Base */,
+				B95BA7A2243EBCB500C8A39B /* AppDelegate.h */,
+				B95BA7A3243EBCB500C8A39B /* AppDelegate.m */,
+				B95BA7A5243EBCB500C8A39B /* SceneDelegate.h */,
+				B95BA7A6243EBCB500C8A39B /* SceneDelegate.m */,
+				B95BA7A8243EBCB500C8A39B /* ViewController.h */,
+				B95BA7A9243EBCB500C8A39B /* ViewController.m */,
+				B95BA7AB243EBCB500C8A39B /* Main.storyboard */,
+				B95BA7AE243EBCB700C8A39B /* Assets.xcassets */,
+				B95BA7B0243EBCB700C8A39B /* LaunchScreen.storyboard */,
+				B95BA7B3243EBCB700C8A39B /* Info.plist */,
+				B95BA7B4243EBCB700C8A39B /* main.m */,
+				B95BA7BB243EBCCB00C8A39B /* PrefixHeader.pch */,
+				B95BA7BC243EBD5700C8A39B /* BOLDER-2.ttf */,
+			);
+			path = GuessParkingSpace;
+			sourceTree = "<group>";
+		};
+		B95BA7BE243EBDAE00C8A39B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7C7243EBE4400C8A39B /* GPSNavigation.h */,
+				B95BA7C8243EBE4400C8A39B /* GPSNavigation.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B95BA7BF243EBDBB00C8A39B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7C2243EBE1300C8A39B /* GPSHomePage.h */,
+				B95BA7C3243EBE1300C8A39B /* GPSHomePage.m */,
+				B95BA7C4243EBE1300C8A39B /* GPSHomePage.xib */,
+				B95BA7CB243EBE8700C8A39B /* GPSAboutAppPage.h */,
+				B95BA7CC243EBE8700C8A39B /* GPSAboutAppPage.m */,
+				B95BA7CD243EBE8700C8A39B /* GPSAboutAppPage.xib */,
+				B95BA803243EC7FD00C8A39B /* GPSRcordPage.h */,
+				B95BA804243EC7FD00C8A39B /* GPSRcordPage.m */,
+				B95BA805243EC7FD00C8A39B /* GPSRcordPage.xib */,
+				B95BA808243EC81500C8A39B /* GPSStartPage.h */,
+				B95BA809243EC81500C8A39B /* GPSStartPage.m */,
+				B95BA80A243EC81500C8A39B /* GPSStartPage.xib */,
+				B95BA813243ECC7E00C8A39B /* GPSGameOverPage.h */,
+				B95BA814243ECC7E00C8A39B /* GPSGameOverPage.m */,
+				B95BA815243ECC7E00C8A39B /* GPSGameOverPage.xib */,
+				B95BA818243ECCA000C8A39B /* GPSHowToPlayPage.h */,
+				B95BA819243ECCA000C8A39B /* GPSHowToPlayPage.m */,
+				B95BA81A243ECCA000C8A39B /* GPSHowToPlayPage.xib */,
+				B95BA81D243ED1FA00C8A39B /* GPSChoosePage.h */,
+				B95BA81E243ED1FA00C8A39B /* GPSChoosePage.m */,
+				B95BA81F243ED1FA00C8A39B /* GPSChoosePage.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B95BA7C0243EBDCA00C8A39B /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7DE243EC00E00C8A39B /* Masonry */,
+				B95BA7D0243EBF0C00C8A39B /* GPSSup */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		B95BA7C1243EBDE400C8A39B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B95BA7CA243EBE5600C8A39B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7DB243EBF8000C8A39B /* NSObject+helpers.h */,
+				B95BA7DC243EBF8000C8A39B /* NSObject+helpers.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B95BA7D0243EBF0C00C8A39B /* GPSSup */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7D1243EBF0C00C8A39B /* YCPresentationController.m */,
+				B95BA7D2243EBF0C00C8A39B /* YCPopoverAnimator.h */,
+				B95BA7D3243EBF0C00C8A39B /* UIViewController+YCPopover.h */,
+				B95BA7D4243EBF0C00C8A39B /* YCPresentationController.h */,
+				B95BA7D5243EBF0C00C8A39B /* YCPopoverMacro.h */,
+				B95BA7D6243EBF0C00C8A39B /* YCPopoverAnimator.m */,
+				B95BA7D7243EBF0C00C8A39B /* UIViewController+YCPopover.m */,
+			);
+			path = GPSSup;
+			sourceTree = "<group>";
+		};
+		B95BA7DE243EC00E00C8A39B /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B95BA7DF243EC00E00C8A39B /* MASCompositeConstraint.h */,
+				B95BA7E0243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B95BA7E1243EC00E00C8A39B /* MASConstraint+Private.h */,
+				B95BA7E2243EC00E00C8A39B /* MASLayoutConstraint.h */,
+				B95BA7E3243EC00E00C8A39B /* NSArray+MASShorthandAdditions.h */,
+				B95BA7E4243EC00E00C8A39B /* MASConstraintMaker.h */,
+				B95BA7E5243EC00E00C8A39B /* View+MASAdditions.h */,
+				B95BA7E6243EC00E00C8A39B /* NSArray+MASAdditions.h */,
+				B95BA7E7243EC00E00C8A39B /* MASUtilities.h */,
+				B95BA7E8243EC00E00C8A39B /* MASViewAttribute.h */,
+				B95BA7E9243EC00E00C8A39B /* ViewController+MASAdditions.m */,
+				B95BA7EA243EC00E00C8A39B /* MASViewConstraint.h */,
+				B95BA7EB243EC00E00C8A39B /* MASConstraint.h */,
+				B95BA7EC243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B95BA7ED243EC00E00C8A39B /* MASCompositeConstraint.m */,
+				B95BA7EE243EC00E00C8A39B /* MASConstraintMaker.m */,
+				B95BA7EF243EC00E00C8A39B /* MASLayoutConstraint.m */,
+				B95BA7F0243EC00E00C8A39B /* NSArray+MASAdditions.m */,
+				B95BA7F1243EC00E00C8A39B /* View+MASAdditions.m */,
+				B95BA7F2243EC00E00C8A39B /* View+MASShorthandAdditions.h */,
+				B95BA7F3243EC00E00C8A39B /* Masonry.h */,
+				B95BA7F4243EC00E00C8A39B /* MASConstraint.m */,
+				B95BA7F5243EC00E00C8A39B /* ViewController+MASAdditions.h */,
+				B95BA7F6243EC00E00C8A39B /* MASViewConstraint.m */,
+				B95BA7F7243EC00E00C8A39B /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B9A0047A2443FAF00041D3EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0047D2443FB050041D3EE /* gps_bg.mp3 */,
+				B9A0047C2443FB050041D3EE /* gps_error.mp3 */,
+				B9A0047B2443FB050041D3EE /* gps_right.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B95BA79E243EBCB500C8A39B /* GuessParkingSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B95BA7B8243EBCB700C8A39B /* Build configuration list for PBXNativeTarget "GuessParkingSpace" */;
+			buildPhases = (
+				B95BA79B243EBCB500C8A39B /* Sources */,
+				B95BA79C243EBCB500C8A39B /* Frameworks */,
+				B95BA79D243EBCB500C8A39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessParkingSpace;
+			productName = GuessParkingSpace;
+			productReference = B95BA79F243EBCB500C8A39B /* Guess parking space.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B95BA797243EBCB500C8A39B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = xiangjia;
+				TargetAttributes = {
+					B95BA79E243EBCB500C8A39B = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B95BA79A243EBCB500C8A39B /* Build configuration list for PBXProject "GuessParkingSpace" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B95BA796243EBCB500C8A39B;
+			productRefGroup = B95BA7A0243EBCB500C8A39B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B95BA79E243EBCB500C8A39B /* GuessParkingSpace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B95BA79D243EBCB500C8A39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A004802443FB050041D3EE /* gps_bg.mp3 in Resources */,
+				B9A0047F2443FB050041D3EE /* gps_error.mp3 in Resources */,
+				B95BA7B2243EBCB700C8A39B /* LaunchScreen.storyboard in Resources */,
+				B95BA7AF243EBCB700C8A39B /* Assets.xcassets in Resources */,
+				B95BA7C6243EBE1300C8A39B /* GPSHomePage.xib in Resources */,
+				B95BA817243ECC7E00C8A39B /* GPSGameOverPage.xib in Resources */,
+				B95BA81C243ECCA100C8A39B /* GPSHowToPlayPage.xib in Resources */,
+				B95BA7AD243EBCB500C8A39B /* Main.storyboard in Resources */,
+				B9A0047E2443FB050041D3EE /* gps_right.mp3 in Resources */,
+				B95BA7BD243EBD5700C8A39B /* BOLDER-2.ttf in Resources */,
+				B95BA807243EC7FD00C8A39B /* GPSRcordPage.xib in Resources */,
+				B95BA80C243EC81500C8A39B /* GPSStartPage.xib in Resources */,
+				B95BA821243ED1FA00C8A39B /* GPSChoosePage.xib in Resources */,
+				B95BA7CF243EBE8700C8A39B /* GPSAboutAppPage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B95BA79B243EBCB500C8A39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95BA806243EC7FD00C8A39B /* GPSRcordPage.m in Sources */,
+				B95BA816243ECC7E00C8A39B /* GPSGameOverPage.m in Sources */,
+				B95BA7FF243EC00E00C8A39B /* MASConstraint.m in Sources */,
+				B95BA7AA243EBCB500C8A39B /* ViewController.m in Sources */,
+				B95BA80B243EC81500C8A39B /* GPSStartPage.m in Sources */,
+				B95BA7D8243EBF0C00C8A39B /* YCPresentationController.m in Sources */,
+				B95BA7C5243EBE1300C8A39B /* GPSHomePage.m in Sources */,
+				B95BA7D9243EBF0C00C8A39B /* YCPopoverAnimator.m in Sources */,
+				B95BA7FC243EC00E00C8A39B /* MASLayoutConstraint.m in Sources */,
+				B95BA7DA243EBF0C00C8A39B /* UIViewController+YCPopover.m in Sources */,
+				B95BA7C9243EBE4400C8A39B /* GPSNavigation.m in Sources */,
+				B95BA801243EC00E00C8A39B /* MASViewAttribute.m in Sources */,
+				B95BA7A4243EBCB500C8A39B /* AppDelegate.m in Sources */,
+				B95BA7FE243EC00E00C8A39B /* View+MASAdditions.m in Sources */,
+				B95BA7B5243EBCB700C8A39B /* main.m in Sources */,
+				B95BA7F9243EC00E00C8A39B /* ViewController+MASAdditions.m in Sources */,
+				B95BA820243ED1FA00C8A39B /* GPSChoosePage.m in Sources */,
+				B95BA7DD243EBF8000C8A39B /* NSObject+helpers.m in Sources */,
+				B95BA7FA243EC00E00C8A39B /* MASCompositeConstraint.m in Sources */,
+				B95BA7FD243EC00E00C8A39B /* NSArray+MASAdditions.m in Sources */,
+				B95BA800243EC00E00C8A39B /* MASViewConstraint.m in Sources */,
+				B95BA7FB243EC00E00C8A39B /* MASConstraintMaker.m in Sources */,
+				B95BA7A7243EBCB500C8A39B /* SceneDelegate.m in Sources */,
+				B95BA81B243ECCA100C8A39B /* GPSHowToPlayPage.m in Sources */,
+				B95BA7CE243EBE8700C8A39B /* GPSAboutAppPage.m in Sources */,
+				B95BA7F8243EC00E00C8A39B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B95BA7AB243EBCB500C8A39B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B95BA7AC243EBCB500C8A39B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B95BA7B0243EBCB700C8A39B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B95BA7B1243EBCB700C8A39B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B95BA7B6243EBCB700C8A39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GuessParkingSpace/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B95BA7B7243EBCB700C8A39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GuessParkingSpace/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B95BA7B9243EBCB700C8A39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH9W2T649Z;
+				INFOPLIST_FILE = GuessParkingSpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiangjia.guessparkingspace;
+				PRODUCT_NAME = "Guess parking space";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B95BA7BA243EBCB700C8A39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH9W2T649Z;
+				INFOPLIST_FILE = GuessParkingSpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiangjia.guessparkingspace;
+				PRODUCT_NAME = "Guess parking space";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B95BA79A243EBCB500C8A39B /* Build configuration list for PBXProject "GuessParkingSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95BA7B6243EBCB700C8A39B /* Debug */,
+				B95BA7B7243EBCB700C8A39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B95BA7B8243EBCB700C8A39B /* Build configuration list for PBXNativeTarget "GuessParkingSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95BA7B9243EBCB700C8A39B /* Debug */,
+				B95BA7BA243EBCB700C8A39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B95BA797243EBCB500C8A39B /* Project object */;
+}

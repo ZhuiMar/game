@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="RSSAnswerItem">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="86M-TL-e3K">
+                    <rect key="frame" x="22" y="13.5" width="30" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="VqO-i8-6hu"/>
+                        <constraint firstAttribute="width" constant="30" id="pmz-qV-4Lc"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kaT-ay-Y3z">
+                    <rect key="frame" x="22" y="57.5" width="30" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="EYv-1P-FOP"/>
+                        <constraint firstAttribute="width" constant="30" id="KdQ-qf-rm0"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F77-en-UlO">
+                    <rect key="frame" x="22" y="101.5" width="30" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="d0K-dx-NEu"/>
+                        <constraint firstAttribute="width" constant="30" id="irW-5a-5hz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwd-tM-sGK">
+                    <rect key="frame" x="0.0" y="0.0" width="74" height="144"/>
+                    <connections>
+                        <action selector="clickItem:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iy9-ja-0cS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kaT-ay-Y3z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0pz-dA-CuR"/>
+                <constraint firstItem="Gwd-tM-sGK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="70z-Sm-jKR"/>
+                <constraint firstItem="kaT-ay-Y3z" firstAttribute="centerX" secondItem="86M-TL-e3K" secondAttribute="centerX" id="7A9-hS-Eu8"/>
+                <constraint firstAttribute="bottom" secondItem="Gwd-tM-sGK" secondAttribute="bottom" id="DTA-cU-yX3"/>
+                <constraint firstItem="kaT-ay-Y3z" firstAttribute="top" secondItem="86M-TL-e3K" secondAttribute="bottom" constant="15" id="SuD-XO-aac"/>
+                <constraint firstAttribute="trailing" secondItem="Gwd-tM-sGK" secondAttribute="trailing" id="V7b-Xm-4Pg"/>
+                <constraint firstItem="F77-en-UlO" firstAttribute="top" secondItem="kaT-ay-Y3z" secondAttribute="bottom" constant="15" id="e1h-Ny-2NW"/>
+                <constraint firstItem="kaT-ay-Y3z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="j3Z-6a-Y1K"/>
+                <constraint firstItem="F77-en-UlO" firstAttribute="centerX" secondItem="86M-TL-e3K" secondAttribute="centerX" id="mI6-VP-Zil"/>
+                <constraint firstItem="Gwd-tM-sGK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qF0-en-gG1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="one" destination="86M-TL-e3K" id="Nl5-hR-ZHs"/>
+                <outlet property="three" destination="F77-en-UlO" id="L7W-o5-s48"/>
+                <outlet property="two" destination="kaT-ay-Y3z" id="aVB-zT-GbM"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="impact.ttf">
+            <string>Impact</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFTBall_AboutPageVC">
+            <connections>
+                <outlet property="aboutBg" destination="xYU-KR-bE7" id="rK7-wY-paF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="OHu-Oq-lr2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYU-KR-bE7">
+                    <rect key="frame" x="15" y="108" width="345" height="291"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydm-vH-uRM">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="291"/>
+                            <string key="text">"Football formation tactics" is a football coach to help the design of football game formation tactics, real-time players to demonstrate the formation changes, so that the coach and the players to communicate with each other.
+
+Users can create a tactical formation for each game, drag the ball to change the tactics, and doodle with different colors. The scheme can be saved to my formation and can be viewed or edited at any time.</string>
+                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="16"/>
+                            <color key="textColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ydm-vH-uRM" firstAttribute="top" secondItem="xYU-KR-bE7" secondAttribute="top" id="79F-ma-EGX"/>
+                        <constraint firstAttribute="bottom" secondItem="Ydm-vH-uRM" secondAttribute="bottom" id="LTR-Df-471"/>
+                        <constraint firstAttribute="trailing" secondItem="Ydm-vH-uRM" secondAttribute="trailing" id="YKC-do-giw"/>
+                        <constraint firstAttribute="height" constant="291" id="as2-o5-rub"/>
+                        <constraint firstItem="Ydm-vH-uRM" firstAttribute="leading" secondItem="xYU-KR-bE7" secondAttribute="leading" id="cQ4-gQ-vIc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OHu-Oq-lr2" secondAttribute="bottom" id="2cG-vp-n4t"/>
+                <constraint firstItem="xYU-KR-bE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="Qt3-Hr-z4g"/>
+                <constraint firstItem="xYU-KR-bE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Tnd-c0-c7f"/>
+                <constraint firstAttribute="trailing" secondItem="xYU-KR-bE7" secondAttribute="trailing" constant="15" id="bjm-7t-L8i"/>
+                <constraint firstItem="OHu-Oq-lr2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cb7-9T-veN"/>
+                <constraint firstItem="OHu-Oq-lr2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fC8-0o-qt2"/>
+                <constraint firstAttribute="trailing" secondItem="OHu-Oq-lr2" secondAttribute="trailing" id="l9R-cD-QKy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_0" width="375" height="667"/>
+    </resources>
+</document>

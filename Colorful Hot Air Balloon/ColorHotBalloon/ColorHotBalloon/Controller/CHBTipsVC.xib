@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHBTipsVC">
+            <connections>
+                <outlet property="contentLabel" destination="B3K-Xm-RAP" id="0at-gw-3KH"/>
+                <outlet property="startBtn" destination="19L-LZ-A3Z" id="Uei-gD-POo"/>
+                <outlet property="titleLabel" destination="LpT-oK-bYm" id="iQ0-pi-ceG"/>
+                <outlet property="view" destination="714-WR-CyE" id="0dd-i8-sf7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="714-WR-CyE">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameplay Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-oK-bYm">
+                    <rect key="frame" x="103.5" y="160" width="168" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay attention to the color requirements in the title and answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3K-Xm-RAP">
+                    <rect key="frame" x="30" y="232" width="315" height="111"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19L-LZ-A3Z">
+                    <rect key="frame" x="127.5" y="423" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="GQ7-xQ-5Ci"/>
+                        <constraint firstAttribute="height" constant="50" id="ysb-Ez-jCg"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="start_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="DqH-JP-dG9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="19L-LZ-A3Z" firstAttribute="centerX" secondItem="B3K-Xm-RAP" secondAttribute="centerX" id="6gB-df-Dss"/>
+                <constraint firstItem="LpT-oK-bYm" firstAttribute="top" secondItem="eyC-rG-cca" secondAttribute="top" constant="140" id="Cw9-RB-oje"/>
+                <constraint firstItem="B3K-Xm-RAP" firstAttribute="centerX" secondItem="714-WR-CyE" secondAttribute="centerX" id="PaU-HM-SZ8"/>
+                <constraint firstItem="B3K-Xm-RAP" firstAttribute="leading" secondItem="eyC-rG-cca" secondAttribute="leading" constant="30" id="aDr-P0-KxH"/>
+                <constraint firstItem="19L-LZ-A3Z" firstAttribute="top" secondItem="B3K-Xm-RAP" secondAttribute="bottom" constant="80" id="dzo-kB-odP"/>
+                <constraint firstItem="eyC-rG-cca" firstAttribute="trailing" secondItem="B3K-Xm-RAP" secondAttribute="trailing" constant="30" id="ef9-UW-PoV"/>
+                <constraint firstItem="B3K-Xm-RAP" firstAttribute="top" secondItem="LpT-oK-bYm" secondAttribute="bottom" constant="40" id="fbR-B6-EBt"/>
+                <constraint firstItem="LpT-oK-bYm" firstAttribute="centerX" secondItem="714-WR-CyE" secondAttribute="centerX" id="zcx-Ly-wwn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="eyC-rG-cca"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="start_button" width="108" height="45"/>
+    </resources>
+</document>

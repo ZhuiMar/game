@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B928B11B2455255F006FBDE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B11A2455255F006FBDE0 /* AppDelegate.m */; };
+		B928B11E2455255F006FBDE0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B11D2455255F006FBDE0 /* SceneDelegate.m */; };
+		B928B1212455255F006FBDE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1202455255F006FBDE0 /* ViewController.m */; };
+		B928B1242455255F006FBDE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B928B1222455255F006FBDE0 /* Main.storyboard */; };
+		B928B12624552563006FBDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B928B12524552563006FBDE0 /* Assets.xcassets */; };
+		B928B12924552563006FBDE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B928B12724552563006FBDE0 /* LaunchScreen.storyboard */; };
+		B928B12C24552563006FBDE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B12B24552563006FBDE0 /* main.m */; };
+		B928B13D24552710006FBDE0 /* NSObject+BuoyMath_tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B13C24552710006FBDE0 /* NSObject+BuoyMath_tool.m */; };
+		B928B145245527FC006FBDE0 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B13E245527FC006FBDE0 /* UIViewController+YCPopover.m */; };
+		B928B146245527FC006FBDE0 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B13F245527FC006FBDE0 /* YCPopoverAnimator.m */; };
+		B928B147245527FC006FBDE0 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B142245527FC006FBDE0 /* YCPresentationController.m */; };
+		B928B14B24552820006FBDE0 /* BuoyMath_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B14924552820006FBDE0 /* BuoyMath_navigation.m */; };
+		B928B1672455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B14F2455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B928B1682455286D006FBDE0 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1582455286D006FBDE0 /* ViewController+MASAdditions.m */; };
+		B928B1692455286D006FBDE0 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B15C2455286D006FBDE0 /* MASCompositeConstraint.m */; };
+		B928B16A2455286D006FBDE0 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B15D2455286D006FBDE0 /* MASConstraintMaker.m */; };
+		B928B16B2455286D006FBDE0 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B15E2455286D006FBDE0 /* MASLayoutConstraint.m */; };
+		B928B16C2455286D006FBDE0 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B15F2455286D006FBDE0 /* NSArray+MASAdditions.m */; };
+		B928B16D2455286D006FBDE0 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1602455286D006FBDE0 /* View+MASAdditions.m */; };
+		B928B16E2455286D006FBDE0 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1632455286D006FBDE0 /* MASConstraint.m */; };
+		B928B16F2455286D006FBDE0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1652455286D006FBDE0 /* MASViewConstraint.m */; };
+		B928B1702455286D006FBDE0 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B1662455286D006FBDE0 /* MASViewAttribute.m */; };
+		B928B17424552896006FBDE0 /* BuoyMath_HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B928B17224552896006FBDE0 /* BuoyMath_HomePageVC.m */; };
+		B928B17524552896006FBDE0 /* BuoyMath_HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B928B17324552896006FBDE0 /* BuoyMath_HomePageVC.xib */; };
+		B96C60422462AB34001A4E8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60412462AB34001A4E8D /* CFNetwork.framework */; };
+		B96C60442462AB3B001A4E8D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60432462AB3B001A4E8D /* CoreFoundation.framework */; };
+		B96C60462462AB43001A4E8D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60452462AB43001A4E8D /* CoreTelephony.framework */; };
+		B96C60482462AB4B001A4E8D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60472462AB4B001A4E8D /* SystemConfiguration.framework */; };
+		B96C604A2462AB54001A4E8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60492462AB54001A4E8D /* CoreGraphics.framework */; };
+		B96C604C2462AB5F001A4E8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C604B2462AB5F001A4E8D /* Foundation.framework */; };
+		B96C604E2462AB67001A4E8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C604D2462AB67001A4E8D /* UIKit.framework */; };
+		B96C60502462AB70001A4E8D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C604F2462AB70001A4E8D /* Security.framework */; };
+		B96C60522462AB7B001A4E8D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60512462AB7B001A4E8D /* libz.tbd */; };
+		B96C60562462AB8E001A4E8D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60552462AB8E001A4E8D /* UserNotifications.framework */; };
+		B96C60582462AB98001A4E8D /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60572462AB98001A4E8D /* libresolv.tbd */; };
+		B96C605A2462ABA3001A4E8D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60592462ABA3001A4E8D /* WebKit.framework */; };
+		B96C60632462AD37001A4E8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60622462AD37001A4E8D /* NetworkExtension.framework */; };
+		B96C60662462C6D1001A4E8D /* BuoyMath_yinsi.m in Sources */ = {isa = PBXBuildFile; fileRef = B96C60652462C6D1001A4E8D /* BuoyMath_yinsi.m */; };
+		B96C606A2462CD7E001A4E8D /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60672462CD7D001A4E8D /* jpush-ios-3.3.2.a */; };
+		B96C606B2462CD7E001A4E8D /* jcore-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C60682462CD7D001A4E8D /* jcore-ios-2.2.5.a */; };
+		B9AE628E24552CD2002F6262 /* ComicNeue-Angular_Bold_Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628724552CD2002F6262 /* ComicNeue-Angular_Bold_Oblique.otf */; };
+		B9AE628F24552CD2002F6262 /* ComicNeue-Angular-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628824552CD2002F6262 /* ComicNeue-Angular-Regular.ttf */; };
+		B9AE629024552CD2002F6262 /* ComicNeue-Angular-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628924552CD2002F6262 /* ComicNeue-Angular-Regular.otf */; };
+		B9AE629124552CD2002F6262 /* ComicNeue-Angular_Light_Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628A24552CD2002F6262 /* ComicNeue-Angular_Light_Oblique.otf */; };
+		B9AE629224552CD2002F6262 /* ComicNeue-Angular-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628B24552CD2002F6262 /* ComicNeue-Angular-Bold.ttf */; };
+		B9AE629324552CD2002F6262 /* ComicNeue-Angular-Regular-Oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628C24552CD2002F6262 /* ComicNeue-Angular-Regular-Oblique.ttf */; };
+		B9AE629424552CD2002F6262 /* ComicNeue-Angular-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AE628D24552CD2002F6262 /* ComicNeue-Angular-Light.ttf */; };
+		B9AE629824553172002F6262 /* BuoyMath_TipPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE629624553172002F6262 /* BuoyMath_TipPageVC.m */; };
+		B9AE629924553172002F6262 /* BuoyMath_TipPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE629724553172002F6262 /* BuoyMath_TipPageVC.xib */; };
+		B9AE629D2455318B002F6262 /* BuoyMath_AboutPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE629B2455318B002F6262 /* BuoyMath_AboutPageVC.m */; };
+		B9AE629E2455318B002F6262 /* BuoyMath_AboutPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE629C2455318B002F6262 /* BuoyMath_AboutPageVC.xib */; };
+		B9AE62A224553731002F6262 /* BuoyMath_gameOverPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62A024553731002F6262 /* BuoyMath_gameOverPageVC.m */; };
+		B9AE62A324553731002F6262 /* BuoyMath_gameOverPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62A124553731002F6262 /* BuoyMath_gameOverPageVC.xib */; };
+		B9AE62A724553A18002F6262 /* BuoyMath_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62A424553A18002F6262 /* BuoyMath_wrong.mp3 */; };
+		B9AE62A824553A18002F6262 /* BuoyMath_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62A524553A18002F6262 /* BuoyMath_bg.mp3 */; };
+		B9AE62A924553A18002F6262 /* BuoyMath_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62A624553A18002F6262 /* BuoyMath_right.mp3 */; };
+		B9AE62AD24553A40002F6262 /* BuoyMath_gamePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62AB24553A40002F6262 /* BuoyMath_gamePageVC.m */; };
+		B9AE62AE24553A40002F6262 /* BuoyMath_gamePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62AC24553A40002F6262 /* BuoyMath_gamePageVC.xib */; };
+		B9AE62B224553B71002F6262 /* BuoyMath_MyRecordPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62B024553B71002F6262 /* BuoyMath_MyRecordPageVC.m */; };
+		B9AE62B324553B71002F6262 /* BuoyMath_MyRecordPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62B124553B71002F6262 /* BuoyMath_MyRecordPageVC.xib */; };
+		B9AE62B6245561E1002F6262 /* BuoyMath_LifeBuoyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62B5245561E1002F6262 /* BuoyMath_LifeBuoyView.m */; };
+		B9AE62B8245561F3002F6262 /* BuoyMath_LifeBuoyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62B7245561F3002F6262 /* BuoyMath_LifeBuoyView.xib */; };
+		BF728145C6E27B93E95CE330 /* libPods-BuoyMathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CAFDF332EE36259B48EA73 /* libPods-BuoyMathematics.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29BD34208F75F2714E0AD18E /* Pods-BuoyMathematics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuoyMathematics.release.xcconfig"; path = "Target Support Files/Pods-BuoyMathematics/Pods-BuoyMathematics.release.xcconfig"; sourceTree = "<group>"; };
+		4844C013676F0722B857FDED /* Pods-BuoyMathematics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuoyMathematics.debug.xcconfig"; path = "Target Support Files/Pods-BuoyMathematics/Pods-BuoyMathematics.debug.xcconfig"; sourceTree = "<group>"; };
+		98CAFDF332EE36259B48EA73 /* libPods-BuoyMathematics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuoyMathematics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B928B1162455255F006FBDE0 /* Lifebuoy Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lifebuoy Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B928B1192455255F006FBDE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B928B11A2455255F006FBDE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B928B11C2455255F006FBDE0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B928B11D2455255F006FBDE0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B928B11F2455255F006FBDE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B928B1202455255F006FBDE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B928B1232455255F006FBDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B928B12524552563006FBDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B928B12824552563006FBDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B928B12A24552563006FBDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B928B12B24552563006FBDE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B928B13A24552666006FBDE0 /* BuoyMath_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_PrefixHeader.pch; sourceTree = "<group>"; };
+		B928B13B24552710006FBDE0 /* NSObject+BuoyMath_tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BuoyMath_tool.h"; sourceTree = "<group>"; };
+		B928B13C24552710006FBDE0 /* NSObject+BuoyMath_tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BuoyMath_tool.m"; sourceTree = "<group>"; };
+		B928B13E245527FC006FBDE0 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B928B13F245527FC006FBDE0 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B928B140245527FC006FBDE0 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B928B141245527FC006FBDE0 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B928B142245527FC006FBDE0 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B928B143245527FC006FBDE0 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B928B144245527FC006FBDE0 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B928B14824552820006FBDE0 /* BuoyMath_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_navigation.h; sourceTree = "<group>"; };
+		B928B14924552820006FBDE0 /* BuoyMath_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_navigation.m; sourceTree = "<group>"; };
+		B928B14E2455286D006FBDE0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B928B14F2455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B928B1502455286D006FBDE0 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B928B1512455286D006FBDE0 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B928B1522455286D006FBDE0 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B928B1532455286D006FBDE0 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B928B1542455286D006FBDE0 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B928B1552455286D006FBDE0 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B928B1562455286D006FBDE0 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B928B1572455286D006FBDE0 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B928B1582455286D006FBDE0 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B928B1592455286D006FBDE0 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B928B15A2455286D006FBDE0 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B928B15B2455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B928B15C2455286D006FBDE0 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B928B15D2455286D006FBDE0 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B928B15E2455286D006FBDE0 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B928B15F2455286D006FBDE0 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B928B1602455286D006FBDE0 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B928B1612455286D006FBDE0 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B928B1622455286D006FBDE0 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B928B1632455286D006FBDE0 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B928B1642455286D006FBDE0 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B928B1652455286D006FBDE0 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B928B1662455286D006FBDE0 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B928B17124552896006FBDE0 /* BuoyMath_HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_HomePageVC.h; sourceTree = "<group>"; };
+		B928B17224552896006FBDE0 /* BuoyMath_HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_HomePageVC.m; sourceTree = "<group>"; };
+		B928B17324552896006FBDE0 /* BuoyMath_HomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_HomePageVC.xib; sourceTree = "<group>"; };
+		B96C60412462AB34001A4E8D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B96C60432462AB3B001A4E8D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B96C60452462AB43001A4E8D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B96C60472462AB4B001A4E8D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B96C60492462AB54001A4E8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B96C604B2462AB5F001A4E8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B96C604D2462AB67001A4E8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B96C604F2462AB70001A4E8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B96C60512462AB7B001A4E8D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B96C60532462AB84001A4E8D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B96C60552462AB8E001A4E8D /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B96C60572462AB98001A4E8D /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B96C60592462ABA3001A4E8D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B96C60622462AD37001A4E8D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		B96C60642462C6D1001A4E8D /* BuoyMath_yinsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_yinsi.h; sourceTree = "<group>"; };
+		B96C60652462C6D1001A4E8D /* BuoyMath_yinsi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_yinsi.m; sourceTree = "<group>"; };
+		B96C60672462CD7D001A4E8D /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B96C60682462CD7D001A4E8D /* jcore-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B96C60692462CD7E001A4E8D /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B9AE628724552CD2002F6262 /* ComicNeue-Angular_Bold_Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular_Bold_Oblique.otf"; sourceTree = "<group>"; };
+		B9AE628824552CD2002F6262 /* ComicNeue-Angular-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular-Regular.ttf"; sourceTree = "<group>"; };
+		B9AE628924552CD2002F6262 /* ComicNeue-Angular-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular-Regular.otf"; sourceTree = "<group>"; };
+		B9AE628A24552CD2002F6262 /* ComicNeue-Angular_Light_Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular_Light_Oblique.otf"; sourceTree = "<group>"; };
+		B9AE628B24552CD2002F6262 /* ComicNeue-Angular-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular-Bold.ttf"; sourceTree = "<group>"; };
+		B9AE628C24552CD2002F6262 /* ComicNeue-Angular-Regular-Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular-Regular-Oblique.ttf"; sourceTree = "<group>"; };
+		B9AE628D24552CD2002F6262 /* ComicNeue-Angular-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Angular-Light.ttf"; sourceTree = "<group>"; };
+		B9AE629524553172002F6262 /* BuoyMath_TipPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_TipPageVC.h; sourceTree = "<group>"; };
+		B9AE629624553172002F6262 /* BuoyMath_TipPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_TipPageVC.m; sourceTree = "<group>"; };
+		B9AE629724553172002F6262 /* BuoyMath_TipPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_TipPageVC.xib; sourceTree = "<group>"; };
+		B9AE629A2455318B002F6262 /* BuoyMath_AboutPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_AboutPageVC.h; sourceTree = "<group>"; };
+		B9AE629B2455318B002F6262 /* BuoyMath_AboutPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_AboutPageVC.m; sourceTree = "<group>"; };
+		B9AE629C2455318B002F6262 /* BuoyMath_AboutPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_AboutPageVC.xib; sourceTree = "<group>"; };
+		B9AE629F24553731002F6262 /* BuoyMath_gameOverPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_gameOverPageVC.h; sourceTree = "<group>"; };
+		B9AE62A024553731002F6262 /* BuoyMath_gameOverPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_gameOverPageVC.m; sourceTree = "<group>"; };
+		B9AE62A124553731002F6262 /* BuoyMath_gameOverPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_gameOverPageVC.xib; sourceTree = "<group>"; };
+		B9AE62A424553A18002F6262 /* BuoyMath_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BuoyMath_wrong.mp3; sourceTree = "<group>"; };
+		B9AE62A524553A18002F6262 /* BuoyMath_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BuoyMath_bg.mp3; sourceTree = "<group>"; };
+		B9AE62A624553A18002F6262 /* BuoyMath_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BuoyMath_right.mp3; sourceTree = "<group>"; };
+		B9AE62AA24553A40002F6262 /* BuoyMath_gamePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_gamePageVC.h; sourceTree = "<group>"; };
+		B9AE62AB24553A40002F6262 /* BuoyMath_gamePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_gamePageVC.m; sourceTree = "<group>"; };
+		B9AE62AC24553A40002F6262 /* BuoyMath_gamePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_gamePageVC.xib; sourceTree = "<group>"; };
+		B9AE62AF24553B71002F6262 /* BuoyMath_MyRecordPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_MyRecordPageVC.h; sourceTree = "<group>"; };
+		B9AE62B024553B71002F6262 /* BuoyMath_MyRecordPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_MyRecordPageVC.m; sourceTree = "<group>"; };
+		B9AE62B124553B71002F6262 /* BuoyMath_MyRecordPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_MyRecordPageVC.xib; sourceTree = "<group>"; };
+		B9AE62B4245561E1002F6262 /* BuoyMath_LifeBuoyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuoyMath_LifeBuoyView.h; sourceTree = "<group>"; };
+		B9AE62B5245561E1002F6262 /* BuoyMath_LifeBuoyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuoyMath_LifeBuoyView.m; sourceTree = "<group>"; };
+		B9AE62B7245561F3002F6262 /* BuoyMath_LifeBuoyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuoyMath_LifeBuoyView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B928B1132455255F006FBDE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96C605A2462ABA3001A4E8D /* WebKit.framework in Frameworks */,
+				B96C606B2462CD7E001A4E8D /* jcore-ios-2.2.5.a in Frameworks */,
+				B96C60582462AB98001A4E8D /* libresolv.tbd in Frameworks */,
+				B96C60562462AB8E001A4E8D /* UserNotifications.framework in Frameworks */,
+				B96C60522462AB7B001A4E8D /* libz.tbd in Frameworks */,
+				B96C60502462AB70001A4E8D /* Security.framework in Frameworks */,
+				B96C604E2462AB67001A4E8D /* UIKit.framework in Frameworks */,
+				B96C604C2462AB5F001A4E8D /* Foundation.framework in Frameworks */,
+				B96C604A2462AB54001A4E8D /* CoreGraphics.framework in Frameworks */,
+				B96C60482462AB4B001A4E8D /* SystemConfiguration.framework in Frameworks */,
+				B96C60462462AB43001A4E8D /* CoreTelephony.framework in Frameworks */,
+				B96C60442462AB3B001A4E8D /* CoreFoundation.framework in Frameworks */,
+				B96C60632462AD37001A4E8D /* NetworkExtension.framework in Frameworks */,
+				B96C60422462AB34001A4E8D /* CFNetwork.framework in Frameworks */,
+				B96C606A2462CD7E001A4E8D /* jpush-ios-3.3.2.a in Frameworks */,
+				BF728145C6E27B93E95CE330 /* libPods-BuoyMathematics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87DC24AAC437D1EC9C61F399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4844C013676F0722B857FDED /* Pods-BuoyMathematics.debug.xcconfig */,
+				29BD34208F75F2714E0AD18E /* Pods-BuoyMathematics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B928B10D2455255F006FBDE0 = {
+			isa = PBXGroup;
+			children = (
+				B928B1182455255F006FBDE0 /* BuoyMathematics */,
+				B928B1172455255F006FBDE0 /* Products */,
+				B96C60402462AB33001A4E8D /* Frameworks */,
+				87DC24AAC437D1EC9C61F399 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B928B1172455255F006FBDE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B928B1162455255F006FBDE0 /* Lifebuoy Math.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B928B1182455255F006FBDE0 /* BuoyMathematics */ = {
+			isa = PBXGroup;
+			children = (
+				B928B1382455261D006FBDE0 /* BuoyMath_Lib */,
+				B928B132245525AE006FBDE0 /* BuoyMath_View */,
+				B928B13724552607006FBDE0 /* BuoyMath_Font */,
+				B928B136245525D3006FBDE0 /* BuoyMath_Music */,
+				B928B135245525D1006FBDE0 /* BuoyMath_Data */,
+				B928B134245525CE006FBDE0 /* BuoyMath_Base */,
+				B928B133245525C3006FBDE0 /* BuoyMath_Controller */,
+				B928B1192455255F006FBDE0 /* AppDelegate.h */,
+				B928B11A2455255F006FBDE0 /* AppDelegate.m */,
+				B928B11C2455255F006FBDE0 /* SceneDelegate.h */,
+				B928B11D2455255F006FBDE0 /* SceneDelegate.m */,
+				B928B11F2455255F006FBDE0 /* ViewController.h */,
+				B928B1202455255F006FBDE0 /* ViewController.m */,
+				B928B1222455255F006FBDE0 /* Main.storyboard */,
+				B928B12524552563006FBDE0 /* Assets.xcassets */,
+				B928B12724552563006FBDE0 /* LaunchScreen.storyboard */,
+				B928B12A24552563006FBDE0 /* Info.plist */,
+				B928B12B24552563006FBDE0 /* main.m */,
+				B928B13A24552666006FBDE0 /* BuoyMath_PrefixHeader.pch */,
+			);
+			path = BuoyMathematics;
+			sourceTree = "<group>";
+		};
+		B928B132245525AE006FBDE0 /* BuoyMath_View */ = {
+			isa = PBXGroup;
+			children = (
+				B928B140245527FC006FBDE0 /* UIViewController+YCPopover.h */,
+				B928B13E245527FC006FBDE0 /* UIViewController+YCPopover.m */,
+				B928B141245527FC006FBDE0 /* YCPopoverAnimator.h */,
+				B928B13F245527FC006FBDE0 /* YCPopoverAnimator.m */,
+				B928B143245527FC006FBDE0 /* YCPopoverMacro.h */,
+				B928B144245527FC006FBDE0 /* YCPresentationController.h */,
+				B928B142245527FC006FBDE0 /* YCPresentationController.m */,
+				B9AE62B4245561E1002F6262 /* BuoyMath_LifeBuoyView.h */,
+				B9AE62B5245561E1002F6262 /* BuoyMath_LifeBuoyView.m */,
+				B9AE62B7245561F3002F6262 /* BuoyMath_LifeBuoyView.xib */,
+			);
+			path = BuoyMath_View;
+			sourceTree = "<group>";
+		};
+		B928B133245525C3006FBDE0 /* BuoyMath_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B928B17124552896006FBDE0 /* BuoyMath_HomePageVC.h */,
+				B928B17224552896006FBDE0 /* BuoyMath_HomePageVC.m */,
+				B928B17324552896006FBDE0 /* BuoyMath_HomePageVC.xib */,
+				B9AE629524553172002F6262 /* BuoyMath_TipPageVC.h */,
+				B9AE629624553172002F6262 /* BuoyMath_TipPageVC.m */,
+				B9AE629724553172002F6262 /* BuoyMath_TipPageVC.xib */,
+				B9AE629A2455318B002F6262 /* BuoyMath_AboutPageVC.h */,
+				B9AE629B2455318B002F6262 /* BuoyMath_AboutPageVC.m */,
+				B9AE629C2455318B002F6262 /* BuoyMath_AboutPageVC.xib */,
+				B9AE629F24553731002F6262 /* BuoyMath_gameOverPageVC.h */,
+				B9AE62A024553731002F6262 /* BuoyMath_gameOverPageVC.m */,
+				B9AE62A124553731002F6262 /* BuoyMath_gameOverPageVC.xib */,
+				B9AE62AF24553B71002F6262 /* BuoyMath_MyRecordPageVC.h */,
+				B9AE62B024553B71002F6262 /* BuoyMath_MyRecordPageVC.m */,
+				B9AE62B124553B71002F6262 /* BuoyMath_MyRecordPageVC.xib */,
+				B9AE62AA24553A40002F6262 /* BuoyMath_gamePageVC.h */,
+				B9AE62AB24553A40002F6262 /* BuoyMath_gamePageVC.m */,
+				B9AE62AC24553A40002F6262 /* BuoyMath_gamePageVC.xib */,
+			);
+			path = BuoyMath_Controller;
+			sourceTree = "<group>";
+		};
+		B928B134245525CE006FBDE0 /* BuoyMath_Base */ = {
+			isa = PBXGroup;
+			children = (
+				B928B14824552820006FBDE0 /* BuoyMath_navigation.h */,
+				B928B14924552820006FBDE0 /* BuoyMath_navigation.m */,
+			);
+			path = BuoyMath_Base;
+			sourceTree = "<group>";
+		};
+		B928B135245525D1006FBDE0 /* BuoyMath_Data */ = {
+			isa = PBXGroup;
+			children = (
+				B96C60642462C6D1001A4E8D /* BuoyMath_yinsi.h */,
+				B96C60652462C6D1001A4E8D /* BuoyMath_yinsi.m */,
+			);
+			path = BuoyMath_Data;
+			sourceTree = "<group>";
+		};
+		B928B136245525D3006FBDE0 /* BuoyMath_Music */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE62A524553A18002F6262 /* BuoyMath_bg.mp3 */,
+				B9AE62A624553A18002F6262 /* BuoyMath_right.mp3 */,
+				B9AE62A424553A18002F6262 /* BuoyMath_wrong.mp3 */,
+			);
+			path = BuoyMath_Music;
+			sourceTree = "<group>";
+		};
+		B928B13724552607006FBDE0 /* BuoyMath_Font */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE628724552CD2002F6262 /* ComicNeue-Angular_Bold_Oblique.otf */,
+				B9AE628A24552CD2002F6262 /* ComicNeue-Angular_Light_Oblique.otf */,
+				B9AE628B24552CD2002F6262 /* ComicNeue-Angular-Bold.ttf */,
+				B9AE628D24552CD2002F6262 /* ComicNeue-Angular-Light.ttf */,
+				B9AE628C24552CD2002F6262 /* ComicNeue-Angular-Regular-Oblique.ttf */,
+				B9AE628924552CD2002F6262 /* ComicNeue-Angular-Regular.otf */,
+				B9AE628824552CD2002F6262 /* ComicNeue-Angular-Regular.ttf */,
+			);
+			path = BuoyMath_Font;
+			sourceTree = "<group>";
+		};
+		B928B1382455261D006FBDE0 /* BuoyMath_Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B96C60682462CD7D001A4E8D /* jcore-ios-2.2.5.a */,
+				B96C60672462CD7D001A4E8D /* jpush-ios-3.3.2.a */,
+				B96C60692462CD7E001A4E8D /* JPUSHService.h */,
+				B928B14D2455286D006FBDE0 /* Masonry */,
+				B928B13B24552710006FBDE0 /* NSObject+BuoyMath_tool.h */,
+				B928B13C24552710006FBDE0 /* NSObject+BuoyMath_tool.m */,
+			);
+			path = BuoyMath_Lib;
+			sourceTree = "<group>";
+		};
+		B928B14D2455286D006FBDE0 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B928B14E2455286D006FBDE0 /* MASCompositeConstraint.h */,
+				B928B14F2455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B928B1502455286D006FBDE0 /* MASConstraint+Private.h */,
+				B928B1512455286D006FBDE0 /* MASLayoutConstraint.h */,
+				B928B1522455286D006FBDE0 /* NSArray+MASShorthandAdditions.h */,
+				B928B1532455286D006FBDE0 /* MASConstraintMaker.h */,
+				B928B1542455286D006FBDE0 /* View+MASAdditions.h */,
+				B928B1552455286D006FBDE0 /* NSArray+MASAdditions.h */,
+				B928B1562455286D006FBDE0 /* MASUtilities.h */,
+				B928B1572455286D006FBDE0 /* MASViewAttribute.h */,
+				B928B1582455286D006FBDE0 /* ViewController+MASAdditions.m */,
+				B928B1592455286D006FBDE0 /* MASViewConstraint.h */,
+				B928B15A2455286D006FBDE0 /* MASConstraint.h */,
+				B928B15B2455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B928B15C2455286D006FBDE0 /* MASCompositeConstraint.m */,
+				B928B15D2455286D006FBDE0 /* MASConstraintMaker.m */,
+				B928B15E2455286D006FBDE0 /* MASLayoutConstraint.m */,
+				B928B15F2455286D006FBDE0 /* NSArray+MASAdditions.m */,
+				B928B1602455286D006FBDE0 /* View+MASAdditions.m */,
+				B928B1612455286D006FBDE0 /* View+MASShorthandAdditions.h */,
+				B928B1622455286D006FBDE0 /* Masonry.h */,
+				B928B1632455286D006FBDE0 /* MASConstraint.m */,
+				B928B1642455286D006FBDE0 /* ViewController+MASAdditions.h */,
+				B928B1652455286D006FBDE0 /* MASViewConstraint.m */,
+				B928B1662455286D006FBDE0 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B96C60402462AB33001A4E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96C60622462AD37001A4E8D /* NetworkExtension.framework */,
+				B96C60592462ABA3001A4E8D /* WebKit.framework */,
+				B96C60572462AB98001A4E8D /* libresolv.tbd */,
+				B96C60552462AB8E001A4E8D /* UserNotifications.framework */,
+				B96C60532462AB84001A4E8D /* AdSupport.framework */,
+				B96C60512462AB7B001A4E8D /* libz.tbd */,
+				B96C604F2462AB70001A4E8D /* Security.framework */,
+				B96C604D2462AB67001A4E8D /* UIKit.framework */,
+				B96C604B2462AB5F001A4E8D /* Foundation.framework */,
+				B96C60492462AB54001A4E8D /* CoreGraphics.framework */,
+				B96C60472462AB4B001A4E8D /* SystemConfiguration.framework */,
+				B96C60452462AB43001A4E8D /* CoreTelephony.framework */,
+				B96C60432462AB3B001A4E8D /* CoreFoundation.framework */,
+				B96C60412462AB34001A4E8D /* CFNetwork.framework */,
+				98CAFDF332EE36259B48EA73 /* libPods-BuoyMathematics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B928B1152455255F006FBDE0 /* BuoyMathematics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B928B12F24552563006FBDE0 /* Build configuration list for PBXNativeTarget "BuoyMathematics" */;
+			buildPhases = (
+				C69A13588DF959C2136BC5D6 /* [CP] Check Pods Manifest.lock */,
+				B928B1122455255F006FBDE0 /* Sources */,
+				B928B1132455255F006FBDE0 /* Frameworks */,
+				B928B1142455255F006FBDE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuoyMathematics;
+			productName = BuoyMathematics;
+			productReference = B928B1162455255F006FBDE0 /* Lifebuoy Math.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B928B10E2455255F006FBDE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BuoyMath_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = yongquan;
+				TargetAttributes = {
+					B928B1152455255F006FBDE0 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B928B1112455255F006FBDE0 /* Build configuration list for PBXProject "BuoyMathematics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B928B10D2455255F006FBDE0;
+			productRefGroup = B928B1172455255F006FBDE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B928B1152455255F006FBDE0 /* BuoyMathematics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B928B1142455255F006FBDE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AE62B8245561F3002F6262 /* BuoyMath_LifeBuoyView.xib in Resources */,
+				B9AE62B324553B71002F6262 /* BuoyMath_MyRecordPageVC.xib in Resources */,
+				B9AE629124552CD2002F6262 /* ComicNeue-Angular_Light_Oblique.otf in Resources */,
+				B9AE629024552CD2002F6262 /* ComicNeue-Angular-Regular.otf in Resources */,
+				B9AE62A324553731002F6262 /* BuoyMath_gameOverPageVC.xib in Resources */,
+				B9AE629E2455318B002F6262 /* BuoyMath_AboutPageVC.xib in Resources */,
+				B9AE629924553172002F6262 /* BuoyMath_TipPageVC.xib in Resources */,
+				B928B12924552563006FBDE0 /* LaunchScreen.storyboard in Resources */,
+				B9AE62A924553A18002F6262 /* BuoyMath_right.mp3 in Resources */,
+				B9AE629324552CD2002F6262 /* ComicNeue-Angular-Regular-Oblique.ttf in Resources */,
+				B928B12624552563006FBDE0 /* Assets.xcassets in Resources */,
+				B9AE628E24552CD2002F6262 /* ComicNeue-Angular_Bold_Oblique.otf in Resources */,
+				B9AE629224552CD2002F6262 /* ComicNeue-Angular-Bold.ttf in Resources */,
+				B9AE62A724553A18002F6262 /* BuoyMath_wrong.mp3 in Resources */,
+				B9AE629424552CD2002F6262 /* ComicNeue-Angular-Light.ttf in Resources */,
+				B928B1242455255F006FBDE0 /* Main.storyboard in Resources */,
+				B9AE62AE24553A40002F6262 /* BuoyMath_gamePageVC.xib in Resources */,
+				B928B17524552896006FBDE0 /* BuoyMath_HomePageVC.xib in Resources */,
+				B9AE62A824553A18002F6262 /* BuoyMath_bg.mp3 in Resources */,
+				B9AE628F24552CD2002F6262 /* ComicNeue-Angular-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C69A13588DF959C2136BC5D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuoyMathematics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B928B1122455255F006FBDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AE62A224553731002F6262 /* BuoyMath_gameOverPageVC.m in Sources */,
+				B928B1212455255F006FBDE0 /* ViewController.m in Sources */,
+				B928B14B24552820006FBDE0 /* BuoyMath_navigation.m in Sources */,
+				B928B16C2455286D006FBDE0 /* NSArray+MASAdditions.m in Sources */,
+				B928B147245527FC006FBDE0 /* YCPresentationController.m in Sources */,
+				B9AE629824553172002F6262 /* BuoyMath_TipPageVC.m in Sources */,
+				B96C60662462C6D1001A4E8D /* BuoyMath_yinsi.m in Sources */,
+				B928B16D2455286D006FBDE0 /* View+MASAdditions.m in Sources */,
+				B928B1672455286D006FBDE0 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B9AE62B224553B71002F6262 /* BuoyMath_MyRecordPageVC.m in Sources */,
+				B9AE62AD24553A40002F6262 /* BuoyMath_gamePageVC.m in Sources */,
+				B928B1692455286D006FBDE0 /* MASCompositeConstraint.m in Sources */,
+				B928B13D24552710006FBDE0 /* NSObject+BuoyMath_tool.m in Sources */,
+				B928B1682455286D006FBDE0 /* ViewController+MASAdditions.m in Sources */,
+				B928B1702455286D006FBDE0 /* MASViewAttribute.m in Sources */,
+				B928B16F2455286D006FBDE0 /* MASViewConstraint.m in Sources */,
+				B928B17424552896006FBDE0 /* BuoyMath_HomePageVC.m in Sources */,
+				B928B145245527FC006FBDE0 /* UIViewController+YCPopover.m in Sources */,
+				B928B16A2455286D006FBDE0 /* MASConstraintMaker.m in Sources */,
+				B928B11B2455255F006FBDE0 /* AppDelegate.m in Sources */,
+				B9AE629D2455318B002F6262 /* BuoyMath_AboutPageVC.m in Sources */,
+				B928B16B2455286D006FBDE0 /* MASLayoutConstraint.m in Sources */,
+				B928B12C24552563006FBDE0 /* main.m in Sources */,
+				B9AE62B6245561E1002F6262 /* BuoyMath_LifeBuoyView.m in Sources */,
+				B928B146245527FC006FBDE0 /* YCPopoverAnimator.m in Sources */,
+				B928B16E2455286D006FBDE0 /* MASConstraint.m in Sources */,
+				B928B11E2455255F006FBDE0 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B928B1222455255F006FBDE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B928B1232455255F006FBDE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B928B12724552563006FBDE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B928B12824552563006FBDE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B928B12D24552563006FBDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B928B12E24552563006FBDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B928B13024552563006FBDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4844C013676F0722B857FDED /* Pods-BuoyMathematics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BuoyMathematics/Lifebuoy Math.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = NRBZYZQBCG;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuoyMathematics/BuoyMath_PrefixHeader.pch";
+				INFOPLIST_FILE = BuoyMathematics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BuoyMathematics/BuoyMath_Lib/Lib",
+					"$(PROJECT_DIR)/BuoyMathematics/BuoyMath_Lib",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongquan.buoymathematics;
+				PRODUCT_NAME = "Lifebuoy Math";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B928B13124552563006FBDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BD34208F75F2714E0AD18E /* Pods-BuoyMathematics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BuoyMathematics/Lifebuoy Math.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = NRBZYZQBCG;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuoyMathematics/BuoyMath_PrefixHeader.pch";
+				INFOPLIST_FILE = BuoyMathematics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BuoyMathematics/BuoyMath_Lib/Lib",
+					"$(PROJECT_DIR)/BuoyMathematics/BuoyMath_Lib",
+				);
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongquan.buoymathematics;
+				PRODUCT_NAME = "Lifebuoy Math";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B928B1112455255F006FBDE0 /* Build configuration list for PBXProject "BuoyMathematics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B928B12D24552563006FBDE0 /* Debug */,
+				B928B12E24552563006FBDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B928B12F24552563006FBDE0 /* Build configuration list for PBXNativeTarget "BuoyMathematics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B928B13024552563006FBDE0 /* Debug */,
+				B928B13124552563006FBDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B928B10E2455255F006FBDE0 /* Project object */;
+}

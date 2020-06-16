@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BOLDER-2.ttf">
+            <string>BOLDER</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSAboutAppPage">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="r5v-Jm-Ule">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_bg" translatesAutoresizingMaskIntoConstraints="NO" id="UEk-Ii-Vhu">
+                    <rect key="frame" x="118" y="52.5" width="431" height="270"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="431" id="PN0-tb-ywb"/>
+                        <constraint firstAttribute="height" constant="270" id="xKP-Ho-WxW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44O-90-WXZ">
+                    <rect key="frame" x="138" y="72.5" width="391" height="230"/>
+                    <string key="text">"Guess the parking space" is a training player observation and mathematical ability of mental intelligence app, calculate the formula of each parking space, according to the law of the number, guess the parking space number is how much, answer correctly can score. Design 3 kinds of difficulty, the more difficult, the greater the scope of the formula.</string>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="UEk-Ii-Vhu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0bZ-Mc-Qgi"/>
+                <constraint firstItem="44O-90-WXZ" firstAttribute="bottom" secondItem="UEk-Ii-Vhu" secondAttribute="bottom" constant="-20" id="2pT-Dm-ELG"/>
+                <constraint firstItem="44O-90-WXZ" firstAttribute="leading" secondItem="UEk-Ii-Vhu" secondAttribute="leading" constant="20" id="5fP-R5-jzc"/>
+                <constraint firstItem="44O-90-WXZ" firstAttribute="top" secondItem="UEk-Ii-Vhu" secondAttribute="top" constant="20" id="7sg-lN-74A"/>
+                <constraint firstItem="r5v-Jm-Ule" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LM6-DJ-XWC"/>
+                <constraint firstItem="UEk-Ii-Vhu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nyx-Wk-rnb"/>
+                <constraint firstAttribute="bottom" secondItem="r5v-Jm-Ule" secondAttribute="bottom" id="ajZ-gc-9e8"/>
+                <constraint firstAttribute="trailing" secondItem="r5v-Jm-Ule" secondAttribute="trailing" id="ikV-0u-gMB"/>
+                <constraint firstItem="44O-90-WXZ" firstAttribute="trailing" secondItem="UEk-Ii-Vhu" secondAttribute="trailing" constant="-20" id="jMr-tF-qJ7"/>
+                <constraint firstItem="r5v-Jm-Ule" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u97-Oc-g2h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_bg" width="413" height="270.5"/>
+        <image name="background_0" width="667" height="375"/>
+    </resources>
+</document>

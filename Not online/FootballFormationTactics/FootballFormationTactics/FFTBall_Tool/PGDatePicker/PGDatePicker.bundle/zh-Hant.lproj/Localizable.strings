@@ -1,0 +1,16 @@
+
+"yearString" = "year";
+"monthString" = "month";
+"dayString" = "day";
+"hourString" = "hour";
+"minuteString" = "minute";
+"secondString" = "second";
+"mondayString" = "monday";
+"tuesdayString" = "tuesday";
+"wednesdayString" = "wednesday";
+"thursdayString" = "thursday";
+"fridayString" = "friday";
+"saturdayString" = "saturday";
+"sundayString" = "sunday";
+"cancelButtonText" = "cancel";
+"confirmButtonText" = "confirm";

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonutNotes_LearnViewController">
+            <connections>
+                <outlet property="WeightLayout" destination="XeQ-49-cRt" id="een-CU-Scx"/>
+                <outlet property="beatLabel" destination="Oqm-Kr-YcD" id="2BM-0a-aAa"/>
+                <outlet property="bgView" destination="ppy-LE-bol" id="fSZ-0J-PqW"/>
+                <outlet property="heightLayout" destination="vEZ-y3-32x" id="V6g-uN-rmx"/>
+                <outlet property="leftView" destination="oUx-Iv-9ta" id="LGf-5R-JPT"/>
+                <outlet property="rightView" destination="DQg-Mw-C5a" id="pzO-6O-F6e"/>
+                <outlet property="starFour" destination="vgy-Ey-ZTU" id="24u-ss-hfU"/>
+                <outlet property="starOne" destination="Fa3-pY-l1i" id="MsK-vP-GkB"/>
+                <outlet property="starThree" destination="O7i-fs-d5f" id="rYF-pK-GgE"/>
+                <outlet property="starTwo" destination="wlM-7d-f2B" id="Inq-E6-EGW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_home" translatesAutoresizingMaskIntoConstraints="NO" id="59A-0b-kDz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppy-LE-bol">
+                    <rect key="frame" x="57" y="153" width="261" height="261"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="261" id="XeQ-49-cRt"/>
+                        <constraint firstAttribute="height" constant="261" id="vEZ-y3-32x"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-Mw-C5a">
+                    <rect key="frame" x="324" y="263.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="4wf-IJ-SFP"/>
+                        <constraint firstAttribute="height" constant="40" id="nXc-cg-zDA"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="next2"/>
+                    <connections>
+                        <action selector="rightAction:" destination="-1" eventType="touchUpInside" id="gcs-J5-x2x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUx-Iv-9ta">
+                    <rect key="frame" x="11" y="263.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="dp8-sJ-xZ2"/>
+                        <constraint firstAttribute="height" constant="40" id="vEZ-bI-Zc7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="next"/>
+                    <connections>
+                        <action selector="leftAction:" destination="-1" eventType="touchUpInside" id="AUu-ox-rrw"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="wlM-7d-f2B">
+                    <rect key="frame" x="143.5" y="437" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="LRd-cd-vdr"/>
+                        <constraint firstAttribute="width" constant="34" id="RVf-HA-1fy"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-fs-d5f">
+                    <rect key="frame" x="197.5" y="437" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="TdF-Qb-1Pa"/>
+                        <constraint firstAttribute="height" constant="34" id="ycd-aZ-GuH"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="vgy-Ey-ZTU">
+                    <rect key="frame" x="251.5" y="437" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="ZXa-VA-JGd"/>
+                        <constraint firstAttribute="height" constant="34" id="d66-ki-l9K"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Four beat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-Kr-YcD">
+                    <rect key="frame" x="125" y="491" width="125.5" height="30"/>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="30"/>
+                    <color key="textColor" red="0.51372549019607838" green="0.14509803921568626" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-pY-l1i">
+                    <rect key="frame" x="89.5" y="437" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="RvC-kn-5pB"/>
+                        <constraint firstAttribute="width" constant="34" id="zBH-qI-m8K"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="oUx-Iv-9ta" firstAttribute="centerY" secondItem="ppy-LE-bol" secondAttribute="centerY" id="15Q-OW-guP"/>
+                <constraint firstItem="wlM-7d-f2B" firstAttribute="centerX" secondItem="ppy-LE-bol" secondAttribute="centerX" constant="-27" id="1nG-Wi-fSC"/>
+                <constraint firstItem="vgy-Ey-ZTU" firstAttribute="centerY" secondItem="Fa3-pY-l1i" secondAttribute="centerY" id="2V2-60-UHX"/>
+                <constraint firstItem="vgy-Ey-ZTU" firstAttribute="leading" secondItem="O7i-fs-d5f" secondAttribute="trailing" constant="20" id="AcQ-9I-ufQ"/>
+                <constraint firstItem="wlM-7d-f2B" firstAttribute="centerY" secondItem="Fa3-pY-l1i" secondAttribute="centerY" id="E7E-hM-HXx"/>
+                <constraint firstItem="O7i-fs-d5f" firstAttribute="centerX" secondItem="ppy-LE-bol" secondAttribute="centerX" constant="27" id="MdX-7t-NaN"/>
+                <constraint firstAttribute="trailing" secondItem="59A-0b-kDz" secondAttribute="trailing" id="SFq-VU-CHa"/>
+                <constraint firstItem="Oqm-Kr-YcD" firstAttribute="centerX" secondItem="ppy-LE-bol" secondAttribute="centerX" id="TeG-nh-HDm"/>
+                <constraint firstItem="ppy-LE-bol" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="WjR-4Z-rBK"/>
+                <constraint firstItem="59A-0b-kDz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YFh-BO-A7g"/>
+                <constraint firstItem="DQg-Mw-C5a" firstAttribute="leading" secondItem="ppy-LE-bol" secondAttribute="trailing" constant="6" id="bcs-BX-W4N"/>
+                <constraint firstItem="O7i-fs-d5f" firstAttribute="centerY" secondItem="Fa3-pY-l1i" secondAttribute="centerY" id="bwU-RL-vq8"/>
+                <constraint firstItem="DQg-Mw-C5a" firstAttribute="centerY" secondItem="ppy-LE-bol" secondAttribute="centerY" id="fzb-Cn-mku"/>
+                <constraint firstAttribute="bottom" secondItem="59A-0b-kDz" secondAttribute="bottom" id="gGL-Ap-qZA"/>
+                <constraint firstItem="Fa3-pY-l1i" firstAttribute="top" secondItem="ppy-LE-bol" secondAttribute="bottom" constant="23" id="i1j-BU-IXX"/>
+                <constraint firstItem="Oqm-Kr-YcD" firstAttribute="top" secondItem="wlM-7d-f2B" secondAttribute="bottom" constant="20" id="ne2-hp-y1J"/>
+                <constraint firstItem="59A-0b-kDz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pMG-1Z-3qF"/>
+                <constraint firstItem="wlM-7d-f2B" firstAttribute="leading" secondItem="Fa3-pY-l1i" secondAttribute="trailing" constant="20" id="qui-Qq-kOv"/>
+                <constraint firstItem="ppy-LE-bol" firstAttribute="leading" secondItem="oUx-Iv-9ta" secondAttribute="trailing" constant="6" id="w2g-nm-fw4"/>
+                <constraint firstItem="ppy-LE-bol" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zpM-28-50t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="148.99553571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_home" width="375" height="667"/>
+        <image name="next" width="40" height="40"/>
+        <image name="next2" width="40" height="40"/>
+        <image name="star" width="34" height="34"/>
+    </resources>
+</document>

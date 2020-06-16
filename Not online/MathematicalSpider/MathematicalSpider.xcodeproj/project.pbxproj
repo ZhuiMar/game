@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91F81DD244D9B510015FD30 /* MatheSpider_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91F81DA244D9B500015FD30 /* MatheSpider_bg.mp3 */; };
+		B91F81DE244D9B510015FD30 /* MatheSpider_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91F81DB244D9B500015FD30 /* MatheSpider_right.mp3 */; };
+		B91F81DF244D9B510015FD30 /* MatheSpider_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91F81DC244D9B500015FD30 /* MatheSpider_wrong.mp3 */; };
+		B98C7C85244D3588001613EB /* MatheSpider_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7C83244D3588001613EB /* MatheSpider_HomeViewController.m */; };
+		B98C7C86244D3588001613EB /* MatheSpider_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C84244D3588001613EB /* MatheSpider_HomeViewController.xib */; };
+		B98C7C90244D3E22001613EB /* MatheSpider_TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7C8E244D3E22001613EB /* MatheSpider_TipsViewController.m */; };
+		B98C7C91244D3E22001613EB /* MatheSpider_TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C8F244D3E22001613EB /* MatheSpider_TipsViewController.xib */; };
+		B98C7C95244D3E45001613EB /* MatheSpider_OverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7C93244D3E45001613EB /* MatheSpider_OverViewController.m */; };
+		B98C7C96244D3E45001613EB /* MatheSpider_OverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C94244D3E45001613EB /* MatheSpider_OverViewController.xib */; };
+		B98C7C9A244D3E77001613EB /* MatheSpider_RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7C98244D3E77001613EB /* MatheSpider_RankViewController.m */; };
+		B98C7C9B244D3E77001613EB /* MatheSpider_RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C99244D3E77001613EB /* MatheSpider_RankViewController.xib */; };
+		B98C7C9F244D3E9B001613EB /* MatheSpider_DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7C9D244D3E9B001613EB /* MatheSpider_DescriptionViewController.m */; };
+		B98C7CA0244D3E9B001613EB /* MatheSpider_DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C9E244D3E9B001613EB /* MatheSpider_DescriptionViewController.xib */; };
+		B98C7CA4244D4BA1001613EB /* COMICBD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B98C7CA1244D4BA0001613EB /* COMICBD.TTF */; };
+		B98C7CA5244D4BA2001613EB /* COMICI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B98C7CA2244D4BA1001613EB /* COMICI.TTF */; };
+		B98C7CA6244D4BA2001613EB /* COMIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B98C7CA3244D4BA1001613EB /* COMIC.TTF */; };
+		B98C7CAA244D5183001613EB /* MatheSpider_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7CA8244D5183001613EB /* MatheSpider_GameViewController.m */; };
+		B98C7CAB244D5183001613EB /* MatheSpider_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98C7CA9244D5183001613EB /* MatheSpider_GameViewController.xib */; };
+		B98C7CAF244D56BF001613EB /* JSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7CAE244D56BF001613EB /* JSAnalogueStick.m */; };
+		B98C7CB5244D79E9001613EB /* SDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7CB1244D79E9001613EB /* SDDrawView.m */; };
+		B98C7CB6244D79E9001613EB /* SDBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C7CB2244D79E9001613EB /* SDBezierPath.m */; };
+		B98E11302477B5F000E564E3 /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E112D2477B5F000E564E3 /* jpush-ios-3.3.2.a */; };
+		B98E11312477B5F000E564E3 /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E112F2477B5F000E564E3 /* jcore-noidfa-ios-2.2.5.a */; };
+		B98E11332477B61E00E564E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11322477B61E00E564E3 /* CFNetwork.framework */; };
+		B98E11352477B62600E564E3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11342477B62600E564E3 /* CoreFoundation.framework */; };
+		B98E11372477B62D00E564E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11362477B62D00E564E3 /* CoreTelephony.framework */; };
+		B98E11392477B63500E564E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11382477B63500E564E3 /* SystemConfiguration.framework */; };
+		B98E113B2477B63C00E564E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E113A2477B63C00E564E3 /* CoreGraphics.framework */; };
+		B98E113D2477B64300E564E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E113C2477B64300E564E3 /* Foundation.framework */; };
+		B98E113F2477B64B00E564E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E113E2477B64B00E564E3 /* UIKit.framework */; };
+		B98E11412477B65200E564E3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11402477B65200E564E3 /* Security.framework */; };
+		B98E11432477B65A00E564E3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11422477B65A00E564E3 /* libz.tbd */; };
+		B98E11452477B66300E564E3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11442477B66300E564E3 /* UserNotifications.framework */; };
+		B98E11472477B66A00E564E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11462477B66A00E564E3 /* libresolv.tbd */; };
+		B98E11492477B67100E564E3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E11482477B67100E564E3 /* WebKit.framework */; };
+		B99896EA244D29780098E245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896E9244D29780098E245 /* AppDelegate.m */; };
+		B99896ED244D29780098E245 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896EC244D29780098E245 /* SceneDelegate.m */; };
+		B99896F0244D29780098E245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896EF244D29780098E245 /* ViewController.m */; };
+		B99896F3244D29780098E245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99896F1244D29780098E245 /* Main.storyboard */; };
+		B99896F5244D297B0098E245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99896F4244D297B0098E245 /* Assets.xcassets */; };
+		B99896F8244D297B0098E245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99896F6244D297B0098E245 /* LaunchScreen.storyboard */; };
+		B99896FB244D297B0098E245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896FA244D297B0098E245 /* main.m */; };
+		B9989709244D2B070098E245 /* MatheSpider_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9989708244D2B070098E245 /* MatheSpider_navigation.m */; };
+		B9989711244D2BE10098E245 /* NSObject+MatheSpider_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9989710244D2BE10098E245 /* NSObject+MatheSpider_Tools.m */; };
+		B9989735244D2CCF0098E245 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B998972E244D2CCF0098E245 /* YCPopoverAnimator.m */; };
+		B9989736244D2CCF0098E245 /* WSRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B998972F244D2CCF0098E245 /* WSRollView.m */; };
+		B9989737244D2CCF0098E245 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9989732244D2CCF0098E245 /* UIViewController+YCPopover.m */; };
+		B9989738244D2CCF0098E245 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9989733244D2CCF0098E245 /* YCPresentationController.m */; };
+		B9DA59D22477CB8000BDC7AA /* MatheSpider_ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59D12477CB8000BDC7AA /* MatheSpider_ThemeManager.m */; };
+		B9DA59D52477CB9E00BDC7AA /* MatheSpider_ScoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59D42477CB9E00BDC7AA /* MatheSpider_ScoreHelper.m */; };
+		B9DA59D82477CBEA00BDC7AA /* MatheSpider_ScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59D72477CBEA00BDC7AA /* MatheSpider_ScoreData.m */; };
+		B9DA59DF2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59DD2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.m */; };
+		B9DA59E02477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9DA59DE2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.xib */; };
+		B9DA59FA2477CF3000BDC7AA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59E22477CF2F00BDC7AA /* Reachability.m */; };
+		B9DA59FB2477CF3000BDC7AA /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59E82477CF2F00BDC7AA /* MJPropertyType.m */; };
+		B9DA59FC2477CF3000BDC7AA /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59EB2477CF2F00BDC7AA /* NSObject+MJKeyValue.m */; };
+		B9DA59FD2477CF3000BDC7AA /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59EC2477CF2F00BDC7AA /* MJProperty.m */; };
+		B9DA59FE2477CF3000BDC7AA /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59EE2477CF3000BDC7AA /* NSObject+MJCoding.m */; };
+		B9DA59FF2477CF3000BDC7AA /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F02477CF3000BDC7AA /* MJExtensionConst.m */; };
+		B9DA5A002477CF3000BDC7AA /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F12477CF3000BDC7AA /* NSObject+MJProperty.m */; };
+		B9DA5A012477CF3000BDC7AA /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F32477CF3000BDC7AA /* NSObject+MJClass.m */; };
+		B9DA5A022477CF3000BDC7AA /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F42477CF3000BDC7AA /* NSString+MJExtension.m */; };
+		B9DA5A032477CF3000BDC7AA /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F52477CF3000BDC7AA /* MJPropertyKey.m */; };
+		B9DA5A042477CF3000BDC7AA /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA59F92477CF3000BDC7AA /* MJFoundation.m */; };
+		B9DA5A072477CFB200BDC7AA /* MatheSpider_getScoreTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DA5A062477CFB200BDC7AA /* MatheSpider_getScoreTool.m */; };
+		EA72A79AA1C18F24A0408930 /* libPods-MathematicalSpider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8040179BBB7DA04D61AE9F /* libPods-MathematicalSpider.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B8040179BBB7DA04D61AE9F /* libPods-MathematicalSpider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathematicalSpider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B66FCDACEEDCC053168CA9 /* Pods-MathematicalSpider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathematicalSpider.debug.xcconfig"; path = "Target Support Files/Pods-MathematicalSpider/Pods-MathematicalSpider.debug.xcconfig"; sourceTree = "<group>"; };
+		B91F81DA244D9B500015FD30 /* MatheSpider_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MatheSpider_bg.mp3; sourceTree = "<group>"; };
+		B91F81DB244D9B500015FD30 /* MatheSpider_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MatheSpider_right.mp3; sourceTree = "<group>"; };
+		B91F81DC244D9B500015FD30 /* MatheSpider_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MatheSpider_wrong.mp3; sourceTree = "<group>"; };
+		B95ED1AD2477EE440039F301 /* Math Small Spider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Math Small Spider.entitlements"; sourceTree = "<group>"; };
+		B98C7C82244D3588001613EB /* MatheSpider_HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_HomeViewController.h; sourceTree = "<group>"; };
+		B98C7C83244D3588001613EB /* MatheSpider_HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_HomeViewController.m; sourceTree = "<group>"; };
+		B98C7C84244D3588001613EB /* MatheSpider_HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_HomeViewController.xib; sourceTree = "<group>"; };
+		B98C7C8D244D3E22001613EB /* MatheSpider_TipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_TipsViewController.h; sourceTree = "<group>"; };
+		B98C7C8E244D3E22001613EB /* MatheSpider_TipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_TipsViewController.m; sourceTree = "<group>"; };
+		B98C7C8F244D3E22001613EB /* MatheSpider_TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_TipsViewController.xib; sourceTree = "<group>"; };
+		B98C7C92244D3E45001613EB /* MatheSpider_OverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_OverViewController.h; sourceTree = "<group>"; };
+		B98C7C93244D3E45001613EB /* MatheSpider_OverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_OverViewController.m; sourceTree = "<group>"; };
+		B98C7C94244D3E45001613EB /* MatheSpider_OverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_OverViewController.xib; sourceTree = "<group>"; };
+		B98C7C97244D3E77001613EB /* MatheSpider_RankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_RankViewController.h; sourceTree = "<group>"; };
+		B98C7C98244D3E77001613EB /* MatheSpider_RankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_RankViewController.m; sourceTree = "<group>"; };
+		B98C7C99244D3E77001613EB /* MatheSpider_RankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_RankViewController.xib; sourceTree = "<group>"; };
+		B98C7C9C244D3E9B001613EB /* MatheSpider_DescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_DescriptionViewController.h; sourceTree = "<group>"; };
+		B98C7C9D244D3E9B001613EB /* MatheSpider_DescriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_DescriptionViewController.m; sourceTree = "<group>"; };
+		B98C7C9E244D3E9B001613EB /* MatheSpider_DescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_DescriptionViewController.xib; sourceTree = "<group>"; };
+		B98C7CA1244D4BA0001613EB /* COMICBD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMICBD.TTF; sourceTree = "<group>"; };
+		B98C7CA2244D4BA1001613EB /* COMICI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMICI.TTF; sourceTree = "<group>"; };
+		B98C7CA3244D4BA1001613EB /* COMIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMIC.TTF; sourceTree = "<group>"; };
+		B98C7CA7244D5183001613EB /* MatheSpider_GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_GameViewController.h; sourceTree = "<group>"; };
+		B98C7CA8244D5183001613EB /* MatheSpider_GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_GameViewController.m; sourceTree = "<group>"; };
+		B98C7CA9244D5183001613EB /* MatheSpider_GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_GameViewController.xib; sourceTree = "<group>"; };
+		B98C7CAD244D56BF001613EB /* JSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnalogueStick.h; sourceTree = "<group>"; };
+		B98C7CAE244D56BF001613EB /* JSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnalogueStick.m; sourceTree = "<group>"; };
+		B98C7CB1244D79E9001613EB /* SDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDrawView.m; sourceTree = "<group>"; };
+		B98C7CB2244D79E9001613EB /* SDBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBezierPath.m; sourceTree = "<group>"; };
+		B98C7CB3244D79E9001613EB /* SDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDrawView.h; sourceTree = "<group>"; };
+		B98C7CB4244D79E9001613EB /* SDBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBezierPath.h; sourceTree = "<group>"; };
+		B98E112D2477B5F000E564E3 /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B98E112E2477B5F000E564E3 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B98E112F2477B5F000E564E3 /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B98E11322477B61E00E564E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B98E11342477B62600E564E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B98E11362477B62D00E564E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B98E11382477B63500E564E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B98E113A2477B63C00E564E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B98E113C2477B64300E564E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B98E113E2477B64B00E564E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B98E11402477B65200E564E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B98E11422477B65A00E564E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B98E11442477B66300E564E3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B98E11462477B66A00E564E3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B98E11482477B67100E564E3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B99896E5244D29780098E245 /* Math Small Spider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Small Spider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99896E8244D29780098E245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B99896E9244D29780098E245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B99896EB244D29780098E245 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B99896EC244D29780098E245 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B99896EE244D29780098E245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B99896EF244D29780098E245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B99896F2244D29780098E245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B99896F4244D297B0098E245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B99896F7244D297B0098E245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B99896F9244D297B0098E245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99896FA244D297B0098E245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9989701244D2A4C0098E245 /* MatheSpider_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9989707244D2B070098E245 /* MatheSpider_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_navigation.h; sourceTree = "<group>"; };
+		B9989708244D2B070098E245 /* MatheSpider_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_navigation.m; sourceTree = "<group>"; };
+		B998970F244D2BE10098E245 /* NSObject+MatheSpider_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MatheSpider_Tools.h"; sourceTree = "<group>"; };
+		B9989710244D2BE10098E245 /* NSObject+MatheSpider_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MatheSpider_Tools.m"; sourceTree = "<group>"; };
+		B998972C244D2CCF0098E245 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B998972D244D2CCF0098E245 /* WSRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRollView.h; sourceTree = "<group>"; };
+		B998972E244D2CCF0098E245 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B998972F244D2CCF0098E245 /* WSRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRollView.m; sourceTree = "<group>"; };
+		B9989730244D2CCF0098E245 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9989731244D2CCF0098E245 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9989732244D2CCF0098E245 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B9989733244D2CCF0098E245 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9989734244D2CCF0098E245 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9DA59D02477CB8000BDC7AA /* MatheSpider_ThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_ThemeManager.h; sourceTree = "<group>"; };
+		B9DA59D12477CB8000BDC7AA /* MatheSpider_ThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_ThemeManager.m; sourceTree = "<group>"; };
+		B9DA59D32477CB9E00BDC7AA /* MatheSpider_ScoreHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_ScoreHelper.h; sourceTree = "<group>"; };
+		B9DA59D42477CB9E00BDC7AA /* MatheSpider_ScoreHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_ScoreHelper.m; sourceTree = "<group>"; };
+		B9DA59D62477CBEA00BDC7AA /* MatheSpider_ScoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_ScoreData.h; sourceTree = "<group>"; };
+		B9DA59D72477CBEA00BDC7AA /* MatheSpider_ScoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_ScoreData.m; sourceTree = "<group>"; };
+		B9DA59DC2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_PrivacyPolicyPageVC.h; sourceTree = "<group>"; };
+		B9DA59DD2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_PrivacyPolicyPageVC.m; sourceTree = "<group>"; };
+		B9DA59DE2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatheSpider_PrivacyPolicyPageVC.xib; sourceTree = "<group>"; };
+		B9DA59E22477CF2F00BDC7AA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B9DA59E32477CF2F00BDC7AA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B9DA59E52477CF2F00BDC7AA /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		B9DA59E62477CF2F00BDC7AA /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		B9DA59E72477CF2F00BDC7AA /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		B9DA59E82477CF2F00BDC7AA /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		B9DA59E92477CF2F00BDC7AA /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		B9DA59EA2477CF2F00BDC7AA /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		B9DA59EB2477CF2F00BDC7AA /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		B9DA59EC2477CF2F00BDC7AA /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		B9DA59ED2477CF3000BDC7AA /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		B9DA59EE2477CF3000BDC7AA /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		B9DA59EF2477CF3000BDC7AA /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		B9DA59F02477CF3000BDC7AA /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		B9DA59F12477CF3000BDC7AA /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		B9DA59F22477CF3000BDC7AA /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		B9DA59F32477CF3000BDC7AA /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		B9DA59F42477CF3000BDC7AA /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B9DA59F52477CF3000BDC7AA /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		B9DA59F62477CF3000BDC7AA /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		B9DA59F72477CF3000BDC7AA /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		B9DA59F82477CF3000BDC7AA /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		B9DA59F92477CF3000BDC7AA /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		B9DA5A052477CFB200BDC7AA /* MatheSpider_getScoreTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatheSpider_getScoreTool.h; sourceTree = "<group>"; };
+		B9DA5A062477CFB200BDC7AA /* MatheSpider_getScoreTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatheSpider_getScoreTool.m; sourceTree = "<group>"; };
+		CD7F4D7CB9451E0FC78E755E /* Pods-MathematicalSpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathematicalSpider.release.xcconfig"; path = "Target Support Files/Pods-MathematicalSpider/Pods-MathematicalSpider.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B99896E2244D29780098E245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98E11492477B67100E564E3 /* WebKit.framework in Frameworks */,
+				B98E11472477B66A00E564E3 /* libresolv.tbd in Frameworks */,
+				B98E11452477B66300E564E3 /* UserNotifications.framework in Frameworks */,
+				B98E11432477B65A00E564E3 /* libz.tbd in Frameworks */,
+				B98E11412477B65200E564E3 /* Security.framework in Frameworks */,
+				B98E113F2477B64B00E564E3 /* UIKit.framework in Frameworks */,
+				B98E113D2477B64300E564E3 /* Foundation.framework in Frameworks */,
+				B98E113B2477B63C00E564E3 /* CoreGraphics.framework in Frameworks */,
+				B98E11392477B63500E564E3 /* SystemConfiguration.framework in Frameworks */,
+				B98E11372477B62D00E564E3 /* CoreTelephony.framework in Frameworks */,
+				B98E11352477B62600E564E3 /* CoreFoundation.framework in Frameworks */,
+				B98E11332477B61E00E564E3 /* CFNetwork.framework in Frameworks */,
+				B98E11312477B5F000E564E3 /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				EA72A79AA1C18F24A0408930 /* libPods-MathematicalSpider.a in Frameworks */,
+				B98E11302477B5F000E564E3 /* jpush-ios-3.3.2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414BF31A1D6105D64242E482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98E11482477B67100E564E3 /* WebKit.framework */,
+				B98E11462477B66A00E564E3 /* libresolv.tbd */,
+				B98E11442477B66300E564E3 /* UserNotifications.framework */,
+				B98E11422477B65A00E564E3 /* libz.tbd */,
+				B98E11402477B65200E564E3 /* Security.framework */,
+				B98E113E2477B64B00E564E3 /* UIKit.framework */,
+				B98E113C2477B64300E564E3 /* Foundation.framework */,
+				B98E113A2477B63C00E564E3 /* CoreGraphics.framework */,
+				B98E11382477B63500E564E3 /* SystemConfiguration.framework */,
+				B98E11362477B62D00E564E3 /* CoreTelephony.framework */,
+				B98E11342477B62600E564E3 /* CoreFoundation.framework */,
+				B98E11322477B61E00E564E3 /* CFNetwork.framework */,
+				3B8040179BBB7DA04D61AE9F /* libPods-MathematicalSpider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91F81D9244D9B400015FD30 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B91F81DA244D9B500015FD30 /* MatheSpider_bg.mp3 */,
+				B91F81DB244D9B500015FD30 /* MatheSpider_right.mp3 */,
+				B91F81DC244D9B500015FD30 /* MatheSpider_wrong.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		B91F81E0244D9B540015FD30 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7CA3244D4BA1001613EB /* COMIC.TTF */,
+				B98C7CA1244D4BA0001613EB /* COMICBD.TTF */,
+				B98C7CA2244D4BA1001613EB /* COMICI.TTF */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		B98C7CAC244D56A4001613EB /* handle */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7CAD244D56BF001613EB /* JSAnalogueStick.h */,
+				B98C7CAE244D56BF001613EB /* JSAnalogueStick.m */,
+			);
+			path = handle;
+			sourceTree = "<group>";
+		};
+		B98C7CB0244D79D3001613EB /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7CB4244D79E9001613EB /* SDBezierPath.h */,
+				B98C7CB2244D79E9001613EB /* SDBezierPath.m */,
+				B98C7CB3244D79E9001613EB /* SDDrawView.h */,
+				B98C7CB1244D79E9001613EB /* SDDrawView.m */,
+			);
+			path = draw;
+			sourceTree = "<group>";
+		};
+		B98E112C2477B4DB00E564E3 /* apns */ = {
+			isa = PBXGroup;
+			children = (
+				B98E112F2477B5F000E564E3 /* jcore-noidfa-ios-2.2.5.a */,
+				B98E112D2477B5F000E564E3 /* jpush-ios-3.3.2.a */,
+				B98E112E2477B5F000E564E3 /* JPUSHService.h */,
+			);
+			path = apns;
+			sourceTree = "<group>";
+		};
+		B99896DC244D29780098E245 = {
+			isa = PBXGroup;
+			children = (
+				B99896E7244D29780098E245 /* MathematicalSpider */,
+				B99896E6244D29780098E245 /* Products */,
+				BC524FD5203C928162122E6E /* Pods */,
+				414BF31A1D6105D64242E482 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B99896E6244D29780098E245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B99896E5244D29780098E245 /* Math Small Spider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B99896E7244D29780098E245 /* MathematicalSpider */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED1AD2477EE440039F301 /* Math Small Spider.entitlements */,
+				B98E112C2477B4DB00E564E3 /* apns */,
+				B91F81E0244D9B540015FD30 /* font */,
+				B91F81D9244D9B400015FD30 /* music */,
+				B9989706244D2AC50098E245 /* base */,
+				B9989705244D2AC20098E245 /* lib */,
+				B9989704244D2AC00098E245 /* controller */,
+				B9989703244D2ABD0098E245 /* view */,
+				B9989702244D2ABA0098E245 /* model */,
+				B99896E8244D29780098E245 /* AppDelegate.h */,
+				B99896E9244D29780098E245 /* AppDelegate.m */,
+				B99896EB244D29780098E245 /* SceneDelegate.h */,
+				B99896EC244D29780098E245 /* SceneDelegate.m */,
+				B99896EE244D29780098E245 /* ViewController.h */,
+				B99896EF244D29780098E245 /* ViewController.m */,
+				B99896F1244D29780098E245 /* Main.storyboard */,
+				B99896F4244D297B0098E245 /* Assets.xcassets */,
+				B99896F6244D297B0098E245 /* LaunchScreen.storyboard */,
+				B99896F9244D297B0098E245 /* Info.plist */,
+				B99896FA244D297B0098E245 /* main.m */,
+				B9989701244D2A4C0098E245 /* MatheSpider_PrefixHeader.pch */,
+			);
+			path = MathematicalSpider;
+			sourceTree = "<group>";
+		};
+		B9989702244D2ABA0098E245 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA59D62477CBEA00BDC7AA /* MatheSpider_ScoreData.h */,
+				B9DA59D72477CBEA00BDC7AA /* MatheSpider_ScoreData.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B9989703244D2ABD0098E245 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7CB0244D79D3001613EB /* draw */,
+				B98C7CAC244D56A4001613EB /* handle */,
+				B9989730244D2CCF0098E245 /* YCPopoverMacro.h */,
+				B998972C244D2CCF0098E245 /* UIViewController+YCPopover.h */,
+				B9989732244D2CCF0098E245 /* UIViewController+YCPopover.m */,
+				B998972D244D2CCF0098E245 /* WSRollView.h */,
+				B998972F244D2CCF0098E245 /* WSRollView.m */,
+				B9989734244D2CCF0098E245 /* YCPopoverAnimator.h */,
+				B998972E244D2CCF0098E245 /* YCPopoverAnimator.m */,
+				B9989731244D2CCF0098E245 /* YCPresentationController.h */,
+				B9989733244D2CCF0098E245 /* YCPresentationController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B9989704244D2AC00098E245 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7C82244D3588001613EB /* MatheSpider_HomeViewController.h */,
+				B98C7C83244D3588001613EB /* MatheSpider_HomeViewController.m */,
+				B98C7C84244D3588001613EB /* MatheSpider_HomeViewController.xib */,
+				B98C7C8D244D3E22001613EB /* MatheSpider_TipsViewController.h */,
+				B98C7C8E244D3E22001613EB /* MatheSpider_TipsViewController.m */,
+				B98C7C8F244D3E22001613EB /* MatheSpider_TipsViewController.xib */,
+				B98C7C92244D3E45001613EB /* MatheSpider_OverViewController.h */,
+				B98C7C93244D3E45001613EB /* MatheSpider_OverViewController.m */,
+				B98C7C94244D3E45001613EB /* MatheSpider_OverViewController.xib */,
+				B98C7C97244D3E77001613EB /* MatheSpider_RankViewController.h */,
+				B98C7C98244D3E77001613EB /* MatheSpider_RankViewController.m */,
+				B98C7C99244D3E77001613EB /* MatheSpider_RankViewController.xib */,
+				B98C7C9C244D3E9B001613EB /* MatheSpider_DescriptionViewController.h */,
+				B98C7C9D244D3E9B001613EB /* MatheSpider_DescriptionViewController.m */,
+				B98C7C9E244D3E9B001613EB /* MatheSpider_DescriptionViewController.xib */,
+				B98C7CA7244D5183001613EB /* MatheSpider_GameViewController.h */,
+				B98C7CA8244D5183001613EB /* MatheSpider_GameViewController.m */,
+				B98C7CA9244D5183001613EB /* MatheSpider_GameViewController.xib */,
+				B9DA59DC2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.h */,
+				B9DA59DD2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.m */,
+				B9DA59DE2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B9989705244D2AC20098E245 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA59E42477CF2F00BDC7AA /* MJExtension */,
+				B9DA59E12477CF2F00BDC7AA /* Reachability */,
+				B998970F244D2BE10098E245 /* NSObject+MatheSpider_Tools.h */,
+				B9989710244D2BE10098E245 /* NSObject+MatheSpider_Tools.m */,
+				B9DA59D02477CB8000BDC7AA /* MatheSpider_ThemeManager.h */,
+				B9DA59D12477CB8000BDC7AA /* MatheSpider_ThemeManager.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B9989706244D2AC50098E245 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				B9989707244D2B070098E245 /* MatheSpider_navigation.h */,
+				B9989708244D2B070098E245 /* MatheSpider_navigation.m */,
+				B9DA59D32477CB9E00BDC7AA /* MatheSpider_ScoreHelper.h */,
+				B9DA59D42477CB9E00BDC7AA /* MatheSpider_ScoreHelper.m */,
+				B9DA5A052477CFB200BDC7AA /* MatheSpider_getScoreTool.h */,
+				B9DA5A062477CFB200BDC7AA /* MatheSpider_getScoreTool.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		B9DA59E12477CF2F00BDC7AA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA59E22477CF2F00BDC7AA /* Reachability.m */,
+				B9DA59E32477CF2F00BDC7AA /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B9DA59E42477CF2F00BDC7AA /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B9DA59E52477CF2F00BDC7AA /* MJPropertyKey.h */,
+				B9DA59E62477CF2F00BDC7AA /* NSObject+MJClass.h */,
+				B9DA59E72477CF2F00BDC7AA /* NSString+MJExtension.h */,
+				B9DA59E82477CF2F00BDC7AA /* MJPropertyType.m */,
+				B9DA59E92477CF2F00BDC7AA /* NSObject+MJProperty.h */,
+				B9DA59EA2477CF2F00BDC7AA /* MJExtensionConst.h */,
+				B9DA59EB2477CF2F00BDC7AA /* NSObject+MJKeyValue.m */,
+				B9DA59EC2477CF2F00BDC7AA /* MJProperty.m */,
+				B9DA59ED2477CF3000BDC7AA /* MJFoundation.h */,
+				B9DA59EE2477CF3000BDC7AA /* NSObject+MJCoding.m */,
+				B9DA59EF2477CF3000BDC7AA /* MJExtension.h */,
+				B9DA59F02477CF3000BDC7AA /* MJExtensionConst.m */,
+				B9DA59F12477CF3000BDC7AA /* NSObject+MJProperty.m */,
+				B9DA59F22477CF3000BDC7AA /* MJPropertyType.h */,
+				B9DA59F32477CF3000BDC7AA /* NSObject+MJClass.m */,
+				B9DA59F42477CF3000BDC7AA /* NSString+MJExtension.m */,
+				B9DA59F52477CF3000BDC7AA /* MJPropertyKey.m */,
+				B9DA59F62477CF3000BDC7AA /* MJProperty.h */,
+				B9DA59F72477CF3000BDC7AA /* NSObject+MJKeyValue.h */,
+				B9DA59F82477CF3000BDC7AA /* NSObject+MJCoding.h */,
+				B9DA59F92477CF3000BDC7AA /* MJFoundation.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		BC524FD5203C928162122E6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49B66FCDACEEDCC053168CA9 /* Pods-MathematicalSpider.debug.xcconfig */,
+				CD7F4D7CB9451E0FC78E755E /* Pods-MathematicalSpider.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B99896E4244D29780098E245 /* MathematicalSpider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99896FE244D297B0098E245 /* Build configuration list for PBXNativeTarget "MathematicalSpider" */;
+			buildPhases = (
+				078889CC877A0343CC657BF5 /* [CP] Check Pods Manifest.lock */,
+				B99896E1244D29780098E245 /* Sources */,
+				B99896E2244D29780098E245 /* Frameworks */,
+				B99896E3244D29780098E245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathematicalSpider;
+			productName = MathematicalSpider;
+			productReference = B99896E5244D29780098E245 /* Math Small Spider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B99896DD244D29780098E245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MatheSpider_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = teresa;
+				TargetAttributes = {
+					B99896E4244D29780098E245 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B99896E0244D29780098E245 /* Build configuration list for PBXProject "MathematicalSpider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B99896DC244D29780098E245;
+			productRefGroup = B99896E6244D29780098E245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B99896E4244D29780098E245 /* MathematicalSpider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B99896E3244D29780098E245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98C7C9B244D3E77001613EB /* MatheSpider_RankViewController.xib in Resources */,
+				B91F81DF244D9B510015FD30 /* MatheSpider_wrong.mp3 in Resources */,
+				B98C7CAB244D5183001613EB /* MatheSpider_GameViewController.xib in Resources */,
+				B91F81DD244D9B510015FD30 /* MatheSpider_bg.mp3 in Resources */,
+				B98C7CA6244D4BA2001613EB /* COMIC.TTF in Resources */,
+				B9DA59E02477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.xib in Resources */,
+				B98C7C91244D3E22001613EB /* MatheSpider_TipsViewController.xib in Resources */,
+				B98C7CA0244D3E9B001613EB /* MatheSpider_DescriptionViewController.xib in Resources */,
+				B98C7C86244D3588001613EB /* MatheSpider_HomeViewController.xib in Resources */,
+				B98C7CA5244D4BA2001613EB /* COMICI.TTF in Resources */,
+				B99896F8244D297B0098E245 /* LaunchScreen.storyboard in Resources */,
+				B98C7C96244D3E45001613EB /* MatheSpider_OverViewController.xib in Resources */,
+				B99896F5244D297B0098E245 /* Assets.xcassets in Resources */,
+				B99896F3244D29780098E245 /* Main.storyboard in Resources */,
+				B91F81DE244D9B510015FD30 /* MatheSpider_right.mp3 in Resources */,
+				B98C7CA4244D4BA1001613EB /* COMICBD.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		078889CC877A0343CC657BF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathematicalSpider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B99896E1244D29780098E245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9DA59FE2477CF3000BDC7AA /* NSObject+MJCoding.m in Sources */,
+				B9DA5A032477CF3000BDC7AA /* MJPropertyKey.m in Sources */,
+				B9989735244D2CCF0098E245 /* YCPopoverAnimator.m in Sources */,
+				B9989736244D2CCF0098E245 /* WSRollView.m in Sources */,
+				B9DA5A012477CF3000BDC7AA /* NSObject+MJClass.m in Sources */,
+				B9DA59FC2477CF3000BDC7AA /* NSObject+MJKeyValue.m in Sources */,
+				B98C7CAA244D5183001613EB /* MatheSpider_GameViewController.m in Sources */,
+				B98C7CB5244D79E9001613EB /* SDDrawView.m in Sources */,
+				B98C7C90244D3E22001613EB /* MatheSpider_TipsViewController.m in Sources */,
+				B9DA5A022477CF3000BDC7AA /* NSString+MJExtension.m in Sources */,
+				B9DA5A002477CF3000BDC7AA /* NSObject+MJProperty.m in Sources */,
+				B9DA59FB2477CF3000BDC7AA /* MJPropertyType.m in Sources */,
+				B98C7CAF244D56BF001613EB /* JSAnalogueStick.m in Sources */,
+				B9989738244D2CCF0098E245 /* YCPresentationController.m in Sources */,
+				B98C7CB6244D79E9001613EB /* SDBezierPath.m in Sources */,
+				B9DA59D52477CB9E00BDC7AA /* MatheSpider_ScoreHelper.m in Sources */,
+				B9DA59D22477CB8000BDC7AA /* MatheSpider_ThemeManager.m in Sources */,
+				B9DA59FA2477CF3000BDC7AA /* Reachability.m in Sources */,
+				B99896F0244D29780098E245 /* ViewController.m in Sources */,
+				B99896EA244D29780098E245 /* AppDelegate.m in Sources */,
+				B9DA5A072477CFB200BDC7AA /* MatheSpider_getScoreTool.m in Sources */,
+				B9989737244D2CCF0098E245 /* UIViewController+YCPopover.m in Sources */,
+				B9DA59D82477CBEA00BDC7AA /* MatheSpider_ScoreData.m in Sources */,
+				B98C7C95244D3E45001613EB /* MatheSpider_OverViewController.m in Sources */,
+				B99896FB244D297B0098E245 /* main.m in Sources */,
+				B9DA59DF2477CCB800BDC7AA /* MatheSpider_PrivacyPolicyPageVC.m in Sources */,
+				B9DA59FF2477CF3000BDC7AA /* MJExtensionConst.m in Sources */,
+				B9989709244D2B070098E245 /* MatheSpider_navigation.m in Sources */,
+				B98C7C9F244D3E9B001613EB /* MatheSpider_DescriptionViewController.m in Sources */,
+				B9DA59FD2477CF3000BDC7AA /* MJProperty.m in Sources */,
+				B99896ED244D29780098E245 /* SceneDelegate.m in Sources */,
+				B9989711244D2BE10098E245 /* NSObject+MatheSpider_Tools.m in Sources */,
+				B98C7C9A244D3E77001613EB /* MatheSpider_RankViewController.m in Sources */,
+				B98C7C85244D3588001613EB /* MatheSpider_HomeViewController.m in Sources */,
+				B9DA5A042477CF3000BDC7AA /* MJFoundation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B99896F1244D29780098E245 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99896F2244D29780098E245 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B99896F6244D297B0098E245 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99896F7244D297B0098E245 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B99896FC244D297B0098E245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathematicalSpider/MatheSpider_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B99896FD244D297B0098E245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathematicalSpider/MatheSpider_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B99896FF244D297B0098E245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B66FCDACEEDCC053168CA9 /* Pods-MathematicalSpider.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MathematicalSpider/Math Small Spider.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMP82VVFSC;
+				INFOPLIST_FILE = MathematicalSpider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MathematicalSpider/apns",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willows.mathematicalspider;
+				PRODUCT_NAME = "Math Small Spider";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9989700244D297B0098E245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD7F4D7CB9451E0FC78E755E /* Pods-MathematicalSpider.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MathematicalSpider/Math Small Spider.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VMP82VVFSC;
+				INFOPLIST_FILE = MathematicalSpider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MathematicalSpider/apns",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willows.mathematicalspider;
+				PRODUCT_NAME = "Math Small Spider";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B99896E0244D29780098E245 /* Build configuration list for PBXProject "MathematicalSpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99896FC244D297B0098E245 /* Debug */,
+				B99896FD244D297B0098E245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99896FE244D297B0098E245 /* Build configuration list for PBXNativeTarget "MathematicalSpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99896FF244D297B0098E245 /* Debug */,
+				B9989700244D297B0098E245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B99896DD244D29780098E245 /* Project object */;
+}

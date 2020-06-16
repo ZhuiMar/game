@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatchBall_GameOverPageVc">
+            <connections>
+                <outlet property="againButtion" destination="bt2-0W-hZG" id="dEW-3I-xgE"/>
+                <outlet property="bottomLabel" destination="FC8-HV-vWs" id="5zj-0f-F5w"/>
+                <outlet property="homeBtn" destination="gAd-fe-GIV" id="jbC-xc-87N"/>
+                <outlet property="middLabel" destination="02D-Fv-d5d" id="CZO-0S-jhQ"/>
+                <outlet property="topLabel" destination="sKv-tp-vCa" id="ifj-lp-Zbn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your record is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKv-tp-vCa">
+                    <rect key="frame" x="80" y="188.5" width="215" height="46"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02D-Fv-d5d">
+                    <rect key="frame" x="147" y="249.5" width="81" height="46"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                    <color key="textColor" red="0.97647058823529409" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest record:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC8-HV-vWs">
+                    <rect key="frame" x="51.5" y="310.5" width="272.5" height="46"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt2-0W-hZG">
+                    <rect key="frame" x="130.5" y="387.5" width="114" height="50"/>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="topAction:" destination="-1" eventType="touchUpInside" id="MG4-SA-eD4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAd-fe-GIV">
+                    <rect key="frame" x="130.5" y="452.5" width="114" height="50"/>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="bottomAction:" destination="-1" eventType="touchUpInside" id="FbD-Yr-hXG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sKv-tp-vCa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2oD-5F-hul"/>
+                <constraint firstItem="FC8-HV-vWs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Meg-CN-Xxy"/>
+                <constraint firstItem="gAd-fe-GIV" firstAttribute="top" secondItem="bt2-0W-hZG" secondAttribute="bottom" constant="15" id="MzP-e2-Shz"/>
+                <constraint firstItem="FC8-HV-vWs" firstAttribute="centerX" secondItem="sKv-tp-vCa" secondAttribute="centerX" id="QGO-so-i4r"/>
+                <constraint firstItem="gAd-fe-GIV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SVk-Qp-oMH"/>
+                <constraint firstItem="bt2-0W-hZG" firstAttribute="top" secondItem="FC8-HV-vWs" secondAttribute="bottom" constant="31" id="X6X-Rb-Oct"/>
+                <constraint firstItem="02D-Fv-d5d" firstAttribute="top" secondItem="sKv-tp-vCa" secondAttribute="bottom" constant="15" id="XHz-lG-aMa"/>
+                <constraint firstItem="02D-Fv-d5d" firstAttribute="centerX" secondItem="sKv-tp-vCa" secondAttribute="centerX" id="ZCH-oG-xvo"/>
+                <constraint firstItem="bt2-0W-hZG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sk7-zL-1Np"/>
+                <constraint firstItem="FC8-HV-vWs" firstAttribute="top" secondItem="02D-Fv-d5d" secondAttribute="bottom" constant="15" id="ywJ-Hk-lVr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="again" width="114" height="50"/>
+        <image name="home" width="114" height="50"/>
+    </resources>
+</document>

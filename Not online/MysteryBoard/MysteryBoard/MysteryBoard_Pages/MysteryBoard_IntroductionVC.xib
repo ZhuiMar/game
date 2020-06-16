@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEPR.TTF">
+            <string>SegoePrint</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MysteryBoard_IntroductionVC">
+            <connections>
+                <outlet property="contentBgView" destination="18X-qz-O7l" id="8vM-F0-tHq"/>
+                <outlet property="height" destination="EVb-sL-RbS" id="i8y-pU-Jz5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="width" destination="rGh-Hs-9LP" id="iw6-PI-lNh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YDB-3l-USk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18X-qz-O7l">
+                    <rect key="frame" x="30" y="90.5" width="315" height="486"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY6-2L-7zR">
+                            <rect key="frame" x="10" y="0.0" width="295" height="486"/>
+                            <string key="text">"Mystery Flagstone" is a puzzle game. In the game, you need to observe the items that appear at the top of the screen, and drag the flagstone with letters below to the vacancy to combine words representing items. The words that appear in "Hard" mode will be more complicated, and you can get stars to unlock more item types through correct spelling.</string>
+                            <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="18"/>
+                            <color key="textColor" red="0.98039215686274506" green="0.29803921568627451" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="AY6-2L-7zR" firstAttribute="leading" secondItem="18X-qz-O7l" secondAttribute="leading" constant="10" id="1s7-dN-HHp"/>
+                        <constraint firstAttribute="trailing" secondItem="AY6-2L-7zR" secondAttribute="trailing" constant="10" id="8LM-Ff-7Hr"/>
+                        <constraint firstAttribute="height" constant="486" id="EVb-sL-RbS"/>
+                        <constraint firstAttribute="bottom" secondItem="AY6-2L-7zR" secondAttribute="bottom" id="fdr-KX-sk8"/>
+                        <constraint firstAttribute="width" constant="315" id="rGh-Hs-9LP"/>
+                        <constraint firstItem="AY6-2L-7zR" firstAttribute="top" secondItem="18X-qz-O7l" secondAttribute="top" id="sJc-FB-Pdo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YDB-3l-USk" secondAttribute="trailing" id="17B-Te-UCv"/>
+                <constraint firstItem="18X-qz-O7l" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7M8-Hp-wFM"/>
+                <constraint firstAttribute="bottom" secondItem="YDB-3l-USk" secondAttribute="bottom" id="GMu-6v-VLJ"/>
+                <constraint firstItem="YDB-3l-USk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SGl-WP-gQj"/>
+                <constraint firstItem="18X-qz-O7l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hKX-0d-TVa"/>
+                <constraint firstItem="YDB-3l-USk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uDX-fj-sIW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>

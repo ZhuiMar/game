@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEPRB.TTF">
+            <string>SegoePrint-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMPRecordViewController" customModule="AnimalMathParadise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="65e-Qd-Vzc" id="G3b-eb-hyj"/>
+                <outletCollection property="findaRecord" destination="ifR-f3-OjT" collectionClass="NSMutableArray" id="CKG-Pb-Qwz"/>
+                <outletCollection property="findaRecord" destination="v40-Kd-7A7" collectionClass="NSMutableArray" id="B8r-4B-PBr"/>
+                <outletCollection property="findaRecord" destination="nf3-S7-Ym9" collectionClass="NSMutableArray" id="HLA-Ed-GSW"/>
+                <outletCollection property="comepareRecord" destination="lNh-iI-mCx" collectionClass="NSMutableArray" id="DXY-M8-ryf"/>
+                <outletCollection property="comepareRecord" destination="OsM-ik-r9A" collectionClass="NSMutableArray" id="Iev-9R-jdg"/>
+                <outletCollection property="comepareRecord" destination="67n-Hy-LND" collectionClass="NSMutableArray" id="m5J-kj-NsL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="65e-Qd-Vzc">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="sCy-kI-UIp">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7X-BY-s0n">
+                    <rect key="frame" x="15" y="27.5" width="32" height="32.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="X7X-BY-s0n" secondAttribute="height" id="3Pf-0b-6PH"/>
+                    </constraints>
+                    <state key="normal" image="return"/>
+                    <connections>
+                        <action selector="goBackHome:" destination="-1" eventType="touchUpInside" id="6TG-H3-7Aj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8h-fm-xsO">
+                    <rect key="frame" x="165" y="15.5" width="150" height="29.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="textColor" red="0.8666666666666667" green="0.41568627450980389" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Edk-jR-FCU">
+                    <rect key="frame" x="29" y="94.5" width="422" height="151"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRo-ih-6bL">
+                            <rect key="frame" x="0.0" y="0.0" width="191" height="151"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find-frame" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-HA-RzW">
+                                    <rect key="frame" x="0.0" y="0.0" width="191" height="151"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="91K-fn-u0P">
+                                    <rect key="frame" x="38" y="38.5" width="115" height="85"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zmY-0Y-0rd">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="28.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f5-fW-jxq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifR-f3-OjT">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-jl-LAP">
+                                            <rect key="frame" x="0.0" y="28.5" width="115" height="28"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-MT-jw5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v40-Kd-7A7">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tkt-Op-JX0">
+                                            <rect key="frame" x="0.0" y="57" width="115" height="28"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daw-ZQ-XXM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf3-S7-Ym9">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="rlH-rZ-nAR"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="91K-fn-u0P" firstAttribute="bottom" secondItem="pRo-ih-6bL" secondAttribute="bottom" multiplier="0.82" id="0t4-vb-5nj"/>
+                                <constraint firstItem="rhX-HA-RzW" firstAttribute="top" secondItem="pRo-ih-6bL" secondAttribute="top" id="3Mk-ru-TUi"/>
+                                <constraint firstItem="91K-fn-u0P" firstAttribute="width" secondItem="pRo-ih-6bL" secondAttribute="width" multiplier="0.6" id="8oG-Ek-ZPG"/>
+                                <constraint firstItem="rhX-HA-RzW" firstAttribute="leading" secondItem="pRo-ih-6bL" secondAttribute="leading" id="9Tj-1A-Nq2"/>
+                                <constraint firstAttribute="width" secondItem="pRo-ih-6bL" secondAttribute="height" multiplier="260:205" id="Hei-PK-L6c"/>
+                                <constraint firstItem="91K-fn-u0P" firstAttribute="top" secondItem="pRo-ih-6bL" secondAttribute="bottom" multiplier="0.253" symbolic="YES" id="S6Q-gY-IIa"/>
+                                <constraint firstAttribute="trailing" secondItem="rhX-HA-RzW" secondAttribute="trailing" id="Xbi-Qm-BqE"/>
+                                <constraint firstItem="91K-fn-u0P" firstAttribute="centerX" secondItem="pRo-ih-6bL" secondAttribute="centerX" id="jbS-xR-aEz"/>
+                                <constraint firstAttribute="bottom" secondItem="rhX-HA-RzW" secondAttribute="bottom" id="rM7-AJ-9ul"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gW-k2-mrr">
+                            <rect key="frame" x="231" y="0.0" width="191" height="151"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compare-frame" translatesAutoresizingMaskIntoConstraints="NO" id="fFu-Ce-nbK">
+                                    <rect key="frame" x="0.0" y="0.0" width="191" height="151"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k5R-rl-CAS">
+                                    <rect key="frame" x="38" y="38.5" width="115" height="85"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jZ6-Jl-GAd">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="28.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NY-Sd-cLk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNh-iI-mCx">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28.5"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z9P-UY-sQh">
+                                            <rect key="frame" x="0.0" y="28.5" width="115" height="28"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY6-nP-Tjv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsM-ik-r9A">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zhO-vv-F2S">
+                                            <rect key="frame" x="0.0" y="57" width="115" height="28"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-6l-Reg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67n-Hy-LND">
+                                                    <rect key="frame" x="101" y="0.0" width="14" height="28"/>
+                                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                    <color key="textColor" red="0.86666666670000003" green="0.41568627450000001" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="npu-7z-6Zd"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fFu-Ce-nbK" firstAttribute="leading" secondItem="5gW-k2-mrr" secondAttribute="leading" id="8wO-sG-vNy"/>
+                                <constraint firstAttribute="trailing" secondItem="fFu-Ce-nbK" secondAttribute="trailing" id="DPZ-Wu-Vck"/>
+                                <constraint firstItem="k5R-rl-CAS" firstAttribute="bottom" secondItem="5gW-k2-mrr" secondAttribute="bottom" multiplier="0.82" id="DbM-Sy-aGr"/>
+                                <constraint firstAttribute="width" secondItem="5gW-k2-mrr" secondAttribute="height" multiplier="260:205" id="Hqd-Lh-crR"/>
+                                <constraint firstItem="fFu-Ce-nbK" firstAttribute="top" secondItem="5gW-k2-mrr" secondAttribute="top" id="MZe-lS-Cug"/>
+                                <constraint firstAttribute="bottom" secondItem="fFu-Ce-nbK" secondAttribute="bottom" id="NUI-SL-KXT"/>
+                                <constraint firstItem="k5R-rl-CAS" firstAttribute="width" secondItem="5gW-k2-mrr" secondAttribute="width" multiplier="0.6" id="Oh0-Qn-T7J"/>
+                                <constraint firstItem="k5R-rl-CAS" firstAttribute="top" secondItem="5gW-k2-mrr" secondAttribute="bottom" multiplier="0.253" symbolic="YES" id="Pg3-3g-EMC"/>
+                                <constraint firstItem="k5R-rl-CAS" firstAttribute="centerX" secondItem="5gW-k2-mrr" secondAttribute="centerX" id="YLU-QZ-kOg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sCy-kI-UIp" secondAttribute="trailing" id="29L-Ac-TJa"/>
+                <constraint firstItem="sCy-kI-UIp" firstAttribute="leading" secondItem="65e-Qd-Vzc" secondAttribute="leading" id="EV2-kn-H3W"/>
+                <constraint firstItem="Q8h-fm-xsO" firstAttribute="centerX" secondItem="sCy-kI-UIp" secondAttribute="centerX" id="ErD-5l-YPJ"/>
+                <constraint firstItem="Q8h-fm-xsO" firstAttribute="height" secondItem="sCy-kI-UIp" secondAttribute="height" multiplier="0.092" id="JyE-ZR-xau"/>
+                <constraint firstItem="Edk-jR-FCU" firstAttribute="centerY" secondItem="sCy-kI-UIp" secondAttribute="centerY" constant="10" id="Tuo-bm-pJR"/>
+                <constraint firstAttribute="bottom" secondItem="sCy-kI-UIp" secondAttribute="bottom" id="WgH-co-QKc"/>
+                <constraint firstItem="Q8h-fm-xsO" firstAttribute="top" secondItem="sCy-kI-UIp" secondAttribute="bottom" multiplier="0.048" id="XDC-qL-VwZ"/>
+                <constraint firstItem="X7X-BY-s0n" firstAttribute="height" secondItem="ctc-sl-Kiq" secondAttribute="height" multiplier="0.1006" id="b9G-2j-cln"/>
+                <constraint firstItem="Edk-jR-FCU" firstAttribute="width" secondItem="ctc-sl-Kiq" secondAttribute="width" multiplier="0.88" id="e44-Qc-KoF"/>
+                <constraint firstItem="Edk-jR-FCU" firstAttribute="centerX" secondItem="sCy-kI-UIp" secondAttribute="centerX" id="eK5-TK-iEj"/>
+                <constraint firstItem="sCy-kI-UIp" firstAttribute="top" secondItem="65e-Qd-Vzc" secondAttribute="top" id="gg5-8r-aXd"/>
+                <constraint firstItem="X7X-BY-s0n" firstAttribute="leading" secondItem="ctc-sl-Kiq" secondAttribute="leading" constant="15" id="ubr-QT-EGN"/>
+                <constraint firstItem="X7X-BY-s0n" firstAttribute="top" secondItem="ctc-sl-Kiq" secondAttribute="bottom" multiplier="0.0612" constant="8" symbolic="YES" id="wzq-o6-hJK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ctc-sl-Kiq"/>
+            <point key="canvasLocation" x="389.73214285714283" y="114.49275362318842"/>
+        </view>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="vGw-Hu-4b7">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moR-bP-nBZ">
+                    <rect key="frame" x="0.0" y="0.0" width="158" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et4-gO-nUG">
+                            <rect key="frame" x="0.0" y="8" width="13.5" height="28"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="24"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLE-oP-Nbf">
+                            <rect key="frame" x="144" y="7.5" width="14" height="29.5"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aGb-cc-JfH">
+                    <rect key="frame" x="0.0" y="44" width="158" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjo-l1-qz7">
+                            <rect key="frame" x="0.0" y="7.5" width="14" height="29.5"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i4-Fb-dXI">
+                            <rect key="frame" x="144" y="7.5" width="14" height="29.5"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ogr-KJ-5lI">
+                    <rect key="frame" x="0.0" y="88" width="158" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-W0-spW">
+                            <rect key="frame" x="0.0" y="7.5" width="14" height="29.5"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-Lw-oka">
+                            <rect key="frame" x="144" y="7.5" width="14" height="29.5"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hhc-EX-2gv"/>
+        </stackView>
+        <view contentMode="scaleToFill" id="udZ-xd-wGo">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-wi-34a">
+                    <rect key="frame" x="105.5" y="81" width="269" height="88.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gkv-oy-Hdg">
+                            <rect key="frame" x="0.0" y="0.0" width="269" height="29.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-Bc-s0u">
+                                    <rect key="frame" x="0.0" y="0.5" width="13.5" height="28"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="24"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZL-oQ-z59">
+                                    <rect key="frame" x="255" y="0.0" width="14" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zXx-0s-WOc">
+                            <rect key="frame" x="0.0" y="29.5" width="269" height="29.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saF-t2-Jfh">
+                                    <rect key="frame" x="0.0" y="0.0" width="14" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJV-0k-zDa">
+                                    <rect key="frame" x="255" y="0.0" width="14" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-rK-hGW">
+                            <rect key="frame" x="0.0" y="59" width="269" height="29.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nny-bz-Pce">
+                                    <rect key="frame" x="0.0" y="0.0" width="14" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xk-jD-FCN">
+                                    <rect key="frame" x="255" y="0.0" width="14" height="29.5"/>
+                                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Xdg-hi-e4T"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9yy-wi-34a" firstAttribute="top" secondItem="udZ-xd-wGo" secondAttribute="bottom" multiplier="0.253" symbolic="YES" id="8uZ-km-ron"/>
+                <constraint firstItem="9yy-wi-34a" firstAttribute="width" secondItem="udZ-xd-wGo" secondAttribute="width" multiplier="0.56" id="Gqs-aU-shm"/>
+                <constraint firstItem="9yy-wi-34a" firstAttribute="centerX" secondItem="udZ-xd-wGo" secondAttribute="centerX" id="iME-nM-G3u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jR1-Iz-IuG"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bj" width="667" height="375"/>
+        <image name="compare-frame" width="260" height="206"/>
+        <image name="find-frame" width="260" height="205.5"/>
+        <image name="return" width="41" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLStudy">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="k5Z-yi-nVe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBd-QS-8EF">
+                    <rect key="frame" x="79.5" y="133.5" width="216" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="AL9-hP-w1b"/>
+                        <constraint firstAttribute="width" constant="216" id="u2K-tz-eOh"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="fruit"/>
+                    <connections>
+                        <action selector="fruitAction:" destination="-1" eventType="touchUpInside" id="RKL-3b-UGR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMs-Vm-2Tj">
+                    <rect key="frame" x="79.5" y="353.5" width="216" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="RH9-gq-8ie"/>
+                        <constraint firstAttribute="width" constant="216" id="hEU-WI-fgI"/>
+                    </constraints>
+                    <state key="normal" image="animal"/>
+                    <connections>
+                        <action selector="animailAction:" destination="-1" eventType="touchUpInside" id="ov4-wR-bhh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UMs-Vm-2Tj" firstAttribute="top" secondItem="wBd-QS-8EF" secondAttribute="bottom" constant="40" id="JAN-5h-YlN"/>
+                <constraint firstItem="k5Z-yi-nVe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NjB-I1-1O9"/>
+                <constraint firstItem="wBd-QS-8EF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-110" id="Odr-k6-7vp"/>
+                <constraint firstItem="wBd-QS-8EF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OyN-PW-ZbF"/>
+                <constraint firstItem="k5Z-yi-nVe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Utf-p3-aXU"/>
+                <constraint firstAttribute="bottom" secondItem="k5Z-yi-nVe" secondAttribute="bottom" id="ZhE-l1-V91"/>
+                <constraint firstItem="UMs-Vm-2Tj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iBF-gp-HN0"/>
+                <constraint firstAttribute="trailing" secondItem="k5Z-yi-nVe" secondAttribute="trailing" id="jRQ-2b-pf2"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="animal" width="216" height="180.5"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="fruit" width="216" height="180.5"/>
+    </resources>
+</document>

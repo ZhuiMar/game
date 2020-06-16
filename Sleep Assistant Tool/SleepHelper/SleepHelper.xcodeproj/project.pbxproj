@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C101BD5889F725EB3F3BDB1 /* libPods-SleepHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E12C599754277FCB0BB41CC /* libPods-SleepHelper.a */; };
+		B909CA47247248FC003C35EB /* SleepHelper_AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B909CA45247248FC003C35EB /* SleepHelper_AlertViewController.m */; };
+		B909CA48247248FC003C35EB /* SleepHelper_AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B909CA46247248FC003C35EB /* SleepHelper_AlertViewController.xib */; };
+		B91A36DF247B6C6F00750171 /* SleepHelper_TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A36DE247B6C6F00750171 /* SleepHelper_TimeModel.m */; };
+		B943959E2473B46300592EB7 /* SleepHelperSleepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B943959C2473B46300592EB7 /* SleepHelperSleepCell.m */; };
+		B943959F2473B46300592EB7 /* SleepHelperSleepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B943959D2473B46300592EB7 /* SleepHelperSleepCell.xib */; };
+		B94395A12473BC8200592EB7 /* sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B94395A02473BC8200592EB7 /* sheep.mp3 */; };
+		B94395A32473BCA700592EB7 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B94395A22473BCA700592EB7 /* pop.mp3 */; };
+		B94395A52473BCFC00592EB7 /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B94395A42473BCFC00592EB7 /* start.mp3 */; };
+		B978283A24721CA800342521 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B978283924721CA800342521 /* AppDelegate.m */; };
+		B978283D24721CA800342521 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B978283C24721CA800342521 /* SceneDelegate.m */; };
+		B978284024721CA800342521 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B978283F24721CA800342521 /* ViewController.m */; };
+		B978284324721CA800342521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B978284124721CA800342521 /* Main.storyboard */; };
+		B978284524721CAC00342521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B978284424721CAC00342521 /* Assets.xcassets */; };
+		B978284824721CAC00342521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B978284624721CAC00342521 /* LaunchScreen.storyboard */; };
+		B978284B24721CAC00342521 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B978284A24721CAC00342521 /* main.m */; };
+		B978285B2472204900342521 /* SleepHelper_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B978285A2472204900342521 /* SleepHelper_navigation.m */; };
+		B97828802472219400342521 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B978285F2472219400342521 /* YCPresentationController.m */; };
+		B97828812472219400342521 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828642472219400342521 /* YCPopoverAnimator.m */; };
+		B97828822472219400342521 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828652472219400342521 /* UIViewController+YCPopover.m */; };
+		B97828832472219400342521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828682472219400342521 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B97828842472219400342521 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828712472219400342521 /* ViewController+MASAdditions.m */; };
+		B97828852472219400342521 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828752472219400342521 /* MASCompositeConstraint.m */; };
+		B97828862472219400342521 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828762472219400342521 /* MASConstraintMaker.m */; };
+		B97828872472219400342521 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828772472219400342521 /* MASLayoutConstraint.m */; };
+		B97828882472219400342521 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828782472219400342521 /* NSArray+MASAdditions.m */; };
+		B97828892472219400342521 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828792472219400342521 /* View+MASAdditions.m */; };
+		B978288A2472219400342521 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B978287C2472219400342521 /* MASConstraint.m */; };
+		B978288B2472219400342521 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B978287E2472219400342521 /* MASViewConstraint.m */; };
+		B978288C2472219400342521 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B978287F2472219400342521 /* MASViewAttribute.m */; };
+		B97828902472221F00342521 /* SleepHelper_HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B978288E2472221F00342521 /* SleepHelper_HomePageVC.m */; };
+		B97828912472221F00342521 /* SleepHelper_HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978288F2472221F00342521 /* SleepHelper_HomePageVC.xib */; };
+		B97828972472243200342521 /* NSObject+SleepHelper_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828962472243200342521 /* NSObject+SleepHelper_helper.m */; };
+		B97828992472247100342521 /* mvboli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97828982472247100342521 /* mvboli.ttf */; };
+		B978289C2472275100342521 /* SleepHelper_RootTab.m in Sources */ = {isa = PBXBuildFile; fileRef = B978289B2472275000342521 /* SleepHelper_RootTab.m */; };
+		B97828A0247227C800342521 /* SleepHelper_SleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B978289E247227C700342521 /* SleepHelper_SleepViewController.m */; };
+		B97828A1247227C800342521 /* SleepHelper_SleepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B978289F247227C800342521 /* SleepHelper_SleepViewController.xib */; };
+		B97828A5247227EF00342521 /* SleepHelper_SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828A3247227EF00342521 /* SleepHelper_SetViewController.m */; };
+		B97828A6247227EF00342521 /* SleepHelper_SetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828A4247227EF00342521 /* SleepHelper_SetViewController.xib */; };
+		B97828A92472285B00342521 /* SleepHelper_TabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828A82472285B00342521 /* SleepHelper_TabbarView.m */; };
+		B97828AB2472286C00342521 /* SleepHelper_TabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828AA2472286C00342521 /* SleepHelper_TabbarView.xib */; };
+		B97828AF2472321900342521 /* SleepHelper_GameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828AD2472321900342521 /* SleepHelper_GameCell.m */; };
+		B97828B02472321900342521 /* SleepHelper_GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828AE2472321900342521 /* SleepHelper_GameCell.xib */; };
+		B97828B92472363200342521 /* SleepHelper_PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828B72472363200342521 /* SleepHelper_PopViewController.m */; };
+		B97828BA2472363200342521 /* SleepHelper_PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828B82472363200342521 /* SleepHelper_PopViewController.xib */; };
+		B97828BE2472365300342521 /* SleepHelper_StarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828BC2472365300342521 /* SleepHelper_StarViewController.m */; };
+		B97828BF2472365300342521 /* SleepHelper_StarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828BD2472365300342521 /* SleepHelper_StarViewController.xib */; };
+		B97828C32472385200342521 /* SleepHelper_SheepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828C12472385200342521 /* SleepHelper_SheepViewController.m */; };
+		B97828C42472385200342521 /* SleepHelper_SheepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828C22472385200342521 /* SleepHelper_SheepViewController.xib */; };
+		B97828C824723D0300342521 /* SleepHelper_AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97828C624723D0300342521 /* SleepHelper_AboutViewController.m */; };
+		B97828C924723D0300342521 /* SleepHelper_AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97828C724723D0300342521 /* SleepHelper_AboutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E12C599754277FCB0BB41CC /* libPods-SleepHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SleepHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24023E8B3D8B7E2C93BC78AE /* Pods-SleepHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepHelper.release.xcconfig"; path = "Target Support Files/Pods-SleepHelper/Pods-SleepHelper.release.xcconfig"; sourceTree = "<group>"; };
+		B909CA44247248FC003C35EB /* SleepHelper_AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_AlertViewController.h; sourceTree = "<group>"; };
+		B909CA45247248FC003C35EB /* SleepHelper_AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_AlertViewController.m; sourceTree = "<group>"; };
+		B909CA46247248FC003C35EB /* SleepHelper_AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_AlertViewController.xib; sourceTree = "<group>"; };
+		B91A36DD247B6C6F00750171 /* SleepHelper_TimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_TimeModel.h; sourceTree = "<group>"; };
+		B91A36DE247B6C6F00750171 /* SleepHelper_TimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_TimeModel.m; sourceTree = "<group>"; };
+		B943959B2473B46300592EB7 /* SleepHelperSleepCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelperSleepCell.h; sourceTree = "<group>"; };
+		B943959C2473B46300592EB7 /* SleepHelperSleepCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelperSleepCell.m; sourceTree = "<group>"; };
+		B943959D2473B46300592EB7 /* SleepHelperSleepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelperSleepCell.xib; sourceTree = "<group>"; };
+		B94395A02473BC8200592EB7 /* sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheep.mp3; sourceTree = "<group>"; };
+		B94395A22473BCA700592EB7 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		B94395A42473BCFC00592EB7 /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		B978283524721CA800342521 /* Sleep Assistant Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Assistant Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B978283824721CA800342521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B978283924721CA800342521 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B978283B24721CA800342521 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B978283C24721CA800342521 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B978283E24721CA800342521 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B978283F24721CA800342521 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B978284224721CA800342521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B978284424721CAC00342521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B978284724721CAC00342521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B978284924721CAC00342521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B978284A24721CAC00342521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B97828592472204900342521 /* SleepHelper_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_navigation.h; sourceTree = "<group>"; };
+		B978285A2472204900342521 /* SleepHelper_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_navigation.m; sourceTree = "<group>"; };
+		B978285D247220E800342521 /* SleepHelper_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_PrefixHeader.pch; sourceTree = "<group>"; };
+		B978285F2472219400342521 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B97828602472219400342521 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B97828612472219400342521 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B97828622472219400342521 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B97828632472219400342521 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B97828642472219400342521 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B97828652472219400342521 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B97828672472219400342521 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B97828682472219400342521 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B97828692472219400342521 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B978286A2472219400342521 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B978286B2472219400342521 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B978286C2472219400342521 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B978286D2472219400342521 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B978286E2472219400342521 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B978286F2472219400342521 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B97828702472219400342521 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B97828712472219400342521 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B97828722472219400342521 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B97828732472219400342521 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B97828742472219400342521 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B97828752472219400342521 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B97828762472219400342521 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B97828772472219400342521 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B97828782472219400342521 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B97828792472219400342521 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B978287A2472219400342521 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B978287B2472219400342521 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B978287C2472219400342521 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B978287D2472219400342521 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B978287E2472219400342521 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B978287F2472219400342521 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B978288D2472221F00342521 /* SleepHelper_HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_HomePageVC.h; sourceTree = "<group>"; };
+		B978288E2472221F00342521 /* SleepHelper_HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_HomePageVC.m; sourceTree = "<group>"; };
+		B978288F2472221F00342521 /* SleepHelper_HomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_HomePageVC.xib; sourceTree = "<group>"; };
+		B97828952472243200342521 /* NSObject+SleepHelper_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SleepHelper_helper.h"; sourceTree = "<group>"; };
+		B97828962472243200342521 /* NSObject+SleepHelper_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SleepHelper_helper.m"; sourceTree = "<group>"; };
+		B97828982472247100342521 /* mvboli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mvboli.ttf; sourceTree = "<group>"; };
+		B978289A2472275000342521 /* SleepHelper_RootTab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_RootTab.h; sourceTree = "<group>"; };
+		B978289B2472275000342521 /* SleepHelper_RootTab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_RootTab.m; sourceTree = "<group>"; };
+		B978289D247227C700342521 /* SleepHelper_SleepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_SleepViewController.h; sourceTree = "<group>"; };
+		B978289E247227C700342521 /* SleepHelper_SleepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_SleepViewController.m; sourceTree = "<group>"; };
+		B978289F247227C800342521 /* SleepHelper_SleepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_SleepViewController.xib; sourceTree = "<group>"; };
+		B97828A2247227EF00342521 /* SleepHelper_SetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_SetViewController.h; sourceTree = "<group>"; };
+		B97828A3247227EF00342521 /* SleepHelper_SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_SetViewController.m; sourceTree = "<group>"; };
+		B97828A4247227EF00342521 /* SleepHelper_SetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_SetViewController.xib; sourceTree = "<group>"; };
+		B97828A72472285B00342521 /* SleepHelper_TabbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_TabbarView.h; sourceTree = "<group>"; };
+		B97828A82472285B00342521 /* SleepHelper_TabbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_TabbarView.m; sourceTree = "<group>"; };
+		B97828AA2472286C00342521 /* SleepHelper_TabbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_TabbarView.xib; sourceTree = "<group>"; };
+		B97828AC2472321900342521 /* SleepHelper_GameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_GameCell.h; sourceTree = "<group>"; };
+		B97828AD2472321900342521 /* SleepHelper_GameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_GameCell.m; sourceTree = "<group>"; };
+		B97828AE2472321900342521 /* SleepHelper_GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_GameCell.xib; sourceTree = "<group>"; };
+		B97828B62472363200342521 /* SleepHelper_PopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_PopViewController.h; sourceTree = "<group>"; };
+		B97828B72472363200342521 /* SleepHelper_PopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_PopViewController.m; sourceTree = "<group>"; };
+		B97828B82472363200342521 /* SleepHelper_PopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_PopViewController.xib; sourceTree = "<group>"; };
+		B97828BB2472365300342521 /* SleepHelper_StarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_StarViewController.h; sourceTree = "<group>"; };
+		B97828BC2472365300342521 /* SleepHelper_StarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_StarViewController.m; sourceTree = "<group>"; };
+		B97828BD2472365300342521 /* SleepHelper_StarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_StarViewController.xib; sourceTree = "<group>"; };
+		B97828C02472385200342521 /* SleepHelper_SheepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_SheepViewController.h; sourceTree = "<group>"; };
+		B97828C12472385200342521 /* SleepHelper_SheepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_SheepViewController.m; sourceTree = "<group>"; };
+		B97828C22472385200342521 /* SleepHelper_SheepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_SheepViewController.xib; sourceTree = "<group>"; };
+		B97828C524723D0300342521 /* SleepHelper_AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHelper_AboutViewController.h; sourceTree = "<group>"; };
+		B97828C624723D0300342521 /* SleepHelper_AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHelper_AboutViewController.m; sourceTree = "<group>"; };
+		B97828C724723D0300342521 /* SleepHelper_AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepHelper_AboutViewController.xib; sourceTree = "<group>"; };
+		F40675B77550C392776DB331 /* Pods-SleepHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepHelper.debug.xcconfig"; path = "Target Support Files/Pods-SleepHelper/Pods-SleepHelper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B978283224721CA800342521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C101BD5889F725EB3F3BDB1 /* libPods-SleepHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10DC679DB0F4D095F8E13AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40675B77550C392776DB331 /* Pods-SleepHelper.debug.xcconfig */,
+				24023E8B3D8B7E2C93BC78AE /* Pods-SleepHelper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B978282C24721CA800342521 = {
+			isa = PBXGroup;
+			children = (
+				B978283724721CA800342521 /* SleepHelper */,
+				B978283624721CA800342521 /* Products */,
+				10DC679DB0F4D095F8E13AAD /* Pods */,
+				DDA1CCA6DBAEDD4F7723D820 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B978283624721CA800342521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B978283524721CA800342521 /* Sleep Assistant Tool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B978283724721CA800342521 /* SleepHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B978285824721E0D00342521 /* SleepHelper_ font */,
+				B978285624721DBF00342521 /* SleepHelper_base */,
+				B978285524721DBC00342521 /* SleepHelper_lib */,
+				B978285424721DB900342521 /* SleepHelper_data */,
+				B978285324721DB700342521 /* SleepHelper_controller */,
+				B978285224721DB400342521 /* SleepHelper_view */,
+				B978285124721DB100342521 /* SleepHelper_music */,
+				B978283824721CA800342521 /* AppDelegate.h */,
+				B978283924721CA800342521 /* AppDelegate.m */,
+				B978283B24721CA800342521 /* SceneDelegate.h */,
+				B978283C24721CA800342521 /* SceneDelegate.m */,
+				B978283E24721CA800342521 /* ViewController.h */,
+				B978283F24721CA800342521 /* ViewController.m */,
+				B978284124721CA800342521 /* Main.storyboard */,
+				B978284424721CAC00342521 /* Assets.xcassets */,
+				B978284624721CAC00342521 /* LaunchScreen.storyboard */,
+				B978284924721CAC00342521 /* Info.plist */,
+				B978284A24721CAC00342521 /* main.m */,
+				B978285D247220E800342521 /* SleepHelper_PrefixHeader.pch */,
+			);
+			path = SleepHelper;
+			sourceTree = "<group>";
+		};
+		B978285124721DB100342521 /* SleepHelper_music */ = {
+			isa = PBXGroup;
+			children = (
+				B94395A42473BCFC00592EB7 /* start.mp3 */,
+				B94395A02473BC8200592EB7 /* sheep.mp3 */,
+				B94395A22473BCA700592EB7 /* pop.mp3 */,
+			);
+			path = SleepHelper_music;
+			sourceTree = "<group>";
+		};
+		B978285224721DB400342521 /* SleepHelper_view */ = {
+			isa = PBXGroup;
+			children = (
+				B97828A72472285B00342521 /* SleepHelper_TabbarView.h */,
+				B97828A82472285B00342521 /* SleepHelper_TabbarView.m */,
+				B97828AA2472286C00342521 /* SleepHelper_TabbarView.xib */,
+				B97828AC2472321900342521 /* SleepHelper_GameCell.h */,
+				B97828AD2472321900342521 /* SleepHelper_GameCell.m */,
+				B97828AE2472321900342521 /* SleepHelper_GameCell.xib */,
+				B943959B2473B46300592EB7 /* SleepHelperSleepCell.h */,
+				B943959C2473B46300592EB7 /* SleepHelperSleepCell.m */,
+				B943959D2473B46300592EB7 /* SleepHelperSleepCell.xib */,
+			);
+			path = SleepHelper_view;
+			sourceTree = "<group>";
+		};
+		B978285324721DB700342521 /* SleepHelper_controller */ = {
+			isa = PBXGroup;
+			children = (
+				B978288D2472221F00342521 /* SleepHelper_HomePageVC.h */,
+				B978288E2472221F00342521 /* SleepHelper_HomePageVC.m */,
+				B978288F2472221F00342521 /* SleepHelper_HomePageVC.xib */,
+				B978289D247227C700342521 /* SleepHelper_SleepViewController.h */,
+				B978289E247227C700342521 /* SleepHelper_SleepViewController.m */,
+				B978289F247227C800342521 /* SleepHelper_SleepViewController.xib */,
+				B97828A2247227EF00342521 /* SleepHelper_SetViewController.h */,
+				B97828A3247227EF00342521 /* SleepHelper_SetViewController.m */,
+				B97828A4247227EF00342521 /* SleepHelper_SetViewController.xib */,
+				B97828C02472385200342521 /* SleepHelper_SheepViewController.h */,
+				B97828C12472385200342521 /* SleepHelper_SheepViewController.m */,
+				B97828C22472385200342521 /* SleepHelper_SheepViewController.xib */,
+				B97828B62472363200342521 /* SleepHelper_PopViewController.h */,
+				B97828B72472363200342521 /* SleepHelper_PopViewController.m */,
+				B97828B82472363200342521 /* SleepHelper_PopViewController.xib */,
+				B97828BB2472365300342521 /* SleepHelper_StarViewController.h */,
+				B97828BC2472365300342521 /* SleepHelper_StarViewController.m */,
+				B97828BD2472365300342521 /* SleepHelper_StarViewController.xib */,
+				B97828C524723D0300342521 /* SleepHelper_AboutViewController.h */,
+				B97828C624723D0300342521 /* SleepHelper_AboutViewController.m */,
+				B97828C724723D0300342521 /* SleepHelper_AboutViewController.xib */,
+				B909CA44247248FC003C35EB /* SleepHelper_AlertViewController.h */,
+				B909CA45247248FC003C35EB /* SleepHelper_AlertViewController.m */,
+				B909CA46247248FC003C35EB /* SleepHelper_AlertViewController.xib */,
+			);
+			path = SleepHelper_controller;
+			sourceTree = "<group>";
+		};
+		B978285424721DB900342521 /* SleepHelper_data */ = {
+			isa = PBXGroup;
+			children = (
+				B91A36DD247B6C6F00750171 /* SleepHelper_TimeModel.h */,
+				B91A36DE247B6C6F00750171 /* SleepHelper_TimeModel.m */,
+			);
+			path = SleepHelper_data;
+			sourceTree = "<group>";
+		};
+		B978285524721DBC00342521 /* SleepHelper_lib */ = {
+			isa = PBXGroup;
+			children = (
+				B978285E2472219400342521 /* Alert */,
+				B97828662472219400342521 /* Masonry */,
+				B97828952472243200342521 /* NSObject+SleepHelper_helper.h */,
+				B97828962472243200342521 /* NSObject+SleepHelper_helper.m */,
+			);
+			path = SleepHelper_lib;
+			sourceTree = "<group>";
+		};
+		B978285624721DBF00342521 /* SleepHelper_base */ = {
+			isa = PBXGroup;
+			children = (
+				B97828592472204900342521 /* SleepHelper_navigation.h */,
+				B978285A2472204900342521 /* SleepHelper_navigation.m */,
+				B978289A2472275000342521 /* SleepHelper_RootTab.h */,
+				B978289B2472275000342521 /* SleepHelper_RootTab.m */,
+			);
+			path = SleepHelper_base;
+			sourceTree = "<group>";
+		};
+		B978285824721E0D00342521 /* SleepHelper_ font */ = {
+			isa = PBXGroup;
+			children = (
+				B97828982472247100342521 /* mvboli.ttf */,
+			);
+			path = "SleepHelper_ font";
+			sourceTree = "<group>";
+		};
+		B978285E2472219400342521 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B978285F2472219400342521 /* YCPresentationController.m */,
+				B97828602472219400342521 /* YCPopoverAnimator.h */,
+				B97828612472219400342521 /* UIViewController+YCPopover.h */,
+				B97828622472219400342521 /* YCPresentationController.h */,
+				B97828632472219400342521 /* YCPopoverMacro.h */,
+				B97828642472219400342521 /* YCPopoverAnimator.m */,
+				B97828652472219400342521 /* UIViewController+YCPopover.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B97828662472219400342521 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B97828672472219400342521 /* MASCompositeConstraint.h */,
+				B97828682472219400342521 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B97828692472219400342521 /* MASConstraint+Private.h */,
+				B978286A2472219400342521 /* MASLayoutConstraint.h */,
+				B978286B2472219400342521 /* NSArray+MASShorthandAdditions.h */,
+				B978286C2472219400342521 /* MASConstraintMaker.h */,
+				B978286D2472219400342521 /* View+MASAdditions.h */,
+				B978286E2472219400342521 /* NSArray+MASAdditions.h */,
+				B978286F2472219400342521 /* MASUtilities.h */,
+				B97828702472219400342521 /* MASViewAttribute.h */,
+				B97828712472219400342521 /* ViewController+MASAdditions.m */,
+				B97828722472219400342521 /* MASViewConstraint.h */,
+				B97828732472219400342521 /* MASConstraint.h */,
+				B97828742472219400342521 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B97828752472219400342521 /* MASCompositeConstraint.m */,
+				B97828762472219400342521 /* MASConstraintMaker.m */,
+				B97828772472219400342521 /* MASLayoutConstraint.m */,
+				B97828782472219400342521 /* NSArray+MASAdditions.m */,
+				B97828792472219400342521 /* View+MASAdditions.m */,
+				B978287A2472219400342521 /* View+MASShorthandAdditions.h */,
+				B978287B2472219400342521 /* Masonry.h */,
+				B978287C2472219400342521 /* MASConstraint.m */,
+				B978287D2472219400342521 /* ViewController+MASAdditions.h */,
+				B978287E2472219400342521 /* MASViewConstraint.m */,
+				B978287F2472219400342521 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		DDA1CCA6DBAEDD4F7723D820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E12C599754277FCB0BB41CC /* libPods-SleepHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B978283424721CA800342521 /* SleepHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B978284E24721CAC00342521 /* Build configuration list for PBXNativeTarget "SleepHelper" */;
+			buildPhases = (
+				52F81551F4D9F01ED62EDE49 /* [CP] Check Pods Manifest.lock */,
+				B978283124721CA800342521 /* Sources */,
+				B978283224721CA800342521 /* Frameworks */,
+				B978283324721CA800342521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepHelper;
+			productName = SleepHelper;
+			productReference = B978283524721CA800342521 /* Sleep Assistant Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B978282D24721CA800342521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SleepHelper_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = tianma;
+				TargetAttributes = {
+					B978283424721CA800342521 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B978283024721CA800342521 /* Build configuration list for PBXProject "SleepHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B978282C24721CA800342521;
+			productRefGroup = B978283624721CA800342521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B978283424721CA800342521 /* SleepHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B978283324721CA800342521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97828C924723D0300342521 /* SleepHelper_AboutViewController.xib in Resources */,
+				B94395A52473BCFC00592EB7 /* start.mp3 in Resources */,
+				B97828B02472321900342521 /* SleepHelper_GameCell.xib in Resources */,
+				B978284824721CAC00342521 /* LaunchScreen.storyboard in Resources */,
+				B943959F2473B46300592EB7 /* SleepHelperSleepCell.xib in Resources */,
+				B978284524721CAC00342521 /* Assets.xcassets in Resources */,
+				B97828AB2472286C00342521 /* SleepHelper_TabbarView.xib in Resources */,
+				B97828C42472385200342521 /* SleepHelper_SheepViewController.xib in Resources */,
+				B97828BF2472365300342521 /* SleepHelper_StarViewController.xib in Resources */,
+				B97828912472221F00342521 /* SleepHelper_HomePageVC.xib in Resources */,
+				B97828992472247100342521 /* mvboli.ttf in Resources */,
+				B909CA48247248FC003C35EB /* SleepHelper_AlertViewController.xib in Resources */,
+				B97828BA2472363200342521 /* SleepHelper_PopViewController.xib in Resources */,
+				B94395A12473BC8200592EB7 /* sheep.mp3 in Resources */,
+				B97828A1247227C800342521 /* SleepHelper_SleepViewController.xib in Resources */,
+				B94395A32473BCA700592EB7 /* pop.mp3 in Resources */,
+				B978284324721CA800342521 /* Main.storyboard in Resources */,
+				B97828A6247227EF00342521 /* SleepHelper_SetViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52F81551F4D9F01ED62EDE49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B978283124721CA800342521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97828BE2472365300342521 /* SleepHelper_StarViewController.m in Sources */,
+				B978288A2472219400342521 /* MASConstraint.m in Sources */,
+				B97828882472219400342521 /* NSArray+MASAdditions.m in Sources */,
+				B97828A92472285B00342521 /* SleepHelper_TabbarView.m in Sources */,
+				B97828C32472385200342521 /* SleepHelper_SheepViewController.m in Sources */,
+				B978284024721CA800342521 /* ViewController.m in Sources */,
+				B978285B2472204900342521 /* SleepHelper_navigation.m in Sources */,
+				B97828832472219400342521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B978288C2472219400342521 /* MASViewAttribute.m in Sources */,
+				B97828C824723D0300342521 /* SleepHelper_AboutViewController.m in Sources */,
+				B91A36DF247B6C6F00750171 /* SleepHelper_TimeModel.m in Sources */,
+				B97828AF2472321900342521 /* SleepHelper_GameCell.m in Sources */,
+				B978283A24721CA800342521 /* AppDelegate.m in Sources */,
+				B978288B2472219400342521 /* MASViewConstraint.m in Sources */,
+				B909CA47247248FC003C35EB /* SleepHelper_AlertViewController.m in Sources */,
+				B97828A0247227C800342521 /* SleepHelper_SleepViewController.m in Sources */,
+				B97828902472221F00342521 /* SleepHelper_HomePageVC.m in Sources */,
+				B97828B92472363200342521 /* SleepHelper_PopViewController.m in Sources */,
+				B978284B24721CAC00342521 /* main.m in Sources */,
+				B97828862472219400342521 /* MASConstraintMaker.m in Sources */,
+				B97828972472243200342521 /* NSObject+SleepHelper_helper.m in Sources */,
+				B97828A5247227EF00342521 /* SleepHelper_SetViewController.m in Sources */,
+				B97828872472219400342521 /* MASLayoutConstraint.m in Sources */,
+				B97828892472219400342521 /* View+MASAdditions.m in Sources */,
+				B943959E2473B46300592EB7 /* SleepHelperSleepCell.m in Sources */,
+				B978289C2472275100342521 /* SleepHelper_RootTab.m in Sources */,
+				B97828852472219400342521 /* MASCompositeConstraint.m in Sources */,
+				B978283D24721CA800342521 /* SceneDelegate.m in Sources */,
+				B97828842472219400342521 /* ViewController+MASAdditions.m in Sources */,
+				B97828812472219400342521 /* YCPopoverAnimator.m in Sources */,
+				B97828822472219400342521 /* UIViewController+YCPopover.m in Sources */,
+				B97828802472219400342521 /* YCPresentationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B978284124721CA800342521 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B978284224721CA800342521 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B978284624721CAC00342521 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B978284724721CAC00342521 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B978284C24721CAC00342521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SleepHelper/SleepHelper_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B978284D24721CAC00342521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SleepHelper/SleepHelper_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B978284F24721CAC00342521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40675B77550C392776DB331 /* Pods-SleepHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9N5GZDF8Q;
+				INFOPLIST_FILE = SleepHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianma.sleepassistant;
+				PRODUCT_NAME = "Sleep Assistant Tool";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B978285024721CAC00342521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24023E8B3D8B7E2C93BC78AE /* Pods-SleepHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9N5GZDF8Q;
+				INFOPLIST_FILE = SleepHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianma.sleepassistant;
+				PRODUCT_NAME = "Sleep Assistant Tool";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B978283024721CA800342521 /* Build configuration list for PBXProject "SleepHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B978284C24721CAC00342521 /* Debug */,
+				B978284D24721CAC00342521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B978284E24721CAC00342521 /* Build configuration list for PBXNativeTarget "SleepHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B978284F24721CAC00342521 /* Debug */,
+				B978285024721CAC00342521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B978282D24721CA800342521 /* Project object */;
+}

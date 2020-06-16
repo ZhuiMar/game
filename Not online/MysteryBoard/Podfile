@@ -1,0 +1,9 @@
+
+platform :ios, '10.0'
+
+target 'MysteryBoard' do
+  
+ pod 'Masonry'
+ pod 'Realm'
+
+end

@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246346E3638524E967CC2565 /* libPods-DonutNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 931829144F1438CBABFCFC9D /* libPods-DonutNotes.a */; };
+		B98C7C8A244D3620001613EB /* DonutNotes_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C87244D3620001613EB /* DonutNotes_wrong.mp3 */; };
+		B98C7C8B244D3620001613EB /* DonutNotes_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C88244D3620001613EB /* DonutNotes_bg.mp3 */; };
+		B98C7C8C244D3620001613EB /* DonutNotes_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98C7C89244D3620001613EB /* DonutNotes_right.mp3 */; };
+		B9930A4B244A89F7001DA1BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A4A244A89F7001DA1BB /* AppDelegate.m */; };
+		B9930A4E244A89F7001DA1BB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A4D244A89F7001DA1BB /* SceneDelegate.m */; };
+		B9930A51244A89F7001DA1BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A50244A89F7001DA1BB /* ViewController.m */; };
+		B9930A54244A89F7001DA1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9930A52244A89F7001DA1BB /* Main.storyboard */; };
+		B9930A56244A89FB001DA1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9930A55244A89FB001DA1BB /* Assets.xcassets */; };
+		B9930A59244A89FB001DA1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9930A57244A89FB001DA1BB /* LaunchScreen.storyboard */; };
+		B9930A5C244A89FB001DA1BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A5B244A89FB001DA1BB /* main.m */; };
+		B9930A6D244A8F60001DA1BB /* ChaparralPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9930A68244A8F60001DA1BB /* ChaparralPro-BoldIt.otf */; };
+		B9930A6E244A8F60001DA1BB /* ChaparralPro-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9930A69244A8F60001DA1BB /* ChaparralPro-Italic.otf */; };
+		B9930A6F244A8F60001DA1BB /* ChaparralPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9930A6A244A8F60001DA1BB /* ChaparralPro-LightIt.otf */; };
+		B9930A70244A8F60001DA1BB /* ChaparralPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9930A6B244A8F60001DA1BB /* ChaparralPro-Bold.otf */; };
+		B9930A71244A8F60001DA1BB /* ChaparralPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9930A6C244A8F60001DA1BB /* ChaparralPro-Regular.otf */; };
+		B9930A75244A9043001DA1BB /* DonutNotes_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A74244A9043001DA1BB /* DonutNotes_navigation.m */; };
+		B9930A7E244A90CA001DA1BB /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A78244A90CA001DA1BB /* YCPopoverAnimator.m */; };
+		B9930A7F244A90CA001DA1BB /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A7A244A90CA001DA1BB /* YCPresentationController.m */; };
+		B9930A80244A90CA001DA1BB /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A7B244A90CA001DA1BB /* UIViewController+YCPopover.m */; };
+		B9930A83244A91DE001DA1BB /* NSObject+DonutNotes_Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930A82244A91DE001DA1BB /* NSObject+DonutNotes_Tool.m */; };
+		B9930AB1244A9364001DA1BB /* DonutNotes_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AAF244A9364001DA1BB /* DonutNotes_HomeViewController.m */; };
+		B9930AB2244A9364001DA1BB /* DonutNotes_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930AB0244A9364001DA1BB /* DonutNotes_HomeViewController.xib */; };
+		B9930AB6244AA4D7001DA1BB /* DonutNotes_LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AB4244AA4D7001DA1BB /* DonutNotes_LearnViewController.m */; };
+		B9930AB7244AA4D7001DA1BB /* DonutNotes_LearnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930AB5244AA4D7001DA1BB /* DonutNotes_LearnViewController.xib */; };
+		B9930ABB244AA5CE001DA1BB /* DonutNotes_TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AB9244AA5CE001DA1BB /* DonutNotes_TipsViewController.m */; };
+		B9930ABC244AA5CE001DA1BB /* DonutNotes_TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930ABA244AA5CE001DA1BB /* DonutNotes_TipsViewController.xib */; };
+		B9930AC0244AA866001DA1BB /* DonutNotes_SelectModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930ABE244AA866001DA1BB /* DonutNotes_SelectModeViewController.m */; };
+		B9930AC1244AA866001DA1BB /* DonutNotes_SelectModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930ABF244AA866001DA1BB /* DonutNotes_SelectModeViewController.xib */; };
+		B9930AC5244AA986001DA1BB /* DonutNotes_AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AC3244AA986001DA1BB /* DonutNotes_AboutViewController.m */; };
+		B9930AC6244AA986001DA1BB /* DonutNotes_AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930AC4244AA986001DA1BB /* DonutNotes_AboutViewController.xib */; };
+		B9930ACA244AAA86001DA1BB /* DonutNotes_OverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AC8244AAA86001DA1BB /* DonutNotes_OverViewController.m */; };
+		B9930ACB244AAA86001DA1BB /* DonutNotes_OverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930AC9244AAA86001DA1BB /* DonutNotes_OverViewController.xib */; };
+		B9930ACF244AB0F2001DA1BB /* DonutNotes_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930ACD244AB0F2001DA1BB /* DonutNotes_GameViewController.m */; };
+		B9930AD0244AB0F2001DA1BB /* DonutNotes_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930ACE244AB0F2001DA1BB /* DonutNotes_GameViewController.xib */; };
+		B9930AD4244AB175001DA1BB /* DonutNotes_RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9930AD2244AB175001DA1BB /* DonutNotes_RecordViewController.m */; };
+		B9930AD5244AB175001DA1BB /* DonutNotes_RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9930AD3244AB175001DA1BB /* DonutNotes_RecordViewController.xib */; };
+		B99896A4244C27110098E245 /* DonutNotes_RecordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896A2244C27110098E245 /* DonutNotes_RecordCollectionViewCell.m */; };
+		B99896A5244C27110098E245 /* DonutNotes_RecordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99896A3244C27110098E245 /* DonutNotes_RecordCollectionViewCell.xib */; };
+		B99896A9244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896A7244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.m */; };
+		B99896AA244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99896A8244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.xib */; };
+		B99896AE244C2DBA0098E245 /* DonutNotes_Score.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896AD244C2DBA0098E245 /* DonutNotes_Score.m */; };
+		B99896B2244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B99896B0244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.m */; };
+		B99896B3244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99896B1244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.xib */; };
+		B9BDBB55244AE6D5003B2084 /* DonutNotes_item.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BDBB54244AE6D5003B2084 /* DonutNotes_item.m */; };
+		B9BDBB57244AE6E1003B2084 /* DonutNotes_item.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BDBB56244AE6E1003B2084 /* DonutNotes_item.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0811C406CCEF29276D4A8E3B /* Pods-DonutNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonutNotes.debug.xcconfig"; path = "Target Support Files/Pods-DonutNotes/Pods-DonutNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		4C7AED28341B7D81ACF88B63 /* Pods-DonutNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DonutNotes.release.xcconfig"; path = "Target Support Files/Pods-DonutNotes/Pods-DonutNotes.release.xcconfig"; sourceTree = "<group>"; };
+		931829144F1438CBABFCFC9D /* libPods-DonutNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DonutNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98C7C87244D3620001613EB /* DonutNotes_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DonutNotes_wrong.mp3; sourceTree = "<group>"; };
+		B98C7C88244D3620001613EB /* DonutNotes_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DonutNotes_bg.mp3; sourceTree = "<group>"; };
+		B98C7C89244D3620001613EB /* DonutNotes_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DonutNotes_right.mp3; sourceTree = "<group>"; };
+		B9930A46244A89F7001DA1BB /* Donut Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donut Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9930A49244A89F7001DA1BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9930A4A244A89F7001DA1BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9930A4C244A89F7001DA1BB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9930A4D244A89F7001DA1BB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9930A4F244A89F7001DA1BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9930A50244A89F7001DA1BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9930A53244A89F7001DA1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9930A55244A89FB001DA1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9930A58244A89FB001DA1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9930A5A244A89FB001DA1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9930A5B244A89FB001DA1BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9930A68244A8F60001DA1BB /* ChaparralPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-BoldIt.otf"; sourceTree = "<group>"; };
+		B9930A69244A8F60001DA1BB /* ChaparralPro-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Italic.otf"; sourceTree = "<group>"; };
+		B9930A6A244A8F60001DA1BB /* ChaparralPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-LightIt.otf"; sourceTree = "<group>"; };
+		B9930A6B244A8F60001DA1BB /* ChaparralPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Bold.otf"; sourceTree = "<group>"; };
+		B9930A6C244A8F60001DA1BB /* ChaparralPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Regular.otf"; sourceTree = "<group>"; };
+		B9930A72244A8FA8001DA1BB /* DonutNotes_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9930A73244A9043001DA1BB /* DonutNotes_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_navigation.h; sourceTree = "<group>"; };
+		B9930A74244A9043001DA1BB /* DonutNotes_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_navigation.m; sourceTree = "<group>"; };
+		B9930A77244A90CA001DA1BB /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9930A78244A90CA001DA1BB /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9930A79244A90CA001DA1BB /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9930A7A244A90CA001DA1BB /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9930A7B244A90CA001DA1BB /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B9930A7C244A90CA001DA1BB /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9930A7D244A90CA001DA1BB /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9930A81244A91DE001DA1BB /* NSObject+DonutNotes_Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DonutNotes_Tool.h"; sourceTree = "<group>"; };
+		B9930A82244A91DE001DA1BB /* NSObject+DonutNotes_Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DonutNotes_Tool.m"; sourceTree = "<group>"; };
+		B9930AAE244A9364001DA1BB /* DonutNotes_HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_HomeViewController.h; sourceTree = "<group>"; };
+		B9930AAF244A9364001DA1BB /* DonutNotes_HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_HomeViewController.m; sourceTree = "<group>"; };
+		B9930AB0244A9364001DA1BB /* DonutNotes_HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_HomeViewController.xib; sourceTree = "<group>"; };
+		B9930AB3244AA4D7001DA1BB /* DonutNotes_LearnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_LearnViewController.h; sourceTree = "<group>"; };
+		B9930AB4244AA4D7001DA1BB /* DonutNotes_LearnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_LearnViewController.m; sourceTree = "<group>"; };
+		B9930AB5244AA4D7001DA1BB /* DonutNotes_LearnViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_LearnViewController.xib; sourceTree = "<group>"; };
+		B9930AB8244AA5CE001DA1BB /* DonutNotes_TipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_TipsViewController.h; sourceTree = "<group>"; };
+		B9930AB9244AA5CE001DA1BB /* DonutNotes_TipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_TipsViewController.m; sourceTree = "<group>"; };
+		B9930ABA244AA5CE001DA1BB /* DonutNotes_TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_TipsViewController.xib; sourceTree = "<group>"; };
+		B9930ABD244AA866001DA1BB /* DonutNotes_SelectModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_SelectModeViewController.h; sourceTree = "<group>"; };
+		B9930ABE244AA866001DA1BB /* DonutNotes_SelectModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_SelectModeViewController.m; sourceTree = "<group>"; };
+		B9930ABF244AA866001DA1BB /* DonutNotes_SelectModeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_SelectModeViewController.xib; sourceTree = "<group>"; };
+		B9930AC2244AA986001DA1BB /* DonutNotes_AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_AboutViewController.h; sourceTree = "<group>"; };
+		B9930AC3244AA986001DA1BB /* DonutNotes_AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_AboutViewController.m; sourceTree = "<group>"; };
+		B9930AC4244AA986001DA1BB /* DonutNotes_AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_AboutViewController.xib; sourceTree = "<group>"; };
+		B9930AC7244AAA86001DA1BB /* DonutNotes_OverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_OverViewController.h; sourceTree = "<group>"; };
+		B9930AC8244AAA86001DA1BB /* DonutNotes_OverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_OverViewController.m; sourceTree = "<group>"; };
+		B9930AC9244AAA86001DA1BB /* DonutNotes_OverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_OverViewController.xib; sourceTree = "<group>"; };
+		B9930ACC244AB0F2001DA1BB /* DonutNotes_GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_GameViewController.h; sourceTree = "<group>"; };
+		B9930ACD244AB0F2001DA1BB /* DonutNotes_GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_GameViewController.m; sourceTree = "<group>"; };
+		B9930ACE244AB0F2001DA1BB /* DonutNotes_GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_GameViewController.xib; sourceTree = "<group>"; };
+		B9930AD1244AB175001DA1BB /* DonutNotes_RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_RecordViewController.h; sourceTree = "<group>"; };
+		B9930AD2244AB175001DA1BB /* DonutNotes_RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_RecordViewController.m; sourceTree = "<group>"; };
+		B9930AD3244AB175001DA1BB /* DonutNotes_RecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_RecordViewController.xib; sourceTree = "<group>"; };
+		B99896A1244C27110098E245 /* DonutNotes_RecordCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_RecordCollectionViewCell.h; sourceTree = "<group>"; };
+		B99896A2244C27110098E245 /* DonutNotes_RecordCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_RecordCollectionViewCell.m; sourceTree = "<group>"; };
+		B99896A3244C27110098E245 /* DonutNotes_RecordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_RecordCollectionViewCell.xib; sourceTree = "<group>"; };
+		B99896A6244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_HeadCollectionReusableView.h; sourceTree = "<group>"; };
+		B99896A7244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_HeadCollectionReusableView.m; sourceTree = "<group>"; };
+		B99896A8244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_HeadCollectionReusableView.xib; sourceTree = "<group>"; };
+		B99896AC244C2DBA0098E245 /* DonutNotes_Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_Score.h; sourceTree = "<group>"; };
+		B99896AD244C2DBA0098E245 /* DonutNotes_Score.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_Score.m; sourceTree = "<group>"; };
+		B99896AF244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_FootCollectionReusableView.h; sourceTree = "<group>"; };
+		B99896B0244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_FootCollectionReusableView.m; sourceTree = "<group>"; };
+		B99896B1244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_FootCollectionReusableView.xib; sourceTree = "<group>"; };
+		B9BDBB53244AE6D5003B2084 /* DonutNotes_item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonutNotes_item.h; sourceTree = "<group>"; };
+		B9BDBB54244AE6D5003B2084 /* DonutNotes_item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutNotes_item.m; sourceTree = "<group>"; };
+		B9BDBB56244AE6E1003B2084 /* DonutNotes_item.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonutNotes_item.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9930A43244A89F7001DA1BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246346E3638524E967CC2565 /* libPods-DonutNotes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A789FC87922A1C12EB1DB70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0811C406CCEF29276D4A8E3B /* Pods-DonutNotes.debug.xcconfig */,
+				4C7AED28341B7D81ACF88B63 /* Pods-DonutNotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9930A3D244A89F7001DA1BB = {
+			isa = PBXGroup;
+			children = (
+				B9930A48244A89F7001DA1BB /* DonutNotes */,
+				B9930A47244A89F7001DA1BB /* Products */,
+				6A789FC87922A1C12EB1DB70 /* Pods */,
+				F2B54F3D232DE6E59A0EEE70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9930A47244A89F7001DA1BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9930A46244A89F7001DA1BB /* Donut Notes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9930A48244A89F7001DA1BB /* DonutNotes */ = {
+			isa = PBXGroup;
+			children = (
+				B99896AB244C2D850098E245 /* DonutNotes_Data */,
+				B9930A67244A8D4E001DA1BB /* DonutNotes_Font */,
+				B9930A66244A8CFA001DA1BB /* DonutNotes_Misic */,
+				B9930A65244A8CEC001DA1BB /* DonutNotes_View */,
+				B9930A64244A8CE2001DA1BB /* DonutNotes_Lib */,
+				B9930A63244A8CD5001DA1BB /* DonutNotes_Base */,
+				B9930A62244A8CBD001DA1BB /* DonutNotes_VC */,
+				B9930A49244A89F7001DA1BB /* AppDelegate.h */,
+				B9930A4A244A89F7001DA1BB /* AppDelegate.m */,
+				B9930A4C244A89F7001DA1BB /* SceneDelegate.h */,
+				B9930A4D244A89F7001DA1BB /* SceneDelegate.m */,
+				B9930A4F244A89F7001DA1BB /* ViewController.h */,
+				B9930A50244A89F7001DA1BB /* ViewController.m */,
+				B9930A52244A89F7001DA1BB /* Main.storyboard */,
+				B9930A55244A89FB001DA1BB /* Assets.xcassets */,
+				B9930A57244A89FB001DA1BB /* LaunchScreen.storyboard */,
+				B9930A5A244A89FB001DA1BB /* Info.plist */,
+				B9930A5B244A89FB001DA1BB /* main.m */,
+				B9930A72244A8FA8001DA1BB /* DonutNotes_PrefixHeader.pch */,
+			);
+			path = DonutNotes;
+			sourceTree = "<group>";
+		};
+		B9930A62244A8CBD001DA1BB /* DonutNotes_VC */ = {
+			isa = PBXGroup;
+			children = (
+				B9930AAE244A9364001DA1BB /* DonutNotes_HomeViewController.h */,
+				B9930AAF244A9364001DA1BB /* DonutNotes_HomeViewController.m */,
+				B9930AB0244A9364001DA1BB /* DonutNotes_HomeViewController.xib */,
+				B9930AB3244AA4D7001DA1BB /* DonutNotes_LearnViewController.h */,
+				B9930AB4244AA4D7001DA1BB /* DonutNotes_LearnViewController.m */,
+				B9930AB5244AA4D7001DA1BB /* DonutNotes_LearnViewController.xib */,
+				B9930AB8244AA5CE001DA1BB /* DonutNotes_TipsViewController.h */,
+				B9930AB9244AA5CE001DA1BB /* DonutNotes_TipsViewController.m */,
+				B9930ABA244AA5CE001DA1BB /* DonutNotes_TipsViewController.xib */,
+				B9930ABD244AA866001DA1BB /* DonutNotes_SelectModeViewController.h */,
+				B9930ABE244AA866001DA1BB /* DonutNotes_SelectModeViewController.m */,
+				B9930ABF244AA866001DA1BB /* DonutNotes_SelectModeViewController.xib */,
+				B9930AC2244AA986001DA1BB /* DonutNotes_AboutViewController.h */,
+				B9930AC3244AA986001DA1BB /* DonutNotes_AboutViewController.m */,
+				B9930AC4244AA986001DA1BB /* DonutNotes_AboutViewController.xib */,
+				B9930AC7244AAA86001DA1BB /* DonutNotes_OverViewController.h */,
+				B9930AC8244AAA86001DA1BB /* DonutNotes_OverViewController.m */,
+				B9930AC9244AAA86001DA1BB /* DonutNotes_OverViewController.xib */,
+				B9930ACC244AB0F2001DA1BB /* DonutNotes_GameViewController.h */,
+				B9930ACD244AB0F2001DA1BB /* DonutNotes_GameViewController.m */,
+				B9930ACE244AB0F2001DA1BB /* DonutNotes_GameViewController.xib */,
+				B9930AD1244AB175001DA1BB /* DonutNotes_RecordViewController.h */,
+				B9930AD2244AB175001DA1BB /* DonutNotes_RecordViewController.m */,
+				B9930AD3244AB175001DA1BB /* DonutNotes_RecordViewController.xib */,
+			);
+			path = DonutNotes_VC;
+			sourceTree = "<group>";
+		};
+		B9930A63244A8CD5001DA1BB /* DonutNotes_Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9930A73244A9043001DA1BB /* DonutNotes_navigation.h */,
+				B9930A74244A9043001DA1BB /* DonutNotes_navigation.m */,
+			);
+			path = DonutNotes_Base;
+			sourceTree = "<group>";
+		};
+		B9930A64244A8CE2001DA1BB /* DonutNotes_Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B9930A81244A91DE001DA1BB /* NSObject+DonutNotes_Tool.h */,
+				B9930A82244A91DE001DA1BB /* NSObject+DonutNotes_Tool.m */,
+				B9930A76244A909E001DA1BB /* DonutNotes_alert */,
+			);
+			path = DonutNotes_Lib;
+			sourceTree = "<group>";
+		};
+		B9930A65244A8CEC001DA1BB /* DonutNotes_View */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDBB53244AE6D5003B2084 /* DonutNotes_item.h */,
+				B9BDBB54244AE6D5003B2084 /* DonutNotes_item.m */,
+				B9BDBB56244AE6E1003B2084 /* DonutNotes_item.xib */,
+				B99896A1244C27110098E245 /* DonutNotes_RecordCollectionViewCell.h */,
+				B99896A2244C27110098E245 /* DonutNotes_RecordCollectionViewCell.m */,
+				B99896A3244C27110098E245 /* DonutNotes_RecordCollectionViewCell.xib */,
+				B99896A6244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.h */,
+				B99896A7244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.m */,
+				B99896A8244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.xib */,
+				B99896AF244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.h */,
+				B99896B0244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.m */,
+				B99896B1244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.xib */,
+			);
+			path = DonutNotes_View;
+			sourceTree = "<group>";
+		};
+		B9930A66244A8CFA001DA1BB /* DonutNotes_Misic */ = {
+			isa = PBXGroup;
+			children = (
+				B98C7C88244D3620001613EB /* DonutNotes_bg.mp3 */,
+				B98C7C89244D3620001613EB /* DonutNotes_right.mp3 */,
+				B98C7C87244D3620001613EB /* DonutNotes_wrong.mp3 */,
+			);
+			path = DonutNotes_Misic;
+			sourceTree = "<group>";
+		};
+		B9930A67244A8D4E001DA1BB /* DonutNotes_Font */ = {
+			isa = PBXGroup;
+			children = (
+				B9930A6B244A8F60001DA1BB /* ChaparralPro-Bold.otf */,
+				B9930A68244A8F60001DA1BB /* ChaparralPro-BoldIt.otf */,
+				B9930A69244A8F60001DA1BB /* ChaparralPro-Italic.otf */,
+				B9930A6A244A8F60001DA1BB /* ChaparralPro-LightIt.otf */,
+				B9930A6C244A8F60001DA1BB /* ChaparralPro-Regular.otf */,
+			);
+			path = DonutNotes_Font;
+			sourceTree = "<group>";
+		};
+		B9930A76244A909E001DA1BB /* DonutNotes_alert */ = {
+			isa = PBXGroup;
+			children = (
+				B9930A79244A90CA001DA1BB /* UIViewController+YCPopover.h */,
+				B9930A7B244A90CA001DA1BB /* UIViewController+YCPopover.m */,
+				B9930A7C244A90CA001DA1BB /* YCPopoverAnimator.h */,
+				B9930A78244A90CA001DA1BB /* YCPopoverAnimator.m */,
+				B9930A7D244A90CA001DA1BB /* YCPopoverMacro.h */,
+				B9930A77244A90CA001DA1BB /* YCPresentationController.h */,
+				B9930A7A244A90CA001DA1BB /* YCPresentationController.m */,
+			);
+			path = DonutNotes_alert;
+			sourceTree = "<group>";
+		};
+		B99896AB244C2D850098E245 /* DonutNotes_Data */ = {
+			isa = PBXGroup;
+			children = (
+				B99896AC244C2DBA0098E245 /* DonutNotes_Score.h */,
+				B99896AD244C2DBA0098E245 /* DonutNotes_Score.m */,
+			);
+			path = DonutNotes_Data;
+			sourceTree = "<group>";
+		};
+		F2B54F3D232DE6E59A0EEE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931829144F1438CBABFCFC9D /* libPods-DonutNotes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9930A45244A89F7001DA1BB /* DonutNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9930A5F244A89FB001DA1BB /* Build configuration list for PBXNativeTarget "DonutNotes" */;
+			buildPhases = (
+				6C61A6C126318B3709328C12 /* [CP] Check Pods Manifest.lock */,
+				B9930A42244A89F7001DA1BB /* Sources */,
+				B9930A43244A89F7001DA1BB /* Frameworks */,
+				B9930A44244A89F7001DA1BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DonutNotes;
+			productName = DonutNotes;
+			productReference = B9930A46244A89F7001DA1BB /* Donut Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9930A3E244A89F7001DA1BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DonutNotes_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = willows;
+				TargetAttributes = {
+					B9930A45244A89F7001DA1BB = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9930A41244A89F7001DA1BB /* Build configuration list for PBXProject "DonutNotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9930A3D244A89F7001DA1BB;
+			productRefGroup = B9930A47244A89F7001DA1BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9930A45244A89F7001DA1BB /* DonutNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9930A44244A89F7001DA1BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9930AC6244AA986001DA1BB /* DonutNotes_AboutViewController.xib in Resources */,
+				B9930A6F244A8F60001DA1BB /* ChaparralPro-LightIt.otf in Resources */,
+				B98C7C8C244D3620001613EB /* DonutNotes_right.mp3 in Resources */,
+				B9930A6E244A8F60001DA1BB /* ChaparralPro-Italic.otf in Resources */,
+				B9930AC1244AA866001DA1BB /* DonutNotes_SelectModeViewController.xib in Resources */,
+				B9930AD5244AB175001DA1BB /* DonutNotes_RecordViewController.xib in Resources */,
+				B9930A6D244A8F60001DA1BB /* ChaparralPro-BoldIt.otf in Resources */,
+				B9930A59244A89FB001DA1BB /* LaunchScreen.storyboard in Resources */,
+				B9930AD0244AB0F2001DA1BB /* DonutNotes_GameViewController.xib in Resources */,
+				B99896A5244C27110098E245 /* DonutNotes_RecordCollectionViewCell.xib in Resources */,
+				B9930A56244A89FB001DA1BB /* Assets.xcassets in Resources */,
+				B99896B3244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.xib in Resources */,
+				B9930ACB244AAA86001DA1BB /* DonutNotes_OverViewController.xib in Resources */,
+				B9930A71244A8F60001DA1BB /* ChaparralPro-Regular.otf in Resources */,
+				B9930AB7244AA4D7001DA1BB /* DonutNotes_LearnViewController.xib in Resources */,
+				B9930AB2244A9364001DA1BB /* DonutNotes_HomeViewController.xib in Resources */,
+				B9BDBB57244AE6E1003B2084 /* DonutNotes_item.xib in Resources */,
+				B98C7C8A244D3620001613EB /* DonutNotes_wrong.mp3 in Resources */,
+				B9930A70244A8F60001DA1BB /* ChaparralPro-Bold.otf in Resources */,
+				B9930ABC244AA5CE001DA1BB /* DonutNotes_TipsViewController.xib in Resources */,
+				B9930A54244A89F7001DA1BB /* Main.storyboard in Resources */,
+				B98C7C8B244D3620001613EB /* DonutNotes_bg.mp3 in Resources */,
+				B99896AA244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C61A6C126318B3709328C12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DonutNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9930A42244A89F7001DA1BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99896A9244C296C0098E245 /* DonutNotes_HeadCollectionReusableView.m in Sources */,
+				B9930AB1244A9364001DA1BB /* DonutNotes_HomeViewController.m in Sources */,
+				B9930A7E244A90CA001DA1BB /* YCPopoverAnimator.m in Sources */,
+				B9930A51244A89F7001DA1BB /* ViewController.m in Sources */,
+				B99896B2244C3FEB0098E245 /* DonutNotes_FootCollectionReusableView.m in Sources */,
+				B9930AD4244AB175001DA1BB /* DonutNotes_RecordViewController.m in Sources */,
+				B9930ABB244AA5CE001DA1BB /* DonutNotes_TipsViewController.m in Sources */,
+				B9930A75244A9043001DA1BB /* DonutNotes_navigation.m in Sources */,
+				B9930A4B244A89F7001DA1BB /* AppDelegate.m in Sources */,
+				B9930A5C244A89FB001DA1BB /* main.m in Sources */,
+				B9930A7F244A90CA001DA1BB /* YCPresentationController.m in Sources */,
+				B9930ACA244AAA86001DA1BB /* DonutNotes_OverViewController.m in Sources */,
+				B9930A80244A90CA001DA1BB /* UIViewController+YCPopover.m in Sources */,
+				B9930ACF244AB0F2001DA1BB /* DonutNotes_GameViewController.m in Sources */,
+				B9930A83244A91DE001DA1BB /* NSObject+DonutNotes_Tool.m in Sources */,
+				B99896AE244C2DBA0098E245 /* DonutNotes_Score.m in Sources */,
+				B9930AC0244AA866001DA1BB /* DonutNotes_SelectModeViewController.m in Sources */,
+				B9930AB6244AA4D7001DA1BB /* DonutNotes_LearnViewController.m in Sources */,
+				B9930AC5244AA986001DA1BB /* DonutNotes_AboutViewController.m in Sources */,
+				B9930A4E244A89F7001DA1BB /* SceneDelegate.m in Sources */,
+				B99896A4244C27110098E245 /* DonutNotes_RecordCollectionViewCell.m in Sources */,
+				B9BDBB55244AE6D5003B2084 /* DonutNotes_item.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9930A52244A89F7001DA1BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9930A53244A89F7001DA1BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9930A57244A89FB001DA1BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9930A58244A89FB001DA1BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9930A5D244A89FB001DA1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DonutNotes/DonutNotes_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9930A5E244A89FB001DA1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DonutNotes/DonutNotes_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9930A60244A89FB001DA1BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0811C406CCEF29276D4A8E3B /* Pods-DonutNotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27875R277U;
+				INFOPLIST_FILE = DonutNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willows.donutnotes;
+				PRODUCT_NAME = "Donut Notes";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9930A61244A89FB001DA1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7AED28341B7D81ACF88B63 /* Pods-DonutNotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27875R277U;
+				INFOPLIST_FILE = DonutNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willows.donutnotes;
+				PRODUCT_NAME = "Donut Notes";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9930A41244A89F7001DA1BB /* Build configuration list for PBXProject "DonutNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9930A5D244A89FB001DA1BB /* Debug */,
+				B9930A5E244A89FB001DA1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9930A5F244A89FB001DA1BB /* Build configuration list for PBXNativeTarget "DonutNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9930A60244A89FB001DA1BB /* Debug */,
+				B9930A61244A89FB001DA1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9930A3E244A89F7001DA1BB /* Project object */;
+}

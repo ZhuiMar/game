@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CPAboutVC">
+            <connections>
+                <outlet property="contentLabel" destination="TVO-Oz-7DW" id="Rlg-BO-tLc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="7zy-xW-KK0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-Oz-7DW">
+                    <rect key="frame" x="0.0" y="102" width="375" height="353"/>
+                    <string key="text">"Plane to plane" is a fun app to teach 
+the players to observe the arithmetic 
+on the plane car and learn mathematics. 
+In order to cultivate the players' interest 
+in learning mathematics, we designed 
+two kinds of playing methods and three 
+kinds of difficulties to improve the 
+children's interest in mathematics.
+
+"passenger Numbers" is to find out 
+which plane has the greatest arithmetic 
+answer. "Sorting" is to sort the arithmetic 
+answers on three airplanes from 
+small to large.</string>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="18"/>
+                    <color key="textColor" red="0.37647058823529411" green="0.098039215686274508" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7zy-xW-KK0" secondAttribute="trailing" id="4fR-yh-kaT"/>
+                <constraint firstAttribute="bottom" secondItem="7zy-xW-KK0" secondAttribute="bottom" id="63s-Ya-QCh"/>
+                <constraint firstAttribute="trailing" secondItem="TVO-Oz-7DW" secondAttribute="trailing" id="SB0-Ka-APc"/>
+                <constraint firstItem="7zy-xW-KK0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ctq-tT-bco"/>
+                <constraint firstItem="TVO-Oz-7DW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="102" id="cvg-km-lRV"/>
+                <constraint firstItem="7zy-xW-KK0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hZt-Rl-ERf"/>
+                <constraint firstItem="TVO-Oz-7DW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wrz-yH-dX4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bj" width="375" height="667"/>
+    </resources>
+</document>

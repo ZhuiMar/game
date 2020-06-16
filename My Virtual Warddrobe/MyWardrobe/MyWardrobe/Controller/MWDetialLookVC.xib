@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MWDetialLookVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-6I-dKA">
+                    <rect key="frame" x="20" y="58.5" width="335" height="550"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy8-zv-QVP">
+                            <rect key="frame" x="300" y="10" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="G3J-gt-z6h"/>
+                                <constraint firstAttribute="width" constant="25" id="n6m-qm-eF1"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="del"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-yz-hlE">
+                            <rect key="frame" x="0.0" y="510" width="335" height="40"/>
+                            <color key="backgroundColor" red="0.75294117650000003" green="0.20000000000000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="t4x-4f-dFk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="550" id="0Ge-OU-jpW"/>
+                        <constraint firstItem="ILW-yz-hlE" firstAttribute="leading" secondItem="9ek-6I-dKA" secondAttribute="leading" id="0R7-hZ-mtc"/>
+                        <constraint firstAttribute="width" constant="335" id="3mE-Se-gDF"/>
+                        <constraint firstAttribute="bottom" secondItem="ILW-yz-hlE" secondAttribute="bottom" id="47Z-n7-kid"/>
+                        <constraint firstAttribute="trailing" secondItem="ILW-yz-hlE" secondAttribute="trailing" id="Aaj-kE-TWW"/>
+                        <constraint firstAttribute="trailing" secondItem="Cy8-zv-QVP" secondAttribute="trailing" constant="10" id="qY5-8d-4G0"/>
+                        <constraint firstItem="Cy8-zv-QVP" firstAttribute="top" secondItem="9ek-6I-dKA" secondAttribute="top" constant="10" id="xcd-V6-b3k"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvN-IW-9aK">
+                    <rect key="frame" x="159.5" y="83.5" width="56" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wvN-IW-9aK" firstAttribute="top" secondItem="9ek-6I-dKA" secondAttribute="top" constant="25" id="2GJ-3Z-AAv"/>
+                <constraint firstItem="9ek-6I-dKA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZpE-CE-eP9"/>
+                <constraint firstItem="9ek-6I-dKA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hDb-c9-rEk"/>
+                <constraint firstItem="wvN-IW-9aK" firstAttribute="centerX" secondItem="9ek-6I-dKA" secondAttribute="centerX" id="we3-jf-WRp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="del" width="25" height="25"/>
+    </resources>
+</document>

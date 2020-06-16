@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B90C3208246D524B00CD0C14 /* SmartDetective_ProblemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C3207246D524B00CD0C14 /* SmartDetective_ProblemItem.m */; };
+		B90C320A246D525A00CD0C14 /* SmartDetective_ProblemItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B90C3209246D525A00CD0C14 /* SmartDetective_ProblemItem.xib */; };
+		B95ED1D52478F5CA0039F301 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1BC2478F5CA0039F301 /* MJPropertyType.m */; };
+		B95ED1D62478F5CA0039F301 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1BF2478F5CA0039F301 /* NSObject+MJKeyValue.m */; };
+		B95ED1D72478F5CA0039F301 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C02478F5CA0039F301 /* MJProperty.m */; };
+		B95ED1D82478F5CA0039F301 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C22478F5CA0039F301 /* NSObject+MJCoding.m */; };
+		B95ED1D92478F5CA0039F301 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C42478F5CA0039F301 /* MJExtensionConst.m */; };
+		B95ED1DA2478F5CA0039F301 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C52478F5CA0039F301 /* NSObject+MJProperty.m */; };
+		B95ED1DB2478F5CA0039F301 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C72478F5CA0039F301 /* NSObject+MJClass.m */; };
+		B95ED1DC2478F5CA0039F301 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C82478F5CA0039F301 /* NSString+MJExtension.m */; };
+		B95ED1DD2478F5CA0039F301 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1C92478F5CA0039F301 /* MJPropertyKey.m */; };
+		B95ED1DE2478F5CA0039F301 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1CD2478F5CA0039F301 /* MJFoundation.m */; };
+		B95ED1DF2478F5CA0039F301 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1CF2478F5CA0039F301 /* Reachability.m */; };
+		B95ED1E02478F5CA0039F301 /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1D22478F5CA0039F301 /* jpush-ios-3.3.2.a */; };
+		B95ED1E12478F5CA0039F301 /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1D42478F5CA0039F301 /* jcore-noidfa-ios-2.2.5.a */; };
+		B95ED1E42478F9230039F301 /* SDPasterSave.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1E32478F9230039F301 /* SDPasterSave.m */; };
+		B95ED1E72478F9A80039F301 /* YCPPasterViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1E62478F9A80039F301 /* YCPPasterViewData.m */; };
+		B95ED1EA24790D7D0039F301 /* SmartDetective_SaveScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED1E924790D7D0039F301 /* SmartDetective_SaveScoreData.m */; };
+		B95ED1ED247917760039F301 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1EC247917760039F301 /* CFNetwork.framework */; };
+		B95ED1EF2479177C0039F301 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1EE2479177B0039F301 /* CoreFoundation.framework */; };
+		B95ED1F1247917820039F301 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1F0247917820039F301 /* CoreTelephony.framework */; };
+		B95ED1F3247917880039F301 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1F2247917880039F301 /* SystemConfiguration.framework */; };
+		B95ED1F52479178E0039F301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1F42479178E0039F301 /* CoreGraphics.framework */; };
+		B95ED1F7247917950039F301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1F6247917940039F301 /* Foundation.framework */; };
+		B95ED1F92479179B0039F301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1F82479179B0039F301 /* UIKit.framework */; };
+		B95ED1FB247917A10039F301 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1FA247917A00039F301 /* Security.framework */; };
+		B95ED1FD247917A90039F301 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1FC247917A90039F301 /* libz.tbd */; };
+		B95ED1FF247917B50039F301 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED1FE247917B50039F301 /* UserNotifications.framework */; };
+		B95ED201247917BC0039F301 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED200247917BC0039F301 /* libresolv.tbd */; };
+		B95ED203247917C30039F301 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95ED202247917C30039F301 /* WebKit.framework */; };
+		B9897F4F246BB06600C19FE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F4E246BB06600C19FE4 /* AppDelegate.m */; };
+		B9897F52246BB06600C19FE4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F51246BB06600C19FE4 /* SceneDelegate.m */; };
+		B9897F55246BB06600C19FE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F54246BB06600C19FE4 /* ViewController.m */; };
+		B9897F58246BB06600C19FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9897F56246BB06600C19FE4 /* Main.storyboard */; };
+		B9897F5A246BB06B00C19FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9897F59246BB06B00C19FE4 /* Assets.xcassets */; };
+		B9897F5D246BB06B00C19FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9897F5B246BB06B00C19FE4 /* LaunchScreen.storyboard */; };
+		B9897F60246BB06B00C19FE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F5F246BB06B00C19FE4 /* main.m */; };
+		B9897F6F246BCE9E00C19FE4 /* SmartDetective_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F6E246BCE9E00C19FE4 /* SmartDetective_navigation.m */; };
+		B9897F74246BCF9200C19FE4 /* SmartDetective_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F72246BCF9200C19FE4 /* SmartDetective_HomeViewController.m */; };
+		B9897F75246BCF9200C19FE4 /* SmartDetective_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9897F73246BCF9200C19FE4 /* SmartDetective_HomeViewController.xib */; };
+		B9897F78246BD00300C19FE4 /* NSObject+SmartDetective_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9897F77246BD00300C19FE4 /* NSObject+SmartDetective_Helper.m */; };
+		B98AA4D8246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4B8246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B98AA4D9246BD0EE000DF712 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C1246BD0EE000DF712 /* ViewController+MASAdditions.m */; };
+		B98AA4DA246BD0EE000DF712 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C5246BD0EE000DF712 /* MASCompositeConstraint.m */; };
+		B98AA4DB246BD0EE000DF712 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C6246BD0EE000DF712 /* MASConstraintMaker.m */; };
+		B98AA4DC246BD0EE000DF712 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C7246BD0EE000DF712 /* MASLayoutConstraint.m */; };
+		B98AA4DD246BD0EE000DF712 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C8246BD0EE000DF712 /* NSArray+MASAdditions.m */; };
+		B98AA4DE246BD0EE000DF712 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4C9246BD0EE000DF712 /* View+MASAdditions.m */; };
+		B98AA4DF246BD0EE000DF712 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4CC246BD0EE000DF712 /* MASConstraint.m */; };
+		B98AA4E0246BD0EE000DF712 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4CE246BD0EE000DF712 /* MASViewConstraint.m */; };
+		B98AA4E1246BD0EE000DF712 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4CF246BD0EE000DF712 /* MASViewAttribute.m */; };
+		B98AA4E2246BD0EE000DF712 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4D1246BD0EE000DF712 /* YCPresentationController.m */; };
+		B98AA4E3246BD0EE000DF712 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4D6246BD0EE000DF712 /* YCPopoverAnimator.m */; };
+		B98AA4E4246BD0EE000DF712 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4D7246BD0EE000DF712 /* UIViewController+YCPopover.m */; };
+		B98AA4E7246BD4E8000DF712 /* SEGOEPR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4E5246BD4E8000DF712 /* SEGOEPR.TTF */; };
+		B98AA4E8246BD4E8000DF712 /* SEGOEPRB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4E6246BD4E8000DF712 /* SEGOEPRB.TTF */; };
+		B98AA4EC246BD5C4000DF712 /* SmartDetective_right_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4E9246BD5C4000DF712 /* SmartDetective_right_music.mp3 */; };
+		B98AA4ED246BD5C4000DF712 /* SmartDetective_wrong_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4EA246BD5C4000DF712 /* SmartDetective_wrong_music.mp3 */; };
+		B98AA4EE246BD5C4000DF712 /* SmartDetective_bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4EB246BD5C4000DF712 /* SmartDetective_bg_music.mp3 */; };
+		B98AA4F2246BD71C000DF712 /* SmartDetective_GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4F0246BD71C000DF712 /* SmartDetective_GameOverViewController.m */; };
+		B98AA4F3246BD71C000DF712 /* SmartDetective_GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4F1246BD71C000DF712 /* SmartDetective_GameOverViewController.xib */; };
+		B98AA4F7246BD756000DF712 /* SmartDetective_RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4F5246BD756000DF712 /* SmartDetective_RecordViewController.m */; };
+		B98AA4F8246BD756000DF712 /* SmartDetective_RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4F6246BD756000DF712 /* SmartDetective_RecordViewController.xib */; };
+		B98AA4FC246BD77C000DF712 /* SmartDetective_IntroductionPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4FA246BD77C000DF712 /* SmartDetective_IntroductionPageVC.m */; };
+		B98AA4FD246BD77C000DF712 /* SmartDetective_IntroductionPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98AA4FB246BD77C000DF712 /* SmartDetective_IntroductionPageVC.xib */; };
+		B98AA501246BE3F8000DF712 /* SmartDetective_ReadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA4FF246BE3F8000DF712 /* SmartDetective_ReadyViewController.m */; };
+		B98AA502246BE3F8000DF712 /* SmartDetective_ReadyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98AA500246BE3F8000DF712 /* SmartDetective_ReadyViewController.xib */; };
+		B98AA506246BE429000DF712 /* SmartDetective_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA504246BE429000DF712 /* SmartDetective_GameViewController.m */; };
+		B98AA507246BE429000DF712 /* SmartDetective_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98AA505246BE429000DF712 /* SmartDetective_GameViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B90C3206246D524B00CD0C14 /* SmartDetective_ProblemItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_ProblemItem.h; sourceTree = "<group>"; };
+		B90C3207246D524B00CD0C14 /* SmartDetective_ProblemItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_ProblemItem.m; sourceTree = "<group>"; };
+		B90C3209246D525A00CD0C14 /* SmartDetective_ProblemItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_ProblemItem.xib; sourceTree = "<group>"; };
+		B95ED1B92478F5CA0039F301 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		B95ED1BA2478F5CA0039F301 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		B95ED1BB2478F5CA0039F301 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		B95ED1BC2478F5CA0039F301 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		B95ED1BD2478F5CA0039F301 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		B95ED1BE2478F5CA0039F301 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		B95ED1BF2478F5CA0039F301 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		B95ED1C02478F5CA0039F301 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		B95ED1C12478F5CA0039F301 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		B95ED1C22478F5CA0039F301 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		B95ED1C32478F5CA0039F301 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		B95ED1C42478F5CA0039F301 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		B95ED1C52478F5CA0039F301 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		B95ED1C62478F5CA0039F301 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		B95ED1C72478F5CA0039F301 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		B95ED1C82478F5CA0039F301 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B95ED1C92478F5CA0039F301 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		B95ED1CA2478F5CA0039F301 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		B95ED1CB2478F5CA0039F301 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		B95ED1CC2478F5CA0039F301 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		B95ED1CD2478F5CA0039F301 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		B95ED1CF2478F5CA0039F301 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B95ED1D02478F5CA0039F301 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B95ED1D22478F5CA0039F301 /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B95ED1D32478F5CA0039F301 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B95ED1D42478F5CA0039F301 /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B95ED1E22478F9230039F301 /* SDPasterSave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPasterSave.h; sourceTree = "<group>"; };
+		B95ED1E32478F9230039F301 /* SDPasterSave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPasterSave.m; sourceTree = "<group>"; };
+		B95ED1E52478F9A80039F301 /* YCPPasterViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCPPasterViewData.h; sourceTree = "<group>"; };
+		B95ED1E62478F9A80039F301 /* YCPPasterViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCPPasterViewData.m; sourceTree = "<group>"; };
+		B95ED1E824790D7D0039F301 /* SmartDetective_SaveScoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_SaveScoreData.h; sourceTree = "<group>"; };
+		B95ED1E924790D7D0039F301 /* SmartDetective_SaveScoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_SaveScoreData.m; sourceTree = "<group>"; };
+		B95ED1EC247917760039F301 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B95ED1EE2479177B0039F301 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B95ED1F0247917820039F301 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B95ED1F2247917880039F301 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B95ED1F42479178E0039F301 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B95ED1F6247917940039F301 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B95ED1F82479179B0039F301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B95ED1FA247917A00039F301 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B95ED1FC247917A90039F301 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B95ED1FE247917B50039F301 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B95ED200247917BC0039F301 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B95ED202247917C30039F301 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B95ED20424791CEE0039F301 /* Smart Little Detective.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Little Detective.entitlements"; sourceTree = "<group>"; };
+		B9897F4A246BB06600C19FE4 /* Smart Little Detective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Little Detective.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9897F4D246BB06600C19FE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9897F4E246BB06600C19FE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9897F50246BB06600C19FE4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9897F51246BB06600C19FE4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9897F53246BB06600C19FE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9897F54246BB06600C19FE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9897F57246BB06600C19FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9897F59246BB06B00C19FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9897F5C246BB06B00C19FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9897F5E246BB06B00C19FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9897F5F246BB06B00C19FE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9897F6D246BCE9E00C19FE4 /* SmartDetective_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_navigation.h; sourceTree = "<group>"; };
+		B9897F6E246BCE9E00C19FE4 /* SmartDetective_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_navigation.m; sourceTree = "<group>"; };
+		B9897F70246BCED000C19FE4 /* SmartDetective_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9897F71246BCF9200C19FE4 /* SmartDetective_HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_HomeViewController.h; sourceTree = "<group>"; };
+		B9897F72246BCF9200C19FE4 /* SmartDetective_HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_HomeViewController.m; sourceTree = "<group>"; };
+		B9897F73246BCF9200C19FE4 /* SmartDetective_HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_HomeViewController.xib; sourceTree = "<group>"; };
+		B9897F76246BD00300C19FE4 /* NSObject+SmartDetective_Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SmartDetective_Helper.h"; sourceTree = "<group>"; };
+		B9897F77246BD00300C19FE4 /* NSObject+SmartDetective_Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SmartDetective_Helper.m"; sourceTree = "<group>"; };
+		B98AA4B7246BD0EE000DF712 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B98AA4B8246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B98AA4B9246BD0EE000DF712 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B98AA4BA246BD0EE000DF712 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B98AA4BB246BD0EE000DF712 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B98AA4BC246BD0EE000DF712 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B98AA4BD246BD0EE000DF712 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B98AA4BE246BD0EE000DF712 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B98AA4BF246BD0EE000DF712 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B98AA4C0246BD0EE000DF712 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B98AA4C1246BD0EE000DF712 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B98AA4C2246BD0EE000DF712 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B98AA4C3246BD0EE000DF712 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B98AA4C4246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B98AA4C5246BD0EE000DF712 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B98AA4C6246BD0EE000DF712 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B98AA4C7246BD0EE000DF712 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B98AA4C8246BD0EE000DF712 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B98AA4C9246BD0EE000DF712 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B98AA4CA246BD0EE000DF712 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B98AA4CB246BD0EE000DF712 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B98AA4CC246BD0EE000DF712 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B98AA4CD246BD0EE000DF712 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B98AA4CE246BD0EE000DF712 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B98AA4CF246BD0EE000DF712 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B98AA4D1246BD0EE000DF712 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B98AA4D2246BD0EE000DF712 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B98AA4D3246BD0EE000DF712 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B98AA4D4246BD0EE000DF712 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B98AA4D5246BD0EE000DF712 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B98AA4D6246BD0EE000DF712 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B98AA4D7246BD0EE000DF712 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B98AA4E5246BD4E8000DF712 /* SEGOEPR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEPR.TTF; sourceTree = "<group>"; };
+		B98AA4E6246BD4E8000DF712 /* SEGOEPRB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEPRB.TTF; sourceTree = "<group>"; };
+		B98AA4E9246BD5C4000DF712 /* SmartDetective_right_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SmartDetective_right_music.mp3; sourceTree = "<group>"; };
+		B98AA4EA246BD5C4000DF712 /* SmartDetective_wrong_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SmartDetective_wrong_music.mp3; sourceTree = "<group>"; };
+		B98AA4EB246BD5C4000DF712 /* SmartDetective_bg_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SmartDetective_bg_music.mp3; sourceTree = "<group>"; };
+		B98AA4EF246BD71C000DF712 /* SmartDetective_GameOverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_GameOverViewController.h; sourceTree = "<group>"; };
+		B98AA4F0246BD71C000DF712 /* SmartDetective_GameOverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_GameOverViewController.m; sourceTree = "<group>"; };
+		B98AA4F1246BD71C000DF712 /* SmartDetective_GameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_GameOverViewController.xib; sourceTree = "<group>"; };
+		B98AA4F4246BD756000DF712 /* SmartDetective_RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_RecordViewController.h; sourceTree = "<group>"; };
+		B98AA4F5246BD756000DF712 /* SmartDetective_RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_RecordViewController.m; sourceTree = "<group>"; };
+		B98AA4F6246BD756000DF712 /* SmartDetective_RecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_RecordViewController.xib; sourceTree = "<group>"; };
+		B98AA4F9246BD77C000DF712 /* SmartDetective_IntroductionPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_IntroductionPageVC.h; sourceTree = "<group>"; };
+		B98AA4FA246BD77C000DF712 /* SmartDetective_IntroductionPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_IntroductionPageVC.m; sourceTree = "<group>"; };
+		B98AA4FB246BD77C000DF712 /* SmartDetective_IntroductionPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_IntroductionPageVC.xib; sourceTree = "<group>"; };
+		B98AA4FE246BE3F8000DF712 /* SmartDetective_ReadyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_ReadyViewController.h; sourceTree = "<group>"; };
+		B98AA4FF246BE3F8000DF712 /* SmartDetective_ReadyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_ReadyViewController.m; sourceTree = "<group>"; };
+		B98AA500246BE3F8000DF712 /* SmartDetective_ReadyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_ReadyViewController.xib; sourceTree = "<group>"; };
+		B98AA503246BE429000DF712 /* SmartDetective_GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDetective_GameViewController.h; sourceTree = "<group>"; };
+		B98AA504246BE429000DF712 /* SmartDetective_GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDetective_GameViewController.m; sourceTree = "<group>"; };
+		B98AA505246BE429000DF712 /* SmartDetective_GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDetective_GameViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9897F47246BB06600C19FE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95ED203247917C30039F301 /* WebKit.framework in Frameworks */,
+				B95ED201247917BC0039F301 /* libresolv.tbd in Frameworks */,
+				B95ED1FF247917B50039F301 /* UserNotifications.framework in Frameworks */,
+				B95ED1FD247917A90039F301 /* libz.tbd in Frameworks */,
+				B95ED1FB247917A10039F301 /* Security.framework in Frameworks */,
+				B95ED1F92479179B0039F301 /* UIKit.framework in Frameworks */,
+				B95ED1F7247917950039F301 /* Foundation.framework in Frameworks */,
+				B95ED1F52479178E0039F301 /* CoreGraphics.framework in Frameworks */,
+				B95ED1F3247917880039F301 /* SystemConfiguration.framework in Frameworks */,
+				B95ED1F1247917820039F301 /* CoreTelephony.framework in Frameworks */,
+				B95ED1EF2479177C0039F301 /* CoreFoundation.framework in Frameworks */,
+				B95ED1ED247917760039F301 /* CFNetwork.framework in Frameworks */,
+				B95ED1E12478F5CA0039F301 /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				B95ED1E02478F5CA0039F301 /* jpush-ios-3.3.2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B95ED1AE2478F2810039F301 /* SmartDetective_apns */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SmartDetective_apns;
+			sourceTree = "<group>";
+		};
+		B95ED1B82478F5CA0039F301 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED1B92478F5CA0039F301 /* MJPropertyKey.h */,
+				B95ED1BA2478F5CA0039F301 /* NSObject+MJClass.h */,
+				B95ED1BB2478F5CA0039F301 /* NSString+MJExtension.h */,
+				B95ED1BC2478F5CA0039F301 /* MJPropertyType.m */,
+				B95ED1BD2478F5CA0039F301 /* NSObject+MJProperty.h */,
+				B95ED1BE2478F5CA0039F301 /* MJExtensionConst.h */,
+				B95ED1BF2478F5CA0039F301 /* NSObject+MJKeyValue.m */,
+				B95ED1C02478F5CA0039F301 /* MJProperty.m */,
+				B95ED1C12478F5CA0039F301 /* MJFoundation.h */,
+				B95ED1C22478F5CA0039F301 /* NSObject+MJCoding.m */,
+				B95ED1C32478F5CA0039F301 /* MJExtension.h */,
+				B95ED1C42478F5CA0039F301 /* MJExtensionConst.m */,
+				B95ED1C52478F5CA0039F301 /* NSObject+MJProperty.m */,
+				B95ED1C62478F5CA0039F301 /* MJPropertyType.h */,
+				B95ED1C72478F5CA0039F301 /* NSObject+MJClass.m */,
+				B95ED1C82478F5CA0039F301 /* NSString+MJExtension.m */,
+				B95ED1C92478F5CA0039F301 /* MJPropertyKey.m */,
+				B95ED1CA2478F5CA0039F301 /* MJProperty.h */,
+				B95ED1CB2478F5CA0039F301 /* NSObject+MJKeyValue.h */,
+				B95ED1CC2478F5CA0039F301 /* NSObject+MJCoding.h */,
+				B95ED1CD2478F5CA0039F301 /* MJFoundation.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		B95ED1CE2478F5CA0039F301 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED1CF2478F5CA0039F301 /* Reachability.m */,
+				B95ED1D02478F5CA0039F301 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B95ED1D12478F5CA0039F301 /* APNS */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED1D22478F5CA0039F301 /* jpush-ios-3.3.2.a */,
+				B95ED1D32478F5CA0039F301 /* JPUSHService.h */,
+				B95ED1D42478F5CA0039F301 /* jcore-noidfa-ios-2.2.5.a */,
+			);
+			path = APNS;
+			sourceTree = "<group>";
+		};
+		B95ED1EB247917750039F301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED202247917C30039F301 /* WebKit.framework */,
+				B95ED200247917BC0039F301 /* libresolv.tbd */,
+				B95ED1FE247917B50039F301 /* UserNotifications.framework */,
+				B95ED1FC247917A90039F301 /* libz.tbd */,
+				B95ED1FA247917A00039F301 /* Security.framework */,
+				B95ED1F82479179B0039F301 /* UIKit.framework */,
+				B95ED1F6247917940039F301 /* Foundation.framework */,
+				B95ED1F42479178E0039F301 /* CoreGraphics.framework */,
+				B95ED1F2247917880039F301 /* SystemConfiguration.framework */,
+				B95ED1F0247917820039F301 /* CoreTelephony.framework */,
+				B95ED1EE2479177B0039F301 /* CoreFoundation.framework */,
+				B95ED1EC247917760039F301 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9897F41246BB06600C19FE4 = {
+			isa = PBXGroup;
+			children = (
+				B9897F4C246BB06600C19FE4 /* SmartDetective */,
+				B9897F4B246BB06600C19FE4 /* Products */,
+				B95ED1EB247917750039F301 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9897F4B246BB06600C19FE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9897F4A246BB06600C19FE4 /* Smart Little Detective.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9897F4C246BB06600C19FE4 /* SmartDetective */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED20424791CEE0039F301 /* Smart Little Detective.entitlements */,
+				B95ED1AE2478F2810039F301 /* SmartDetective_apns */,
+				B9897F6C246BB12C00C19FE4 /* SmartDetective_Data */,
+				B9897F6B246BB0D300C19FE4 /* SmartDetective_BaseVC */,
+				B9897F6A246BB0CF00C19FE4 /* SmartDetective_PageVC */,
+				B9897F69246BB0CC00C19FE4 /* SmartDetective_Font */,
+				B9897F68246BB0C800C19FE4 /* SmartDetective_Musics */,
+				B9897F67246BB0C400C19FE4 /* SmartDetective_Third */,
+				B9897F66246BB0C100C19FE4 /* SmartDetective_View */,
+				B9897F4D246BB06600C19FE4 /* AppDelegate.h */,
+				B9897F4E246BB06600C19FE4 /* AppDelegate.m */,
+				B9897F50246BB06600C19FE4 /* SceneDelegate.h */,
+				B9897F51246BB06600C19FE4 /* SceneDelegate.m */,
+				B9897F53246BB06600C19FE4 /* ViewController.h */,
+				B9897F54246BB06600C19FE4 /* ViewController.m */,
+				B9897F56246BB06600C19FE4 /* Main.storyboard */,
+				B9897F59246BB06B00C19FE4 /* Assets.xcassets */,
+				B9897F5B246BB06B00C19FE4 /* LaunchScreen.storyboard */,
+				B9897F5E246BB06B00C19FE4 /* Info.plist */,
+				B9897F70246BCED000C19FE4 /* SmartDetective_PrefixHeader.pch */,
+				B9897F5F246BB06B00C19FE4 /* main.m */,
+			);
+			path = SmartDetective;
+			sourceTree = "<group>";
+		};
+		B9897F66246BB0C100C19FE4 /* SmartDetective_View */ = {
+			isa = PBXGroup;
+			children = (
+				B90C3206246D524B00CD0C14 /* SmartDetective_ProblemItem.h */,
+				B90C3207246D524B00CD0C14 /* SmartDetective_ProblemItem.m */,
+				B90C3209246D525A00CD0C14 /* SmartDetective_ProblemItem.xib */,
+			);
+			path = SmartDetective_View;
+			sourceTree = "<group>";
+		};
+		B9897F67246BB0C400C19FE4 /* SmartDetective_Third */ = {
+			isa = PBXGroup;
+			children = (
+				B95ED1D12478F5CA0039F301 /* APNS */,
+				B95ED1B82478F5CA0039F301 /* MJExtension */,
+				B95ED1CE2478F5CA0039F301 /* Reachability */,
+				B98AA4D0246BD0EE000DF712 /* Alert */,
+				B98AA4B6246BD0EE000DF712 /* Masonry */,
+				B9897F76246BD00300C19FE4 /* NSObject+SmartDetective_Helper.h */,
+				B9897F77246BD00300C19FE4 /* NSObject+SmartDetective_Helper.m */,
+				B95ED1E824790D7D0039F301 /* SmartDetective_SaveScoreData.h */,
+				B95ED1E924790D7D0039F301 /* SmartDetective_SaveScoreData.m */,
+			);
+			path = SmartDetective_Third;
+			sourceTree = "<group>";
+		};
+		B9897F68246BB0C800C19FE4 /* SmartDetective_Musics */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA4EB246BD5C4000DF712 /* SmartDetective_bg_music.mp3 */,
+				B98AA4E9246BD5C4000DF712 /* SmartDetective_right_music.mp3 */,
+				B98AA4EA246BD5C4000DF712 /* SmartDetective_wrong_music.mp3 */,
+			);
+			path = SmartDetective_Musics;
+			sourceTree = "<group>";
+		};
+		B9897F69246BB0CC00C19FE4 /* SmartDetective_Font */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA4E5246BD4E8000DF712 /* SEGOEPR.TTF */,
+				B98AA4E6246BD4E8000DF712 /* SEGOEPRB.TTF */,
+			);
+			path = SmartDetective_Font;
+			sourceTree = "<group>";
+		};
+		B9897F6A246BB0CF00C19FE4 /* SmartDetective_PageVC */ = {
+			isa = PBXGroup;
+			children = (
+				B9897F71246BCF9200C19FE4 /* SmartDetective_HomeViewController.h */,
+				B9897F72246BCF9200C19FE4 /* SmartDetective_HomeViewController.m */,
+				B9897F73246BCF9200C19FE4 /* SmartDetective_HomeViewController.xib */,
+				B98AA4EF246BD71C000DF712 /* SmartDetective_GameOverViewController.h */,
+				B98AA4F0246BD71C000DF712 /* SmartDetective_GameOverViewController.m */,
+				B98AA4F1246BD71C000DF712 /* SmartDetective_GameOverViewController.xib */,
+				B98AA4F4246BD756000DF712 /* SmartDetective_RecordViewController.h */,
+				B98AA4F5246BD756000DF712 /* SmartDetective_RecordViewController.m */,
+				B98AA4F6246BD756000DF712 /* SmartDetective_RecordViewController.xib */,
+				B98AA4F9246BD77C000DF712 /* SmartDetective_IntroductionPageVC.h */,
+				B98AA4FA246BD77C000DF712 /* SmartDetective_IntroductionPageVC.m */,
+				B98AA4FB246BD77C000DF712 /* SmartDetective_IntroductionPageVC.xib */,
+				B98AA4FE246BE3F8000DF712 /* SmartDetective_ReadyViewController.h */,
+				B98AA4FF246BE3F8000DF712 /* SmartDetective_ReadyViewController.m */,
+				B98AA500246BE3F8000DF712 /* SmartDetective_ReadyViewController.xib */,
+				B98AA503246BE429000DF712 /* SmartDetective_GameViewController.h */,
+				B98AA504246BE429000DF712 /* SmartDetective_GameViewController.m */,
+				B98AA505246BE429000DF712 /* SmartDetective_GameViewController.xib */,
+			);
+			path = SmartDetective_PageVC;
+			sourceTree = "<group>";
+		};
+		B9897F6B246BB0D300C19FE4 /* SmartDetective_BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				B9897F6D246BCE9E00C19FE4 /* SmartDetective_navigation.h */,
+				B9897F6E246BCE9E00C19FE4 /* SmartDetective_navigation.m */,
+			);
+			path = SmartDetective_BaseVC;
+			sourceTree = "<group>";
+		};
+		B9897F6C246BB12C00C19FE4 /* SmartDetective_Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SmartDetective_Data;
+			sourceTree = "<group>";
+		};
+		B98AA4B6246BD0EE000DF712 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA4B7246BD0EE000DF712 /* MASCompositeConstraint.h */,
+				B98AA4B8246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B98AA4B9246BD0EE000DF712 /* MASConstraint+Private.h */,
+				B98AA4BA246BD0EE000DF712 /* MASLayoutConstraint.h */,
+				B98AA4BB246BD0EE000DF712 /* NSArray+MASShorthandAdditions.h */,
+				B98AA4BC246BD0EE000DF712 /* MASConstraintMaker.h */,
+				B98AA4BD246BD0EE000DF712 /* View+MASAdditions.h */,
+				B98AA4BE246BD0EE000DF712 /* NSArray+MASAdditions.h */,
+				B98AA4BF246BD0EE000DF712 /* MASUtilities.h */,
+				B98AA4C0246BD0EE000DF712 /* MASViewAttribute.h */,
+				B98AA4C1246BD0EE000DF712 /* ViewController+MASAdditions.m */,
+				B98AA4C2246BD0EE000DF712 /* MASViewConstraint.h */,
+				B98AA4C3246BD0EE000DF712 /* MASConstraint.h */,
+				B98AA4C4246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B98AA4C5246BD0EE000DF712 /* MASCompositeConstraint.m */,
+				B98AA4C6246BD0EE000DF712 /* MASConstraintMaker.m */,
+				B98AA4C7246BD0EE000DF712 /* MASLayoutConstraint.m */,
+				B98AA4C8246BD0EE000DF712 /* NSArray+MASAdditions.m */,
+				B98AA4C9246BD0EE000DF712 /* View+MASAdditions.m */,
+				B98AA4CA246BD0EE000DF712 /* View+MASShorthandAdditions.h */,
+				B98AA4CB246BD0EE000DF712 /* Masonry.h */,
+				B98AA4CC246BD0EE000DF712 /* MASConstraint.m */,
+				B98AA4CD246BD0EE000DF712 /* ViewController+MASAdditions.h */,
+				B98AA4CE246BD0EE000DF712 /* MASViewConstraint.m */,
+				B98AA4CF246BD0EE000DF712 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B98AA4D0246BD0EE000DF712 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA4D1246BD0EE000DF712 /* YCPresentationController.m */,
+				B98AA4D2246BD0EE000DF712 /* YCPopoverAnimator.h */,
+				B98AA4D3246BD0EE000DF712 /* UIViewController+YCPopover.h */,
+				B98AA4D4246BD0EE000DF712 /* YCPresentationController.h */,
+				B98AA4D5246BD0EE000DF712 /* YCPopoverMacro.h */,
+				B98AA4D6246BD0EE000DF712 /* YCPopoverAnimator.m */,
+				B98AA4D7246BD0EE000DF712 /* UIViewController+YCPopover.m */,
+				B95ED1E22478F9230039F301 /* SDPasterSave.h */,
+				B95ED1E32478F9230039F301 /* SDPasterSave.m */,
+				B95ED1E52478F9A80039F301 /* YCPPasterViewData.h */,
+				B95ED1E62478F9A80039F301 /* YCPPasterViewData.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9897F49246BB06600C19FE4 /* SmartDetective */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9897F63246BB06B00C19FE4 /* Build configuration list for PBXNativeTarget "SmartDetective" */;
+			buildPhases = (
+				B9897F46246BB06600C19FE4 /* Sources */,
+				B9897F47246BB06600C19FE4 /* Frameworks */,
+				B9897F48246BB06600C19FE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartDetective;
+			productName = SmartDetective;
+			productReference = B9897F4A246BB06600C19FE4 /* Smart Little Detective.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9897F42246BB06600C19FE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SmartDetective_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = jingjiang;
+				TargetAttributes = {
+					B9897F49246BB06600C19FE4 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9897F45246BB06600C19FE4 /* Build configuration list for PBXProject "SmartDetective" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9897F41246BB06600C19FE4;
+			productRefGroup = B9897F4B246BB06600C19FE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9897F49246BB06600C19FE4 /* SmartDetective */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9897F48246BB06600C19FE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98AA4EC246BD5C4000DF712 /* SmartDetective_right_music.mp3 in Resources */,
+				B9897F5D246BB06B00C19FE4 /* LaunchScreen.storyboard in Resources */,
+				B98AA507246BE429000DF712 /* SmartDetective_GameViewController.xib in Resources */,
+				B98AA502246BE3F8000DF712 /* SmartDetective_ReadyViewController.xib in Resources */,
+				B98AA4F3246BD71C000DF712 /* SmartDetective_GameOverViewController.xib in Resources */,
+				B9897F75246BCF9200C19FE4 /* SmartDetective_HomeViewController.xib in Resources */,
+				B98AA4EE246BD5C4000DF712 /* SmartDetective_bg_music.mp3 in Resources */,
+				B9897F5A246BB06B00C19FE4 /* Assets.xcassets in Resources */,
+				B98AA4ED246BD5C4000DF712 /* SmartDetective_wrong_music.mp3 in Resources */,
+				B90C320A246D525A00CD0C14 /* SmartDetective_ProblemItem.xib in Resources */,
+				B98AA4E8246BD4E8000DF712 /* SEGOEPRB.TTF in Resources */,
+				B9897F58246BB06600C19FE4 /* Main.storyboard in Resources */,
+				B98AA4FD246BD77C000DF712 /* SmartDetective_IntroductionPageVC.xib in Resources */,
+				B98AA4F8246BD756000DF712 /* SmartDetective_RecordViewController.xib in Resources */,
+				B98AA4E7246BD4E8000DF712 /* SEGOEPR.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9897F46246BB06600C19FE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9897F55246BB06600C19FE4 /* ViewController.m in Sources */,
+				B9897F4F246BB06600C19FE4 /* AppDelegate.m in Sources */,
+				B95ED1DA2478F5CA0039F301 /* NSObject+MJProperty.m in Sources */,
+				B95ED1D92478F5CA0039F301 /* MJExtensionConst.m in Sources */,
+				B95ED1E72478F9A80039F301 /* YCPPasterViewData.m in Sources */,
+				B98AA4DD246BD0EE000DF712 /* NSArray+MASAdditions.m in Sources */,
+				B95ED1D72478F5CA0039F301 /* MJProperty.m in Sources */,
+				B95ED1DC2478F5CA0039F301 /* NSString+MJExtension.m in Sources */,
+				B9897F60246BB06B00C19FE4 /* main.m in Sources */,
+				B98AA4E1246BD0EE000DF712 /* MASViewAttribute.m in Sources */,
+				B98AA506246BE429000DF712 /* SmartDetective_GameViewController.m in Sources */,
+				B95ED1EA24790D7D0039F301 /* SmartDetective_SaveScoreData.m in Sources */,
+				B95ED1DB2478F5CA0039F301 /* NSObject+MJClass.m in Sources */,
+				B9897F78246BD00300C19FE4 /* NSObject+SmartDetective_Helper.m in Sources */,
+				B98AA501246BE3F8000DF712 /* SmartDetective_ReadyViewController.m in Sources */,
+				B98AA4DC246BD0EE000DF712 /* MASLayoutConstraint.m in Sources */,
+				B95ED1D62478F5CA0039F301 /* NSObject+MJKeyValue.m in Sources */,
+				B98AA4DE246BD0EE000DF712 /* View+MASAdditions.m in Sources */,
+				B90C3208246D524B00CD0C14 /* SmartDetective_ProblemItem.m in Sources */,
+				B98AA4DA246BD0EE000DF712 /* MASCompositeConstraint.m in Sources */,
+				B98AA4F2246BD71C000DF712 /* SmartDetective_GameOverViewController.m in Sources */,
+				B95ED1D82478F5CA0039F301 /* NSObject+MJCoding.m in Sources */,
+				B95ED1D52478F5CA0039F301 /* MJPropertyType.m in Sources */,
+				B9897F52246BB06600C19FE4 /* SceneDelegate.m in Sources */,
+				B98AA4F7246BD756000DF712 /* SmartDetective_RecordViewController.m in Sources */,
+				B98AA4D9246BD0EE000DF712 /* ViewController+MASAdditions.m in Sources */,
+				B98AA4E2246BD0EE000DF712 /* YCPresentationController.m in Sources */,
+				B95ED1DD2478F5CA0039F301 /* MJPropertyKey.m in Sources */,
+				B98AA4FC246BD77C000DF712 /* SmartDetective_IntroductionPageVC.m in Sources */,
+				B9897F6F246BCE9E00C19FE4 /* SmartDetective_navigation.m in Sources */,
+				B9897F74246BCF9200C19FE4 /* SmartDetective_HomeViewController.m in Sources */,
+				B98AA4E4246BD0EE000DF712 /* UIViewController+YCPopover.m in Sources */,
+				B95ED1DE2478F5CA0039F301 /* MJFoundation.m in Sources */,
+				B95ED1DF2478F5CA0039F301 /* Reachability.m in Sources */,
+				B98AA4DB246BD0EE000DF712 /* MASConstraintMaker.m in Sources */,
+				B98AA4D8246BD0EE000DF712 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B98AA4DF246BD0EE000DF712 /* MASConstraint.m in Sources */,
+				B98AA4E3246BD0EE000DF712 /* YCPopoverAnimator.m in Sources */,
+				B98AA4E0246BD0EE000DF712 /* MASViewConstraint.m in Sources */,
+				B95ED1E42478F9230039F301 /* SDPasterSave.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9897F56246BB06600C19FE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9897F57246BB06600C19FE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9897F5B246BB06B00C19FE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9897F5C246BB06B00C19FE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9897F61246BB06B00C19FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartDetective/SmartDetective_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9897F62246BB06B00C19FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SmartDetective/SmartDetective_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9897F64246BB06B00C19FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SmartDetective/Smart Little Detective.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D63WL6N85;
+				INFOPLIST_FILE = SmartDetective/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartDetective/SmartDetective_Third/APNS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingjiang.smartdetective;
+				PRODUCT_NAME = "Smart Little Detective";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9897F65246BB06B00C19FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SmartDetective/Smart Little Detective.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D63WL6N85;
+				INFOPLIST_FILE = SmartDetective/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartDetective/SmartDetective_Third/APNS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jingjiang.smartdetective;
+				PRODUCT_NAME = "Smart Little Detective";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9897F45246BB06600C19FE4 /* Build configuration list for PBXProject "SmartDetective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9897F61246BB06B00C19FE4 /* Debug */,
+				B9897F62246BB06B00C19FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9897F63246BB06B00C19FE4 /* Build configuration list for PBXNativeTarget "SmartDetective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9897F64246BB06B00C19FE4 /* Debug */,
+				B9897F65246BB06B00C19FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9897F42246BB06600C19FE4 /* Project object */;
+}

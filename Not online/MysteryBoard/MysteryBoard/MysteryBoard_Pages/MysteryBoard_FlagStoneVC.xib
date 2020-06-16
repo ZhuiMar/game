@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEPRB.TTF">
+            <string>SegoePrint-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MysteryBoard_FlagStoneVC">
+            <connections>
+                <outlet property="animalBtn" destination="Ocg-25-CEZ" id="US1-fz-rHx"/>
+                <outlet property="colorBtn" destination="Djh-tZ-lfv" id="cSb-cQ-UfF"/>
+                <outlet property="fruitBtn" destination="LTX-za-zGS" id="qRi-Rb-OaO"/>
+                <outlet property="satrCount" destination="oEF-P7-CLJ" id="4vu-vw-K0V"/>
+                <outlet property="starbg" destination="QYL-fM-7mR" id="FS7-ok-Zir"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widtrh" destination="QU7-iu-MIN" id="ehE-NO-Cor"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-ne-Gsu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTX-za-zGS">
+                    <rect key="frame" x="99" y="299.5" width="177" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="3YV-bv-7C1"/>
+                        <constraint firstAttribute="height" constant="68" id="uMo-eR-BJB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="fruits"/>
+                    <connections>
+                        <action selector="fruitAction:" destination="-1" eventType="touchUpInside" id="WHL-ac-HJ4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djh-tZ-lfv">
+                    <rect key="frame" x="99" y="188.5" width="177" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="5ap-FO-IBZ"/>
+                        <constraint firstAttribute="height" constant="68" id="v1c-p6-zfP"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="colour"/>
+                    <connections>
+                        <action selector="colorAction:" destination="-1" eventType="touchUpInside" id="fbz-Ch-n4k"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYL-fM-7mR">
+                    <rect key="frame" x="265" y="23" width="100" height="38"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="GrL-bp-FPS">
+                            <rect key="frame" x="10" y="7.5" width="23" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="2iC-tl-mKj"/>
+                                <constraint firstAttribute="width" constant="23" id="IVW-Xp-e11"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEF-P7-CLJ">
+                            <rect key="frame" x="36" y="0.0" width="54" height="38"/>
+                            <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="24"/>
+                            <color key="textColor" red="0.98039215686274506" green="0.29803921568627451" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="oEF-P7-CLJ" firstAttribute="centerY" secondItem="GrL-bp-FPS" secondAttribute="centerY" id="4At-Bu-ZLn"/>
+                        <constraint firstAttribute="trailing" secondItem="oEF-P7-CLJ" secondAttribute="trailing" constant="10" id="4BX-1s-3Dy"/>
+                        <constraint firstAttribute="height" constant="38" id="L4j-ZO-N0V"/>
+                        <constraint firstAttribute="width" constant="100" id="QU7-iu-MIN"/>
+                        <constraint firstItem="GrL-bp-FPS" firstAttribute="centerY" secondItem="QYL-fM-7mR" secondAttribute="centerY" id="VaQ-Yc-O3m"/>
+                        <constraint firstItem="oEF-P7-CLJ" firstAttribute="leading" secondItem="GrL-bp-FPS" secondAttribute="trailing" constant="3" id="bKx-Y3-I8g"/>
+                        <constraint firstItem="GrL-bp-FPS" firstAttribute="leading" secondItem="QYL-fM-7mR" secondAttribute="leading" constant="10" id="bsR-mB-6IS"/>
+                        <constraint firstItem="oEF-P7-CLJ" firstAttribute="top" secondItem="QYL-fM-7mR" secondAttribute="top" id="iaK-nP-o0s"/>
+                        <constraint firstAttribute="bottom" secondItem="oEF-P7-CLJ" secondAttribute="bottom" id="nMS-he-Wyi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-25-CEZ">
+                    <rect key="frame" x="99" y="410.5" width="177" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="er4-hq-qVR"/>
+                        <constraint firstAttribute="height" constant="68" id="zAp-df-pda"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="animal_1"/>
+                    <connections>
+                        <action selector="animalAction:" destination="-1" eventType="touchUpInside" id="Kgk-X2-5lp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Djh-tZ-lfv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6uv-2G-J4X"/>
+                <constraint firstItem="Ocg-25-CEZ" firstAttribute="top" secondItem="LTX-za-zGS" secondAttribute="bottom" constant="43" id="92y-FK-yVR"/>
+                <constraint firstItem="YFG-ne-Gsu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B2f-0v-7lY"/>
+                <constraint firstAttribute="bottom" secondItem="YFG-ne-Gsu" secondAttribute="bottom" id="Fla-RE-Jk3"/>
+                <constraint firstItem="QYL-fM-7mR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="L0D-G2-s05"/>
+                <constraint firstItem="YFG-ne-Gsu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mky-Bz-2r7"/>
+                <constraint firstItem="LTX-za-zGS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OCg-jv-m6e"/>
+                <constraint firstAttribute="trailing" secondItem="QYL-fM-7mR" secondAttribute="trailing" constant="10" id="PKU-CM-RMV"/>
+                <constraint firstItem="Ocg-25-CEZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e4j-rL-gyW"/>
+                <constraint firstItem="LTX-za-zGS" firstAttribute="top" secondItem="Djh-tZ-lfv" secondAttribute="bottom" constant="43" id="sqs-sT-3SV"/>
+                <constraint firstAttribute="trailing" secondItem="YFG-ne-Gsu" secondAttribute="trailing" id="tby-gh-6AT"/>
+                <constraint firstItem="LTX-za-zGS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uZt-yg-eWJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="152.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="animal_1" width="176.5" height="67.5"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="colour" width="176.5" height="67.5"/>
+        <image name="fruits" width="176.5" height="67.5"/>
+        <image name="star" width="45" height="43"/>
+    </resources>
+</document>

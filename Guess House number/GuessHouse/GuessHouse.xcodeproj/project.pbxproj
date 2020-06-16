@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040979C0246266E0002551F4 /* backMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040979BD246266E0002551F4 /* backMusic.mp3 */; };
+		040979C1246266E0002551F4 /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040979BE246266E0002551F4 /* error.mp3 */; };
+		040979C2246266E0002551F4 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 040979BF246266E0002551F4 /* right.mp3 */; };
+		04F9E82A2462A19C00761526 /* GHDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9E8292462A19C00761526 /* GHDescriptionView.swift */; };
+		04F9E82C2462A1BC00761526 /* GHDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9E82B2462A1BC00761526 /* GHDescriptionView.xib */; };
+		B9696683247E225300DE8758 /* ChaparralPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B969667E247E225300DE8758 /* ChaparralPro-LightIt.otf */; };
+		B9696684247E225300DE8758 /* ChaparralPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B969667F247E225300DE8758 /* ChaparralPro-Bold.otf */; };
+		B9696685247E225300DE8758 /* ChaparralPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9696680247E225300DE8758 /* ChaparralPro-Regular.otf */; };
+		B9696686247E225300DE8758 /* ChaparralPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9696681247E225300DE8758 /* ChaparralPro-BoldIt.otf */; };
+		B9696687247E225300DE8758 /* ChaparralPro-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9696682247E225300DE8758 /* ChaparralPro-Italic.otf */; };
+		DBEBB58144B18F7C5AAB0CB0 /* Pods_GuessHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F1CEE8089F69BB7C60D3A2 /* Pods_GuessHouse.framework */; };
+		E6677EF9245E38160038E591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677EF8245E38160038E591 /* AppDelegate.swift */; };
+		E6677F05245E38180038E591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6677F03245E38180038E591 /* LaunchScreen.storyboard */; };
+		E6677F28245E3C820038E591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6677F0C245E3C810038E591 /* Assets.xcassets */; };
+		E6677F2E245E3C820038E591 /* GHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F14245E3C810038E591 /* GHExtension.swift */; };
+		E6677F30245E3C820038E591 /* GHDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F19245E3C810038E591 /* GHDescriptionViewController.swift */; };
+		E6677F32245E3C820038E591 /* GHRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F1B245E3C810038E591 /* GHRankingViewController.swift */; };
+		E6677F33245E3C820038E591 /* GHGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F1C245E3C810038E591 /* GHGameViewController.swift */; };
+		E6677F34245E3C820038E591 /* GHRankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677F1D245E3C810038E591 /* GHRankingViewController.xib */; };
+		E6677F36245E3C820038E591 /* GHImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F1F245E3C810038E591 /* GHImageView.swift */; };
+		E6677F37245E3C820038E591 /* GHGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677F20245E3C810038E591 /* GHGameViewController.xib */; };
+		E6677F38245E3C820038E591 /* GHDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677F21245E3C810038E591 /* GHDescriptionViewController.xib */; };
+		E6677F39245E3C820038E591 /* GHIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677F24245E3C810038E591 /* GHIntroductionViewController.xib */; };
+		E6677F3A245E3C820038E591 /* GHIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F25245E3C810038E591 /* GHIntroductionViewController.swift */; };
+		E6677F3B245E3C820038E591 /* GHHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677F26245E3C810038E591 /* GHHomeViewController.xib */; };
+		E6677F3C245E3C820038E591 /* GHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F27245E3C810038E591 /* GHHomeViewController.swift */; };
+		E6677F3F245EB2C50038E591 /* GHGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677F3E245EB2C50038E591 /* GHGameModel.swift */; };
+		E6677FDA24600D420038E591 /* GHGameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677FD924600D420038E591 /* GHGameOver.swift */; };
+		E6677FDC24600D600038E591 /* GHGameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677FDB24600D600038E591 /* GHGameOver.xib */; };
+		E6677FE024616BE00038E591 /* GHRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6677FDF24616BE00038E591 /* GHRankingView.swift */; };
+		E6677FE424616C040038E591 /* GHRankingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6677FE324616C040038E591 /* GHRankingView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040979BD246266E0002551F4 /* backMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backMusic.mp3; sourceTree = "<group>"; };
+		040979BE246266E0002551F4 /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		040979BF246266E0002551F4 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		04F9E8292462A19C00761526 /* GHDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDescriptionView.swift; sourceTree = "<group>"; };
+		04F9E82B2462A1BC00761526 /* GHDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHDescriptionView.xib; sourceTree = "<group>"; };
+		31F1CEE8089F69BB7C60D3A2 /* Pods_GuessHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35D6DBD51566EF0C6F227DB1 /* Pods-GuessHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessHouse.release.xcconfig"; path = "Target Support Files/Pods-GuessHouse/Pods-GuessHouse.release.xcconfig"; sourceTree = "<group>"; };
+		B969667E247E225300DE8758 /* ChaparralPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-LightIt.otf"; sourceTree = "<group>"; };
+		B969667F247E225300DE8758 /* ChaparralPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Bold.otf"; sourceTree = "<group>"; };
+		B9696680247E225300DE8758 /* ChaparralPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Regular.otf"; sourceTree = "<group>"; };
+		B9696681247E225300DE8758 /* ChaparralPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-BoldIt.otf"; sourceTree = "<group>"; };
+		B9696682247E225300DE8758 /* ChaparralPro-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChaparralPro-Italic.otf"; sourceTree = "<group>"; };
+		E6677EF5245E38160038E591 /* Guess House number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess House number.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6677EF8245E38160038E591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6677F04245E38180038E591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6677F06245E38180038E591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6677F0C245E3C810038E591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6677F14245E3C810038E591 /* GHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHExtension.swift; sourceTree = "<group>"; };
+		E6677F19245E3C810038E591 /* GHDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHDescriptionViewController.swift; sourceTree = "<group>"; };
+		E6677F1B245E3C810038E591 /* GHRankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHRankingViewController.swift; sourceTree = "<group>"; };
+		E6677F1C245E3C810038E591 /* GHGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHGameViewController.swift; sourceTree = "<group>"; };
+		E6677F1D245E3C810038E591 /* GHRankingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRankingViewController.xib; sourceTree = "<group>"; };
+		E6677F1F245E3C810038E591 /* GHImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GHImageView.swift; path = ../ViewController/GHImageView.swift; sourceTree = "<group>"; };
+		E6677F20245E3C810038E591 /* GHGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHGameViewController.xib; sourceTree = "<group>"; };
+		E6677F21245E3C810038E591 /* GHDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHDescriptionViewController.xib; sourceTree = "<group>"; };
+		E6677F24245E3C810038E591 /* GHIntroductionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHIntroductionViewController.xib; sourceTree = "<group>"; };
+		E6677F25245E3C810038E591 /* GHIntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHIntroductionViewController.swift; sourceTree = "<group>"; };
+		E6677F26245E3C810038E591 /* GHHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHHomeViewController.xib; sourceTree = "<group>"; };
+		E6677F27245E3C810038E591 /* GHHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHHomeViewController.swift; sourceTree = "<group>"; };
+		E6677F3E245EB2C50038E591 /* GHGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHGameModel.swift; sourceTree = "<group>"; };
+		E6677FD924600D420038E591 /* GHGameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHGameOver.swift; sourceTree = "<group>"; };
+		E6677FDB24600D600038E591 /* GHGameOver.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHGameOver.xib; sourceTree = "<group>"; };
+		E6677FDF24616BE00038E591 /* GHRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHRankingView.swift; sourceTree = "<group>"; };
+		E6677FE324616C040038E591 /* GHRankingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHRankingView.xib; sourceTree = "<group>"; };
+		E67AE7F6DAF9AC0BAE55937E /* Pods-GuessHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessHouse.debug.xcconfig"; path = "Target Support Files/Pods-GuessHouse/Pods-GuessHouse.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6677EF2245E38160038E591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEBB58144B18F7C5AAB0CB0 /* Pods_GuessHouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F251FB6B7284672C0CCC5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31F1CEE8089F69BB7C60D3A2 /* Pods_GuessHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24D8C957C2C9F5A3AADC5B14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E67AE7F6DAF9AC0BAE55937E /* Pods-GuessHouse.debug.xcconfig */,
+				35D6DBD51566EF0C6F227DB1 /* Pods-GuessHouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6677EEC245E38160038E591 = {
+			isa = PBXGroup;
+			children = (
+				E6677EF7245E38160038E591 /* GuessHouse */,
+				E6677EF6245E38160038E591 /* Products */,
+				24D8C957C2C9F5A3AADC5B14 /* Pods */,
+				15F251FB6B7284672C0CCC5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6677EF6245E38160038E591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6677EF5245E38160038E591 /* Guess House number.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6677EF7245E38160038E591 /* GuessHouse */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F0C245E3C810038E591 /* Assets.xcassets */,
+				E6677F15245E3C810038E591 /* GHGames */,
+				E6677F22245E3C810038E591 /* GHHome */,
+				E6677F0D245E3C810038E591 /* Other */,
+				E6677F13245E3C810038E591 /* Tool */,
+				E6677EF8245E38160038E591 /* AppDelegate.swift */,
+				E6677F03245E38180038E591 /* LaunchScreen.storyboard */,
+				E6677F06245E38180038E591 /* Info.plist */,
+				B969667F247E225300DE8758 /* ChaparralPro-Bold.otf */,
+				B9696681247E225300DE8758 /* ChaparralPro-BoldIt.otf */,
+				B9696682247E225300DE8758 /* ChaparralPro-Italic.otf */,
+				B969667E247E225300DE8758 /* ChaparralPro-LightIt.otf */,
+				B9696680247E225300DE8758 /* ChaparralPro-Regular.otf */,
+			);
+			path = GuessHouse;
+			sourceTree = "<group>";
+		};
+		E6677F0D245E3C810038E591 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				040979BD246266E0002551F4 /* backMusic.mp3 */,
+				040979BE246266E0002551F4 /* error.mp3 */,
+				040979BF246266E0002551F4 /* right.mp3 */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E6677F13245E3C810038E591 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F14245E3C810038E591 /* GHExtension.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E6677F15245E3C810038E591 /* GHGames */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F3D245E4C680038E591 /* view */,
+				E6677F16245E3C810038E591 /* Model */,
+				E6677F18245E3C810038E591 /* ViewController */,
+			);
+			path = GHGames;
+			sourceTree = "<group>";
+		};
+		E6677F16245E3C810038E591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F3E245EB2C50038E591 /* GHGameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6677F18245E3C810038E591 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F19245E3C810038E591 /* GHDescriptionViewController.swift */,
+				E6677F21245E3C810038E591 /* GHDescriptionViewController.xib */,
+				E6677F1B245E3C810038E591 /* GHRankingViewController.swift */,
+				E6677F1D245E3C810038E591 /* GHRankingViewController.xib */,
+				E6677F1C245E3C810038E591 /* GHGameViewController.swift */,
+				E6677F20245E3C810038E591 /* GHGameViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E6677F22245E3C810038E591 /* GHHome */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F23245E3C810038E591 /* ViewController */,
+			);
+			path = GHHome;
+			sourceTree = "<group>";
+		};
+		E6677F23245E3C810038E591 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F24245E3C810038E591 /* GHIntroductionViewController.xib */,
+				E6677F25245E3C810038E591 /* GHIntroductionViewController.swift */,
+				E6677F26245E3C810038E591 /* GHHomeViewController.xib */,
+				E6677F27245E3C810038E591 /* GHHomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E6677F3D245E4C680038E591 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E6677F1F245E3C810038E591 /* GHImageView.swift */,
+				E6677FD924600D420038E591 /* GHGameOver.swift */,
+				E6677FDB24600D600038E591 /* GHGameOver.xib */,
+				E6677FDF24616BE00038E591 /* GHRankingView.swift */,
+				E6677FE324616C040038E591 /* GHRankingView.xib */,
+				04F9E8292462A19C00761526 /* GHDescriptionView.swift */,
+				04F9E82B2462A1BC00761526 /* GHDescriptionView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6677EF4245E38160038E591 /* GuessHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6677F09245E38180038E591 /* Build configuration list for PBXNativeTarget "GuessHouse" */;
+			buildPhases = (
+				18A1012AAC484A286E1167FE /* [CP] Check Pods Manifest.lock */,
+				E6677EF1245E38160038E591 /* Sources */,
+				E6677EF2245E38160038E591 /* Frameworks */,
+				E6677EF3245E38160038E591 /* Resources */,
+				F7E58E1D1214FB0BF376E889 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessHouse;
+			productName = GuessHouse;
+			productReference = E6677EF5245E38160038E591 /* Guess House number.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6677EED245E38160038E591 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = www;
+				TargetAttributes = {
+					E6677EF4245E38160038E591 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = E6677EF0245E38160038E591 /* Build configuration list for PBXProject "GuessHouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6677EEC245E38160038E591;
+			productRefGroup = E6677EF6245E38160038E591 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6677EF4245E38160038E591 /* GuessHouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6677EF3245E38160038E591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6677FE424616C040038E591 /* GHRankingView.xib in Resources */,
+				E6677F3B245E3C820038E591 /* GHHomeViewController.xib in Resources */,
+				E6677F34245E3C820038E591 /* GHRankingViewController.xib in Resources */,
+				E6677F37245E3C820038E591 /* GHGameViewController.xib in Resources */,
+				E6677F28245E3C820038E591 /* Assets.xcassets in Resources */,
+				B9696686247E225300DE8758 /* ChaparralPro-BoldIt.otf in Resources */,
+				E6677F38245E3C820038E591 /* GHDescriptionViewController.xib in Resources */,
+				E6677F39245E3C820038E591 /* GHIntroductionViewController.xib in Resources */,
+				E6677FDC24600D600038E591 /* GHGameOver.xib in Resources */,
+				B9696683247E225300DE8758 /* ChaparralPro-LightIt.otf in Resources */,
+				E6677F05245E38180038E591 /* LaunchScreen.storyboard in Resources */,
+				B9696684247E225300DE8758 /* ChaparralPro-Bold.otf in Resources */,
+				040979C2246266E0002551F4 /* right.mp3 in Resources */,
+				040979C0246266E0002551F4 /* backMusic.mp3 in Resources */,
+				B9696687247E225300DE8758 /* ChaparralPro-Italic.otf in Resources */,
+				B9696685247E225300DE8758 /* ChaparralPro-Regular.otf in Resources */,
+				04F9E82C2462A1BC00761526 /* GHDescriptionView.xib in Resources */,
+				040979C1246266E0002551F4 /* error.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18A1012AAC484A286E1167FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E58E1D1214FB0BF376E889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessHouse/Pods-GuessHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessHouse/Pods-GuessHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessHouse/Pods-GuessHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6677EF1245E38160038E591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6677F2E245E3C820038E591 /* GHExtension.swift in Sources */,
+				E6677F3A245E3C820038E591 /* GHIntroductionViewController.swift in Sources */,
+				E6677F36245E3C820038E591 /* GHImageView.swift in Sources */,
+				E6677F33245E3C820038E591 /* GHGameViewController.swift in Sources */,
+				E6677FDA24600D420038E591 /* GHGameOver.swift in Sources */,
+				E6677F32245E3C820038E591 /* GHRankingViewController.swift in Sources */,
+				E6677FE024616BE00038E591 /* GHRankingView.swift in Sources */,
+				E6677EF9245E38160038E591 /* AppDelegate.swift in Sources */,
+				04F9E82A2462A19C00761526 /* GHDescriptionView.swift in Sources */,
+				E6677F30245E3C820038E591 /* GHDescriptionViewController.swift in Sources */,
+				E6677F3F245EB2C50038E591 /* GHGameModel.swift in Sources */,
+				E6677F3C245E3C820038E591 /* GHHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6677F03245E38180038E591 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6677F04245E38180038E591 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6677F07245E38180038E591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6677F08245E38180038E591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6677F0A245E38180038E591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67AE7F6DAF9AC0BAE55937E /* Pods-GuessHouse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D63WL6N85;
+				INFOPLIST_FILE = GuessHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chegongmiao.guesshousenumber;
+				PRODUCT_NAME = "Guess House number";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E6677F0B245E38180038E591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D6DBD51566EF0C6F227DB1 /* Pods-GuessHouse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4D63WL6N85;
+				INFOPLIST_FILE = GuessHouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chegongmiao.guesshousenumber;
+				PRODUCT_NAME = "Guess House number";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6677EF0245E38160038E591 /* Build configuration list for PBXProject "GuessHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6677F07245E38180038E591 /* Debug */,
+				E6677F08245E38180038E591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6677F09245E38180038E591 /* Build configuration list for PBXNativeTarget "GuessHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6677F0A245E38180038E591 /* Debug */,
+				E6677F0B245E38180038E591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6677EED245E38160038E591 /* Project object */;
+}

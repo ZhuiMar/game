@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HWGHomeVC">
+            <connections>
+                <outlet property="bottomTop" destination="aUA-28-JfU" id="wCE-KV-iyN"/>
+                <outlet property="fourBtn" destination="SCd-w8-BrC" id="5Gx-3m-qID"/>
+                <outlet property="oneBtn" destination="frc-tH-gGD" id="zg7-BZ-A9i"/>
+                <outlet property="threeBtn" destination="lUI-Cm-irw" id="MMe-h8-DJt"/>
+                <outlet property="twoBtn" destination="Mue-aE-isF" id="fox-2c-v8z"/>
+                <outlet property="typingTopLayout" destination="j5A-zz-XNK" id="pSs-Vz-mM5"/>
+                <outlet property="view" destination="Xgv-ea-sLy" id="woX-uT-Z2n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Xgv-ea-sLy">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-pq-a4I">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frc-tH-gGD">
+                    <rect key="frame" x="34" y="130" width="155" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="155" id="8HE-BI-ftB"/>
+                        <constraint firstAttribute="height" constant="83" id="Olo-Ed-TJT"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Blackletter"/>
+                    <connections>
+                        <action selector="oneBtnAction:" destination="-1" eventType="touchUpInside" id="wgF-iS-6v7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-aE-isF">
+                    <rect key="frame" x="130" y="237" width="171" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="171" id="mXv-fb-msx"/>
+                        <constraint firstAttribute="height" constant="83" id="ntE-t9-v9O"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Handwritten"/>
+                    <connections>
+                        <action selector="twoBtnAction:" destination="-1" eventType="touchUpInside" id="PRp-wW-taf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUI-Cm-irw">
+                    <rect key="frame" x="195" y="367" width="128" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="GxQ-uk-YSh"/>
+                        <constraint firstAttribute="height" constant="83" id="bdJ-3k-4dq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Typing"/>
+                    <connections>
+                        <action selector="threeBtnAction:" destination="-1" eventType="touchUpInside" id="Xgc-ST-Fh6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCd-w8-BrC">
+                    <rect key="frame" x="40" y="471" width="118" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="118" id="UO8-eL-qE5"/>
+                        <constraint firstAttribute="height" constant="83" id="wKB-cq-xS6"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Works"/>
+                    <connections>
+                        <action selector="fourBtnAction:" destination="-1" eventType="touchUpInside" id="BaQ-gv-rwa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mue-aE-isF" secondAttribute="trailing" constant="74" id="541-L4-KYd"/>
+                <constraint firstItem="frc-tH-gGD" firstAttribute="leading" secondItem="Xgv-ea-sLy" secondAttribute="leading" constant="34" id="7pa-p8-Z8R"/>
+                <constraint firstItem="Mue-aE-isF" firstAttribute="top" secondItem="frc-tH-gGD" secondAttribute="bottom" constant="24" id="Cnc-gz-7wp"/>
+                <constraint firstItem="6fc-pq-a4I" firstAttribute="bottom" secondItem="Xgv-ea-sLy" secondAttribute="bottom" id="PJm-UU-QZa"/>
+                <constraint firstItem="SCd-w8-BrC" firstAttribute="leading" secondItem="Xgv-ea-sLy" secondAttribute="leading" constant="40" id="S0x-0H-Ihp"/>
+                <constraint firstItem="SCd-w8-BrC" firstAttribute="top" secondItem="frc-tH-gGD" secondAttribute="bottom" constant="258" id="aUA-28-JfU"/>
+                <constraint firstAttribute="trailing" secondItem="lUI-Cm-irw" secondAttribute="trailing" constant="52" id="bQ7-a5-IcL"/>
+                <constraint firstItem="frc-tH-gGD" firstAttribute="top" secondItem="Xgv-ea-sLy" secondAttribute="top" constant="130" id="dcq-gn-Q8X"/>
+                <constraint firstItem="6fc-pq-a4I" firstAttribute="trailing" secondItem="Xgv-ea-sLy" secondAttribute="trailing" id="ikf-MS-UDI"/>
+                <constraint firstItem="lUI-Cm-irw" firstAttribute="top" secondItem="Mue-aE-isF" secondAttribute="bottom" constant="47" id="j5A-zz-XNK"/>
+                <constraint firstItem="6fc-pq-a4I" firstAttribute="leading" secondItem="Xgv-ea-sLy" secondAttribute="leading" id="kfF-ej-uFt"/>
+                <constraint firstItem="6fc-pq-a4I" firstAttribute="top" secondItem="Xgv-ea-sLy" secondAttribute="top" id="xX8-Vj-ddZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="z4b-tL-M93"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Blackletter" width="155" height="83"/>
+        <image name="Handwritten" width="171" height="83"/>
+        <image name="Typing" width="128" height="83"/>
+        <image name="Works" width="118.5" height="83"/>
+        <image name="default_bg" width="375" height="667"/>
+    </resources>
+</document>

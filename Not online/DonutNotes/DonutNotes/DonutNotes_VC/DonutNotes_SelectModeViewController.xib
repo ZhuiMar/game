@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonutNotes_SelectModeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_home" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-ZP-oSF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npz-nG-WWu">
+                    <rect key="frame" x="49.5" y="306" width="276" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="276" id="f13-13-c9k"/>
+                        <constraint firstAttribute="height" constant="55" id="fTQ-qT-0Od"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button2"/>
+                    <connections>
+                        <action selector="findBeat:" destination="-1" eventType="touchUpInside" id="ja8-5c-cyZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-Ux-Wne">
+                    <rect key="frame" x="49.5" y="207" width="276" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="276" id="NZy-Ea-L1t"/>
+                        <constraint firstAttribute="height" constant="55" id="r1P-mR-8ok"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button"/>
+                    <connections>
+                        <action selector="findName:" destination="-1" eventType="touchUpInside" id="mQE-DI-fxj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-nI-nYz">
+                    <rect key="frame" x="49.5" y="405" width="276" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="YbF-Uq-y43"/>
+                        <constraint firstAttribute="width" constant="276" id="erI-4e-A3N"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button3"/>
+                    <connections>
+                        <action selector="findStars:" destination="-1" eventType="touchUpInside" id="V1Z-1R-Ywd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="wRq-nI-nYz" firstAttribute="centerX" secondItem="Nrb-Ux-Wne" secondAttribute="centerX" id="6JZ-ff-0gL"/>
+                <constraint firstItem="kKB-ZP-oSF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DBw-vv-6iV"/>
+                <constraint firstItem="Npz-nG-WWu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FRY-py-FIw"/>
+                <constraint firstAttribute="trailing" secondItem="kKB-ZP-oSF" secondAttribute="trailing" id="aNK-4E-LK0"/>
+                <constraint firstItem="Npz-nG-WWu" firstAttribute="top" secondItem="Nrb-Ux-Wne" secondAttribute="bottom" constant="44" id="bxK-fb-bwd"/>
+                <constraint firstItem="Npz-nG-WWu" firstAttribute="centerX" secondItem="Nrb-Ux-Wne" secondAttribute="centerX" id="eUH-IJ-6TQ"/>
+                <constraint firstItem="kKB-ZP-oSF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eje-Kh-4HM"/>
+                <constraint firstItem="wRq-nI-nYz" firstAttribute="top" secondItem="Npz-nG-WWu" secondAttribute="bottom" constant="44" id="qiy-Ja-eAu"/>
+                <constraint firstAttribute="bottom" secondItem="kKB-ZP-oSF" secondAttribute="bottom" id="r2B-lr-fPL"/>
+                <constraint firstItem="Npz-nG-WWu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vpR-NK-WHX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_home" width="375" height="667"/>
+        <image name="button" width="276" height="55"/>
+        <image name="button2" width="276" height="55"/>
+        <image name="button3" width="276" height="55"/>
+    </resources>
+</document>

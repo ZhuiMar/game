@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepHelper_PopViewController">
+            <connections>
+                <outlet property="countLabel" destination="WVQ-3T-tsR" id="R3Y-fI-wdC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="Laa-Oc-4HY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVQ-3T-tsR">
+                    <rect key="frame" x="338.5" y="23" width="16.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="KPZ-88-gZz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="23"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="WVQ-3T-tsR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="5r2-Sk-qi0"/>
+                <constraint firstItem="Laa-Oc-4HY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P5a-Vv-Z9U"/>
+                <constraint firstAttribute="trailing" secondItem="Laa-Oc-4HY" secondAttribute="trailing" id="RHf-nd-JnZ"/>
+                <constraint firstItem="Laa-Oc-4HY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XeM-e7-70h"/>
+                <constraint firstAttribute="bottom" secondItem="Laa-Oc-4HY" secondAttribute="bottom" id="mTK-qa-k6m"/>
+                <constraint firstAttribute="trailing" secondItem="WVQ-3T-tsR" secondAttribute="trailing" constant="20" id="wvO-0o-MoX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background-1" width="375" height="667"/>
+    </resources>
+</document>

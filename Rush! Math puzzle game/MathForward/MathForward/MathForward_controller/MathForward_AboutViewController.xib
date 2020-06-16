@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Billgates-2.ttf">
+            <string>Billgates</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MathForward_AboutViewController">
+            <connections>
+                <outlet property="H" destination="k2F-7M-tzr" id="jmN-q4-VNN"/>
+                <outlet property="W" destination="QTe-Nf-s9o" id="7cu-YG-DhF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="I51-kA-UdO">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_text" translatesAutoresizingMaskIntoConstraints="NO" id="r46-gy-Zbo">
+                    <rect key="frame" x="117" y="52.5" width="433" height="270"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="433" id="QTe-Nf-s9o"/>
+                        <constraint firstAttribute="height" constant="270" id="k2F-7M-tzr"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y96-Zz-1b8">
+                    <rect key="frame" x="274" y="322.5" width="119" height="35"/>
+                    <fontDescription key="fontDescription" name="Billgates" family="Billgates" pointSize="23"/>
+                    <state key="normal" title="Privacy policy">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="privacyPolicyAction:" destination="-1" eventType="touchUpInside" id="tq6-TI-Gnc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Y96-Zz-1b8" firstAttribute="centerX" secondItem="r46-gy-Zbo" secondAttribute="centerX" id="4S1-u0-JVX"/>
+                <constraint firstItem="I51-kA-UdO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="51P-hT-Ljd"/>
+                <constraint firstItem="I51-kA-UdO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="La6-GI-crw"/>
+                <constraint firstAttribute="bottom" secondItem="I51-kA-UdO" secondAttribute="bottom" id="SHw-hc-CLo"/>
+                <constraint firstAttribute="trailing" secondItem="I51-kA-UdO" secondAttribute="trailing" id="Wys-lN-P92"/>
+                <constraint firstItem="r46-gy-Zbo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lKB-Xb-Va6"/>
+                <constraint firstItem="Y96-Zz-1b8" firstAttribute="top" secondItem="r46-gy-Zbo" secondAttribute="bottom" id="sDk-fE-N8n"/>
+                <constraint firstItem="r46-gy-Zbo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tp1-Jj-xnR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_text" width="467" height="278"/>
+        <image name="background_0" width="667" height="375"/>
+    </resources>
+</document>

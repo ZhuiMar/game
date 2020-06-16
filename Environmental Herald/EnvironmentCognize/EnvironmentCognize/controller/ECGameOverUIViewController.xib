@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ECGameOverUIViewController">
+            <connections>
+                <outlet property="H" destination="aGx-Aq-hgL" id="V2l-2B-c5l"/>
+                <outlet property="W" destination="aGx-Aq-hgL" id="54q-yL-rVh"/>
+                <outlet property="againBtn" destination="rhP-aK-vc2" id="Esj-P1-2AH"/>
+                <outlet property="contentlabel" destination="irW-TW-Pd4" id="oYk-vN-hJm"/>
+                <outlet property="homeBtn" destination="PFQ-Z9-2o2" id="YUi-5s-5ck"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="over" translatesAutoresizingMaskIntoConstraints="NO" id="v4p-v5-JMJ">
+                    <rect key="frame" x="30.5" y="194.5" width="314" height="278"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="314" id="aGx-Aq-hgL"/>
+                        <constraint firstAttribute="height" constant="278" id="zzi-Yz-8hQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's great. All right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irW-TW-Pd4">
+                    <rect key="frame" x="81.5" y="285.5" width="212.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.396078431372549" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht4-U2-IXf">
+                    <rect key="frame" x="114.5" y="234.5" width="146" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.396078431372549" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-aK-vc2">
+                    <rect key="frame" x="77.5" y="340.5" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.73333333333333328" green="0.34901960784313724" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4So-Yf-Squ"/>
+                        <constraint firstAttribute="width" constant="100" id="vkL-T6-Tmt"/>
+                    </constraints>
+                    <state key="normal" title="Again">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="zwi-XR-qkM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFQ-Z9-2o2">
+                    <rect key="frame" x="197.5" y="340.5" width="100" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6eb-OF-Le9"/>
+                        <constraint firstAttribute="width" constant="100" id="7OM-Jm-yAK"/>
+                    </constraints>
+                    <state key="normal" title="Home">
+                        <color key="titleColor" red="0.396078431372549" green="0.19215686274509802" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="33f-oV-hmF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="PFQ-Z9-2o2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="60" id="2R6-q9-oMI"/>
+                <constraint firstItem="v4p-v5-JMJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ASu-of-kpc"/>
+                <constraint firstItem="Ht4-U2-IXf" firstAttribute="centerX" secondItem="v4p-v5-JMJ" secondAttribute="centerX" id="FrO-HS-pHm"/>
+                <constraint firstItem="rhP-aK-vc2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-60" id="HfC-Mm-h0s"/>
+                <constraint firstItem="rhP-aK-vc2" firstAttribute="top" secondItem="irW-TW-Pd4" secondAttribute="bottom" constant="26" id="Iaq-u8-2w1"/>
+                <constraint firstItem="PFQ-Z9-2o2" firstAttribute="top" secondItem="irW-TW-Pd4" secondAttribute="bottom" constant="26" id="Sun-et-Rbz"/>
+                <constraint firstItem="Ht4-U2-IXf" firstAttribute="top" secondItem="v4p-v5-JMJ" secondAttribute="top" constant="40" id="cbX-8Y-rgq"/>
+                <constraint firstItem="irW-TW-Pd4" firstAttribute="centerX" secondItem="Ht4-U2-IXf" secondAttribute="centerX" id="oUg-2w-uDE"/>
+                <constraint firstItem="v4p-v5-JMJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ojs-KT-E1K"/>
+                <constraint firstItem="irW-TW-Pd4" firstAttribute="top" secondItem="Ht4-U2-IXf" secondAttribute="bottom" constant="15" id="sKJ-lf-SPn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.15942028985509" y="152.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="over" width="314.5" height="278.5"/>
+    </resources>
+</document>

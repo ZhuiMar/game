@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B92AA1FA2458272100991719 /* SecretOfRain_countView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AA1F92458272100991719 /* SecretOfRain_countView.m */; };
+		B92AA1FC2458272C00991719 /* SecretOfRain_countView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92AA1FB2458272B00991719 /* SecretOfRain_countView.xib */; };
+		B949C52D24566F5300FDB4AF /* ChalkboardSE.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B949C52C24566F5300FDB4AF /* ChalkboardSE.ttc */; };
+		B949C5312456711A00FDB4AF /* SecretOfRain_AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C52F2456711A00FDB4AF /* SecretOfRain_AboutViewController.m */; };
+		B949C5322456711A00FDB4AF /* SecretOfRain_AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C5302456711A00FDB4AF /* SecretOfRain_AboutViewController.xib */; };
+		B949C536245672B200FDB4AF /* SecretOfRain_TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C534245672B200FDB4AF /* SecretOfRain_TipViewController.m */; };
+		B949C537245672B200FDB4AF /* SecretOfRain_TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C535245672B200FDB4AF /* SecretOfRain_TipViewController.xib */; };
+		B949C53B245674EF00FDB4AF /* SecretOfRain_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B949C538245674EF00FDB4AF /* SecretOfRain_right.mp3 */; };
+		B949C53C245674EF00FDB4AF /* SecretOfRain_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B949C539245674EF00FDB4AF /* SecretOfRain_bg.mp3 */; };
+		B949C53D245674EF00FDB4AF /* SecretOfRain_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B949C53A245674EF00FDB4AF /* SecretOfRain_wrong.mp3 */; };
+		B949C5412456752100FDB4AF /* SecretOfRain_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C53F2456752100FDB4AF /* SecretOfRain_GameViewController.m */; };
+		B949C5422456752100FDB4AF /* SecretOfRain_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C5402456752100FDB4AF /* SecretOfRain_GameViewController.xib */; };
+		B949C546245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C544245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.m */; };
+		B949C547245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C545245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.xib */; };
+		B949C54B245676E900FDB4AF /* SecretOfRain_OverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C549245676E900FDB4AF /* SecretOfRain_OverViewController.m */; };
+		B949C54C245676E900FDB4AF /* SecretOfRain_OverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C54A245676E900FDB4AF /* SecretOfRain_OverViewController.xib */; };
+		B949C550245679B200FDB4AF /* SecretOfRain_RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C54E245679B200FDB4AF /* SecretOfRain_RecordViewController.m */; };
+		B949C551245679B200FDB4AF /* SecretOfRain_RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C54F245679B200FDB4AF /* SecretOfRain_RecordViewController.xib */; };
+		B949C55824567E0500FDB4AF /* SecretOfRain_RecodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C55624567E0500FDB4AF /* SecretOfRain_RecodCell.m */; };
+		B949C55924567E0500FDB4AF /* SecretOfRain_RecodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B949C55724567E0500FDB4AF /* SecretOfRain_RecodCell.xib */; };
+		B98E10B224777C6D00E564E3 /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10AF24777C6D00E564E3 /* jcore-noidfa-ios-2.2.5.a */; };
+		B98E10B324777C6D00E564E3 /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10B024777C6D00E564E3 /* jpush-ios-3.3.2.a */; };
+		B98E10B624777C9800E564E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10B524777C9800E564E3 /* CFNetwork.framework */; };
+		B98E10B824777C9E00E564E3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10B724777C9E00E564E3 /* CoreFoundation.framework */; };
+		B98E10BA24777CA400E564E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10B924777CA400E564E3 /* CoreTelephony.framework */; };
+		B98E10BC24777CAA00E564E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10BB24777CAA00E564E3 /* SystemConfiguration.framework */; };
+		B98E10BE24777CB000E564E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10BD24777CB000E564E3 /* CoreGraphics.framework */; };
+		B98E10C024777CB700E564E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10BF24777CB700E564E3 /* Foundation.framework */; };
+		B98E10C224777CBE00E564E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10C124777CBE00E564E3 /* UIKit.framework */; };
+		B98E10C424777CC600E564E3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10C324777CC500E564E3 /* Security.framework */; };
+		B98E10C624777CCD00E564E3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10C524777CCD00E564E3 /* libz.tbd */; };
+		B98E10C824777CD500E564E3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10C724777CD500E564E3 /* UserNotifications.framework */; };
+		B98E10CA24777CDB00E564E3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10C924777CDB00E564E3 /* libresolv.tbd */; };
+		B98E10CC24777CE100E564E3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E10CB24777CE100E564E3 /* WebKit.framework */; };
+		B98E110124777EC100E564E3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10CF24777EC100E564E3 /* Reachability.m */; };
+		B98E110C24777EC200E564E3 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10EF24777EC100E564E3 /* MJPropertyType.m */; };
+		B98E110D24777EC200E564E3 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10F224777EC100E564E3 /* NSObject+MJKeyValue.m */; };
+		B98E110E24777EC200E564E3 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10F324777EC100E564E3 /* MJProperty.m */; };
+		B98E110F24777EC200E564E3 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10F524777EC100E564E3 /* NSObject+MJCoding.m */; };
+		B98E111024777EC200E564E3 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10F724777EC100E564E3 /* MJExtensionConst.m */; };
+		B98E111124777EC200E564E3 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10F824777EC100E564E3 /* NSObject+MJProperty.m */; };
+		B98E111224777EC200E564E3 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10FA24777EC100E564E3 /* NSObject+MJClass.m */; };
+		B98E111324777EC200E564E3 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10FB24777EC100E564E3 /* NSString+MJExtension.m */; };
+		B98E111424777EC200E564E3 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E10FC24777EC100E564E3 /* MJPropertyKey.m */; };
+		B98E111524777EC200E564E3 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E110024777EC100E564E3 /* MJFoundation.m */; };
+		B98E11182477808100E564E3 /* SecretOfRain_setThemeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E11172477808100E564E3 /* SecretOfRain_setThemeTool.m */; };
+		B98E111B247780C200E564E3 /* SecretOfRain_getPrivacyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E111A247780C200E564E3 /* SecretOfRain_getPrivacyHelper.m */; };
+		B98E111E2477815000E564E3 /* YCPresentHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E111D2477815000E564E3 /* YCPresentHandle.m */; };
+		B98E11252477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E11232477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.m */; };
+		B98E11262477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98E11242477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.xib */; };
+		B98E112A247783DD00E564E3 /* SecretOfRain_ThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B98E1129247783DD00E564E3 /* SecretOfRain_ThemeModel.m */; };
+		B9AE62C724566590002F6262 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62C624566590002F6262 /* AppDelegate.m */; };
+		B9AE62CA24566590002F6262 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62C924566590002F6262 /* SceneDelegate.m */; };
+		B9AE62CD24566590002F6262 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62CC24566590002F6262 /* ViewController.m */; };
+		B9AE62D024566590002F6262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62CE24566590002F6262 /* Main.storyboard */; };
+		B9AE62D224566592002F6262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62D124566592002F6262 /* Assets.xcassets */; };
+		B9AE62D524566592002F6262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9AE62D324566592002F6262 /* LaunchScreen.storyboard */; };
+		B9AE62D824566592002F6262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62D724566592002F6262 /* main.m */; };
+		B9AE62ED24566779002F6262 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62E824566779002F6262 /* UIViewController+YCPopover.m */; };
+		B9AE62EE24566779002F6262 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62E924566779002F6262 /* YCPresentationController.m */; };
+		B9AE62EF24566779002F6262 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62EA24566779002F6262 /* YCPopoverAnimator.m */; };
+		B9AE630A24566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62F224566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B9AE630B24566799002F6262 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62FB24566799002F6262 /* ViewController+MASAdditions.m */; };
+		B9AE630C24566799002F6262 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE62FF24566799002F6262 /* MASCompositeConstraint.m */; };
+		B9AE630D24566799002F6262 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630024566799002F6262 /* MASConstraintMaker.m */; };
+		B9AE630E24566799002F6262 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630124566799002F6262 /* MASLayoutConstraint.m */; };
+		B9AE630F24566799002F6262 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630224566799002F6262 /* NSArray+MASAdditions.m */; };
+		B9AE631024566799002F6262 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630324566799002F6262 /* View+MASAdditions.m */; };
+		B9AE631124566799002F6262 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630624566799002F6262 /* MASConstraint.m */; };
+		B9AE631224566799002F6262 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630824566799002F6262 /* MASViewConstraint.m */; };
+		B9AE631324566799002F6262 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE630924566799002F6262 /* MASViewAttribute.m */; };
+		B9AE6317245667CC002F6262 /* NSObject+SecretOfRain_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE6316245667CC002F6262 /* NSObject+SecretOfRain_helper.m */; };
+		B9AE631A24566873002F6262 /* SecretOfRain_navigate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE631924566873002F6262 /* SecretOfRain_navigate.m */; };
+		B9AE631E2456689E002F6262 /* SecretOfRain_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AE631C2456689E002F6262 /* SecretOfRain_HomeViewController.m */; };
+		B9AE631F2456689E002F6262 /* SecretOfRain_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AE631D2456689E002F6262 /* SecretOfRain_HomeViewController.xib */; };
+		B9CB05C024569A6B00A35524 /* SecretOfRain_CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB05BE24569A6B00A35524 /* SecretOfRain_CarViewController.m */; };
+		B9CB05C124569A6B00A35524 /* SecretOfRain_CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CB05BF24569A6B00A35524 /* SecretOfRain_CarViewController.xib */; };
+		B9CB05C524569B2000A35524 /* SecretOfRain_CarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB05C324569B2000A35524 /* SecretOfRain_CarCell.m */; };
+		B9CB05C624569B2000A35524 /* SecretOfRain_CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CB05C424569B2000A35524 /* SecretOfRain_CarCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B92AA1F82458272100991719 /* SecretOfRain_countView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_countView.h; sourceTree = "<group>"; };
+		B92AA1F92458272100991719 /* SecretOfRain_countView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_countView.m; sourceTree = "<group>"; };
+		B92AA1FB2458272B00991719 /* SecretOfRain_countView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_countView.xib; sourceTree = "<group>"; };
+		B949C52C24566F5300FDB4AF /* ChalkboardSE.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChalkboardSE.ttc; sourceTree = "<group>"; };
+		B949C52E2456711A00FDB4AF /* SecretOfRain_AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_AboutViewController.h; sourceTree = "<group>"; };
+		B949C52F2456711A00FDB4AF /* SecretOfRain_AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_AboutViewController.m; sourceTree = "<group>"; };
+		B949C5302456711A00FDB4AF /* SecretOfRain_AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_AboutViewController.xib; sourceTree = "<group>"; };
+		B949C533245672B200FDB4AF /* SecretOfRain_TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_TipViewController.h; sourceTree = "<group>"; };
+		B949C534245672B200FDB4AF /* SecretOfRain_TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_TipViewController.m; sourceTree = "<group>"; };
+		B949C535245672B200FDB4AF /* SecretOfRain_TipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_TipViewController.xib; sourceTree = "<group>"; };
+		B949C538245674EF00FDB4AF /* SecretOfRain_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SecretOfRain_right.mp3; sourceTree = "<group>"; };
+		B949C539245674EF00FDB4AF /* SecretOfRain_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SecretOfRain_bg.mp3; sourceTree = "<group>"; };
+		B949C53A245674EF00FDB4AF /* SecretOfRain_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SecretOfRain_wrong.mp3; sourceTree = "<group>"; };
+		B949C53E2456752100FDB4AF /* SecretOfRain_GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_GameViewController.h; sourceTree = "<group>"; };
+		B949C53F2456752100FDB4AF /* SecretOfRain_GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_GameViewController.m; sourceTree = "<group>"; };
+		B949C5402456752100FDB4AF /* SecretOfRain_GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_GameViewController.xib; sourceTree = "<group>"; };
+		B949C543245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_ChooseDifficulty.h; sourceTree = "<group>"; };
+		B949C544245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_ChooseDifficulty.m; sourceTree = "<group>"; };
+		B949C545245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_ChooseDifficulty.xib; sourceTree = "<group>"; };
+		B949C548245676E900FDB4AF /* SecretOfRain_OverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_OverViewController.h; sourceTree = "<group>"; };
+		B949C549245676E900FDB4AF /* SecretOfRain_OverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_OverViewController.m; sourceTree = "<group>"; };
+		B949C54A245676E900FDB4AF /* SecretOfRain_OverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_OverViewController.xib; sourceTree = "<group>"; };
+		B949C54D245679B200FDB4AF /* SecretOfRain_RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_RecordViewController.h; sourceTree = "<group>"; };
+		B949C54E245679B200FDB4AF /* SecretOfRain_RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_RecordViewController.m; sourceTree = "<group>"; };
+		B949C54F245679B200FDB4AF /* SecretOfRain_RecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_RecordViewController.xib; sourceTree = "<group>"; };
+		B949C55524567E0500FDB4AF /* SecretOfRain_RecodCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_RecodCell.h; sourceTree = "<group>"; };
+		B949C55624567E0500FDB4AF /* SecretOfRain_RecodCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_RecodCell.m; sourceTree = "<group>"; };
+		B949C55724567E0500FDB4AF /* SecretOfRain_RecodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_RecodCell.xib; sourceTree = "<group>"; };
+		B98E10AF24777C6D00E564E3 /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B98E10B024777C6D00E564E3 /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B98E10B124777C6D00E564E3 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B98E10B524777C9800E564E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B98E10B724777C9E00E564E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B98E10B924777CA400E564E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B98E10BB24777CAA00E564E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B98E10BD24777CB000E564E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B98E10BF24777CB700E564E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B98E10C124777CBE00E564E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B98E10C324777CC500E564E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B98E10C524777CCD00E564E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B98E10C724777CD500E564E3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B98E10C924777CDB00E564E3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B98E10CB24777CE100E564E3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B98E10CF24777EC100E564E3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B98E10D024777EC100E564E3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B98E10EC24777EC100E564E3 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		B98E10ED24777EC100E564E3 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		B98E10EE24777EC100E564E3 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		B98E10EF24777EC100E564E3 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		B98E10F024777EC100E564E3 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		B98E10F124777EC100E564E3 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		B98E10F224777EC100E564E3 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		B98E10F324777EC100E564E3 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		B98E10F424777EC100E564E3 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		B98E10F524777EC100E564E3 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		B98E10F624777EC100E564E3 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		B98E10F724777EC100E564E3 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		B98E10F824777EC100E564E3 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		B98E10F924777EC100E564E3 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		B98E10FA24777EC100E564E3 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		B98E10FB24777EC100E564E3 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B98E10FC24777EC100E564E3 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		B98E10FD24777EC100E564E3 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		B98E10FE24777EC100E564E3 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		B98E10FF24777EC100E564E3 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		B98E110024777EC100E564E3 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		B98E11162477808100E564E3 /* SecretOfRain_setThemeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_setThemeTool.h; sourceTree = "<group>"; };
+		B98E11172477808100E564E3 /* SecretOfRain_setThemeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_setThemeTool.m; sourceTree = "<group>"; };
+		B98E1119247780C200E564E3 /* SecretOfRain_getPrivacyHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_getPrivacyHelper.h; sourceTree = "<group>"; };
+		B98E111A247780C200E564E3 /* SecretOfRain_getPrivacyHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_getPrivacyHelper.m; sourceTree = "<group>"; };
+		B98E111C2477815000E564E3 /* YCPresentHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCPresentHandle.h; sourceTree = "<group>"; };
+		B98E111D2477815000E564E3 /* YCPresentHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCPresentHandle.m; sourceTree = "<group>"; };
+		B98E11222477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		B98E11232477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_PrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		B98E11242477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_PrivacyPolicyViewController.xib; sourceTree = "<group>"; };
+		B98E1128247783DD00E564E3 /* SecretOfRain_ThemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_ThemeModel.h; sourceTree = "<group>"; };
+		B98E1129247783DD00E564E3 /* SecretOfRain_ThemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_ThemeModel.m; sourceTree = "<group>"; };
+		B98E112B24778E0F00E564E3 /* Secret of Raindrops.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Secret of Raindrops.entitlements"; sourceTree = "<group>"; };
+		B9AE62C224566590002F6262 /* Secret of Raindrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret of Raindrops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9AE62C524566590002F6262 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9AE62C624566590002F6262 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9AE62C824566590002F6262 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9AE62C924566590002F6262 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9AE62CB24566590002F6262 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9AE62CC24566590002F6262 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9AE62CF24566590002F6262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9AE62D124566592002F6262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9AE62D424566592002F6262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9AE62D624566592002F6262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9AE62D724566592002F6262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9AE62E42456669D002F6262 /* SecretOfRain_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9AE62E624566779002F6262 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9AE62E724566779002F6262 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9AE62E824566779002F6262 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B9AE62E924566779002F6262 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9AE62EA24566779002F6262 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9AE62EB24566779002F6262 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9AE62EC24566779002F6262 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9AE62F124566799002F6262 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B9AE62F224566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B9AE62F324566799002F6262 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B9AE62F424566799002F6262 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B9AE62F524566799002F6262 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B9AE62F624566799002F6262 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B9AE62F724566799002F6262 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B9AE62F824566799002F6262 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B9AE62F924566799002F6262 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B9AE62FA24566799002F6262 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B9AE62FB24566799002F6262 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B9AE62FC24566799002F6262 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B9AE62FD24566799002F6262 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B9AE62FE24566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B9AE62FF24566799002F6262 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B9AE630024566799002F6262 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B9AE630124566799002F6262 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B9AE630224566799002F6262 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B9AE630324566799002F6262 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B9AE630424566799002F6262 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B9AE630524566799002F6262 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B9AE630624566799002F6262 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B9AE630724566799002F6262 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B9AE630824566799002F6262 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B9AE630924566799002F6262 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B9AE6315245667CC002F6262 /* NSObject+SecretOfRain_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SecretOfRain_helper.h"; sourceTree = "<group>"; };
+		B9AE6316245667CC002F6262 /* NSObject+SecretOfRain_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SecretOfRain_helper.m"; sourceTree = "<group>"; };
+		B9AE631824566873002F6262 /* SecretOfRain_navigate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_navigate.h; sourceTree = "<group>"; };
+		B9AE631924566873002F6262 /* SecretOfRain_navigate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_navigate.m; sourceTree = "<group>"; };
+		B9AE631B2456689E002F6262 /* SecretOfRain_HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_HomeViewController.h; sourceTree = "<group>"; };
+		B9AE631C2456689E002F6262 /* SecretOfRain_HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_HomeViewController.m; sourceTree = "<group>"; };
+		B9AE631D2456689E002F6262 /* SecretOfRain_HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_HomeViewController.xib; sourceTree = "<group>"; };
+		B9CB05BD24569A6B00A35524 /* SecretOfRain_CarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_CarViewController.h; sourceTree = "<group>"; };
+		B9CB05BE24569A6B00A35524 /* SecretOfRain_CarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_CarViewController.m; sourceTree = "<group>"; };
+		B9CB05BF24569A6B00A35524 /* SecretOfRain_CarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_CarViewController.xib; sourceTree = "<group>"; };
+		B9CB05C224569B2000A35524 /* SecretOfRain_CarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretOfRain_CarCell.h; sourceTree = "<group>"; };
+		B9CB05C324569B2000A35524 /* SecretOfRain_CarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretOfRain_CarCell.m; sourceTree = "<group>"; };
+		B9CB05C424569B2000A35524 /* SecretOfRain_CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecretOfRain_CarCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9AE62BF24566590002F6262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98E10CC24777CE100E564E3 /* WebKit.framework in Frameworks */,
+				B98E10CA24777CDB00E564E3 /* libresolv.tbd in Frameworks */,
+				B98E10C824777CD500E564E3 /* UserNotifications.framework in Frameworks */,
+				B98E10C624777CCD00E564E3 /* libz.tbd in Frameworks */,
+				B98E10C424777CC600E564E3 /* Security.framework in Frameworks */,
+				B98E10C224777CBE00E564E3 /* UIKit.framework in Frameworks */,
+				B98E10C024777CB700E564E3 /* Foundation.framework in Frameworks */,
+				B98E10BE24777CB000E564E3 /* CoreGraphics.framework in Frameworks */,
+				B98E10BC24777CAA00E564E3 /* SystemConfiguration.framework in Frameworks */,
+				B98E10BA24777CA400E564E3 /* CoreTelephony.framework in Frameworks */,
+				B98E10B824777C9E00E564E3 /* CoreFoundation.framework in Frameworks */,
+				B98E10B624777C9800E564E3 /* CFNetwork.framework in Frameworks */,
+				B98E10B224777C6D00E564E3 /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				B98E10B324777C6D00E564E3 /* jpush-ios-3.3.2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B98E10AE24777C1C00E564E3 /* SecretOfRain_apns */ = {
+			isa = PBXGroup;
+			children = (
+				B98E10AF24777C6D00E564E3 /* jcore-noidfa-ios-2.2.5.a */,
+				B98E10B024777C6D00E564E3 /* jpush-ios-3.3.2.a */,
+				B98E10B124777C6D00E564E3 /* JPUSHService.h */,
+			);
+			path = SecretOfRain_apns;
+			sourceTree = "<group>";
+		};
+		B98E10B424777C9700E564E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98E10CB24777CE100E564E3 /* WebKit.framework */,
+				B98E10C924777CDB00E564E3 /* libresolv.tbd */,
+				B98E10C724777CD500E564E3 /* UserNotifications.framework */,
+				B98E10C524777CCD00E564E3 /* libz.tbd */,
+				B98E10C324777CC500E564E3 /* Security.framework */,
+				B98E10C124777CBE00E564E3 /* UIKit.framework */,
+				B98E10BF24777CB700E564E3 /* Foundation.framework */,
+				B98E10BD24777CB000E564E3 /* CoreGraphics.framework */,
+				B98E10BB24777CAA00E564E3 /* SystemConfiguration.framework */,
+				B98E10B924777CA400E564E3 /* CoreTelephony.framework */,
+				B98E10B724777C9E00E564E3 /* CoreFoundation.framework */,
+				B98E10B524777C9800E564E3 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98E10CD24777E8500E564E3 /* SecretOfRain_libs */ = {
+			isa = PBXGroup;
+			children = (
+				B98E10EB24777EC100E564E3 /* MJExtension */,
+				B98E10CE24777EC100E564E3 /* Reachability */,
+			);
+			path = SecretOfRain_libs;
+			sourceTree = "<group>";
+		};
+		B98E10CE24777EC100E564E3 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B98E10CF24777EC100E564E3 /* Reachability.m */,
+				B98E10D024777EC100E564E3 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B98E10EB24777EC100E564E3 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B98E10EC24777EC100E564E3 /* MJPropertyKey.h */,
+				B98E10ED24777EC100E564E3 /* NSObject+MJClass.h */,
+				B98E10EE24777EC100E564E3 /* NSString+MJExtension.h */,
+				B98E10EF24777EC100E564E3 /* MJPropertyType.m */,
+				B98E10F024777EC100E564E3 /* NSObject+MJProperty.h */,
+				B98E10F124777EC100E564E3 /* MJExtensionConst.h */,
+				B98E10F224777EC100E564E3 /* NSObject+MJKeyValue.m */,
+				B98E10F324777EC100E564E3 /* MJProperty.m */,
+				B98E10F424777EC100E564E3 /* MJFoundation.h */,
+				B98E10F524777EC100E564E3 /* NSObject+MJCoding.m */,
+				B98E10F624777EC100E564E3 /* MJExtension.h */,
+				B98E10F724777EC100E564E3 /* MJExtensionConst.m */,
+				B98E10F824777EC100E564E3 /* NSObject+MJProperty.m */,
+				B98E10F924777EC100E564E3 /* MJPropertyType.h */,
+				B98E10FA24777EC100E564E3 /* NSObject+MJClass.m */,
+				B98E10FB24777EC100E564E3 /* NSString+MJExtension.m */,
+				B98E10FC24777EC100E564E3 /* MJPropertyKey.m */,
+				B98E10FD24777EC100E564E3 /* MJProperty.h */,
+				B98E10FE24777EC100E564E3 /* NSObject+MJKeyValue.h */,
+				B98E10FF24777EC100E564E3 /* NSObject+MJCoding.h */,
+				B98E110024777EC100E564E3 /* MJFoundation.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		B98E1127247783B200E564E3 /* SecretOfRain_data */ = {
+			isa = PBXGroup;
+			children = (
+				B98E1128247783DD00E564E3 /* SecretOfRain_ThemeModel.h */,
+				B98E1129247783DD00E564E3 /* SecretOfRain_ThemeModel.m */,
+			);
+			path = SecretOfRain_data;
+			sourceTree = "<group>";
+		};
+		B9AE62B924566590002F6262 = {
+			isa = PBXGroup;
+			children = (
+				B9AE62C424566590002F6262 /* SecretOfRain */,
+				B9AE62C324566590002F6262 /* Products */,
+				B98E10B424777C9700E564E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9AE62C324566590002F6262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE62C224566590002F6262 /* Secret of Raindrops.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9AE62C424566590002F6262 /* SecretOfRain */ = {
+			isa = PBXGroup;
+			children = (
+				B98E112B24778E0F00E564E3 /* Secret of Raindrops.entitlements */,
+				B98E1127247783B200E564E3 /* SecretOfRain_data */,
+				B98E10CD24777E8500E564E3 /* SecretOfRain_libs */,
+				B98E10AE24777C1C00E564E3 /* SecretOfRain_apns */,
+				B9AE6314245667A7002F6262 /* SecretOfRain_category */,
+				B9AE62E324566682002F6262 /* SecretOfRain_base */,
+				B9AE62E224566677002F6262 /* SecretOfRain_music */,
+				B9AE62E12456665C002F6262 /* SecretOfRain_font */,
+				B9AE62E024566651002F6262 /* SecretOfRain_controller */,
+				B9AE62DF24566647002F6262 /* SecretOfRain_view */,
+				B9AE62DE2456663F002F6262 /* SecretOfRain_lib */,
+				B9AE62C524566590002F6262 /* AppDelegate.h */,
+				B9AE62C624566590002F6262 /* AppDelegate.m */,
+				B9AE62C824566590002F6262 /* SceneDelegate.h */,
+				B9AE62C924566590002F6262 /* SceneDelegate.m */,
+				B9AE62CB24566590002F6262 /* ViewController.h */,
+				B9AE62CC24566590002F6262 /* ViewController.m */,
+				B9AE62CE24566590002F6262 /* Main.storyboard */,
+				B9AE62D124566592002F6262 /* Assets.xcassets */,
+				B9AE62D324566592002F6262 /* LaunchScreen.storyboard */,
+				B9AE62D624566592002F6262 /* Info.plist */,
+				B9AE62D724566592002F6262 /* main.m */,
+				B9AE62E42456669D002F6262 /* SecretOfRain_PrefixHeader.pch */,
+			);
+			path = SecretOfRain;
+			sourceTree = "<group>";
+		};
+		B9AE62DE2456663F002F6262 /* SecretOfRain_lib */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE62F024566799002F6262 /* Masonry */,
+				B9AE62E524566722002F6262 /* Alert */,
+			);
+			path = SecretOfRain_lib;
+			sourceTree = "<group>";
+		};
+		B9AE62DF24566647002F6262 /* SecretOfRain_view */ = {
+			isa = PBXGroup;
+			children = (
+				B949C55524567E0500FDB4AF /* SecretOfRain_RecodCell.h */,
+				B949C55624567E0500FDB4AF /* SecretOfRain_RecodCell.m */,
+				B949C55724567E0500FDB4AF /* SecretOfRain_RecodCell.xib */,
+				B9CB05C224569B2000A35524 /* SecretOfRain_CarCell.h */,
+				B9CB05C324569B2000A35524 /* SecretOfRain_CarCell.m */,
+				B9CB05C424569B2000A35524 /* SecretOfRain_CarCell.xib */,
+				B92AA1F82458272100991719 /* SecretOfRain_countView.h */,
+				B92AA1F92458272100991719 /* SecretOfRain_countView.m */,
+				B92AA1FB2458272B00991719 /* SecretOfRain_countView.xib */,
+			);
+			path = SecretOfRain_view;
+			sourceTree = "<group>";
+		};
+		B9AE62E024566651002F6262 /* SecretOfRain_controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE631B2456689E002F6262 /* SecretOfRain_HomeViewController.h */,
+				B9AE631C2456689E002F6262 /* SecretOfRain_HomeViewController.m */,
+				B9AE631D2456689E002F6262 /* SecretOfRain_HomeViewController.xib */,
+				B949C52E2456711A00FDB4AF /* SecretOfRain_AboutViewController.h */,
+				B949C52F2456711A00FDB4AF /* SecretOfRain_AboutViewController.m */,
+				B949C5302456711A00FDB4AF /* SecretOfRain_AboutViewController.xib */,
+				B949C533245672B200FDB4AF /* SecretOfRain_TipViewController.h */,
+				B949C534245672B200FDB4AF /* SecretOfRain_TipViewController.m */,
+				B949C535245672B200FDB4AF /* SecretOfRain_TipViewController.xib */,
+				B949C53E2456752100FDB4AF /* SecretOfRain_GameViewController.h */,
+				B949C53F2456752100FDB4AF /* SecretOfRain_GameViewController.m */,
+				B949C5402456752100FDB4AF /* SecretOfRain_GameViewController.xib */,
+				B98E11222477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.h */,
+				B98E11232477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.m */,
+				B98E11242477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.xib */,
+				B949C543245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.h */,
+				B949C544245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.m */,
+				B949C545245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.xib */,
+				B949C548245676E900FDB4AF /* SecretOfRain_OverViewController.h */,
+				B949C549245676E900FDB4AF /* SecretOfRain_OverViewController.m */,
+				B949C54A245676E900FDB4AF /* SecretOfRain_OverViewController.xib */,
+				B949C54D245679B200FDB4AF /* SecretOfRain_RecordViewController.h */,
+				B949C54E245679B200FDB4AF /* SecretOfRain_RecordViewController.m */,
+				B949C54F245679B200FDB4AF /* SecretOfRain_RecordViewController.xib */,
+				B9CB05BD24569A6B00A35524 /* SecretOfRain_CarViewController.h */,
+				B9CB05BE24569A6B00A35524 /* SecretOfRain_CarViewController.m */,
+				B9CB05BF24569A6B00A35524 /* SecretOfRain_CarViewController.xib */,
+			);
+			path = SecretOfRain_controller;
+			sourceTree = "<group>";
+		};
+		B9AE62E12456665C002F6262 /* SecretOfRain_font */ = {
+			isa = PBXGroup;
+			children = (
+				B949C52C24566F5300FDB4AF /* ChalkboardSE.ttc */,
+			);
+			path = SecretOfRain_font;
+			sourceTree = "<group>";
+		};
+		B9AE62E224566677002F6262 /* SecretOfRain_music */ = {
+			isa = PBXGroup;
+			children = (
+				B949C539245674EF00FDB4AF /* SecretOfRain_bg.mp3 */,
+				B949C538245674EF00FDB4AF /* SecretOfRain_right.mp3 */,
+				B949C53A245674EF00FDB4AF /* SecretOfRain_wrong.mp3 */,
+			);
+			path = SecretOfRain_music;
+			sourceTree = "<group>";
+		};
+		B9AE62E324566682002F6262 /* SecretOfRain_base */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE631824566873002F6262 /* SecretOfRain_navigate.h */,
+				B9AE631924566873002F6262 /* SecretOfRain_navigate.m */,
+				B98E11162477808100E564E3 /* SecretOfRain_setThemeTool.h */,
+				B98E11172477808100E564E3 /* SecretOfRain_setThemeTool.m */,
+				B98E1119247780C200E564E3 /* SecretOfRain_getPrivacyHelper.h */,
+				B98E111A247780C200E564E3 /* SecretOfRain_getPrivacyHelper.m */,
+			);
+			path = SecretOfRain_base;
+			sourceTree = "<group>";
+		};
+		B9AE62E524566722002F6262 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE62E724566779002F6262 /* YCPopoverAnimator.h */,
+				B9AE62E624566779002F6262 /* UIViewController+YCPopover.h */,
+				B9AE62E824566779002F6262 /* UIViewController+YCPopover.m */,
+				B9AE62EA24566779002F6262 /* YCPopoverAnimator.m */,
+				B9AE62EC24566779002F6262 /* YCPopoverMacro.h */,
+				B9AE62EB24566779002F6262 /* YCPresentationController.h */,
+				B9AE62E924566779002F6262 /* YCPresentationController.m */,
+				B98E111C2477815000E564E3 /* YCPresentHandle.h */,
+				B98E111D2477815000E564E3 /* YCPresentHandle.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B9AE62F024566799002F6262 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE62F124566799002F6262 /* MASCompositeConstraint.h */,
+				B9AE62F224566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B9AE62F324566799002F6262 /* MASConstraint+Private.h */,
+				B9AE62F424566799002F6262 /* MASLayoutConstraint.h */,
+				B9AE62F524566799002F6262 /* NSArray+MASShorthandAdditions.h */,
+				B9AE62F624566799002F6262 /* MASConstraintMaker.h */,
+				B9AE62F724566799002F6262 /* View+MASAdditions.h */,
+				B9AE62F824566799002F6262 /* NSArray+MASAdditions.h */,
+				B9AE62F924566799002F6262 /* MASUtilities.h */,
+				B9AE62FA24566799002F6262 /* MASViewAttribute.h */,
+				B9AE62FB24566799002F6262 /* ViewController+MASAdditions.m */,
+				B9AE62FC24566799002F6262 /* MASViewConstraint.h */,
+				B9AE62FD24566799002F6262 /* MASConstraint.h */,
+				B9AE62FE24566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B9AE62FF24566799002F6262 /* MASCompositeConstraint.m */,
+				B9AE630024566799002F6262 /* MASConstraintMaker.m */,
+				B9AE630124566799002F6262 /* MASLayoutConstraint.m */,
+				B9AE630224566799002F6262 /* NSArray+MASAdditions.m */,
+				B9AE630324566799002F6262 /* View+MASAdditions.m */,
+				B9AE630424566799002F6262 /* View+MASShorthandAdditions.h */,
+				B9AE630524566799002F6262 /* Masonry.h */,
+				B9AE630624566799002F6262 /* MASConstraint.m */,
+				B9AE630724566799002F6262 /* ViewController+MASAdditions.h */,
+				B9AE630824566799002F6262 /* MASViewConstraint.m */,
+				B9AE630924566799002F6262 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B9AE6314245667A7002F6262 /* SecretOfRain_category */ = {
+			isa = PBXGroup;
+			children = (
+				B9AE6315245667CC002F6262 /* NSObject+SecretOfRain_helper.h */,
+				B9AE6316245667CC002F6262 /* NSObject+SecretOfRain_helper.m */,
+			);
+			path = SecretOfRain_category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9AE62C124566590002F6262 /* SecretOfRain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9AE62DB24566592002F6262 /* Build configuration list for PBXNativeTarget "SecretOfRain" */;
+			buildPhases = (
+				B9AE62BE24566590002F6262 /* Sources */,
+				B9AE62BF24566590002F6262 /* Frameworks */,
+				B9AE62C024566590002F6262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretOfRain;
+			productName = SecretOfRain;
+			productReference = B9AE62C224566590002F6262 /* Secret of Raindrops.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9AE62BA24566590002F6262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SecretOfRain_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = yongquan;
+				TargetAttributes = {
+					B9AE62C124566590002F6262 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9AE62BD24566590002F6262 /* Build configuration list for PBXProject "SecretOfRain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9AE62B924566590002F6262;
+			productRefGroup = B9AE62C324566590002F6262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9AE62C124566590002F6262 /* SecretOfRain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9AE62C024566590002F6262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B949C52D24566F5300FDB4AF /* ChalkboardSE.ttc in Resources */,
+				B92AA1FC2458272C00991719 /* SecretOfRain_countView.xib in Resources */,
+				B9AE631F2456689E002F6262 /* SecretOfRain_HomeViewController.xib in Resources */,
+				B949C54C245676E900FDB4AF /* SecretOfRain_OverViewController.xib in Resources */,
+				B949C547245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.xib in Resources */,
+				B9AE62D524566592002F6262 /* LaunchScreen.storyboard in Resources */,
+				B9AE62D224566592002F6262 /* Assets.xcassets in Resources */,
+				B949C55924567E0500FDB4AF /* SecretOfRain_RecodCell.xib in Resources */,
+				B9CB05C624569B2000A35524 /* SecretOfRain_CarCell.xib in Resources */,
+				B949C551245679B200FDB4AF /* SecretOfRain_RecordViewController.xib in Resources */,
+				B9AE62D024566590002F6262 /* Main.storyboard in Resources */,
+				B949C537245672B200FDB4AF /* SecretOfRain_TipViewController.xib in Resources */,
+				B949C53C245674EF00FDB4AF /* SecretOfRain_bg.mp3 in Resources */,
+				B949C53D245674EF00FDB4AF /* SecretOfRain_wrong.mp3 in Resources */,
+				B9CB05C124569A6B00A35524 /* SecretOfRain_CarViewController.xib in Resources */,
+				B949C5422456752100FDB4AF /* SecretOfRain_GameViewController.xib in Resources */,
+				B949C53B245674EF00FDB4AF /* SecretOfRain_right.mp3 in Resources */,
+				B98E11262477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.xib in Resources */,
+				B949C5322456711A00FDB4AF /* SecretOfRain_AboutViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9AE62BE24566590002F6262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AE62CD24566590002F6262 /* ViewController.m in Sources */,
+				B9AE62C724566590002F6262 /* AppDelegate.m in Sources */,
+				B9AE630F24566799002F6262 /* NSArray+MASAdditions.m in Sources */,
+				B9AE62D824566592002F6262 /* main.m in Sources */,
+				B9CB05C024569A6B00A35524 /* SecretOfRain_CarViewController.m in Sources */,
+				B9AE6317245667CC002F6262 /* NSObject+SecretOfRain_helper.m in Sources */,
+				B9AE631324566799002F6262 /* MASViewAttribute.m in Sources */,
+				B98E111324777EC200E564E3 /* NSString+MJExtension.m in Sources */,
+				B9AE62CA24566590002F6262 /* SceneDelegate.m in Sources */,
+				B9AE630E24566799002F6262 /* MASLayoutConstraint.m in Sources */,
+				B98E110D24777EC200E564E3 /* NSObject+MJKeyValue.m in Sources */,
+				B98E110F24777EC200E564E3 /* NSObject+MJCoding.m in Sources */,
+				B949C5412456752100FDB4AF /* SecretOfRain_GameViewController.m in Sources */,
+				B9AE631024566799002F6262 /* View+MASAdditions.m in Sources */,
+				B98E110124777EC100E564E3 /* Reachability.m in Sources */,
+				B949C546245675CD00FDB4AF /* SecretOfRain_ChooseDifficulty.m in Sources */,
+				B9AE631A24566873002F6262 /* SecretOfRain_navigate.m in Sources */,
+				B949C550245679B200FDB4AF /* SecretOfRain_RecordViewController.m in Sources */,
+				B98E111124777EC200E564E3 /* NSObject+MJProperty.m in Sources */,
+				B9AE630C24566799002F6262 /* MASCompositeConstraint.m in Sources */,
+				B949C5312456711A00FDB4AF /* SecretOfRain_AboutViewController.m in Sources */,
+				B9AE62ED24566779002F6262 /* UIViewController+YCPopover.m in Sources */,
+				B9AE630B24566799002F6262 /* ViewController+MASAdditions.m in Sources */,
+				B949C536245672B200FDB4AF /* SecretOfRain_TipViewController.m in Sources */,
+				B98E11252477827E00E564E3 /* SecretOfRain_PrivacyPolicyViewController.m in Sources */,
+				B9AE62EF24566779002F6262 /* YCPopoverAnimator.m in Sources */,
+				B98E111524777EC200E564E3 /* MJFoundation.m in Sources */,
+				B9AE62EE24566779002F6262 /* YCPresentationController.m in Sources */,
+				B92AA1FA2458272100991719 /* SecretOfRain_countView.m in Sources */,
+				B9AE630D24566799002F6262 /* MASConstraintMaker.m in Sources */,
+				B98E112A247783DD00E564E3 /* SecretOfRain_ThemeModel.m in Sources */,
+				B98E110C24777EC200E564E3 /* MJPropertyType.m in Sources */,
+				B9AE631E2456689E002F6262 /* SecretOfRain_HomeViewController.m in Sources */,
+				B9AE630A24566799002F6262 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B949C54B245676E900FDB4AF /* SecretOfRain_OverViewController.m in Sources */,
+				B98E111E2477815000E564E3 /* YCPresentHandle.m in Sources */,
+				B949C55824567E0500FDB4AF /* SecretOfRain_RecodCell.m in Sources */,
+				B98E111024777EC200E564E3 /* MJExtensionConst.m in Sources */,
+				B98E11182477808100E564E3 /* SecretOfRain_setThemeTool.m in Sources */,
+				B9AE631124566799002F6262 /* MASConstraint.m in Sources */,
+				B9CB05C524569B2000A35524 /* SecretOfRain_CarCell.m in Sources */,
+				B9AE631224566799002F6262 /* MASViewConstraint.m in Sources */,
+				B98E111B247780C200E564E3 /* SecretOfRain_getPrivacyHelper.m in Sources */,
+				B98E111224777EC200E564E3 /* NSObject+MJClass.m in Sources */,
+				B98E111424777EC200E564E3 /* MJPropertyKey.m in Sources */,
+				B98E110E24777EC200E564E3 /* MJProperty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9AE62CE24566590002F6262 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9AE62CF24566590002F6262 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9AE62D324566592002F6262 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9AE62D424566592002F6262 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9AE62D924566592002F6262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SecretOfRain/SecretOfRain_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9AE62DA24566592002F6262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SecretOfRain/SecretOfRain_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9AE62DC24566592002F6262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SecretOfRain/Secret of Raindrops.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6MBK6958J2;
+				INFOPLIST_FILE = SecretOfRain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SecretOfRain/SecretOfRain_apns",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongquan.secretofraindrops;
+				PRODUCT_NAME = "Secret of Raindrops";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9AE62DD24566592002F6262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SecretOfRain/Secret of Raindrops.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6MBK6958J2;
+				INFOPLIST_FILE = SecretOfRain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SecretOfRain/SecretOfRain_apns",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongquan.secretofraindrops;
+				PRODUCT_NAME = "Secret of Raindrops";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9AE62BD24566590002F6262 /* Build configuration list for PBXProject "SecretOfRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9AE62D924566592002F6262 /* Debug */,
+				B9AE62DA24566592002F6262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9AE62DB24566592002F6262 /* Build configuration list for PBXNativeTarget "SecretOfRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9AE62DC24566592002F6262 /* Debug */,
+				B9AE62DD24566592002F6262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9AE62BA24566590002F6262 /* Project object */;
+}

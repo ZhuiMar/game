@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aCK-v1-9mP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEPR.TTF">
+            <string>SegoePrint</string>
+        </array>
+        <array key="SEGOEPRB.TTF">
+            <string>SegoePrint-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Go6-MW-EyB">
+            <objects>
+                <navigationController id="aCK-v1-9mP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3q-ha-Fim">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3n1-Ub-hIM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60L-OD-fBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1630" y="-779"/>
+        </scene>
+        <!--Meteoritel Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MeteoritelHomeViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-Kx-Iir">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="FbZ-2u-MJq">
+                                <rect key="frame" x="28" y="165" width="360.5" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FbZ-2u-MJq" secondAttribute="height" multiplier="326.2:59.25" id="eyf-1l-yQ0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-DP-rT4">
+                                <rect key="frame" x="117" y="270" width="180" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmx-pk-zTq">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                        <state key="normal" title="Button" image="level_mode"/>
+                                        <connections>
+                                            <segue destination="N6m-IV-AEi" kind="push" identifier="levelmoad" id="7IX-Db-pYe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWe-dJ-ilj">
+                                        <rect key="frame" x="0.0" y="75" width="180" height="50"/>
+                                        <state key="normal" title="Button" image="endless_mode"/>
+                                        <connections>
+                                            <segue destination="N6m-IV-AEi" kind="push" identifier="endless" id="JMY-je-Hh9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8z-HW-oEC">
+                                        <rect key="frame" x="0.0" y="150" width="180" height="50"/>
+                                        <state key="normal" title="Button" image="leaderboard"/>
+                                        <connections>
+                                            <segue destination="p5x-hu-u1Q" kind="push" identifier="gotoRead" id="RF9-i3-xb9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="NMM-ag-y6O"/>
+                                    <constraint firstAttribute="height" constant="200" id="S09-0v-BtV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deC-hb-s4L">
+                                <rect key="frame" x="27" y="128" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="3xi-Mg-9DJ"/>
+                                    <constraint firstAttribute="height" constant="38" id="jBT-PN-At1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="introduction"/>
+                                <connections>
+                                    <action selector="aboutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AK2-Jf-bUF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaA-cQ-45m">
+                                <rect key="frame" x="349" y="128" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="HDy-AZ-rzn"/>
+                                    <constraint firstAttribute="width" constant="38" id="Kc2-GA-fH4"/>
+                                </constraints>
+                                <state key="normal" image="music_1"/>
+                                <state key="selected" image="music_1"/>
+                                <connections>
+                                    <action selector="dianJjYingYue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Hw-2L-xLU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i0M-Kx-Iir" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F67-1D-4hS"/>
+                            <constraint firstItem="i0M-Kx-Iir" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JNc-iL-Q5u"/>
+                            <constraint firstItem="UcS-DP-rT4" firstAttribute="centerX" secondItem="i0M-Kx-Iir" secondAttribute="centerX" id="JOm-Bx-Kbc"/>
+                            <constraint firstAttribute="bottom" secondItem="i0M-Kx-Iir" secondAttribute="bottom" id="LZa-75-ken"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KaA-cQ-45m" secondAttribute="trailing" constant="27" id="YfP-eO-hV0"/>
+                            <constraint firstItem="FbZ-2u-MJq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="326.2:375" id="egF-k1-spC"/>
+                            <constraint firstItem="UcS-DP-rT4" firstAttribute="top" secondItem="FbZ-2u-MJq" secondAttribute="bottom" constant="40" id="ehh-ER-XBW"/>
+                            <constraint firstItem="FbZ-2u-MJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="127.5:667" id="f5o-Sp-oqF"/>
+                            <constraint firstItem="deC-hb-s4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="hKD-9b-Kuo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0M-Kx-Iir" secondAttribute="trailing" id="jUB-GL-gPS"/>
+                            <constraint firstItem="FbZ-2u-MJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" multiplier="25.5:375" id="nT3-w0-smt"/>
+                            <constraint firstItem="deC-hb-s4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nt2-jJ-Xf9"/>
+                            <constraint firstItem="KaA-cQ-45m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="sN1-nO-LbZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bXQ-JR-1TA"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="-779"/>
+        </scene>
+        <!--Lead View Controller-->
+        <scene sceneID="ySV-bf-vyK">
+            <objects>
+                <viewController id="p5x-hu-u1Q" customClass="LeadViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DY6-6d-kq6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UEC-iC-GIk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXX-ut-Gki">
+                                <rect key="frame" x="20" y="110" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="gHB-pa-lEt"/>
+                                    <constraint firstAttribute="height" constant="33" id="o0R-Xn-hvg"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goToHome:" destination="p5x-hu-u1Q" eventType="touchUpInside" id="ESQ-uy-1ZY"/>
+                                    <action selector="goToHome:" destination="N6m-IV-AEi" eventType="touchUpInside" id="Oft-4o-1gv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaderboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tor-rg-uW3">
+                                <rect key="frame" x="121" y="113" width="172.5" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="LjD-cn-IyU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GFR-Ce-hDV">
+                                <rect key="frame" x="25" y="181" width="364" height="636"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-F4-ZJY">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="303"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="CrD-lJ-FIq">
+                                        <rect key="frame" x="0.0" y="333" width="364" height="303"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-5h-zTF">
+                                <rect key="frame" x="25" y="181" width="364" height="636"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cY9-q1-4Wx">
+                                        <rect key="frame" x="30" y="0.0" width="304" height="303"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akL-Rp-tos">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="76"/>
+                                                <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                <color key="textColor" red="0.11764705882352941" green="0.6470588235294118" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-Lp-Tmn">
+                                                <rect key="frame" x="0.0" y="76" width="304" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDC-mq-15e">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333333333335" green="0.23529411764705882" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR0-ih-TRY">
+                                                        <rect key="frame" x="194.5" y="11.5" width="109.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-m8-4Hd">
+                                                <rect key="frame" x="0.0" y="151.5" width="304" height="76"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8O-Gt-LrU">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-aa-1Mq">
+                                                        <rect key="frame" x="194.5" y="11.5" width="109.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-qi-AiX">
+                                                <rect key="frame" x="0.0" y="227.5" width="304" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-92-HxE">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU6-zb-xNN">
+                                                        <rect key="frame" x="194.5" y="11.5" width="109.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oEt-Kg-PWv">
+                                        <rect key="frame" x="30" y="333" width="304" height="303"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endless mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLH-on-Sx8">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="76"/>
+                                                <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="25"/>
+                                                <color key="textColor" red="0.11764705882352941" green="0.6470588235294118" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Klx-X2-K4N">
+                                                <rect key="frame" x="0.0" y="76" width="304" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLU-Y8-qVi">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwX-0d-inv">
+                                                        <rect key="frame" x="282" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="odW-lo-2Vw">
+                                                <rect key="frame" x="0.0" y="151.5" width="304" height="76"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74F-Jb-5bv">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-OR-Hkc">
+                                                        <rect key="frame" x="282" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3tF-14-zOT">
+                                                <rect key="frame" x="0.0" y="227.5" width="304" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4E-fi-Ipm">
+                                                        <rect key="frame" x="0.0" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKv-Dc-xVL">
+                                                        <rect key="frame" x="282" y="11.5" width="22" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="30"/>
+                                                        <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cY9-q1-4Wx" firstAttribute="leading" secondItem="QYh-5h-zTF" secondAttribute="leading" constant="30" id="GOJ-im-RaA"/>
+                                    <constraint firstItem="oEt-Kg-PWv" firstAttribute="leading" secondItem="QYh-5h-zTF" secondAttribute="leading" constant="30" id="Zde-yu-twu"/>
+                                    <constraint firstAttribute="trailing" secondItem="oEt-Kg-PWv" secondAttribute="trailing" constant="30" id="b1w-EG-TSk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cY9-q1-4Wx" secondAttribute="trailing" constant="30" id="qcm-kU-o72"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vza-E2-Xp7" firstAttribute="trailing" secondItem="GFR-Ce-hDV" secondAttribute="trailing" constant="25" id="0zU-GZ-vI2"/>
+                            <constraint firstItem="QYh-5h-zTF" firstAttribute="top" secondItem="vza-E2-Xp7" secondAttribute="top" constant="93" id="1Gn-Xn-M00"/>
+                            <constraint firstItem="UEC-iC-GIk" firstAttribute="leading" secondItem="DY6-6d-kq6" secondAttribute="leading" id="4ZK-GA-DbZ"/>
+                            <constraint firstItem="tor-rg-uW3" firstAttribute="centerY" secondItem="dXX-ut-Gki" secondAttribute="centerY" id="5np-xe-1z9"/>
+                            <constraint firstItem="vza-E2-Xp7" firstAttribute="bottom" secondItem="QYh-5h-zTF" secondAttribute="bottom" constant="45" id="929-RK-ppC"/>
+                            <constraint firstItem="GFR-Ce-hDV" firstAttribute="top" secondItem="vza-E2-Xp7" secondAttribute="top" constant="93" id="AbS-AA-D9j"/>
+                            <constraint firstItem="dXX-ut-Gki" firstAttribute="leading" secondItem="vza-E2-Xp7" secondAttribute="leading" constant="20" id="FmV-mW-QIl"/>
+                            <constraint firstItem="GFR-Ce-hDV" firstAttribute="leading" secondItem="vza-E2-Xp7" secondAttribute="leading" constant="25" id="LoK-hZ-57Q"/>
+                            <constraint firstItem="QYh-5h-zTF" firstAttribute="leading" secondItem="vza-E2-Xp7" secondAttribute="leading" constant="25" id="Pav-pi-Aa6"/>
+                            <constraint firstItem="dXX-ut-Gki" firstAttribute="top" secondItem="vza-E2-Xp7" secondAttribute="top" constant="22" id="Zxz-65-7pq"/>
+                            <constraint firstItem="vza-E2-Xp7" firstAttribute="trailing" secondItem="UEC-iC-GIk" secondAttribute="trailing" id="bct-wd-jJ1"/>
+                            <constraint firstItem="UEC-iC-GIk" firstAttribute="top" secondItem="DY6-6d-kq6" secondAttribute="top" id="cYh-lg-M1U"/>
+                            <constraint firstItem="tor-rg-uW3" firstAttribute="centerX" secondItem="vza-E2-Xp7" secondAttribute="centerX" id="cfk-U8-DOt"/>
+                            <constraint firstItem="vza-E2-Xp7" firstAttribute="trailing" secondItem="QYh-5h-zTF" secondAttribute="trailing" constant="25" id="ipH-G4-0Gx"/>
+                            <constraint firstItem="vza-E2-Xp7" firstAttribute="bottom" secondItem="GFR-Ce-hDV" secondAttribute="bottom" constant="45" id="ldN-Bk-fU5"/>
+                            <constraint firstAttribute="bottom" secondItem="UEC-iC-GIk" secondAttribute="bottom" id="uGY-9V-8JH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vza-E2-Xp7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q9i-1R-zYL"/>
+                    <connections>
+                        <outlet property="endle1" destination="IwX-0d-inv" id="Tmg-Xo-505"/>
+                        <outlet property="endle2" destination="xs5-OR-Hkc" id="QNV-XH-AKh"/>
+                        <outlet property="endle3" destination="LKv-Dc-xVL" id="IQQ-l8-TCU"/>
+                        <outlet property="level1" destination="tR0-ih-TRY" id="9DW-Bn-vPg"/>
+                        <outlet property="level2" destination="dBA-aa-1Mq" id="L1R-ef-9pS"/>
+                        <outlet property="level3" destination="PU6-zb-xNN" id="yei-a6-zJO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbS-EK-YQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-64"/>
+        </scene>
+        <!--Defeat View Controller-->
+        <scene sceneID="FV8-6U-J4D">
+            <objects>
+                <viewController id="YbC-T1-073" customClass="DefeatViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bTD-3a-bjf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fQ7-NO-oJQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="tJf-oW-1Mq">
+                                <rect key="frame" x="82" y="212" width="250" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9CP-3J-uj2"/>
+                                    <constraint firstAttribute="height" constant="136" id="Rkq-XZ-Lcb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-Cd-akI">
+                                <rect key="frame" x="73" y="423" width="268" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-dH-idF">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="goHome:" destination="YbC-T1-073" eventType="touchUpInside" id="G7c-kc-BMq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFR-7i-NCa">
+                                        <rect key="frame" x="140" y="0.0" width="128" height="60"/>
+                                        <state key="normal" image="again"/>
+                                        <connections>
+                                            <action selector="again:" destination="YbC-T1-073" eventType="touchUpInside" id="Qrr-Ze-xe9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1ah-Pr-CGt"/>
+                                    <constraint firstAttribute="width" constant="268" id="qW9-RH-0Qy"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyh-fD-Hr4">
+                                <rect key="frame" x="109.5" y="242" width="195.5" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="c6W-r8-8H1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="60"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.67450980392156867" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fQ7-NO-oJQ" firstAttribute="leading" secondItem="asr-Qc-XJr" secondAttribute="leading" id="0C2-O7-BOF"/>
+                            <constraint firstItem="sO4-Cd-akI" firstAttribute="centerX" secondItem="fQ7-NO-oJQ" secondAttribute="centerX" id="HT6-ws-kCd"/>
+                            <constraint firstItem="fQ7-NO-oJQ" firstAttribute="top" secondItem="bTD-3a-bjf" secondAttribute="top" id="Pwv-z4-z14"/>
+                            <constraint firstItem="vyh-fD-Hr4" firstAttribute="top" secondItem="tJf-oW-1Mq" secondAttribute="top" constant="30" id="UK2-3Y-Dg9"/>
+                            <constraint firstItem="sO4-Cd-akI" firstAttribute="top" secondItem="tJf-oW-1Mq" secondAttribute="bottom" constant="75" id="Vwz-h1-gkO"/>
+                            <constraint firstItem="tJf-oW-1Mq" firstAttribute="centerX" secondItem="fQ7-NO-oJQ" secondAttribute="centerX" id="Ygn-vv-dy6"/>
+                            <constraint firstAttribute="bottom" secondItem="fQ7-NO-oJQ" secondAttribute="bottom" id="ZwF-BO-Cbu"/>
+                            <constraint firstItem="tJf-oW-1Mq" firstAttribute="top" secondItem="asr-Qc-XJr" secondAttribute="top" constant="168" id="fSM-SD-BWL"/>
+                            <constraint firstItem="vyh-fD-Hr4" firstAttribute="centerX" secondItem="fQ7-NO-oJQ" secondAttribute="centerX" id="n0d-Xn-zNP"/>
+                            <constraint firstItem="fQ7-NO-oJQ" firstAttribute="trailing" secondItem="asr-Qc-XJr" secondAttribute="trailing" id="zI2-se-9yT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="asr-Qc-XJr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGI-YD-Anb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="657"/>
+        </scene>
+        <!--Level View Controller-->
+        <scene sceneID="CTh-ee-PG1">
+            <objects>
+                <viewController id="N6m-IV-AEi" customClass="LevelViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V6q-Mr-5uk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="DtD-2D-Q5P">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-XS-Aby">
+                                <rect key="frame" x="0.0" y="763.5" width="414" height="98.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98.599999999999994" id="8Zq-Ki-OEa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="4Xo-Eg-8bq">
+                                <rect key="frame" x="378.5" y="121" width="25.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25.5" id="Kh0-jK-K5h"/>
+                                    <constraint firstAttribute="height" constant="23" id="Y3f-s2-YXY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="vh3-0N-Mul">
+                                <rect key="frame" x="345" y="121" width="25.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="jVk-4t-2tx"/>
+                                    <constraint firstAttribute="width" constant="25.5" id="srQ-kI-mNI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="3s0-Lv-LtZ">
+                                <rect key="frame" x="311.5" y="121" width="25.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="9QH-PC-zh8"/>
+                                    <constraint firstAttribute="width" constant="25.5" id="DsI-04-4y3"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="auy-1u-VX8">
+                                <rect key="frame" x="77" y="814" width="260" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYF-nx-YCV">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="4" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button4:" destination="N6m-IV-AEi" eventType="touchUpInside" id="8Ey-Wq-ODb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-Hz-YOy">
+                                        <rect key="frame" x="44.5" y="0.0" width="37" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="5" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button5:" destination="N6m-IV-AEi" eventType="touchUpInside" id="V0h-eb-AtD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUd-jZ-Qco">
+                                        <rect key="frame" x="89.5" y="0.0" width="36.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="6" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button6:" destination="N6m-IV-AEi" eventType="touchUpInside" id="xMO-GL-2w6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZU-YG-4Uf">
+                                        <rect key="frame" x="134" y="0.0" width="36.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="7" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button7:" destination="N6m-IV-AEi" eventType="touchUpInside" id="ySR-mb-WXa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-1T-Fij">
+                                        <rect key="frame" x="178.5" y="0.0" width="37" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="8" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button8:" destination="N6m-IV-AEi" eventType="touchUpInside" id="hiy-Ai-Mi1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5er-Dw-rHo">
+                                        <rect key="frame" x="223.5" y="0.0" width="36.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="9" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button9:" destination="N6m-IV-AEi" eventType="touchUpInside" id="E0G-OV-miL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="4HU-1x-Y85"/>
+                                    <constraint firstAttribute="height" constant="38" id="g6D-03-bbP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7qj-wm-xbz">
+                                <rect key="frame" x="142" y="776" width="130" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRJ-N7-LMd">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="1" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button1:" destination="N6m-IV-AEi" eventType="touchUpInside" id="6EN-3f-fCh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6o-Bg-Xb6">
+                                        <rect key="frame" x="46" y="0.0" width="38" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="2" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button2:" destination="N6m-IV-AEi" eventType="touchUpInside" id="dh2-ix-wg7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNj-Qy-rnc">
+                                        <rect key="frame" x="92" y="0.0" width="38" height="38"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="24"/>
+                                        <state key="normal" title="3" backgroundImage="button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button3:" destination="N6m-IV-AEi" eventType="touchUpInside" id="U4t-Bz-gPI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="LNS-RP-fIC"/>
+                                    <constraint firstAttribute="height" constant="38" id="ZFB-dx-ySa"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WA-ua-3MJ">
+                                <rect key="frame" x="13" y="117" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="COy-cd-kIy"/>
+                                    <constraint firstAttribute="height" constant="33" id="RKH-8F-TyA"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goToHome:" destination="N6m-IV-AEi" eventType="touchUpInside" id="iXd-yu-x47"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="XM7-UV-l7H">
+                                <rect key="frame" x="137" y="118" width="140" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-Gs-J9K">
+                                        <rect key="frame" x="22" y="0.0" width="96" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="Js7-S4-GNS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="30"/>
+                                        <color key="textColor" red="0.93333333333333335" green="0.23529411764705882" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skq-UU-M6V">
+                                        <rect key="frame" x="53" y="40" width="34.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="1BX-JV-Aos"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SegoePrint" family="Segoe Print" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.75294117647058822" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="xhG-Ex-PFD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DtD-2D-Q5P" firstAttribute="leading" secondItem="FmJ-DD-sYT" secondAttribute="leading" id="3og-lL-BCD"/>
+                            <constraint firstItem="4WA-ua-3MJ" firstAttribute="top" secondItem="FmJ-DD-sYT" secondAttribute="top" constant="29" id="4hm-fq-4P7"/>
+                            <constraint firstItem="XM7-UV-l7H" firstAttribute="centerX" secondItem="DtD-2D-Q5P" secondAttribute="centerX" id="C2F-4S-PvS"/>
+                            <constraint firstItem="auy-1u-VX8" firstAttribute="top" secondItem="7qj-wm-xbz" secondAttribute="bottom" id="Ehb-sh-MYh"/>
+                            <constraint firstItem="DtD-2D-Q5P" firstAttribute="top" secondItem="V6q-Mr-5uk" secondAttribute="top" id="JQi-m3-Ept"/>
+                            <constraint firstItem="vh3-0N-Mul" firstAttribute="leading" secondItem="3s0-Lv-LtZ" secondAttribute="trailing" constant="8" id="KQj-gQ-eMP"/>
+                            <constraint firstItem="FmJ-DD-sYT" firstAttribute="trailing" secondItem="ClN-XS-Aby" secondAttribute="trailing" id="KUl-5g-qOj"/>
+                            <constraint firstItem="4Xo-Eg-8bq" firstAttribute="leading" secondItem="vh3-0N-Mul" secondAttribute="trailing" constant="8" id="M0K-bY-T1r"/>
+                            <constraint firstItem="ClN-XS-Aby" firstAttribute="leading" secondItem="FmJ-DD-sYT" secondAttribute="leading" id="Mlx-2E-hxP"/>
+                            <constraint firstItem="FmJ-DD-sYT" firstAttribute="trailing" secondItem="DtD-2D-Q5P" secondAttribute="trailing" id="NrG-jy-3xw"/>
+                            <constraint firstItem="3s0-Lv-LtZ" firstAttribute="top" secondItem="vh3-0N-Mul" secondAttribute="top" id="RFp-V4-erX"/>
+                            <constraint firstItem="3s0-Lv-LtZ" firstAttribute="top" secondItem="FmJ-DD-sYT" secondAttribute="top" constant="33" id="RQb-dE-gyD"/>
+                            <constraint firstItem="FmJ-DD-sYT" firstAttribute="bottom" secondItem="ClN-XS-Aby" secondAttribute="bottom" id="dt3-zQ-R4h"/>
+                            <constraint firstItem="4WA-ua-3MJ" firstAttribute="leading" secondItem="FmJ-DD-sYT" secondAttribute="leading" constant="13" id="fmX-Mt-fzM"/>
+                            <constraint firstItem="FmJ-DD-sYT" firstAttribute="trailing" secondItem="4Xo-Eg-8bq" secondAttribute="trailing" constant="10" id="hUv-4j-WbF"/>
+                            <constraint firstItem="3s0-Lv-LtZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4WA-ua-3MJ" secondAttribute="trailing" constant="8" symbolic="YES" id="hhJ-Ij-He9"/>
+                            <constraint firstItem="7qj-wm-xbz" firstAttribute="centerX" secondItem="DtD-2D-Q5P" secondAttribute="centerX" id="ieG-VK-EZc"/>
+                            <constraint firstItem="auy-1u-VX8" firstAttribute="centerX" secondItem="DtD-2D-Q5P" secondAttribute="centerX" id="oCu-B0-H2b"/>
+                            <constraint firstItem="XM7-UV-l7H" firstAttribute="top" secondItem="FmJ-DD-sYT" secondAttribute="top" constant="30" id="qlv-Te-YS9"/>
+                            <constraint firstAttribute="bottom" secondItem="DtD-2D-Q5P" secondAttribute="bottom" id="riI-uV-lB6"/>
+                            <constraint firstItem="FmJ-DD-sYT" firstAttribute="bottom" secondItem="auy-1u-VX8" secondAttribute="bottom" constant="10" id="two-ZZ-PKW"/>
+                            <constraint firstItem="3s0-Lv-LtZ" firstAttribute="top" secondItem="4Xo-Eg-8bq" secondAttribute="top" id="wrF-2i-3fU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FmJ-DD-sYT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZ5-bS-FaM"/>
+                    <connections>
+                        <outlet property="backBtn" destination="4WA-ua-3MJ" id="fn8-ie-bZT"/>
+                        <outlet property="backImage" destination="DtD-2D-Q5P" id="h2H-Tl-5l7"/>
+                        <outlet property="earehImage" destination="ClN-XS-Aby" id="JvS-tD-E7s"/>
+                        <outlet property="titelT" destination="skq-UU-M6V" id="F8s-ck-ykw"/>
+                        <outlet property="titleIOne" destination="8QH-Gs-J9K" id="oaR-QY-ZbY"/>
+                        <outlet property="xingOne" destination="3s0-Lv-LtZ" id="nqf-c7-NMB"/>
+                        <outlet property="xingT" destination="vh3-0N-Mul" id="1cR-9M-0CU"/>
+                        <outletCollection property="numberButton" destination="XRJ-N7-LMd" collectionClass="NSMutableArray" id="ZVK-48-r3x"/>
+                        <outletCollection property="numberButton" destination="E6o-Bg-Xb6" collectionClass="NSMutableArray" id="ad0-R4-fZf"/>
+                        <outletCollection property="numberButton" destination="iNj-Qy-rnc" collectionClass="NSMutableArray" id="CLw-gM-idd"/>
+                        <outletCollection property="numberButton" destination="TYF-nx-YCV" collectionClass="NSMutableArray" id="ZQS-uj-deD"/>
+                        <outletCollection property="numberButton" destination="8Ah-Hz-YOy" collectionClass="NSMutableArray" id="kQf-tk-o2E"/>
+                        <outletCollection property="numberButton" destination="dUd-jZ-Qco" collectionClass="NSMutableArray" id="sG6-Nd-Vcc"/>
+                        <outletCollection property="numberButton" destination="eZU-YG-4Uf" collectionClass="NSMutableArray" id="XtH-iw-t0S"/>
+                        <outletCollection property="numberButton" destination="YCi-1T-Fij" collectionClass="NSMutableArray" id="fmd-cW-Jyo"/>
+                        <outletCollection property="numberButton" destination="5er-Dw-rHo" collectionClass="NSMutableArray" id="gFu-SP-JzH"/>
+                        <segue destination="YbC-T1-073" kind="modal" identifier="showDefeat" modalPresentationStyle="fullScreen" id="GcT-wD-blK"/>
+                        <segue destination="9aW-4a-nbv" kind="modal" identifier="showVictory" modalPresentationStyle="fullScreen" id="Iuh-KP-15C"/>
+                        <segue destination="0hO-Tz-3Xb" kind="modal" identifier="showGameOver" modalPresentationStyle="fullScreen" id="hH7-vf-l7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkq-9o-yqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1181.1594202898552" y="-75.669642857142847"/>
+        </scene>
+        <!--Victory View Controller-->
+        <scene sceneID="QZZ-hZ-4B8">
+            <objects>
+                <viewController id="9aW-4a-nbv" customClass="VictoryViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xK0-KO-xP5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="e54-JD-Rk8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jky-Df-CxR">
+                                <rect key="frame" x="73" y="423" width="268" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsN-9N-aTi">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="gohome:" destination="9aW-4a-nbv" eventType="touchUpInside" id="v56-SW-vgE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-cK-Cwo">
+                                        <rect key="frame" x="140" y="0.0" width="128" height="60"/>
+                                        <state key="normal" image="neaxt"/>
+                                        <connections>
+                                            <action selector="nextFunc:" destination="9aW-4a-nbv" eventType="touchUpInside" id="nan-QM-3YA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9tW-ww-d0i"/>
+                                    <constraint firstAttribute="width" constant="268" id="emn-li-FYa"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="ihs-gi-GI8">
+                                <rect key="frame" x="82" y="212" width="250" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="lHH-DE-1F4"/>
+                                    <constraint firstAttribute="height" constant="136" id="wqc-Fa-oTf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vig-0O-5bu">
+                                <rect key="frame" x="82" y="212" width="250" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4L-Qp-srC">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="68"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="37"/>
+                                        <color key="textColor" red="1" green="0.24313725489999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wz-Nh-AHU">
+                                        <rect key="frame" x="0.0" y="68" width="250" height="68"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="45"/>
+                                        <color key="textColor" red="1" green="0.24313725489999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vig-0O-5bu" firstAttribute="leading" secondItem="ihs-gi-GI8" secondAttribute="leading" id="0ab-DL-uv3"/>
+                            <constraint firstItem="Jky-Df-CxR" firstAttribute="centerX" secondItem="e54-JD-Rk8" secondAttribute="centerX" id="16z-6y-dgn"/>
+                            <constraint firstAttribute="bottom" secondItem="e54-JD-Rk8" secondAttribute="bottom" id="2l0-f0-Yam"/>
+                            <constraint firstItem="vig-0O-5bu" firstAttribute="trailing" secondItem="ihs-gi-GI8" secondAttribute="trailing" id="4AM-sQ-weV"/>
+                            <constraint firstItem="e54-JD-Rk8" firstAttribute="trailing" secondItem="rak-a7-uCO" secondAttribute="trailing" id="Aee-dI-T6N"/>
+                            <constraint firstItem="vig-0O-5bu" firstAttribute="top" secondItem="ihs-gi-GI8" secondAttribute="top" id="BuQ-QJ-RI6"/>
+                            <constraint firstItem="vig-0O-5bu" firstAttribute="bottom" secondItem="ihs-gi-GI8" secondAttribute="bottom" id="KzT-I5-jmE"/>
+                            <constraint firstItem="e54-JD-Rk8" firstAttribute="top" secondItem="xK0-KO-xP5" secondAttribute="top" id="QDZ-H2-2IF"/>
+                            <constraint firstItem="ihs-gi-GI8" firstAttribute="centerX" secondItem="e54-JD-Rk8" secondAttribute="centerX" id="jcx-Rb-sQj"/>
+                            <constraint firstItem="ihs-gi-GI8" firstAttribute="top" secondItem="rak-a7-uCO" secondAttribute="top" constant="168" id="oLh-OT-LZU"/>
+                            <constraint firstItem="Jky-Df-CxR" firstAttribute="top" secondItem="ihs-gi-GI8" secondAttribute="bottom" constant="75" id="q6K-lb-s55"/>
+                            <constraint firstItem="e54-JD-Rk8" firstAttribute="leading" secondItem="rak-a7-uCO" secondAttribute="leading" id="sd9-Pw-eIG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rak-a7-uCO"/>
+                    </view>
+                    <connections>
+                        <outlet property="guanshu" destination="9Wz-Nh-AHU" id="w5K-Cc-Wew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qk-QM-0T6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1701" y="657"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="ppX-Ey-cWG">
+            <objects>
+                <viewController id="0hO-Tz-3Xb" customClass="GameOverViewController" customModule="Meteorite_Impact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WB-H0-4CC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="aoJ-SH-nfg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="jM2-bU-vU5">
+                                <rect key="frame" x="82" y="212" width="250" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5i6-Rj-KxW"/>
+                                    <constraint firstAttribute="height" constant="136" id="SDG-vH-P7L"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZNb-fZ-a0F">
+                                <rect key="frame" x="73" y="423" width="268" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49s-rX-swn">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="gohome:" destination="0hO-Tz-3Xb" eventType="touchUpInside" id="2Pb-F2-V4E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGA-MF-DUU">
+                                        <rect key="frame" x="140" y="0.0" width="128" height="60"/>
+                                        <state key="normal" image="neaxt"/>
+                                        <connections>
+                                            <action selector="next:" destination="0hO-Tz-3Xb" eventType="touchUpInside" id="iTE-IX-bfU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="9M9-7M-0Ht"/>
+                                    <constraint firstAttribute="height" constant="60" id="qTd-sG-zG6"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-1o-pJZ">
+                                <rect key="frame" x="82" y="212" width="250" height="136"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqg-Zz-fAM">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="68"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="37"/>
+                                        <color key="textColor" red="0.1764705882" green="0.67450980390000004" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKt-c1-3zT">
+                                        <rect key="frame" x="0.0" y="68" width="250" height="68"/>
+                                        <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="45"/>
+                                        <color key="textColor" red="1" green="0.24313725489999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A0q-1o-pJZ" firstAttribute="leading" secondItem="jM2-bU-vU5" secondAttribute="leading" id="32O-oP-TSc"/>
+                            <constraint firstItem="ZNb-fZ-a0F" firstAttribute="centerX" secondItem="aoJ-SH-nfg" secondAttribute="centerX" id="BQD-wz-f9S"/>
+                            <constraint firstItem="A0q-1o-pJZ" firstAttribute="bottom" secondItem="jM2-bU-vU5" secondAttribute="bottom" id="RIE-is-Bjd"/>
+                            <constraint firstItem="aoJ-SH-nfg" firstAttribute="top" secondItem="6WB-H0-4CC" secondAttribute="top" id="Tc6-59-CNd"/>
+                            <constraint firstAttribute="bottom" secondItem="aoJ-SH-nfg" secondAttribute="bottom" id="WCe-Nt-Wnr"/>
+                            <constraint firstItem="aoJ-SH-nfg" firstAttribute="leading" secondItem="oGZ-hn-gAZ" secondAttribute="leading" id="bLa-A4-V5z"/>
+                            <constraint firstItem="aoJ-SH-nfg" firstAttribute="trailing" secondItem="oGZ-hn-gAZ" secondAttribute="trailing" id="c9z-YW-D4O"/>
+                            <constraint firstItem="jM2-bU-vU5" firstAttribute="top" secondItem="oGZ-hn-gAZ" secondAttribute="top" constant="168" id="e5u-Pz-SKG"/>
+                            <constraint firstItem="ZNb-fZ-a0F" firstAttribute="top" secondItem="jM2-bU-vU5" secondAttribute="bottom" constant="75" id="k2h-Js-YOU"/>
+                            <constraint firstItem="A0q-1o-pJZ" firstAttribute="top" secondItem="jM2-bU-vU5" secondAttribute="top" id="lSu-Zy-lIU"/>
+                            <constraint firstItem="A0q-1o-pJZ" firstAttribute="trailing" secondItem="jM2-bU-vU5" secondAttribute="trailing" id="mya-BR-0D0"/>
+                            <constraint firstItem="jM2-bU-vU5" firstAttribute="centerX" secondItem="aoJ-SH-nfg" secondAttribute="centerX" id="xfJ-iG-Zm0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oGZ-hn-gAZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="fenshu" destination="rKt-c1-3zT" id="dBS-BL-foj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mit-Qm-s3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="657"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JMY-je-Hh9"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="again" width="130" height="43"/>
+        <image name="back" width="38" height="38"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="bg1" width="375" height="667"/>
+        <image name="button" width="40.5" height="40.5"/>
+        <image name="card" width="325" height="250"/>
+        <image name="earth" width="374" height="100"/>
+        <image name="endless_mode" width="180" height="43"/>
+        <image name="heart" width="25.5" height="22.5"/>
+        <image name="home" width="130" height="43"/>
+        <image name="introduction" width="38" height="38"/>
+        <image name="leaderboard" width="180" height="43"/>
+        <image name="level_mode" width="180" height="43"/>
+        <image name="music_1" width="38" height="38"/>
+        <image name="name" width="327" height="60"/>
+        <image name="neaxt" width="130" height="43"/>
+    </resources>
+</document>

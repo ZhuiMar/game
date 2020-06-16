@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLIntroductionVC">
+            <connections>
+                <outlet property="contentLabel" destination="Ujq-uu-6cb" id="f1r-Bn-eo4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="R0w-f4-PQG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xVP-kV-BXY">
+                    <rect key="frame" x="23" y="125" width="329" height="417"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="329" id="GV9-cZ-y5C"/>
+                        <constraint firstAttribute="height" constant="417" id="mi3-i9-6cf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-uu-6cb">
+                    <rect key="frame" x="46" y="148" width="283" height="371"/>
+                    <string key="text">"Japanese Enlightenment" 
+is an app for parents and 
+children.Not only can 
+it help users improve their 
+language talents, but it 
+can also improve the 
+relationship between 
+family members and allow 
+children to grow up 
+in happiness.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ujq-uu-6cb" firstAttribute="leading" secondItem="xVP-kV-BXY" secondAttribute="leading" constant="23" id="2XU-It-380"/>
+                <constraint firstItem="R0w-f4-PQG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2ep-Sm-uz6"/>
+                <constraint firstAttribute="bottom" secondItem="R0w-f4-PQG" secondAttribute="bottom" id="DEg-w6-f53"/>
+                <constraint firstAttribute="trailing" secondItem="R0w-f4-PQG" secondAttribute="trailing" id="Gdq-2V-CvN"/>
+                <constraint firstItem="Ujq-uu-6cb" firstAttribute="trailing" secondItem="xVP-kV-BXY" secondAttribute="trailing" constant="-23" id="JZf-Us-QL3"/>
+                <constraint firstItem="Ujq-uu-6cb" firstAttribute="top" secondItem="xVP-kV-BXY" secondAttribute="top" constant="23" id="Yet-9z-pE4"/>
+                <constraint firstItem="Ujq-uu-6cb" firstAttribute="bottom" secondItem="xVP-kV-BXY" secondAttribute="bottom" constant="-23" id="eao-6w-CFa"/>
+                <constraint firstItem="R0w-f4-PQG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="htr-Xg-UyD"/>
+                <constraint firstItem="xVP-kV-BXY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ii5-Fq-3Zd"/>
+                <constraint firstItem="xVP-kV-BXY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tcN-HE-cbb"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="content_bg" width="329" height="417"/>
+    </resources>
+</document>

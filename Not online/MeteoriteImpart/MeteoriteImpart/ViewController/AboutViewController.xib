@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEGOEPRB.TTF">
+            <string>SegoePrint-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="Meteorite_Impact" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="kwG-A7-Iw5" id="ZAw-C5-Hla"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kwG-A7-Iw5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="xIj-Ld-ZxE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content" translatesAutoresizingMaskIntoConstraints="NO" id="C42-qj-tWl">
+                    <rect key="frame" x="67" y="248" width="280" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="r8z-kM-D6y"/>
+                        <constraint firstAttribute="width" constant="280" id="yju-1P-GD7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIM-0l-kaf">
+                    <rect key="frame" x="56" y="278" width="302" height="356"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="302" id="nHB-oo-Nv0"/>
+                    </constraints>
+                    <string key="text">“Meteorite impact” 
+is a mathematical elimination 
+game. The operation is simple 
+and easy to operate. Players 
+can complete the equations 
+on the meteorite to eliminate 
+the meteorite. Through the 
+game mechanism, players 
+can train their mental 
+arithmetic and hands-on 
+ability.
+                            </string>
+                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="17"/>
+                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEb-WF-lng">
+                    <rect key="frame" x="20" y="68" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="4Zk-Py-SzJ"/>
+                        <constraint firstAttribute="width" constant="33" id="tnO-a1-IHk"/>
+                    </constraints>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="uae-wi-WSD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnQ-ZR-V6S">
+                    <rect key="frame" x="56" y="55" width="302" height="59.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="302" id="lM4-KC-1aE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SegoePrint-Bold" family="Segoe Print" pointSize="34"/>
+                    <color key="textColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BEb-WF-lng" firstAttribute="top" secondItem="jAF-8y-z82" secondAttribute="top" constant="24" id="0Sz-5W-fCf"/>
+                <constraint firstItem="xIj-Ld-ZxE" firstAttribute="top" secondItem="kwG-A7-Iw5" secondAttribute="top" id="2Xz-GX-4KL"/>
+                <constraint firstItem="BEb-WF-lng" firstAttribute="leading" secondItem="jAF-8y-z82" secondAttribute="leading" constant="20" id="5kq-En-ycK"/>
+                <constraint firstItem="C42-qj-tWl" firstAttribute="centerX" secondItem="jAF-8y-z82" secondAttribute="centerX" id="8uI-4j-f1B"/>
+                <constraint firstItem="tIM-0l-kaf" firstAttribute="top" secondItem="C42-qj-tWl" secondAttribute="top" constant="30" id="DgY-5q-MV7"/>
+                <constraint firstItem="cnQ-ZR-V6S" firstAttribute="centerX" secondItem="jAF-8y-z82" secondAttribute="centerX" id="Lne-u1-Heq"/>
+                <constraint firstItem="tIM-0l-kaf" firstAttribute="centerX" secondItem="C42-qj-tWl" secondAttribute="centerX" id="T1R-OY-uKh"/>
+                <constraint firstAttribute="bottom" secondItem="xIj-Ld-ZxE" secondAttribute="bottom" id="eLB-ls-iCq"/>
+                <constraint firstItem="xIj-Ld-ZxE" firstAttribute="leading" secondItem="jAF-8y-z82" secondAttribute="leading" id="eUV-tQ-9ay"/>
+                <constraint firstItem="C42-qj-tWl" firstAttribute="centerY" secondItem="kwG-A7-Iw5" secondAttribute="centerY" id="k8k-Nu-9UH"/>
+                <constraint firstItem="cnQ-ZR-V6S" firstAttribute="centerY" secondItem="BEb-WF-lng" secondAttribute="centerY" id="mG3-3W-Mji"/>
+                <constraint firstItem="xIj-Ld-ZxE" firstAttribute="trailing" secondItem="jAF-8y-z82" secondAttribute="trailing" id="sdM-vK-n12"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jAF-8y-z82"/>
+            <point key="canvasLocation" x="176.81159420289856" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="38" height="38"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="content" width="325.5" height="450.5"/>
+    </resources>
+</document>

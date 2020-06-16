@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyWardrobe' do
+ pod 'IQKeyboardManager', '5.0.8'
+ pod 'Realm'
+ 
+end
+

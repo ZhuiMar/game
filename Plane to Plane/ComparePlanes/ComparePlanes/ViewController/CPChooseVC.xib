@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CPChooseVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="pv9-NS-6SN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mr-24-vBl">
+                    <rect key="frame" x="75" y="173.5" width="225" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="L12-E5-UJ4"/>
+                        <constraint firstAttribute="width" constant="225" id="zMF-6p-nS2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="simplicity"/>
+                    <connections>
+                        <action selector="simAction:" destination="-1" eventType="touchUpInside" id="Ab2-oR-o4U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ7-zf-w8S">
+                    <rect key="frame" x="75" y="293.5" width="225" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="225" id="NFt-4n-6tL"/>
+                        <constraint firstAttribute="height" constant="80" id="vno-jc-4kD"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="commonly"/>
+                    <connections>
+                        <action selector="comAction:" destination="-1" eventType="touchUpInside" id="JzP-tU-aJ9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3w-Me-VSD">
+                    <rect key="frame" x="75" y="413.5" width="225" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="225" id="8BX-eZ-uJX"/>
+                        <constraint firstAttribute="height" constant="80" id="e2P-WZ-WUO"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="difficulty"/>
+                    <connections>
+                        <action selector="diffAction:" destination="-1" eventType="touchUpInside" id="fqd-Ej-0E7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="B3w-Me-VSD" firstAttribute="top" secondItem="kJ7-zf-w8S" secondAttribute="bottom" constant="40" id="HgF-Sp-56Q"/>
+                <constraint firstItem="pv9-NS-6SN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LhT-7Y-0rQ"/>
+                <constraint firstAttribute="bottom" secondItem="pv9-NS-6SN" secondAttribute="bottom" id="RkS-Gx-bFX"/>
+                <constraint firstItem="kJ7-zf-w8S" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XvY-DD-irp"/>
+                <constraint firstItem="B3w-Me-VSD" firstAttribute="centerX" secondItem="8Mr-24-vBl" secondAttribute="centerX" id="a9a-P5-Npc"/>
+                <constraint firstItem="kJ7-zf-w8S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eMk-WG-oBA"/>
+                <constraint firstAttribute="trailing" secondItem="pv9-NS-6SN" secondAttribute="trailing" id="kUS-x7-guf"/>
+                <constraint firstItem="kJ7-zf-w8S" firstAttribute="top" secondItem="8Mr-24-vBl" secondAttribute="bottom" constant="40" id="rHn-Iq-lse"/>
+                <constraint firstItem="kJ7-zf-w8S" firstAttribute="centerX" secondItem="8Mr-24-vBl" secondAttribute="centerX" id="tdC-lG-APG"/>
+                <constraint firstItem="pv9-NS-6SN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vAX-5R-i2X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bj" width="375" height="667"/>
+        <image name="commonly" width="225" height="80"/>
+        <image name="difficulty" width="225" height="80"/>
+        <image name="simplicity" width="225" height="80"/>
+    </resources>
+</document>

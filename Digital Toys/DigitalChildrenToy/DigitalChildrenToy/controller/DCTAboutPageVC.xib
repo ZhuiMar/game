@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DCTAboutPageVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="9RW-Bu-PPd">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="about_text" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-o9-bN2">
+                    <rect key="frame" x="107" y="61.5" width="453" height="252"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="453" id="Ku1-et-xPg"/>
+                        <constraint firstAttribute="height" constant="252" id="uce-x5-7WK"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9RW-Bu-PPd" secondAttribute="bottom" id="1eU-FU-X6Y"/>
+                <constraint firstAttribute="trailing" secondItem="9RW-Bu-PPd" secondAttribute="trailing" id="IgV-VA-A0v"/>
+                <constraint firstItem="9RW-Bu-PPd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gXl-Oi-Su5"/>
+                <constraint firstItem="6uD-o9-bN2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jEu-FO-1eX"/>
+                <constraint firstItem="9RW-Bu-PPd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pJA-KJ-fOr"/>
+                <constraint firstItem="6uD-o9-bN2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rLF-Gq-HWt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="276" y="-18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_text" width="454" height="253.5"/>
+        <image name="background_0" width="667" height="375"/>
+    </resources>
+</document>

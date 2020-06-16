@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepHelper_AboutViewController">
+            <connections>
+                <outlet property="aboutBg" destination="dyZ-jw-vXm" id="lhh-nz-afr"/>
+                <outlet property="versonLabel" destination="YSl-Ny-928" id="V1H-af-dZm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSl-Ny-928">
+                    <rect key="frame" x="187.5" y="615" width="0.0" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="xcT-0M-czl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyZ-jw-vXm">
+                    <rect key="frame" x="20" y="95" width="335" height="486"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofs-Lv-Ale">
+                            <rect key="frame" x="15" y="0.0" width="305" height="486"/>
+                            <string key="text">"Sleep Assistant" is an app that can help you fall asleep. The app contains 3 mini games: "Counting lambs", "Poke bubbles" and "Falling star". Choose the game you like to play to help you fall asleep quickly. At the same time, according to your playing time, APP can analyze your sleep time.</string>
+                            <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="21"/>
+                            <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ofs-Lv-Ale" firstAttribute="leading" secondItem="dyZ-jw-vXm" secondAttribute="leading" constant="15" id="4tU-0d-HNu"/>
+                        <constraint firstAttribute="bottom" secondItem="Ofs-Lv-Ale" secondAttribute="bottom" id="9C1-qD-clb"/>
+                        <constraint firstAttribute="trailing" secondItem="Ofs-Lv-Ale" secondAttribute="trailing" constant="15" id="LII-6o-ZIZ"/>
+                        <constraint firstItem="Ofs-Lv-Ale" firstAttribute="top" secondItem="dyZ-jw-vXm" secondAttribute="top" id="g9w-9a-GTy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.98431372549019602" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dyZ-jw-vXm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4l8-il-bag"/>
+                <constraint firstAttribute="bottom" secondItem="YSl-Ny-928" secondAttribute="bottom" constant="34" id="XU8-m2-usi"/>
+                <constraint firstItem="YSl-Ny-928" firstAttribute="top" secondItem="dyZ-jw-vXm" secondAttribute="bottom" constant="34" id="YJG-n3-43D"/>
+                <constraint firstItem="dyZ-jw-vXm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="fLs-Ml-5yg"/>
+                <constraint firstAttribute="trailing" secondItem="dyZ-jw-vXm" secondAttribute="trailing" constant="20" id="huN-Lb-fuR"/>
+                <constraint firstItem="YSl-Ny-928" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ieq-IK-6I2"/>
+                <constraint firstItem="dyZ-jw-vXm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="xUI-Mh-Kx1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="152.34375"/>
+        </view>
+    </objects>
+</document>

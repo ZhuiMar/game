@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90097DA9B822A8952D1E60B8 /* libPods-MysteryBoard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A28681C9043321160B97A7D1 /* libPods-MysteryBoard.a */; };
+		B90FF6BA2464E6AA008841F9 /* MysteryBoard_yinsi.m in Sources */ = {isa = PBXBuildFile; fileRef = B90FF6B92464E6AA008841F9 /* MysteryBoard_yinsi.m */; };
+		B90FF6BE2464F40B008841F9 /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6BC2464F40A008841F9 /* jcore-noidfa-ios-2.2.5.a */; };
+		B90FF6BF2464F40B008841F9 /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6BD2464F40A008841F9 /* jpush-ios-3.3.2.a */; };
+		B90FF6C22464F4DC008841F9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6C12464F4DC008841F9 /* CFNetwork.framework */; };
+		B90FF6C42464F4E4008841F9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6C32464F4E4008841F9 /* CoreFoundation.framework */; };
+		B90FF6C62464F4F0008841F9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6C52464F4F0008841F9 /* CoreTelephony.framework */; };
+		B90FF6C82464F4F8008841F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6C72464F4F8008841F9 /* SystemConfiguration.framework */; };
+		B90FF6CA2464F500008841F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6C92464F500008841F9 /* CoreGraphics.framework */; };
+		B90FF6CC2464F509008841F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6CB2464F509008841F9 /* Foundation.framework */; };
+		B90FF6CE2464F512008841F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6CD2464F512008841F9 /* UIKit.framework */; };
+		B90FF6D02464F51A008841F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6CF2464F51A008841F9 /* Security.framework */; };
+		B90FF6D22464F521008841F9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6D12464F521008841F9 /* libz.tbd */; };
+		B90FF6D42464F531008841F9 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6D32464F531008841F9 /* UserNotifications.framework */; };
+		B90FF6D62464F53B008841F9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6D52464F53B008841F9 /* libresolv.tbd */; };
+		B90FF6D82464F545008841F9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6D72464F545008841F9 /* WebKit.framework */; };
+		B90FF6DA2464FAB8008841F9 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FF6D92464FAB8008841F9 /* NetworkExtension.framework */; };
+		B9583F9D24503C3E0016C136 /* SEGOEPRB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B9583F9B24503C3E0016C136 /* SEGOEPRB.TTF */; };
+		B9583F9E24503C3E0016C136 /* SEGOEPR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B9583F9C24503C3E0016C136 /* SEGOEPR.TTF */; };
+		B9583FA22450437E0016C136 /* MysteryBoard_IntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9583FA02450437E0016C136 /* MysteryBoard_IntroductionVC.m */; };
+		B9583FA32450437E0016C136 /* MysteryBoard_IntroductionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9583FA12450437E0016C136 /* MysteryBoard_IntroductionVC.xib */; };
+		B9583FA7245047220016C136 /* MysteryBoard_FlagStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9583FA5245047220016C136 /* MysteryBoard_FlagStoneVC.m */; };
+		B9583FA8245047220016C136 /* MysteryBoard_FlagStoneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9583FA6245047220016C136 /* MysteryBoard_FlagStoneVC.xib */; };
+		B9583FAC24504AE30016C136 /* MysteryBoard_ShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9583FAA24504AE30016C136 /* MysteryBoard_ShowVC.m */; };
+		B9583FAD24504AE30016C136 /* MysteryBoard_ShowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9583FAB24504AE30016C136 /* MysteryBoard_ShowVC.xib */; };
+		B9583FB124504BA90016C136 /* MysteryBoard_PlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9583FAF24504BA90016C136 /* MysteryBoard_PlayItem.m */; };
+		B9583FB224504BA90016C136 /* MysteryBoard_PlayItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9583FB024504BA90016C136 /* MysteryBoard_PlayItem.xib */; };
+		B9583FB624508BB90016C136 /* MysteryBoard_GameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9583FB424508BB90016C136 /* MysteryBoard_GameVC.m */; };
+		B9583FB724508BB90016C136 /* MysteryBoard_GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9583FB524508BB90016C136 /* MysteryBoard_GameVC.xib */; };
+		B96BAE8F24517A5F00CAD325 /* MysteryBoard_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B96BAE8D24517A5F00CAD325 /* MysteryBoard_wrong.mp3 */; };
+		B96BAE9024517A5F00CAD325 /* MysteryBoard_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B96BAE8E24517A5F00CAD325 /* MysteryBoard_right.mp3 */; };
+		B9F74914245127AC005EE842 /* MysteryBoard_OverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F74912245127AC005EE842 /* MysteryBoard_OverVC.m */; };
+		B9F74915245127AC005EE842 /* MysteryBoard_OverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F74913245127AC005EE842 /* MysteryBoard_OverVC.xib */; };
+		B9F7491924515328005EE842 /* MysteryBoard_sui.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9F7491724515327005EE842 /* MysteryBoard_sui.mp3 */; };
+		B9F7491A24515328005EE842 /* MysteryBoard_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9F7491824515327005EE842 /* MysteryBoard_bg.mp3 */; };
+		B9FF86E4245037670074EEA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF86E3245037670074EEA0 /* AppDelegate.m */; };
+		B9FF86E7245037670074EEA0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF86E6245037670074EEA0 /* SceneDelegate.m */; };
+		B9FF86EA245037670074EEA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF86E9245037670074EEA0 /* ViewController.m */; };
+		B9FF86ED245037670074EEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FF86EB245037670074EEA0 /* Main.storyboard */; };
+		B9FF86EF2450376C0074EEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FF86EE2450376C0074EEA0 /* Assets.xcassets */; };
+		B9FF86F22450376C0074EEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FF86F02450376C0074EEA0 /* LaunchScreen.storyboard */; };
+		B9FF86F52450376C0074EEA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF86F42450376C0074EEA0 /* main.m */; };
+		B9FF8704245039770074EEA0 /* MysteryBoard_Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF8703245039770074EEA0 /* MysteryBoard_Navigation.m */; };
+		B9FF8708245039D20074EEA0 /* MysteryBoard_HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF8706245039D20074EEA0 /* MysteryBoard_HomeVC.m */; };
+		B9FF8709245039D20074EEA0 /* MysteryBoard_HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9FF8707245039D20074EEA0 /* MysteryBoard_HomeVC.xib */; };
+		B9FF870C24503A0C0074EEA0 /* NSObject+MysteryBoardTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF870B24503A0C0074EEA0 /* NSObject+MysteryBoardTools.m */; };
+		B9FF871524503ABE0074EEA0 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF870E24503ABE0074EEA0 /* YCPresentationController.m */; };
+		B9FF871624503ABE0074EEA0 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF871324503ABE0074EEA0 /* YCPopoverAnimator.m */; };
+		B9FF871724503ABE0074EEA0 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FF871424503ABE0074EEA0 /* UIViewController+YCPopover.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7DFE46C11F2B9CCFBBFCC269 /* Pods-MysteryBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteryBoard.release.xcconfig"; path = "Target Support Files/Pods-MysteryBoard/Pods-MysteryBoard.release.xcconfig"; sourceTree = "<group>"; };
+		8D1E01F34973D42730210A89 /* Pods-MysteryBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MysteryBoard.debug.xcconfig"; path = "Target Support Files/Pods-MysteryBoard/Pods-MysteryBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		A28681C9043321160B97A7D1 /* libPods-MysteryBoard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MysteryBoard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90FF6B82464E6AA008841F9 /* MysteryBoard_yinsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_yinsi.h; sourceTree = "<group>"; };
+		B90FF6B92464E6AA008841F9 /* MysteryBoard_yinsi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_yinsi.m; sourceTree = "<group>"; };
+		B90FF6BB2464F40A008841F9 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B90FF6BC2464F40A008841F9 /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B90FF6BD2464F40A008841F9 /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B90FF6C12464F4DC008841F9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B90FF6C32464F4E4008841F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B90FF6C52464F4F0008841F9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B90FF6C72464F4F8008841F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B90FF6C92464F500008841F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B90FF6CB2464F509008841F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B90FF6CD2464F512008841F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B90FF6CF2464F51A008841F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B90FF6D12464F521008841F9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B90FF6D32464F531008841F9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B90FF6D52464F53B008841F9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B90FF6D72464F545008841F9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B90FF6D92464FAB8008841F9 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		B9583F9B24503C3E0016C136 /* SEGOEPRB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEPRB.TTF; sourceTree = "<group>"; };
+		B9583F9C24503C3E0016C136 /* SEGOEPR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SEGOEPR.TTF; sourceTree = "<group>"; };
+		B9583F9F2450437E0016C136 /* MysteryBoard_IntroductionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_IntroductionVC.h; sourceTree = "<group>"; };
+		B9583FA02450437E0016C136 /* MysteryBoard_IntroductionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_IntroductionVC.m; sourceTree = "<group>"; };
+		B9583FA12450437E0016C136 /* MysteryBoard_IntroductionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_IntroductionVC.xib; sourceTree = "<group>"; };
+		B9583FA4245047220016C136 /* MysteryBoard_FlagStoneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_FlagStoneVC.h; sourceTree = "<group>"; };
+		B9583FA5245047220016C136 /* MysteryBoard_FlagStoneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_FlagStoneVC.m; sourceTree = "<group>"; };
+		B9583FA6245047220016C136 /* MysteryBoard_FlagStoneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_FlagStoneVC.xib; sourceTree = "<group>"; };
+		B9583FA924504AE30016C136 /* MysteryBoard_ShowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_ShowVC.h; sourceTree = "<group>"; };
+		B9583FAA24504AE30016C136 /* MysteryBoard_ShowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_ShowVC.m; sourceTree = "<group>"; };
+		B9583FAB24504AE30016C136 /* MysteryBoard_ShowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_ShowVC.xib; sourceTree = "<group>"; };
+		B9583FAE24504BA90016C136 /* MysteryBoard_PlayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_PlayItem.h; sourceTree = "<group>"; };
+		B9583FAF24504BA90016C136 /* MysteryBoard_PlayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_PlayItem.m; sourceTree = "<group>"; };
+		B9583FB024504BA90016C136 /* MysteryBoard_PlayItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_PlayItem.xib; sourceTree = "<group>"; };
+		B9583FB324508BB90016C136 /* MysteryBoard_GameVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_GameVC.h; sourceTree = "<group>"; };
+		B9583FB424508BB90016C136 /* MysteryBoard_GameVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_GameVC.m; sourceTree = "<group>"; };
+		B9583FB524508BB90016C136 /* MysteryBoard_GameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_GameVC.xib; sourceTree = "<group>"; };
+		B96BAE8D24517A5F00CAD325 /* MysteryBoard_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MysteryBoard_wrong.mp3; sourceTree = "<group>"; };
+		B96BAE8E24517A5F00CAD325 /* MysteryBoard_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MysteryBoard_right.mp3; sourceTree = "<group>"; };
+		B9F74911245127AC005EE842 /* MysteryBoard_OverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_OverVC.h; sourceTree = "<group>"; };
+		B9F74912245127AC005EE842 /* MysteryBoard_OverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_OverVC.m; sourceTree = "<group>"; };
+		B9F74913245127AC005EE842 /* MysteryBoard_OverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_OverVC.xib; sourceTree = "<group>"; };
+		B9F7491724515327005EE842 /* MysteryBoard_sui.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MysteryBoard_sui.mp3; sourceTree = "<group>"; };
+		B9F7491824515327005EE842 /* MysteryBoard_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MysteryBoard_bg.mp3; sourceTree = "<group>"; };
+		B9FF86DF245037670074EEA0 /* Mysterious Flagstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mysterious Flagstone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FF86E2245037670074EEA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9FF86E3245037670074EEA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9FF86E5245037670074EEA0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9FF86E6245037670074EEA0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9FF86E8245037670074EEA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9FF86E9245037670074EEA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9FF86EC245037670074EEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9FF86EE2450376C0074EEA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9FF86F12450376C0074EEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9FF86F32450376C0074EEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FF86F42450376C0074EEA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9FF86FB245038180074EEA0 /* MysteryBoard_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9FF8702245039770074EEA0 /* MysteryBoard_Navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_Navigation.h; sourceTree = "<group>"; };
+		B9FF8703245039770074EEA0 /* MysteryBoard_Navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_Navigation.m; sourceTree = "<group>"; };
+		B9FF8705245039D20074EEA0 /* MysteryBoard_HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MysteryBoard_HomeVC.h; sourceTree = "<group>"; };
+		B9FF8706245039D20074EEA0 /* MysteryBoard_HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysteryBoard_HomeVC.m; sourceTree = "<group>"; };
+		B9FF8707245039D20074EEA0 /* MysteryBoard_HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MysteryBoard_HomeVC.xib; sourceTree = "<group>"; };
+		B9FF870A24503A0C0074EEA0 /* NSObject+MysteryBoardTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MysteryBoardTools.h"; sourceTree = "<group>"; };
+		B9FF870B24503A0C0074EEA0 /* NSObject+MysteryBoardTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MysteryBoardTools.m"; sourceTree = "<group>"; };
+		B9FF870E24503ABE0074EEA0 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9FF870F24503ABE0074EEA0 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9FF871024503ABE0074EEA0 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9FF871124503ABE0074EEA0 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9FF871224503ABE0074EEA0 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9FF871324503ABE0074EEA0 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9FF871424503ABE0074EEA0 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9FF86DC245037670074EEA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B90FF6DA2464FAB8008841F9 /* NetworkExtension.framework in Frameworks */,
+				B90FF6D82464F545008841F9 /* WebKit.framework in Frameworks */,
+				B90FF6D62464F53B008841F9 /* libresolv.tbd in Frameworks */,
+				B90FF6D42464F531008841F9 /* UserNotifications.framework in Frameworks */,
+				B90FF6D22464F521008841F9 /* libz.tbd in Frameworks */,
+				B90FF6D02464F51A008841F9 /* Security.framework in Frameworks */,
+				B90FF6CE2464F512008841F9 /* UIKit.framework in Frameworks */,
+				B90FF6CC2464F509008841F9 /* Foundation.framework in Frameworks */,
+				B90FF6CA2464F500008841F9 /* CoreGraphics.framework in Frameworks */,
+				B90FF6C82464F4F8008841F9 /* SystemConfiguration.framework in Frameworks */,
+				B90FF6C62464F4F0008841F9 /* CoreTelephony.framework in Frameworks */,
+				B90FF6C42464F4E4008841F9 /* CoreFoundation.framework in Frameworks */,
+				B90FF6C22464F4DC008841F9 /* CFNetwork.framework in Frameworks */,
+				B90FF6BF2464F40B008841F9 /* jpush-ios-3.3.2.a in Frameworks */,
+				B90FF6BE2464F40B008841F9 /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				90097DA9B822A8952D1E60B8 /* libPods-MysteryBoard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		231122194D52AB2004999074 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D1E01F34973D42730210A89 /* Pods-MysteryBoard.debug.xcconfig */,
+				7DFE46C11F2B9CCFBBFCC269 /* Pods-MysteryBoard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D62705AE03F42FD8DE4DD73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90FF6D92464FAB8008841F9 /* NetworkExtension.framework */,
+				B90FF6D72464F545008841F9 /* WebKit.framework */,
+				B90FF6D52464F53B008841F9 /* libresolv.tbd */,
+				B90FF6D32464F531008841F9 /* UserNotifications.framework */,
+				B90FF6D12464F521008841F9 /* libz.tbd */,
+				B90FF6CF2464F51A008841F9 /* Security.framework */,
+				B90FF6CD2464F512008841F9 /* UIKit.framework */,
+				B90FF6CB2464F509008841F9 /* Foundation.framework */,
+				B90FF6C92464F500008841F9 /* CoreGraphics.framework */,
+				B90FF6C72464F4F8008841F9 /* SystemConfiguration.framework */,
+				B90FF6C52464F4F0008841F9 /* CoreTelephony.framework */,
+				B90FF6C32464F4E4008841F9 /* CoreFoundation.framework */,
+				B90FF6C12464F4DC008841F9 /* CFNetwork.framework */,
+				A28681C9043321160B97A7D1 /* libPods-MysteryBoard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B90FF6B72464E692008841F9 /* MysteryBoard_Data */ = {
+			isa = PBXGroup;
+			children = (
+				B90FF6B82464E6AA008841F9 /* MysteryBoard_yinsi.h */,
+				B90FF6B92464E6AA008841F9 /* MysteryBoard_yinsi.m */,
+			);
+			path = MysteryBoard_Data;
+			sourceTree = "<group>";
+		};
+		B9F74916245152EE005EE842 /* MysteryBoard_Misic */ = {
+			isa = PBXGroup;
+			children = (
+				B9F7491824515327005EE842 /* MysteryBoard_bg.mp3 */,
+				B9F7491724515327005EE842 /* MysteryBoard_sui.mp3 */,
+				B96BAE8E24517A5F00CAD325 /* MysteryBoard_right.mp3 */,
+				B96BAE8D24517A5F00CAD325 /* MysteryBoard_wrong.mp3 */,
+			);
+			path = MysteryBoard_Misic;
+			sourceTree = "<group>";
+		};
+		B9FF86D6245037670074EEA0 = {
+			isa = PBXGroup;
+			children = (
+				B9FF86E1245037670074EEA0 /* MysteryBoard */,
+				B9FF86E0245037670074EEA0 /* Products */,
+				231122194D52AB2004999074 /* Pods */,
+				3D62705AE03F42FD8DE4DD73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9FF86E0245037670074EEA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9FF86DF245037670074EEA0 /* Mysterious Flagstone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9FF86E1245037670074EEA0 /* MysteryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B9F74916245152EE005EE842 /* MysteryBoard_Misic */,
+				B9FF8701245039510074EEA0 /* MysteryBoard_Font */,
+				B9FF8700245039440074EEA0 /* MysteryBoard_Model */,
+				B9FF86FF245039390074EEA0 /* MysteryBoard_View */,
+				B9FF86FE2450392F0074EEA0 /* MysteryBoard_Lib */,
+				B9FF86FD245039250074EEA0 /* MysteryBoard_Base */,
+				B90FF6B72464E692008841F9 /* MysteryBoard_Data */,
+				B9FF86FC245039140074EEA0 /* MysteryBoard_Pages */,
+				B9FF86E2245037670074EEA0 /* AppDelegate.h */,
+				B9FF86E3245037670074EEA0 /* AppDelegate.m */,
+				B9FF86E5245037670074EEA0 /* SceneDelegate.h */,
+				B9FF86E6245037670074EEA0 /* SceneDelegate.m */,
+				B9FF86E8245037670074EEA0 /* ViewController.h */,
+				B9FF86E9245037670074EEA0 /* ViewController.m */,
+				B9FF86EB245037670074EEA0 /* Main.storyboard */,
+				B9FF86EE2450376C0074EEA0 /* Assets.xcassets */,
+				B9FF86F02450376C0074EEA0 /* LaunchScreen.storyboard */,
+				B9FF86F32450376C0074EEA0 /* Info.plist */,
+				B9FF86F42450376C0074EEA0 /* main.m */,
+				B9FF86FB245038180074EEA0 /* MysteryBoard_PrefixHeader.pch */,
+			);
+			path = MysteryBoard;
+			sourceTree = "<group>";
+		};
+		B9FF86FC245039140074EEA0 /* MysteryBoard_Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B9FF8705245039D20074EEA0 /* MysteryBoard_HomeVC.h */,
+				B9FF8706245039D20074EEA0 /* MysteryBoard_HomeVC.m */,
+				B9FF8707245039D20074EEA0 /* MysteryBoard_HomeVC.xib */,
+				B9583FA4245047220016C136 /* MysteryBoard_FlagStoneVC.h */,
+				B9583FA5245047220016C136 /* MysteryBoard_FlagStoneVC.m */,
+				B9583FA6245047220016C136 /* MysteryBoard_FlagStoneVC.xib */,
+				B9583FA924504AE30016C136 /* MysteryBoard_ShowVC.h */,
+				B9583FAA24504AE30016C136 /* MysteryBoard_ShowVC.m */,
+				B9583FAB24504AE30016C136 /* MysteryBoard_ShowVC.xib */,
+				B9583F9F2450437E0016C136 /* MysteryBoard_IntroductionVC.h */,
+				B9583FA02450437E0016C136 /* MysteryBoard_IntroductionVC.m */,
+				B9583FA12450437E0016C136 /* MysteryBoard_IntroductionVC.xib */,
+				B9583FB324508BB90016C136 /* MysteryBoard_GameVC.h */,
+				B9583FB424508BB90016C136 /* MysteryBoard_GameVC.m */,
+				B9583FB524508BB90016C136 /* MysteryBoard_GameVC.xib */,
+				B9F74911245127AC005EE842 /* MysteryBoard_OverVC.h */,
+				B9F74912245127AC005EE842 /* MysteryBoard_OverVC.m */,
+				B9F74913245127AC005EE842 /* MysteryBoard_OverVC.xib */,
+			);
+			path = MysteryBoard_Pages;
+			sourceTree = "<group>";
+		};
+		B9FF86FD245039250074EEA0 /* MysteryBoard_Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9FF8702245039770074EEA0 /* MysteryBoard_Navigation.h */,
+				B9FF8703245039770074EEA0 /* MysteryBoard_Navigation.m */,
+			);
+			path = MysteryBoard_Base;
+			sourceTree = "<group>";
+		};
+		B9FF86FE2450392F0074EEA0 /* MysteryBoard_Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B90FF6BC2464F40A008841F9 /* jcore-noidfa-ios-2.2.5.a */,
+				B90FF6BD2464F40A008841F9 /* jpush-ios-3.3.2.a */,
+				B90FF6BB2464F40A008841F9 /* JPUSHService.h */,
+				B9FF870D24503ABE0074EEA0 /* MyAlert */,
+				B9FF870A24503A0C0074EEA0 /* NSObject+MysteryBoardTools.h */,
+				B9FF870B24503A0C0074EEA0 /* NSObject+MysteryBoardTools.m */,
+			);
+			path = MysteryBoard_Lib;
+			sourceTree = "<group>";
+		};
+		B9FF86FF245039390074EEA0 /* MysteryBoard_View */ = {
+			isa = PBXGroup;
+			children = (
+				B9583FAE24504BA90016C136 /* MysteryBoard_PlayItem.h */,
+				B9583FAF24504BA90016C136 /* MysteryBoard_PlayItem.m */,
+				B9583FB024504BA90016C136 /* MysteryBoard_PlayItem.xib */,
+			);
+			path = MysteryBoard_View;
+			sourceTree = "<group>";
+		};
+		B9FF8700245039440074EEA0 /* MysteryBoard_Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MysteryBoard_Model;
+			sourceTree = "<group>";
+		};
+		B9FF8701245039510074EEA0 /* MysteryBoard_Font */ = {
+			isa = PBXGroup;
+			children = (
+				B9583F9C24503C3E0016C136 /* SEGOEPR.TTF */,
+				B9583F9B24503C3E0016C136 /* SEGOEPRB.TTF */,
+			);
+			path = MysteryBoard_Font;
+			sourceTree = "<group>";
+		};
+		B9FF870D24503ABE0074EEA0 /* MyAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B9FF870E24503ABE0074EEA0 /* YCPresentationController.m */,
+				B9FF870F24503ABE0074EEA0 /* YCPopoverAnimator.h */,
+				B9FF871024503ABE0074EEA0 /* UIViewController+YCPopover.h */,
+				B9FF871124503ABE0074EEA0 /* YCPresentationController.h */,
+				B9FF871224503ABE0074EEA0 /* YCPopoverMacro.h */,
+				B9FF871324503ABE0074EEA0 /* YCPopoverAnimator.m */,
+				B9FF871424503ABE0074EEA0 /* UIViewController+YCPopover.m */,
+			);
+			path = MyAlert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9FF86DE245037670074EEA0 /* MysteryBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FF86F82450376C0074EEA0 /* Build configuration list for PBXNativeTarget "MysteryBoard" */;
+			buildPhases = (
+				C64BF190B80485C27223FA52 /* [CP] Check Pods Manifest.lock */,
+				B9FF86DB245037670074EEA0 /* Sources */,
+				B9FF86DC245037670074EEA0 /* Frameworks */,
+				B9FF86DD245037670074EEA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MysteryBoard;
+			productName = MysteryBoard;
+			productReference = B9FF86DF245037670074EEA0 /* Mysterious Flagstone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9FF86D7245037670074EEA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MysteryBoard_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = wansheng;
+				TargetAttributes = {
+					B9FF86DE245037670074EEA0 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9FF86DA245037670074EEA0 /* Build configuration list for PBXProject "MysteryBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9FF86D6245037670074EEA0;
+			productRefGroup = B9FF86E0245037670074EEA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9FF86DE245037670074EEA0 /* MysteryBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9FF86DD245037670074EEA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FF86F22450376C0074EEA0 /* LaunchScreen.storyboard in Resources */,
+				B9F7491A24515328005EE842 /* MysteryBoard_bg.mp3 in Resources */,
+				B9FF86EF2450376C0074EEA0 /* Assets.xcassets in Resources */,
+				B9583FA32450437E0016C136 /* MysteryBoard_IntroductionVC.xib in Resources */,
+				B9583F9E24503C3E0016C136 /* SEGOEPR.TTF in Resources */,
+				B96BAE9024517A5F00CAD325 /* MysteryBoard_right.mp3 in Resources */,
+				B9FF8709245039D20074EEA0 /* MysteryBoard_HomeVC.xib in Resources */,
+				B9F74915245127AC005EE842 /* MysteryBoard_OverVC.xib in Resources */,
+				B9583FB224504BA90016C136 /* MysteryBoard_PlayItem.xib in Resources */,
+				B9583FA8245047220016C136 /* MysteryBoard_FlagStoneVC.xib in Resources */,
+				B9583FB724508BB90016C136 /* MysteryBoard_GameVC.xib in Resources */,
+				B96BAE8F24517A5F00CAD325 /* MysteryBoard_wrong.mp3 in Resources */,
+				B9F7491924515328005EE842 /* MysteryBoard_sui.mp3 in Resources */,
+				B9583FAD24504AE30016C136 /* MysteryBoard_ShowVC.xib in Resources */,
+				B9583F9D24503C3E0016C136 /* SEGOEPRB.TTF in Resources */,
+				B9FF86ED245037670074EEA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C64BF190B80485C27223FA52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MysteryBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9FF86DB245037670074EEA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FF86EA245037670074EEA0 /* ViewController.m in Sources */,
+				B9FF871524503ABE0074EEA0 /* YCPresentationController.m in Sources */,
+				B9FF86E4245037670074EEA0 /* AppDelegate.m in Sources */,
+				B9FF871624503ABE0074EEA0 /* YCPopoverAnimator.m in Sources */,
+				B9FF871724503ABE0074EEA0 /* UIViewController+YCPopover.m in Sources */,
+				B9583FA7245047220016C136 /* MysteryBoard_FlagStoneVC.m in Sources */,
+				B90FF6BA2464E6AA008841F9 /* MysteryBoard_yinsi.m in Sources */,
+				B9583FA22450437E0016C136 /* MysteryBoard_IntroductionVC.m in Sources */,
+				B9FF8708245039D20074EEA0 /* MysteryBoard_HomeVC.m in Sources */,
+				B9FF870C24503A0C0074EEA0 /* NSObject+MysteryBoardTools.m in Sources */,
+				B9F74914245127AC005EE842 /* MysteryBoard_OverVC.m in Sources */,
+				B9583FAC24504AE30016C136 /* MysteryBoard_ShowVC.m in Sources */,
+				B9FF86F52450376C0074EEA0 /* main.m in Sources */,
+				B9583FB124504BA90016C136 /* MysteryBoard_PlayItem.m in Sources */,
+				B9FF86E7245037670074EEA0 /* SceneDelegate.m in Sources */,
+				B9583FB624508BB90016C136 /* MysteryBoard_GameVC.m in Sources */,
+				B9FF8704245039770074EEA0 /* MysteryBoard_Navigation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9FF86EB245037670074EEA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9FF86EC245037670074EEA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9FF86F02450376C0074EEA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9FF86F12450376C0074EEA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9FF86F62450376C0074EEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MysteryBoard/MysteryBoard_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9FF86F72450376C0074EEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MysteryBoard/MysteryBoard_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9FF86F92450376C0074EEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1E01F34973D42730210A89 /* Pods-MysteryBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MysteryBoard/Mysterious Flagstone.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTHSHD6PMB;
+				INFOPLIST_FILE = MysteryBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MysteryBoard/MysteryBoard_Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wansheng.mysteryboard;
+				PRODUCT_NAME = "Mysterious Flagstone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9FF86FA2450376C0074EEA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFE46C11F2B9CCFBBFCC269 /* Pods-MysteryBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MysteryBoard/Mysterious Flagstone.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTHSHD6PMB;
+				INFOPLIST_FILE = MysteryBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MysteryBoard/MysteryBoard_Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wansheng.mysteryboard;
+				PRODUCT_NAME = "Mysterious Flagstone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9FF86DA245037670074EEA0 /* Build configuration list for PBXProject "MysteryBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FF86F62450376C0074EEA0 /* Debug */,
+				B9FF86F72450376C0074EEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FF86F82450376C0074EEA0 /* Build configuration list for PBXNativeTarget "MysteryBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9FF86F92450376C0074EEA0 /* Debug */,
+				B9FF86FA2450376C0074EEA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9FF86D7245037670074EEA0 /* Project object */;
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="SleepHelperSleepCell">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-NC-QVr">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="184"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqM-RH-aAh">
+                        <rect key="frame" x="275" y="82" width="53" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="iz8-B3-FNU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleepiness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rc-N5-9IH">
+                        <rect key="frame" x="17" y="146" width="77.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Cap-H1-i9V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.99607843137254903" green="0.77254901960784317" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falling star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-Pi-qX9">
+                        <rect key="frame" x="17" y="114" width="88" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="4mN-74-M97"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBT-BH-Gr8">
+                        <rect key="frame" x="275" y="114" width="53" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="tso-Qi-TEc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="04:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqT-fU-WRH">
+                        <rect key="frame" x="275.5" y="50" width="52.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="LKF-A5-BE4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poke bubbles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5j-Pr-zfD">
+                        <rect key="frame" x="17" y="82" width="101.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="c0e-Xm-zID"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020/04/13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udr-Z9-64X">
+                        <rect key="frame" x="17" y="16" width="144" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="dVW-AQ-OyL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Counting lambs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aR-Er-aC7">
+                        <rect key="frame" x="17" y="50" width="142" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Y8J-hE-YG7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="20"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.32549019607843138" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trE-0G-anF">
+                        <rect key="frame" x="275" y="146" width="53" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="8Xu-6f-4OF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="17"/>
+                        <color key="textColor" red="0.99607843137254903" green="0.77254901960784317" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="JqT-fU-WRH" firstAttribute="centerY" secondItem="3aR-Er-aC7" secondAttribute="centerY" id="00w-gI-HSa"/>
+                <constraint firstItem="bBT-BH-Gr8" firstAttribute="centerY" secondItem="BhO-Pi-qX9" secondAttribute="centerY" id="1WV-IK-1ZE"/>
+                <constraint firstItem="j5j-Pr-zfD" firstAttribute="top" secondItem="3aR-Er-aC7" secondAttribute="bottom" constant="10" id="2ae-kD-0xH"/>
+                <constraint firstItem="2rc-N5-9IH" firstAttribute="top" secondItem="BhO-Pi-qX9" secondAttribute="bottom" constant="10" id="3zd-bL-A8I"/>
+                <constraint firstItem="bBT-BH-Gr8" firstAttribute="trailing" secondItem="JqT-fU-WRH" secondAttribute="trailing" id="5Do-Ex-n6U"/>
+                <constraint firstItem="mqM-RH-aAh" firstAttribute="centerY" secondItem="j5j-Pr-zfD" secondAttribute="centerY" id="6Av-pq-B8W"/>
+                <constraint firstItem="hVH-NC-QVr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8f9-wu-yoO"/>
+                <constraint firstItem="2rc-N5-9IH" firstAttribute="leading" secondItem="3aR-Er-aC7" secondAttribute="leading" id="Fnn-Fy-Rbo"/>
+                <constraint firstItem="mqM-RH-aAh" firstAttribute="trailing" secondItem="JqT-fU-WRH" secondAttribute="trailing" id="Hxf-Jd-kwK"/>
+                <constraint firstItem="bBT-BH-Gr8" firstAttribute="trailing" secondItem="trE-0G-anF" secondAttribute="trailing" id="Mhx-k1-mdr"/>
+                <constraint firstItem="3aR-Er-aC7" firstAttribute="top" secondItem="udr-Z9-64X" secondAttribute="bottom" constant="10" id="Omn-EA-giY"/>
+                <constraint firstAttribute="trailing" secondItem="JqT-fU-WRH" secondAttribute="trailing" constant="17" id="SC7-Ve-t3t"/>
+                <constraint firstItem="BhO-Pi-qX9" firstAttribute="top" secondItem="j5j-Pr-zfD" secondAttribute="bottom" constant="10" id="UjW-Dv-4mA"/>
+                <constraint firstItem="BhO-Pi-qX9" firstAttribute="leading" secondItem="3aR-Er-aC7" secondAttribute="leading" id="WsM-zf-wpq"/>
+                <constraint firstItem="hVH-NC-QVr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bAs-gq-0kE"/>
+                <constraint firstItem="udr-Z9-64X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="c9u-ze-RLl"/>
+                <constraint firstItem="j5j-Pr-zfD" firstAttribute="leading" secondItem="3aR-Er-aC7" secondAttribute="leading" id="cjq-Wi-G7y"/>
+                <constraint firstItem="udr-Z9-64X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="17" id="hXd-WO-T7k"/>
+                <constraint firstItem="3aR-Er-aC7" firstAttribute="leading" secondItem="udr-Z9-64X" secondAttribute="leading" id="ocU-fE-68N"/>
+                <constraint firstItem="trE-0G-anF" firstAttribute="centerY" secondItem="2rc-N5-9IH" secondAttribute="centerY" id="pEx-i1-S23"/>
+                <constraint firstAttribute="trailing" secondItem="hVH-NC-QVr" secondAttribute="trailing" id="pxQ-dt-HN0"/>
+                <constraint firstAttribute="bottom" secondItem="hVH-NC-QVr" secondAttribute="bottom" id="uOK-tG-k98"/>
+            </constraints>
+            <connections>
+                <outlet property="countingLabel" destination="3aR-Er-aC7" id="pcH-yC-jf9"/>
+                <outlet property="countingV" destination="JqT-fU-WRH" id="9fv-PD-04a"/>
+                <outlet property="datelabel" destination="udr-Z9-64X" id="drl-aB-IkN"/>
+                <outlet property="fallingV" destination="bBT-BH-Gr8" id="wha-hf-V2H"/>
+                <outlet property="fallinglabel" destination="BhO-Pi-qX9" id="sLA-0l-wZ4"/>
+                <outlet property="pokeLabel" destination="j5j-Pr-zfD" id="T9u-VA-zgx"/>
+                <outlet property="pokeV" destination="mqM-RH-aAh" id="AaT-CQ-Ynm"/>
+                <outlet property="sleepV" destination="trE-0G-anF" id="cXM-r9-YCX"/>
+                <outlet property="sleeping" destination="2rc-N5-9IH" id="Dms-ZL-Ziw"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="frame" width="354" height="184"/>
+    </resources>
+</document>

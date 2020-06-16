@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NMTipsViewController">
+            <connections>
+                <outlet property="H" destination="i0H-s3-CTX" id="Hcm-DM-4m6"/>
+                <outlet property="tip" destination="haU-bo-vkB" id="BDj-cb-r0B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="w" destination="xpb-YK-CrD" id="e4C-3M-0PI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haU-bo-vkB">
+                    <rect key="frame" x="66.5" y="28.5" width="534" height="258"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="258" id="i0H-s3-CTX"/>
+                        <constraint firstAttribute="width" constant="534" id="xpb-YK-CrD"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixf-7V-HcM">
+                    <rect key="frame" x="270" y="300.5" width="127.5" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="EfK-pp-7Oc"/>
+                        <constraint firstAttribute="width" constant="127.5" id="rct-WV-FoS"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ok"/>
+                    <connections>
+                        <action selector="okAction:" destination="-1" eventType="touchUpInside" id="cei-qq-f27"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="haU-bo-vkB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="7e6-L3-V6N"/>
+                <constraint firstItem="haU-bo-vkB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QDD-8y-osr"/>
+                <constraint firstItem="ixf-7V-HcM" firstAttribute="top" secondItem="haU-bo-vkB" secondAttribute="bottom" constant="14" id="i8O-pv-9rQ"/>
+                <constraint firstItem="ixf-7V-HcM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t8d-5s-QZN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="128" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ok" width="127.5" height="54"/>
+    </resources>
+</document>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmartNumber_GameViewController">
+            <connections>
+                <outlet property="bttnFour" destination="oQQ-MJ-s8g" id="VwD-Sx-9hd"/>
+                <outlet property="bttnOne" destination="IjX-2g-Cs1" id="UsT-bk-jSd"/>
+                <outlet property="bttnThree" destination="Sn2-pJ-SB5" id="Dn7-0a-frO"/>
+                <outlet property="bttnTwo" destination="x4Y-a9-2fU" id="X5b-by-lXG"/>
+                <outlet property="chooseX" destination="KmU-nv-mrE" id="can-h9-mB5"/>
+                <outlet property="jiangeBottom" destination="crw-Ye-6gB" id="SgY-zb-Otn"/>
+                <outlet property="jiangeX" destination="aOf-Xg-23a" id="Vaq-gh-R2r"/>
+                <outlet property="levelNumber" destination="JkN-Sy-ENB" id="hdw-zg-XvG"/>
+                <outlet property="prossView" destination="YoZ-Li-XJS" id="S46-4Q-Bjd"/>
+                <outlet property="prossbg" destination="ddz-EE-QRF" id="ewz-sc-V4V"/>
+                <outlet property="rightMargin" destination="Jbg-Hm-DlX" id="MWI-o4-c6e"/>
+                <outlet property="scoreLabel" destination="HX6-mt-jx0" id="Vtv-e6-y8a"/>
+                <outlet property="sliderTop" destination="kYo-K7-dAw" id="5s3-Fw-i6O"/>
+                <outlet property="startOne" destination="dez-cA-dpn" id="aSM-Ud-jBO"/>
+                <outlet property="startThree" destination="zh9-az-6Tf" id="70o-ES-vaU"/>
+                <outlet property="startTwo" destination="rGu-XU-DEd" id="p3U-Gj-FM5"/>
+                <outlet property="tittleY" destination="Adu-PF-D7z" id="wxH-Lo-Vrf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="bpA-ou-jJA">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQQ-MJ-s8g">
+                    <rect key="frame" x="470.5" y="319" width="44" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="CYW-VB-GKa"/>
+                        <constraint firstAttribute="height" constant="36" id="dEE-Nl-d6a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="24"/>
+                    <state key="normal" backgroundImage="answer_bg">
+                        <color key="titleColor" red="0.83137254901960778" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="answerFour:" destination="-1" eventType="touchUpInside" id="87E-Le-7Rf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn2-pJ-SB5">
+                    <rect key="frame" x="364.5" y="319" width="44" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="0m0-Hz-Jsu"/>
+                        <constraint firstAttribute="height" constant="36" id="dlK-jB-Y6h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="24"/>
+                    <state key="normal" backgroundImage="answer_bg">
+                        <color key="titleColor" red="0.83137254901960778" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="answerThree:" destination="-1" eventType="touchUpInside" id="PL1-9J-W6C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4Y-a9-2fU">
+                    <rect key="frame" x="258.5" y="319" width="44" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="bN1-nt-JcL"/>
+                        <constraint firstAttribute="width" constant="44" id="mJd-JT-w2P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="24"/>
+                    <state key="normal" backgroundImage="answer_bg">
+                        <color key="titleColor" red="0.83137254901960778" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="answerTwo:" destination="-1" eventType="touchUpInside" id="kiI-ci-TdD"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="life" translatesAutoresizingMaskIntoConstraints="NO" id="dez-cA-dpn">
+                    <rect key="frame" x="573.5" y="15" width="14.5" height="13.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13.5" id="8XJ-dh-OcF"/>
+                        <constraint firstAttribute="width" constant="14.5" id="Z2h-df-K0H"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="life" translatesAutoresizingMaskIntoConstraints="NO" id="zh9-az-6Tf">
+                    <rect key="frame" x="632.5" y="15" width="14.5" height="13.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13.5" id="gJO-Q9-fOv"/>
+                        <constraint firstAttribute="width" constant="14.5" id="v7M-mO-hC8"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="life" translatesAutoresizingMaskIntoConstraints="NO" id="rGu-XU-DEd">
+                    <rect key="frame" x="603" y="15" width="14.5" height="13.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13.5" id="S5I-Rh-ny0"/>
+                        <constraint firstAttribute="width" constant="14.5" id="Yp7-1N-3Rd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX6-mt-jx0">
+                    <rect key="frame" x="327" y="13" width="13" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="lmj-JD-PmL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="18"/>
+                    <color key="textColor" red="0.78431372549019607" green="0.29411764705882354" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddz-EE-QRF">
+                    <rect key="frame" x="202" y="46" width="263" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="8hL-xA-hbZ"/>
+                        <constraint firstAttribute="width" constant="263" id="SBq-r3-sE9"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoZ-Li-XJS">
+                    <rect key="frame" x="203" y="47" width="261" height="4"/>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.69019607843137254" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERb-CF-fer">
+                    <rect key="frame" x="618" y="326" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="W7d-Ib-W37"/>
+                        <constraint firstAttribute="height" constant="24" id="wnX-gA-JoC"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="description"/>
+                    <connections>
+                        <action selector="questionAction:" destination="-1" eventType="touchUpInside" id="7no-jP-Dz8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjX-2g-Cs1">
+                    <rect key="frame" x="152.5" y="319" width="44" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ewN-cC-gAo"/>
+                        <constraint firstAttribute="height" constant="36" id="h6P-rc-x7n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="24"/>
+                    <state key="normal" backgroundImage="answer_bg">
+                        <color key="titleColor" red="0.83137254901960778" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="answerOne:" destination="-1" eventType="touchUpInside" id="nQ2-N1-d9e"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question" translatesAutoresizingMaskIntoConstraints="NO" id="Vig-Uo-tEJ">
+                    <rect key="frame" x="209.5" y="280" width="248" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="iI1-gs-QRd"/>
+                        <constraint firstAttribute="width" constant="248" id="qpA-Ge-JDB"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkN-Sy-ENB">
+                    <rect key="frame" x="283" y="248.5" width="101" height="28.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="GUc-R6-YMt"/>
+                        <constraint firstAttribute="height" constant="28.5" id="xL6-H7-R8E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="15"/>
+                    <state key="normal" backgroundImage="bg-1">
+                        <color key="titleColor" red="0.83137254901960778" green="0.43137254901960786" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Sn2-pJ-SB5" firstAttribute="leading" secondItem="x4Y-a9-2fU" secondAttribute="trailing" constant="62" id="0C7-hs-Nc0"/>
+                <constraint firstAttribute="trailing" secondItem="zh9-az-6Tf" secondAttribute="trailing" constant="20" id="236-iR-fsh"/>
+                <constraint firstItem="bpA-ou-jJA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3uU-Ys-uIc"/>
+                <constraint firstItem="YoZ-Li-XJS" firstAttribute="bottom" secondItem="ddz-EE-QRF" secondAttribute="bottom" constant="-1" id="4od-rp-b9x"/>
+                <constraint firstItem="rGu-XU-DEd" firstAttribute="leading" secondItem="dez-cA-dpn" secondAttribute="trailing" constant="15" id="55A-nV-o4R"/>
+                <constraint firstItem="YoZ-Li-XJS" firstAttribute="top" secondItem="ddz-EE-QRF" secondAttribute="top" constant="1" id="7ZR-2M-vxn"/>
+                <constraint firstItem="dez-cA-dpn" firstAttribute="centerY" secondItem="HX6-mt-jx0" secondAttribute="centerY" id="Adu-PF-D7z"/>
+                <constraint firstAttribute="trailing" secondItem="bpA-ou-jJA" secondAttribute="trailing" id="BD2-VG-dkl"/>
+                <constraint firstItem="ddz-EE-QRF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CtT-Ke-W8R"/>
+                <constraint firstItem="bpA-ou-jJA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DIL-lI-eUF"/>
+                <constraint firstItem="Sn2-pJ-SB5" firstAttribute="top" secondItem="Vig-Uo-tEJ" secondAttribute="bottom" constant="10" id="Etk-Mr-jBL"/>
+                <constraint firstAttribute="trailing" secondItem="ERb-CF-fer" secondAttribute="trailing" constant="25" id="GJh-Mp-zD7"/>
+                <constraint firstItem="YoZ-Li-XJS" firstAttribute="trailing" secondItem="ddz-EE-QRF" secondAttribute="trailing" constant="-1" id="Jbg-Hm-DlX"/>
+                <constraint firstItem="Vig-Uo-tEJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KmU-nv-mrE"/>
+                <constraint firstItem="Sn2-pJ-SB5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="53" id="Nw1-2T-gJI"/>
+                <constraint firstAttribute="bottom" secondItem="bpA-ou-jJA" secondAttribute="bottom" id="R1g-m2-p5J"/>
+                <constraint firstItem="YoZ-Li-XJS" firstAttribute="leading" secondItem="ddz-EE-QRF" secondAttribute="leading" constant="1" id="Ub2-45-1dz"/>
+                <constraint firstAttribute="bottom" secondItem="x4Y-a9-2fU" secondAttribute="bottom" constant="20" id="Wiv-Bz-WhU"/>
+                <constraint firstItem="HX6-mt-jx0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YbH-4V-4BX"/>
+                <constraint firstItem="JkN-Sy-ENB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aOf-Xg-23a"/>
+                <constraint firstItem="oQQ-MJ-s8g" firstAttribute="centerY" secondItem="IjX-2g-Cs1" secondAttribute="centerY" id="bu3-aI-cRE"/>
+                <constraint firstItem="Vig-Uo-tEJ" firstAttribute="top" secondItem="JkN-Sy-ENB" secondAttribute="bottom" constant="3" id="crw-Ye-6gB"/>
+                <constraint firstAttribute="bottom" secondItem="ERb-CF-fer" secondAttribute="bottom" constant="25" id="fjr-4A-cpL"/>
+                <constraint firstItem="oQQ-MJ-s8g" firstAttribute="leading" secondItem="Sn2-pJ-SB5" secondAttribute="trailing" constant="62" id="iiQ-km-Ag3"/>
+                <constraint firstItem="zh9-az-6Tf" firstAttribute="leading" secondItem="rGu-XU-DEd" secondAttribute="trailing" constant="15" id="kMO-YI-Co1"/>
+                <constraint firstItem="ddz-EE-QRF" firstAttribute="top" secondItem="HX6-mt-jx0" secondAttribute="bottom" constant="15" id="kYo-K7-dAw"/>
+                <constraint firstItem="x4Y-a9-2fU" firstAttribute="centerY" secondItem="IjX-2g-Cs1" secondAttribute="centerY" id="m4i-gv-WVL"/>
+                <constraint firstItem="rGu-XU-DEd" firstAttribute="centerY" secondItem="dez-cA-dpn" secondAttribute="centerY" id="pGi-hG-umo"/>
+                <constraint firstItem="zh9-az-6Tf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="pjR-yO-WbY"/>
+                <constraint firstItem="zh9-az-6Tf" firstAttribute="centerY" secondItem="dez-cA-dpn" secondAttribute="centerY" id="rAK-eZ-g2O"/>
+                <constraint firstItem="x4Y-a9-2fU" firstAttribute="leading" secondItem="IjX-2g-Cs1" secondAttribute="trailing" constant="62" id="v4V-I6-ns4"/>
+                <constraint firstItem="Sn2-pJ-SB5" firstAttribute="centerY" secondItem="IjX-2g-Cs1" secondAttribute="centerY" id="z47-26-WRy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="150.33482142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="answer_bg" width="43.5" height="36"/>
+        <image name="background_1" width="667" height="375"/>
+        <image name="bg-1" width="101" height="28.5"/>
+        <image name="description" width="24" height="24"/>
+        <image name="life" width="14.5" height="13.5"/>
+        <image name="question" width="248" height="29"/>
+    </resources>
+</document>

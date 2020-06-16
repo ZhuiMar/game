@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonutNotes_AboutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_home" translatesAutoresizingMaskIntoConstraints="NO" id="zdx-wJ-dqW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQZ-a4-Yio">
+                    <rect key="frame" x="21" y="120" width="333" height="286"/>
+                    <string key="text">"Donut Notes" is a fun app that helps players learn music theory.The app has designed a teaching page and 3 test methods to help players remember the names, beats, and stars of notes and rests.Players drag the right donut to the upper area with their hands to cultivate players' interest in learning music theory and light up higher achievements.</string>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="22"/>
+                    <color key="textColor" red="0.51372549019607838" green="0.14509803921568626" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="dQZ-a4-Yio" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="JgK-xd-Jkn"/>
+                <constraint firstAttribute="trailing" secondItem="zdx-wJ-dqW" secondAttribute="trailing" id="KJL-OM-rpb"/>
+                <constraint firstItem="zdx-wJ-dqW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aLh-IK-Q8h"/>
+                <constraint firstAttribute="bottom" secondItem="zdx-wJ-dqW" secondAttribute="bottom" id="f2j-a5-Ax4"/>
+                <constraint firstAttribute="trailing" secondItem="dQZ-a4-Yio" secondAttribute="trailing" constant="21" id="gPx-xx-z0g"/>
+                <constraint firstItem="dQZ-a4-Yio" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="kj2-EC-uJr"/>
+                <constraint firstItem="zdx-wJ-dqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nLr-Tw-Uh0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_home" width="375" height="667"/>
+    </resources>
+</document>

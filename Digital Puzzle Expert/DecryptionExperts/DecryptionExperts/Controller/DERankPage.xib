@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cambridgeround-it.otf">
+            <string>CambridgeRound-It</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DERankPage">
+            <connections>
+                <outlet property="H" destination="qGk-r9-mrF" id="FgN-A5-Mca"/>
+                <outlet property="W" destination="YWb-B5-5g3" id="HvH-2n-wGm"/>
+                <outlet property="diffBt" destination="zzc-iN-0eJ" id="Vbo-Ub-MyW"/>
+                <outlet property="genBt" destination="osw-Es-DAk" id="wNk-Va-SPK"/>
+                <outlet property="left" destination="yYo-gB-ebe" id="fFu-qy-WK3"/>
+                <outlet property="one" destination="wRn-C2-jsA" id="KqN-Vs-eh1"/>
+                <outlet property="simBt" destination="EjW-Ef-INP" id="3eV-VI-VlK"/>
+                <outlet property="three" destination="g9W-Qx-gEt" id="CzF-c4-P8e"/>
+                <outlet property="two" destination="OtA-aG-cma" id="8zH-Yf-tA1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="4jT-g8-8EM">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjW-Ef-INP">
+                    <rect key="frame" x="230.5" y="67.5" width="62" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="hiP-V8-goP"/>
+                        <constraint firstAttribute="height" constant="39" id="vmF-YT-QJQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="17"/>
+                    <state key="normal" title="simple" backgroundImage="selected">
+                        <color key="titleColor" red="0.074509803921568626" green="0.070588235294117646" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="simAc:" destination="-1" eventType="touchUpInside" id="1CB-NU-tfR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzc-iN-0eJ">
+                    <rect key="frame" x="374.5" y="67.5" width="62" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="jMf-n0-8c8"/>
+                        <constraint firstAttribute="height" constant="39" id="mzd-Yg-OYz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="17"/>
+                    <state key="normal" title="difficult" backgroundImage="not_selected">
+                        <color key="titleColor" red="0.074509803921568626" green="0.070588235294117646" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="diffAction:" destination="-1" eventType="touchUpInside" id="y7V-VC-NcB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osw-Es-DAk">
+                    <rect key="frame" x="302.5" y="67.5" width="62" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="050-ya-1mi"/>
+                        <constraint firstAttribute="height" constant="39" id="zUz-mD-eCY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="17"/>
+                    <state key="normal" title="general" backgroundImage="not_selected">
+                        <color key="titleColor" red="0.074509803921568626" green="0.070588235294117646" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="genAc:" destination="-1" eventType="touchUpInside" id="L5l-Zj-Spz"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record_bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="Udi-pt-beb">
+                    <rect key="frame" x="145" y="86.5" width="377" height="242.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242.5" id="YWb-B5-5g3"/>
+                        <constraint firstAttribute="width" constant="377" id="qGk-r9-mrF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-Xi-Qjy">
+                    <rect key="frame" x="245" y="227" width="45" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="XPM-Qk-gAj"/>
+                        <constraint firstAttribute="width" constant="45" id="YHI-6b-SKj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-ut-TUF">
+                    <rect key="frame" x="245" y="196" width="45" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="LGE-d9-hjD"/>
+                        <constraint firstAttribute="width" constant="45" id="e4R-WQ-M3v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbi-Dv-Cb3">
+                    <rect key="frame" x="245" y="165" width="45" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="TEs-Vb-htk"/>
+                        <constraint firstAttribute="width" constant="45" id="qrA-dL-0v5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-Qx-gEt">
+                    <rect key="frame" x="411.5" y="227" width="10.5" height="23"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtA-aG-cma">
+                    <rect key="frame" x="411.5" y="196" width="10.5" height="23"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRn-C2-jsA">
+                    <rect key="frame" x="411.5" y="165" width="10.5" height="23"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="20"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="eWD-ut-TUF" firstAttribute="centerY" secondItem="Udi-pt-beb" secondAttribute="centerY" id="216-Yb-5tB"/>
+                <constraint firstItem="g9W-Qx-gEt" firstAttribute="trailing" secondItem="wRn-C2-jsA" secondAttribute="trailing" id="2Mt-Wb-qHb"/>
+                <constraint firstAttribute="trailing" secondItem="4jT-g8-8EM" secondAttribute="trailing" id="4A0-b2-aMd"/>
+                <constraint firstItem="wRn-C2-jsA" firstAttribute="top" secondItem="Zbi-Dv-Cb3" secondAttribute="top" id="73o-tc-qZ1"/>
+                <constraint firstItem="4jT-g8-8EM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Np-Xp-RW5"/>
+                <constraint firstItem="z0H-Xi-Qjy" firstAttribute="top" secondItem="eWD-ut-TUF" secondAttribute="bottom" constant="8" id="Hnd-4o-VFi"/>
+                <constraint firstItem="OtA-aG-cma" firstAttribute="top" secondItem="eWD-ut-TUF" secondAttribute="top" id="IOm-p0-udx"/>
+                <constraint firstItem="zzc-iN-0eJ" firstAttribute="centerY" secondItem="EjW-Ef-INP" secondAttribute="centerY" id="KhZ-QU-jKb"/>
+                <constraint firstItem="z0H-Xi-Qjy" firstAttribute="leading" secondItem="Zbi-Dv-Cb3" secondAttribute="leading" id="NIM-WG-A0e"/>
+                <constraint firstItem="Udi-pt-beb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NMw-N1-Rwi"/>
+                <constraint firstItem="OtA-aG-cma" firstAttribute="leading" secondItem="wRn-C2-jsA" secondAttribute="leading" id="Oqh-ma-f5c"/>
+                <constraint firstItem="4jT-g8-8EM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R18-4w-1Q6"/>
+                <constraint firstItem="Udi-pt-beb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="20" id="Urb-Ig-hab"/>
+                <constraint firstItem="osw-Es-DAk" firstAttribute="centerY" secondItem="EjW-Ef-INP" secondAttribute="centerY" id="ay6-jP-bVr"/>
+                <constraint firstItem="osw-Es-DAk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bos-60-E8W"/>
+                <constraint firstItem="wRn-C2-jsA" firstAttribute="trailing" secondItem="Udi-pt-beb" secondAttribute="trailing" constant="-100" id="cNs-2w-SNL"/>
+                <constraint firstItem="zzc-iN-0eJ" firstAttribute="leading" secondItem="osw-Es-DAk" secondAttribute="trailing" constant="10" id="ck7-BY-KYi"/>
+                <constraint firstItem="eWD-ut-TUF" firstAttribute="leading" secondItem="Zbi-Dv-Cb3" secondAttribute="leading" id="glF-sO-gic"/>
+                <constraint firstAttribute="bottom" secondItem="4jT-g8-8EM" secondAttribute="bottom" id="hvi-zi-zFh"/>
+                <constraint firstItem="OtA-aG-cma" firstAttribute="trailing" secondItem="wRn-C2-jsA" secondAttribute="trailing" id="iQO-6b-LHw"/>
+                <constraint firstItem="osw-Es-DAk" firstAttribute="leading" secondItem="EjW-Ef-INP" secondAttribute="trailing" constant="10" id="icI-0I-ARk"/>
+                <constraint firstItem="g9W-Qx-gEt" firstAttribute="top" secondItem="z0H-Xi-Qjy" secondAttribute="top" id="irY-hi-PeL"/>
+                <constraint firstItem="Udi-pt-beb" firstAttribute="top" secondItem="osw-Es-DAk" secondAttribute="bottom" constant="-20" id="qR5-W1-cte"/>
+                <constraint firstItem="eWD-ut-TUF" firstAttribute="top" secondItem="Zbi-Dv-Cb3" secondAttribute="bottom" constant="8" id="v4d-Pk-BsF"/>
+                <constraint firstItem="Zbi-Dv-Cb3" firstAttribute="leading" secondItem="Udi-pt-beb" secondAttribute="leading" constant="100" id="yYo-gB-ebe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_1" width="667" height="375"/>
+        <image name="not_selected" width="64" height="40"/>
+        <image name="record_bg-1" width="377" height="242.5"/>
+        <image name="selected" width="61.5" height="38.5"/>
+    </resources>
+</document>

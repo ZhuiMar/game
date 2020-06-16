@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="SmartNumber_ItemView">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7fm-l7-LFB">
+                    <rect key="frame" x="0.0" y="26" width="78" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="154" id="HcW-jW-tDC"/>
+                        <constraint firstAttribute="width" constant="78" id="jaQ-gs-nEJ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87W-uE-GZe">
+                    <rect key="frame" x="78" y="46" width="55" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="2Ra-UC-oWa"/>
+                        <constraint firstAttribute="height" constant="49" id="9yG-Zn-LZI"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="bg"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-7E-90I">
+                    <rect key="frame" x="30.5" y="2" width="17.5" height="20"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="87W-uE-GZe" firstAttribute="top" secondItem="7fm-l7-LFB" secondAttribute="top" constant="20" id="88r-r2-3RX"/>
+                <constraint firstItem="7fm-l7-LFB" firstAttribute="centerX" secondItem="RVY-7E-90I" secondAttribute="centerX" id="SjP-7G-jB7"/>
+                <constraint firstAttribute="bottom" secondItem="7fm-l7-LFB" secondAttribute="bottom" id="Wdq-we-oCr"/>
+                <constraint firstItem="87W-uE-GZe" firstAttribute="leading" secondItem="7fm-l7-LFB" secondAttribute="trailing" id="aEJ-FZ-1Mm"/>
+                <constraint firstItem="7fm-l7-LFB" firstAttribute="top" secondItem="RVY-7E-90I" secondAttribute="bottom" constant="4" id="mam-I1-4CA"/>
+                <constraint firstItem="7fm-l7-LFB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r7x-SJ-xJy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrow" destination="RVY-7E-90I" id="5zD-Hf-2i3"/>
+                <outlet property="number" destination="87W-uE-GZe" id="Foy-0i-mWj"/>
+                <outlet property="peppleImageView" destination="7fm-l7-LFB" id="rPl-iW-xId"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="0" width="78" height="154"/>
+        <image name="bg" width="55" height="49"/>
+        <image name="selected" width="17.5" height="20"/>
+    </resources>
+</document>

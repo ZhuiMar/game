@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ComicNeue-Angular_Bold_Oblique.otf">
+            <string>ComicNeueAngular-BoldOblique</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuoyMath_AboutPageVC">
+            <connections>
+                <outlet property="content" destination="dDh-5V-5p9" id="x3D-OG-I5F"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="IeQ-gx-H4d">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-5V-5p9">
+                    <rect key="frame" x="30" y="44" width="607" height="331"/>
+                    <mutableString key="text">"Lifebuoy Math" uses different combinations to train players in mathematical arithmetic.In the "combination" gameplay, the combination of lifebuoys represents two-digit addition and subtraction operations, and the number of lifebuoys on both sides of the calculation symbol is calculated. Answer the total number of lifebuoys.According to the known result in the "Take Away" game, according to the existing number of life buoys, click one to take away one buoy. Finally, click the Finish button to make the equation hold and score.</mutableString>
+                    <fontDescription key="fontDescription" name="ComicNeueAngular-BoldOblique" family="Comic Neue Angular" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="IeQ-gx-H4d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ShA-YX-UWt"/>
+                <constraint firstItem="dDh-5V-5p9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="fn1-xC-ZEC"/>
+                <constraint firstAttribute="trailing" secondItem="dDh-5V-5p9" secondAttribute="trailing" constant="30" id="i2X-3i-EYB"/>
+                <constraint firstItem="dDh-5V-5p9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="j9B-sM-2Fp"/>
+                <constraint firstAttribute="bottom" secondItem="IeQ-gx-H4d" secondAttribute="bottom" id="kFJ-Jh-JPq"/>
+                <constraint firstItem="IeQ-gx-H4d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kZz-LJ-eMG"/>
+                <constraint firstAttribute="bottom" secondItem="dDh-5V-5p9" secondAttribute="bottom" id="tta-Og-f3l"/>
+                <constraint firstAttribute="trailing" secondItem="IeQ-gx-H4d" secondAttribute="trailing" id="v5e-h0-yRQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bj" width="667" height="375"/>
+    </resources>
+</document>

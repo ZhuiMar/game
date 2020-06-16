@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DETipsPage">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="tips" translatesAutoresizingMaskIntoConstraints="NO" id="XGb-0Q-yfb">
+                    <rect key="frame" x="167" y="49.5" width="333.5" height="202.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="333.5" id="6LY-tP-07i"/>
+                        <constraint firstAttribute="height" constant="202.5" id="84g-b1-Bfe"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8Z-At-SuP">
+                    <rect key="frame" x="274.5" y="272" width="118" height="53"/>
+                    <state key="normal" backgroundImage="i_know"/>
+                    <connections>
+                        <action selector="ikonwAction:" destination="-1" eventType="touchUpInside" id="25S-ay-s5s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="XGb-0Q-yfb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-37" id="1Ql-HF-uPl"/>
+                <constraint firstItem="z8Z-At-SuP" firstAttribute="centerX" secondItem="XGb-0Q-yfb" secondAttribute="centerX" id="gNg-xP-WLA"/>
+                <constraint firstItem="z8Z-At-SuP" firstAttribute="top" secondItem="XGb-0Q-yfb" secondAttribute="bottom" constant="20" id="tIR-KX-rgW"/>
+                <constraint firstItem="XGb-0Q-yfb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z9c-ch-9G6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="i_know" width="118" height="53"/>
+        <image name="tips" width="333.5" height="202.5"/>
+    </resources>
+</document>

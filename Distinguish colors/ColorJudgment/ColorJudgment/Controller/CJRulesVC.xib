@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CJRulesVC">
+            <connections>
+                <outlet property="okBtn" destination="brT-Oe-tDd" id="eda-H9-tjR"/>
+                <outlet property="startBtn" destination="ecx-X1-okX" id="CJ9-9K-THP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8MZ-Q9-0Cb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tips" translatesAutoresizingMaskIntoConstraints="NO" id="xWh-7z-R2q">
+                    <rect key="frame" x="54" y="115.5" width="267" height="296"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="296" id="J7S-cD-15b"/>
+                        <constraint firstAttribute="width" constant="267" id="oHf-zH-g7N"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brT-Oe-tDd">
+                    <rect key="frame" x="25" y="451.5" width="150" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="kM1-lw-HeL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ok"/>
+                    <connections>
+                        <action selector="okBtnAction:" destination="-1" eventType="touchUpInside" id="mqq-7M-6JN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-X1-okX">
+                    <rect key="frame" x="200" y="451.5" width="150" height="96"/>
+                    <state key="normal" backgroundImage="start"/>
+                    <connections>
+                        <action selector="startBtnAction:" destination="-1" eventType="touchUpInside" id="BF6-jN-9ry"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ecx-X1-okX" secondAttribute="trailing" constant="25" id="00u-5r-eaC"/>
+                <constraint firstItem="brT-Oe-tDd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="0jN-cv-LFS"/>
+                <constraint firstAttribute="trailing" secondItem="8MZ-Q9-0Cb" secondAttribute="trailing" id="BQa-8H-JBR"/>
+                <constraint firstItem="ecx-X1-okX" firstAttribute="height" secondItem="brT-Oe-tDd" secondAttribute="height" id="Hwy-WL-xha"/>
+                <constraint firstItem="8MZ-Q9-0Cb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MQz-yW-1mL"/>
+                <constraint firstItem="xWh-7z-R2q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TkX-fg-iIN"/>
+                <constraint firstItem="brT-Oe-tDd" firstAttribute="top" secondItem="xWh-7z-R2q" secondAttribute="bottom" constant="40" id="XKs-nV-Pmt"/>
+                <constraint firstItem="ecx-X1-okX" firstAttribute="centerY" secondItem="brT-Oe-tDd" secondAttribute="centerY" id="dcy-zi-JJw"/>
+                <constraint firstItem="ecx-X1-okX" firstAttribute="width" secondItem="brT-Oe-tDd" secondAttribute="width" id="g84-Uo-4SH"/>
+                <constraint firstAttribute="bottom" secondItem="8MZ-Q9-0Cb" secondAttribute="bottom" id="jJl-bR-4PN"/>
+                <constraint firstItem="ecx-X1-okX" firstAttribute="leading" secondItem="brT-Oe-tDd" secondAttribute="trailing" constant="25" id="pZA-Ap-EAU"/>
+                <constraint firstItem="xWh-7z-R2q" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-70" id="th6-iz-QyZ"/>
+                <constraint firstItem="8MZ-Q9-0Cb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w0u-Qn-cUw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ok" width="156" height="96"/>
+        <image name="start" width="156" height="96"/>
+        <image name="tips" width="267" height="296"/>
+    </resources>
+</document>

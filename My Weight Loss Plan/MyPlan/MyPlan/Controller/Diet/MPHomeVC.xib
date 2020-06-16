@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MPHomeVC">
+            <connections>
+                <outlet property="dateBgView" destination="tE8-xB-bhQ" id="4aE-jg-rdA"/>
+                <outlet property="datelabel" destination="ks2-2f-bfV" id="dFA-ea-FNH"/>
+                <outlet property="screenMiddleLaebl" destination="PBx-Hz-R66" id="iOX-xd-3Vc"/>
+                <outlet property="topView" destination="2ZS-kc-Nvf" id="yBj-DS-ySE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xinqi" destination="FAI-07-uuI" id="VvL-Xx-dfZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tE8-xB-bhQ">
+                    <rect key="frame" x="0.0" y="44" width="375" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-2f-bfV">
+                            <rect key="frame" x="187.5" y="0.0" width="0.0" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.5607843137254902" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="ivL-Uo-8MV">
+                            <rect key="frame" x="160" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="GvB-bq-R0u"/>
+                                <constraint firstAttribute="height" constant="20" id="rD9-9H-33Q"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAI-07-uuI">
+                            <rect key="frame" x="197.5" y="10" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.52549019607843139" green="0.5607843137254902" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ks2-2f-bfV" secondAttribute="bottom" id="6C2-xI-bxy"/>
+                        <constraint firstItem="ks2-2f-bfV" firstAttribute="top" secondItem="tE8-xB-bhQ" secondAttribute="top" id="Jy0-4h-dgI"/>
+                        <constraint firstItem="FAI-07-uuI" firstAttribute="leading" secondItem="ks2-2f-bfV" secondAttribute="trailing" constant="10" id="KvD-Vh-ecM"/>
+                        <constraint firstItem="FAI-07-uuI" firstAttribute="centerY" secondItem="ks2-2f-bfV" secondAttribute="centerY" id="U5o-SR-CTI"/>
+                        <constraint firstAttribute="height" constant="20" id="WoM-is-skR"/>
+                        <constraint firstItem="ks2-2f-bfV" firstAttribute="centerY" secondItem="ivL-Uo-8MV" secondAttribute="centerY" id="Xbi-3c-gMI"/>
+                        <constraint firstItem="ks2-2f-bfV" firstAttribute="leading" secondItem="ivL-Uo-8MV" secondAttribute="trailing" constant="7.5" id="utx-i0-scy"/>
+                        <constraint firstItem="ks2-2f-bfV" firstAttribute="centerX" secondItem="tE8-xB-bhQ" secondAttribute="centerX" id="vmt-SR-QUo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No diet plan added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBx-Hz-R66">
+                    <rect key="frame" x="86" y="318.5" width="203.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.28627450980392155" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.9137254901960784" green="0.9882352941176471" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tE8-xB-bhQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="2ZS-kc-Nvf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tE8-xB-bhQ" secondAttribute="trailing" id="LVH-7P-C19"/>
+                <constraint firstItem="PBx-Hz-R66" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hOc-ag-6lz"/>
+                <constraint firstItem="tE8-xB-bhQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="sEf-dK-g1C"/>
+                <constraint firstItem="PBx-Hz-R66" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v6Z-cd-amc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.15942028985509" y="152.34375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar" width="20" height="20"/>
+    </resources>
+</document>

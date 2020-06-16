@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E2EDB90B151787E04B273E2 /* libPods-MathForward.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67482AA103D89B99CC0C6C2A /* libPods-MathForward.a */; };
+		B90C320E246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B90C320C246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.m */; };
+		B90C320F246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B90C320D246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.xib */; };
+		B980E2E3244EE56D005300B9 /* MathForward_ItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B980E2E1244EE56D005300B9 /* MathForward_ItemsView.m */; };
+		B980E2E4244EE56D005300B9 /* MathForward_ItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B980E2E2244EE56D005300B9 /* MathForward_ItemsView.xib */; };
+		B980E2EA244EF65B005300B9 /* MathForward_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B980E2E6244EF65B005300B9 /* MathForward_wrong.mp3 */; };
+		B980E2EB244EF65B005300B9 /* MathForward_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B980E2E7244EF65B005300B9 /* MathForward_bg.mp3 */; };
+		B980E2EC244EF65B005300B9 /* MathForward_jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B980E2E8244EF65B005300B9 /* MathForward_jump.mp3 */; };
+		B980E2ED244EF65B005300B9 /* MathForward_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B980E2E9244EF65B005300B9 /* MathForward_right.mp3 */; };
+		B98A4076246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A405E246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B98A4077246F7EF900371633 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A4067246F7EF900371633 /* ViewController+MASAdditions.m */; };
+		B98A4078246F7EF900371633 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A406B246F7EF900371633 /* MASCompositeConstraint.m */; };
+		B98A4079246F7EF900371633 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A406C246F7EF900371633 /* MASConstraintMaker.m */; };
+		B98A407A246F7EF900371633 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A406D246F7EF900371633 /* MASLayoutConstraint.m */; };
+		B98A407B246F7EF900371633 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A406E246F7EF900371633 /* NSArray+MASAdditions.m */; };
+		B98A407C246F7EF900371633 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A406F246F7EF900371633 /* View+MASAdditions.m */; };
+		B98A407D246F7EF900371633 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A4072246F7EF900371633 /* MASConstraint.m */; };
+		B98A407E246F7EF900371633 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A4074246F7EF900371633 /* MASViewConstraint.m */; };
+		B98A407F246F7EF900371633 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A4075246F7EF900371633 /* MASViewAttribute.m */; };
+		B98AA580246CF512000DF712 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA57F246CF511000DF712 /* CFNetwork.framework */; };
+		B98AA582246CF518000DF712 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA581246CF518000DF712 /* CoreFoundation.framework */; };
+		B98AA584246CF51F000DF712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA583246CF51F000DF712 /* CoreTelephony.framework */; };
+		B98AA586246CF527000DF712 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA585246CF527000DF712 /* SystemConfiguration.framework */; };
+		B98AA588246CF52D000DF712 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA587246CF52D000DF712 /* CoreGraphics.framework */; };
+		B98AA58A246CF535000DF712 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA589246CF535000DF712 /* Foundation.framework */; };
+		B98AA58C246CF53B000DF712 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA58B246CF53B000DF712 /* UIKit.framework */; };
+		B98AA58E246CF542000DF712 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA58D246CF542000DF712 /* Security.framework */; };
+		B98AA590246CF549000DF712 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA58F246CF549000DF712 /* libz.tbd */; };
+		B98AA592246CF551000DF712 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA591246CF550000DF712 /* UserNotifications.framework */; };
+		B98AA594246CF556000DF712 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA593246CF556000DF712 /* libresolv.tbd */; };
+		B98AA596246CF55F000DF712 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA595246CF55F000DF712 /* WebKit.framework */; };
+		B98AA59B246CF69B000DF712 /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA598246CF69B000DF712 /* jcore-noidfa-ios-2.2.5.a */; };
+		B98AA59C246CF69B000DF712 /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B98AA599246CF69B000DF712 /* jpush-ios-3.3.2.a */; };
+		B98AA59F246D19D4000DF712 /* MathForward_PrivacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA59E246D19D4000DF712 /* MathForward_PrivacyManager.m */; };
+		B98AA5A2246D1A11000DF712 /* MathForward_ScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5A1246D1A11000DF712 /* MathForward_ScoreData.m */; };
+		B98AA5A5246D1A91000DF712 /* MathForward_ThemeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5A4246D1A91000DF712 /* MathForward_ThemeTool.m */; };
+		B98AA5A8246D1FF3000DF712 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5A7246D1FF3000DF712 /* Reachability.m */; };
+		B98AA5AB246D2784000DF712 /* MathForward_SaveDataHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5AA246D2784000DF712 /* MathForward_SaveDataHelp.m */; };
+		B98AA5C2246D2C4E000DF712 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B0246D2C4E000DF712 /* MJPropertyType.m */; };
+		B98AA5C3246D2C4E000DF712 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B3246D2C4E000DF712 /* NSObject+MJKeyValue.m */; };
+		B98AA5C4246D2C4E000DF712 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B4246D2C4E000DF712 /* MJProperty.m */; };
+		B98AA5C5246D2C4E000DF712 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B6246D2C4E000DF712 /* NSObject+MJCoding.m */; };
+		B98AA5C6246D2C4E000DF712 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B8246D2C4E000DF712 /* MJExtensionConst.m */; };
+		B98AA5C7246D2C4E000DF712 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5B9246D2C4E000DF712 /* NSObject+MJProperty.m */; };
+		B98AA5C8246D2C4E000DF712 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5BB246D2C4E000DF712 /* NSObject+MJClass.m */; };
+		B98AA5C9246D2C4E000DF712 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5BC246D2C4E000DF712 /* NSString+MJExtension.m */; };
+		B98AA5CA246D2C4E000DF712 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5BD246D2C4E000DF712 /* MJPropertyKey.m */; };
+		B98AA5CB246D2C4E000DF712 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B98AA5C1246D2C4E000DF712 /* MJFoundation.m */; };
+		B9B8744C244E9B3D001D7C96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8744B244E9B3D001D7C96 /* AppDelegate.m */; };
+		B9B8744F244E9B3D001D7C96 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8744E244E9B3D001D7C96 /* SceneDelegate.m */; };
+		B9B87452244E9B3D001D7C96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87451244E9B3D001D7C96 /* ViewController.m */; };
+		B9B87455244E9B3D001D7C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B87453244E9B3D001D7C96 /* Main.storyboard */; };
+		B9B87457244E9B41001D7C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B87456244E9B41001D7C96 /* Assets.xcassets */; };
+		B9B8745A244E9B41001D7C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B87458244E9B41001D7C96 /* LaunchScreen.storyboard */; };
+		B9B8745D244E9B41001D7C96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8745C244E9B41001D7C96 /* main.m */; };
+		B9B8746B244E9C53001D7C96 /* MathForward_navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8746A244E9C53001D7C96 /* MathForward_navigation.m */; };
+		B9B8746F244E9C67001D7C96 /* MathForward_HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8746D244E9C67001D7C96 /* MathForward_HomeViewController.m */; };
+		B9B87470244E9C67001D7C96 /* MathForward_HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B8746E244E9C67001D7C96 /* MathForward_HomeViewController.xib */; };
+		B9B87472244E9DC7001D7C96 /* Billgates-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B87471244E9DC7001D7C96 /* Billgates-2.ttf */; };
+		B9B87475244E9DF8001D7C96 /* NSObject+MathForward_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87474244E9DF8001D7C96 /* NSObject+MathForward_helper.m */; };
+		B9B87480244E9ED9001D7C96 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87477244E9ED9001D7C96 /* YCPopoverAnimator.m */; };
+		B9B87482244E9ED9001D7C96 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8747B244E9ED9001D7C96 /* UIViewController+YCPopover.m */; };
+		B9B87483244E9ED9001D7C96 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8747D244E9ED9001D7C96 /* YCPresentationController.m */; };
+		B9B87487244EA3E2001D7C96 /* MathForward_AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87485244EA3E2001D7C96 /* MathForward_AboutViewController.m */; };
+		B9B87488244EA3E2001D7C96 /* MathForward_AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B87486244EA3E2001D7C96 /* MathForward_AboutViewController.xib */; };
+		B9B8748C244EA5C6001D7C96 /* MathForward_TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8748A244EA5C6001D7C96 /* MathForward_TipsViewController.m */; };
+		B9B8748D244EA5C6001D7C96 /* MathForward_TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B8748B244EA5C6001D7C96 /* MathForward_TipsViewController.xib */; };
+		B9B87491244EA852001D7C96 /* MathForward_OverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B8748F244EA852001D7C96 /* MathForward_OverViewController.m */; };
+		B9B87492244EA852001D7C96 /* MathForward_OverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B87490244EA852001D7C96 /* MathForward_OverViewController.xib */; };
+		B9B87496244EAB3B001D7C96 /* MathForward_RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87494244EAB3B001D7C96 /* MathForward_RankingViewController.m */; };
+		B9B87497244EAB3B001D7C96 /* MathForward_RankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B87495244EAB3B001D7C96 /* MathForward_RankingViewController.xib */; };
+		B9B8749B244EB10C001D7C96 /* MathForward_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B87499244EB10C001D7C96 /* MathForward_GameViewController.m */; };
+		B9B8749C244EB10C001D7C96 /* MathForward_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B8749A244EB10C001D7C96 /* MathForward_GameViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A4267E2A58A043B62918DA7 /* Pods-MathForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathForward.debug.xcconfig"; path = "Target Support Files/Pods-MathForward/Pods-MathForward.debug.xcconfig"; sourceTree = "<group>"; };
+		67482AA103D89B99CC0C6C2A /* libPods-MathForward.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MathForward.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		693122388D8D6CA543DB3F6E /* Pods-MathForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathForward.release.xcconfig"; path = "Target Support Files/Pods-MathForward/Pods-MathForward.release.xcconfig"; sourceTree = "<group>"; };
+		B90C320B246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		B90C320C246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_PrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		B90C320D246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_PrivacyPolicyViewController.xib; sourceTree = "<group>"; };
+		B980E2E0244EE56D005300B9 /* MathForward_ItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathForward_ItemsView.h; sourceTree = "<group>"; };
+		B980E2E1244EE56D005300B9 /* MathForward_ItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathForward_ItemsView.m; sourceTree = "<group>"; };
+		B980E2E2244EE56D005300B9 /* MathForward_ItemsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathForward_ItemsView.xib; sourceTree = "<group>"; };
+		B980E2E6244EF65B005300B9 /* MathForward_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MathForward_wrong.mp3; sourceTree = "<group>"; };
+		B980E2E7244EF65B005300B9 /* MathForward_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MathForward_bg.mp3; sourceTree = "<group>"; };
+		B980E2E8244EF65B005300B9 /* MathForward_jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MathForward_jump.mp3; sourceTree = "<group>"; };
+		B980E2E9244EF65B005300B9 /* MathForward_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MathForward_right.mp3; sourceTree = "<group>"; };
+		B98A403C246E8A9B00371633 /* Math Puzzle Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Math Puzzle Game.entitlements"; sourceTree = "<group>"; };
+		B98A405D246F7EF900371633 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B98A405E246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B98A405F246F7EF900371633 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B98A4060246F7EF900371633 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B98A4061246F7EF900371633 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B98A4062246F7EF900371633 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B98A4063246F7EF900371633 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B98A4064246F7EF900371633 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B98A4065246F7EF900371633 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B98A4066246F7EF900371633 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B98A4067246F7EF900371633 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B98A4068246F7EF900371633 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B98A4069246F7EF900371633 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B98A406A246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B98A406B246F7EF900371633 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B98A406C246F7EF900371633 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B98A406D246F7EF900371633 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B98A406E246F7EF900371633 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B98A406F246F7EF900371633 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B98A4070246F7EF900371633 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B98A4071246F7EF900371633 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B98A4072246F7EF900371633 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B98A4073246F7EF900371633 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B98A4074246F7EF900371633 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B98A4075246F7EF900371633 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B98AA57F246CF511000DF712 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B98AA581246CF518000DF712 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B98AA583246CF51F000DF712 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B98AA585246CF527000DF712 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B98AA587246CF52D000DF712 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B98AA589246CF535000DF712 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B98AA58B246CF53B000DF712 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B98AA58D246CF542000DF712 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B98AA58F246CF549000DF712 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B98AA591246CF550000DF712 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B98AA593246CF556000DF712 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B98AA595246CF55F000DF712 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B98AA598246CF69B000DF712 /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B98AA599246CF69B000DF712 /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B98AA59A246CF69B000DF712 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B98AA59D246D19D4000DF712 /* MathForward_PrivacyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_PrivacyManager.h; sourceTree = "<group>"; };
+		B98AA59E246D19D4000DF712 /* MathForward_PrivacyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_PrivacyManager.m; sourceTree = "<group>"; };
+		B98AA5A0246D1A11000DF712 /* MathForward_ScoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_ScoreData.h; sourceTree = "<group>"; };
+		B98AA5A1246D1A11000DF712 /* MathForward_ScoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_ScoreData.m; sourceTree = "<group>"; };
+		B98AA5A3246D1A91000DF712 /* MathForward_ThemeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_ThemeTool.h; sourceTree = "<group>"; };
+		B98AA5A4246D1A91000DF712 /* MathForward_ThemeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_ThemeTool.m; sourceTree = "<group>"; };
+		B98AA5A6246D1FF3000DF712 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B98AA5A7246D1FF3000DF712 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B98AA5A9246D2784000DF712 /* MathForward_SaveDataHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_SaveDataHelp.h; sourceTree = "<group>"; };
+		B98AA5AA246D2784000DF712 /* MathForward_SaveDataHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_SaveDataHelp.m; sourceTree = "<group>"; };
+		B98AA5AD246D2C4E000DF712 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		B98AA5AE246D2C4E000DF712 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		B98AA5AF246D2C4E000DF712 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		B98AA5B0246D2C4E000DF712 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		B98AA5B1246D2C4E000DF712 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		B98AA5B2246D2C4E000DF712 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		B98AA5B3246D2C4E000DF712 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		B98AA5B4246D2C4E000DF712 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		B98AA5B5246D2C4E000DF712 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		B98AA5B6246D2C4E000DF712 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		B98AA5B7246D2C4E000DF712 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		B98AA5B8246D2C4E000DF712 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		B98AA5B9246D2C4E000DF712 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		B98AA5BA246D2C4E000DF712 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		B98AA5BB246D2C4E000DF712 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		B98AA5BC246D2C4E000DF712 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		B98AA5BD246D2C4E000DF712 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		B98AA5BE246D2C4E000DF712 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		B98AA5BF246D2C4E000DF712 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		B98AA5C0246D2C4E000DF712 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		B98AA5C1246D2C4E000DF712 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		B9B87447244E9B3D001D7C96 /* Rush! Math puzzle game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rush! Math puzzle game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B8744A244E9B3D001D7C96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9B8744B244E9B3D001D7C96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9B8744D244E9B3D001D7C96 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9B8744E244E9B3D001D7C96 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9B87450244E9B3D001D7C96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9B87451244E9B3D001D7C96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9B87454244E9B3D001D7C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9B87456244E9B41001D7C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B87459244E9B41001D7C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9B8745B244E9B41001D7C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B8745C244E9B41001D7C96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9B87463244E9B7F001D7C96 /* MathForward_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9B87469244E9C53001D7C96 /* MathForward_navigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_navigation.h; sourceTree = "<group>"; };
+		B9B8746A244E9C53001D7C96 /* MathForward_navigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_navigation.m; sourceTree = "<group>"; };
+		B9B8746C244E9C67001D7C96 /* MathForward_HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_HomeViewController.h; sourceTree = "<group>"; };
+		B9B8746D244E9C67001D7C96 /* MathForward_HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_HomeViewController.m; sourceTree = "<group>"; };
+		B9B8746E244E9C67001D7C96 /* MathForward_HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_HomeViewController.xib; sourceTree = "<group>"; };
+		B9B87471244E9DC7001D7C96 /* Billgates-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Billgates-2.ttf"; sourceTree = "<group>"; };
+		B9B87473244E9DF8001D7C96 /* NSObject+MathForward_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MathForward_helper.h"; sourceTree = "<group>"; };
+		B9B87474244E9DF8001D7C96 /* NSObject+MathForward_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MathForward_helper.m"; sourceTree = "<group>"; };
+		B9B87477244E9ED9001D7C96 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9B87478244E9ED9001D7C96 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9B8747B244E9ED9001D7C96 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B9B8747C244E9ED9001D7C96 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9B8747D244E9ED9001D7C96 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9B8747E244E9ED9001D7C96 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9B8747F244E9ED9001D7C96 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9B87484244EA3E2001D7C96 /* MathForward_AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_AboutViewController.h; sourceTree = "<group>"; };
+		B9B87485244EA3E2001D7C96 /* MathForward_AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_AboutViewController.m; sourceTree = "<group>"; };
+		B9B87486244EA3E2001D7C96 /* MathForward_AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_AboutViewController.xib; sourceTree = "<group>"; };
+		B9B87489244EA5C6001D7C96 /* MathForward_TipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_TipsViewController.h; sourceTree = "<group>"; };
+		B9B8748A244EA5C6001D7C96 /* MathForward_TipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_TipsViewController.m; sourceTree = "<group>"; };
+		B9B8748B244EA5C6001D7C96 /* MathForward_TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_TipsViewController.xib; sourceTree = "<group>"; };
+		B9B8748E244EA852001D7C96 /* MathForward_OverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_OverViewController.h; sourceTree = "<group>"; };
+		B9B8748F244EA852001D7C96 /* MathForward_OverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_OverViewController.m; sourceTree = "<group>"; };
+		B9B87490244EA852001D7C96 /* MathForward_OverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_OverViewController.xib; sourceTree = "<group>"; };
+		B9B87493244EAB3B001D7C96 /* MathForward_RankingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_RankingViewController.h; sourceTree = "<group>"; };
+		B9B87494244EAB3B001D7C96 /* MathForward_RankingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_RankingViewController.m; sourceTree = "<group>"; };
+		B9B87495244EAB3B001D7C96 /* MathForward_RankingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_RankingViewController.xib; sourceTree = "<group>"; };
+		B9B87498244EB10C001D7C96 /* MathForward_GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathForward_GameViewController.h; sourceTree = "<group>"; };
+		B9B87499244EB10C001D7C96 /* MathForward_GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathForward_GameViewController.m; sourceTree = "<group>"; };
+		B9B8749A244EB10C001D7C96 /* MathForward_GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathForward_GameViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9B87444244E9B3D001D7C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98AA59B246CF69B000DF712 /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				B98AA596246CF55F000DF712 /* WebKit.framework in Frameworks */,
+				B98AA594246CF556000DF712 /* libresolv.tbd in Frameworks */,
+				B98AA592246CF551000DF712 /* UserNotifications.framework in Frameworks */,
+				B98AA590246CF549000DF712 /* libz.tbd in Frameworks */,
+				B98AA58E246CF542000DF712 /* Security.framework in Frameworks */,
+				B98AA59C246CF69B000DF712 /* jpush-ios-3.3.2.a in Frameworks */,
+				B98AA58C246CF53B000DF712 /* UIKit.framework in Frameworks */,
+				B98AA58A246CF535000DF712 /* Foundation.framework in Frameworks */,
+				B98AA588246CF52D000DF712 /* CoreGraphics.framework in Frameworks */,
+				B98AA586246CF527000DF712 /* SystemConfiguration.framework in Frameworks */,
+				B98AA584246CF51F000DF712 /* CoreTelephony.framework in Frameworks */,
+				B98AA582246CF518000DF712 /* CoreFoundation.framework in Frameworks */,
+				B98AA580246CF512000DF712 /* CFNetwork.framework in Frameworks */,
+				5E2EDB90B151787E04B273E2 /* libPods-MathForward.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30D38CF52CD1BB5A98D2E293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA595246CF55F000DF712 /* WebKit.framework */,
+				B98AA593246CF556000DF712 /* libresolv.tbd */,
+				B98AA591246CF550000DF712 /* UserNotifications.framework */,
+				B98AA58F246CF549000DF712 /* libz.tbd */,
+				B98AA58D246CF542000DF712 /* Security.framework */,
+				B98AA58B246CF53B000DF712 /* UIKit.framework */,
+				B98AA589246CF535000DF712 /* Foundation.framework */,
+				B98AA587246CF52D000DF712 /* CoreGraphics.framework */,
+				B98AA585246CF527000DF712 /* SystemConfiguration.framework */,
+				B98AA583246CF51F000DF712 /* CoreTelephony.framework */,
+				B98AA581246CF518000DF712 /* CoreFoundation.framework */,
+				B98AA57F246CF511000DF712 /* CFNetwork.framework */,
+				67482AA103D89B99CC0C6C2A /* libPods-MathForward.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B980E2E5244EF395005300B9 /* MathForward_music */ = {
+			isa = PBXGroup;
+			children = (
+				B980E2E7244EF65B005300B9 /* MathForward_bg.mp3 */,
+				B980E2E8244EF65B005300B9 /* MathForward_jump.mp3 */,
+				B980E2E9244EF65B005300B9 /* MathForward_right.mp3 */,
+				B980E2E6244EF65B005300B9 /* MathForward_wrong.mp3 */,
+			);
+			path = MathForward_music;
+			sourceTree = "<group>";
+		};
+		B98A405C246F7EF900371633 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B98A405D246F7EF900371633 /* MASCompositeConstraint.h */,
+				B98A405E246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B98A405F246F7EF900371633 /* MASConstraint+Private.h */,
+				B98A4060246F7EF900371633 /* MASLayoutConstraint.h */,
+				B98A4061246F7EF900371633 /* NSArray+MASShorthandAdditions.h */,
+				B98A4062246F7EF900371633 /* MASConstraintMaker.h */,
+				B98A4063246F7EF900371633 /* View+MASAdditions.h */,
+				B98A4064246F7EF900371633 /* NSArray+MASAdditions.h */,
+				B98A4065246F7EF900371633 /* MASUtilities.h */,
+				B98A4066246F7EF900371633 /* MASViewAttribute.h */,
+				B98A4067246F7EF900371633 /* ViewController+MASAdditions.m */,
+				B98A4068246F7EF900371633 /* MASViewConstraint.h */,
+				B98A4069246F7EF900371633 /* MASConstraint.h */,
+				B98A406A246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B98A406B246F7EF900371633 /* MASCompositeConstraint.m */,
+				B98A406C246F7EF900371633 /* MASConstraintMaker.m */,
+				B98A406D246F7EF900371633 /* MASLayoutConstraint.m */,
+				B98A406E246F7EF900371633 /* NSArray+MASAdditions.m */,
+				B98A406F246F7EF900371633 /* View+MASAdditions.m */,
+				B98A4070246F7EF900371633 /* View+MASShorthandAdditions.h */,
+				B98A4071246F7EF900371633 /* Masonry.h */,
+				B98A4072246F7EF900371633 /* MASConstraint.m */,
+				B98A4073246F7EF900371633 /* ViewController+MASAdditions.h */,
+				B98A4074246F7EF900371633 /* MASViewConstraint.m */,
+				B98A4075246F7EF900371633 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B98AA597246CF679000DF712 /* MathForward_APNS */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA598246CF69B000DF712 /* jcore-noidfa-ios-2.2.5.a */,
+				B98AA599246CF69B000DF712 /* jpush-ios-3.3.2.a */,
+				B98AA59A246CF69B000DF712 /* JPUSHService.h */,
+			);
+			path = MathForward_APNS;
+			sourceTree = "<group>";
+		};
+		B98AA5AC246D2C4E000DF712 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B98AA5AD246D2C4E000DF712 /* MJPropertyKey.h */,
+				B98AA5AE246D2C4E000DF712 /* NSObject+MJClass.h */,
+				B98AA5AF246D2C4E000DF712 /* NSString+MJExtension.h */,
+				B98AA5B0246D2C4E000DF712 /* MJPropertyType.m */,
+				B98AA5B1246D2C4E000DF712 /* NSObject+MJProperty.h */,
+				B98AA5B2246D2C4E000DF712 /* MJExtensionConst.h */,
+				B98AA5B3246D2C4E000DF712 /* NSObject+MJKeyValue.m */,
+				B98AA5B4246D2C4E000DF712 /* MJProperty.m */,
+				B98AA5B5246D2C4E000DF712 /* MJFoundation.h */,
+				B98AA5B6246D2C4E000DF712 /* NSObject+MJCoding.m */,
+				B98AA5B7246D2C4E000DF712 /* MJExtension.h */,
+				B98AA5B8246D2C4E000DF712 /* MJExtensionConst.m */,
+				B98AA5B9246D2C4E000DF712 /* NSObject+MJProperty.m */,
+				B98AA5BA246D2C4E000DF712 /* MJPropertyType.h */,
+				B98AA5BB246D2C4E000DF712 /* NSObject+MJClass.m */,
+				B98AA5BC246D2C4E000DF712 /* NSString+MJExtension.m */,
+				B98AA5BD246D2C4E000DF712 /* MJPropertyKey.m */,
+				B98AA5BE246D2C4E000DF712 /* MJProperty.h */,
+				B98AA5BF246D2C4E000DF712 /* NSObject+MJKeyValue.h */,
+				B98AA5C0246D2C4E000DF712 /* NSObject+MJCoding.h */,
+				B98AA5C1246D2C4E000DF712 /* MJFoundation.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		B9B8743E244E9B3D001D7C96 = {
+			isa = PBXGroup;
+			children = (
+				B9B87449244E9B3D001D7C96 /* MathForward */,
+				B9B87448244E9B3D001D7C96 /* Products */,
+				C1B7718A4724769E32258845 /* Pods */,
+				30D38CF52CD1BB5A98D2E293 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9B87448244E9B3D001D7C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B87447244E9B3D001D7C96 /* Rush! Math puzzle game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9B87449244E9B3D001D7C96 /* MathForward */ = {
+			isa = PBXGroup;
+			children = (
+				B98A403C246E8A9B00371633 /* Math Puzzle Game.entitlements */,
+				B98AA597246CF679000DF712 /* MathForward_APNS */,
+				B980E2E5244EF395005300B9 /* MathForward_music */,
+				B9B87468244E9BED001D7C96 /* MathForward_controller */,
+				B9B87467244E9BEB001D7C96 /* MathForward_view */,
+				B9B87466244E9BE8001D7C96 /* MathForward_lib */,
+				B9B87465244E9BE5001D7C96 /* MathForward_base */,
+				B9B87464244E9BE2001D7C96 /* MathForward_font */,
+				B9B8744A244E9B3D001D7C96 /* AppDelegate.h */,
+				B9B8744B244E9B3D001D7C96 /* AppDelegate.m */,
+				B9B8744D244E9B3D001D7C96 /* SceneDelegate.h */,
+				B9B8744E244E9B3D001D7C96 /* SceneDelegate.m */,
+				B9B87450244E9B3D001D7C96 /* ViewController.h */,
+				B9B87451244E9B3D001D7C96 /* ViewController.m */,
+				B9B87453244E9B3D001D7C96 /* Main.storyboard */,
+				B9B87456244E9B41001D7C96 /* Assets.xcassets */,
+				B9B87458244E9B41001D7C96 /* LaunchScreen.storyboard */,
+				B9B8745B244E9B41001D7C96 /* Info.plist */,
+				B9B8745C244E9B41001D7C96 /* main.m */,
+				B9B87463244E9B7F001D7C96 /* MathForward_PrefixHeader.pch */,
+			);
+			path = MathForward;
+			sourceTree = "<group>";
+		};
+		B9B87464244E9BE2001D7C96 /* MathForward_font */ = {
+			isa = PBXGroup;
+			children = (
+				B9B87471244E9DC7001D7C96 /* Billgates-2.ttf */,
+			);
+			path = MathForward_font;
+			sourceTree = "<group>";
+		};
+		B9B87465244E9BE5001D7C96 /* MathForward_base */ = {
+			isa = PBXGroup;
+			children = (
+				B9B87469244E9C53001D7C96 /* MathForward_navigation.h */,
+				B9B8746A244E9C53001D7C96 /* MathForward_navigation.m */,
+				B98AA59D246D19D4000DF712 /* MathForward_PrivacyManager.h */,
+				B98AA59E246D19D4000DF712 /* MathForward_PrivacyManager.m */,
+			);
+			path = MathForward_base;
+			sourceTree = "<group>";
+		};
+		B9B87466244E9BE8001D7C96 /* MathForward_lib */ = {
+			isa = PBXGroup;
+			children = (
+				B98A405C246F7EF900371633 /* Masonry */,
+				B98AA5AC246D2C4E000DF712 /* MJExtension */,
+				B98AA5A6246D1FF3000DF712 /* Reachability.h */,
+				B98AA5A7246D1FF3000DF712 /* Reachability.m */,
+				B98AA5A9246D2784000DF712 /* MathForward_SaveDataHelp.h */,
+				B98AA5AA246D2784000DF712 /* MathForward_SaveDataHelp.m */,
+				B9B87473244E9DF8001D7C96 /* NSObject+MathForward_helper.h */,
+				B9B87474244E9DF8001D7C96 /* NSObject+MathForward_helper.m */,
+				B98AA5A3246D1A91000DF712 /* MathForward_ThemeTool.h */,
+				B98AA5A4246D1A91000DF712 /* MathForward_ThemeTool.m */,
+			);
+			path = MathForward_lib;
+			sourceTree = "<group>";
+		};
+		B9B87467244E9BEB001D7C96 /* MathForward_view */ = {
+			isa = PBXGroup;
+			children = (
+				B980E2E0244EE56D005300B9 /* MathForward_ItemsView.h */,
+				B980E2E1244EE56D005300B9 /* MathForward_ItemsView.m */,
+				B980E2E2244EE56D005300B9 /* MathForward_ItemsView.xib */,
+				B9B8747E244E9ED9001D7C96 /* UIViewController+YCPopover.h */,
+				B9B8747B244E9ED9001D7C96 /* UIViewController+YCPopover.m */,
+				B9B87478244E9ED9001D7C96 /* YCPopoverAnimator.h */,
+				B9B87477244E9ED9001D7C96 /* YCPopoverAnimator.m */,
+				B9B8747F244E9ED9001D7C96 /* YCPopoverMacro.h */,
+				B9B8747C244E9ED9001D7C96 /* YCPresentationController.h */,
+				B9B8747D244E9ED9001D7C96 /* YCPresentationController.m */,
+				B98AA5A0246D1A11000DF712 /* MathForward_ScoreData.h */,
+				B98AA5A1246D1A11000DF712 /* MathForward_ScoreData.m */,
+			);
+			path = MathForward_view;
+			sourceTree = "<group>";
+		};
+		B9B87468244E9BED001D7C96 /* MathForward_controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9B8746C244E9C67001D7C96 /* MathForward_HomeViewController.h */,
+				B9B8746D244E9C67001D7C96 /* MathForward_HomeViewController.m */,
+				B9B8746E244E9C67001D7C96 /* MathForward_HomeViewController.xib */,
+				B9B87484244EA3E2001D7C96 /* MathForward_AboutViewController.h */,
+				B9B87485244EA3E2001D7C96 /* MathForward_AboutViewController.m */,
+				B9B87486244EA3E2001D7C96 /* MathForward_AboutViewController.xib */,
+				B9B87489244EA5C6001D7C96 /* MathForward_TipsViewController.h */,
+				B9B8748A244EA5C6001D7C96 /* MathForward_TipsViewController.m */,
+				B9B8748B244EA5C6001D7C96 /* MathForward_TipsViewController.xib */,
+				B9B8748E244EA852001D7C96 /* MathForward_OverViewController.h */,
+				B9B8748F244EA852001D7C96 /* MathForward_OverViewController.m */,
+				B9B87490244EA852001D7C96 /* MathForward_OverViewController.xib */,
+				B9B87493244EAB3B001D7C96 /* MathForward_RankingViewController.h */,
+				B9B87494244EAB3B001D7C96 /* MathForward_RankingViewController.m */,
+				B9B87495244EAB3B001D7C96 /* MathForward_RankingViewController.xib */,
+				B9B87498244EB10C001D7C96 /* MathForward_GameViewController.h */,
+				B9B87499244EB10C001D7C96 /* MathForward_GameViewController.m */,
+				B9B8749A244EB10C001D7C96 /* MathForward_GameViewController.xib */,
+				B90C320B246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.h */,
+				B90C320C246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.m */,
+				B90C320D246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.xib */,
+			);
+			path = MathForward_controller;
+			sourceTree = "<group>";
+		};
+		C1B7718A4724769E32258845 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A4267E2A58A043B62918DA7 /* Pods-MathForward.debug.xcconfig */,
+				693122388D8D6CA543DB3F6E /* Pods-MathForward.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9B87446244E9B3D001D7C96 /* MathForward */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B87460244E9B41001D7C96 /* Build configuration list for PBXNativeTarget "MathForward" */;
+			buildPhases = (
+				70B4146FD0BD51C2A1F370E6 /* [CP] Check Pods Manifest.lock */,
+				B9B87443244E9B3D001D7C96 /* Sources */,
+				B9B87444244E9B3D001D7C96 /* Frameworks */,
+				B9B87445244E9B3D001D7C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathForward;
+			productName = MathForward;
+			productReference = B9B87447244E9B3D001D7C96 /* Rush! Math puzzle game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9B8743F244E9B3D001D7C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MathForward_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = teresa;
+				TargetAttributes = {
+					B9B87446244E9B3D001D7C96 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9B87442244E9B3D001D7C96 /* Build configuration list for PBXProject "MathForward" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9B8743E244E9B3D001D7C96;
+			productRefGroup = B9B87448244E9B3D001D7C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9B87446244E9B3D001D7C96 /* MathForward */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B87445244E9B3D001D7C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B8749C244EB10C001D7C96 /* MathForward_GameViewController.xib in Resources */,
+				B980E2ED244EF65B005300B9 /* MathForward_right.mp3 in Resources */,
+				B980E2EA244EF65B005300B9 /* MathForward_wrong.mp3 in Resources */,
+				B9B87488244EA3E2001D7C96 /* MathForward_AboutViewController.xib in Resources */,
+				B9B8748D244EA5C6001D7C96 /* MathForward_TipsViewController.xib in Resources */,
+				B9B8745A244E9B41001D7C96 /* LaunchScreen.storyboard in Resources */,
+				B9B87470244E9C67001D7C96 /* MathForward_HomeViewController.xib in Resources */,
+				B90C320F246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.xib in Resources */,
+				B980E2E4244EE56D005300B9 /* MathForward_ItemsView.xib in Resources */,
+				B980E2EC244EF65B005300B9 /* MathForward_jump.mp3 in Resources */,
+				B9B87492244EA852001D7C96 /* MathForward_OverViewController.xib in Resources */,
+				B9B87497244EAB3B001D7C96 /* MathForward_RankingViewController.xib in Resources */,
+				B9B87457244E9B41001D7C96 /* Assets.xcassets in Resources */,
+				B9B87472244E9DC7001D7C96 /* Billgates-2.ttf in Resources */,
+				B980E2EB244EF65B005300B9 /* MathForward_bg.mp3 in Resources */,
+				B9B87455244E9B3D001D7C96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70B4146FD0BD51C2A1F370E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathForward-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9B87443244E9B3D001D7C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B87491244EA852001D7C96 /* MathForward_OverViewController.m in Sources */,
+				B98AA5C3246D2C4E000DF712 /* NSObject+MJKeyValue.m in Sources */,
+				B9B87480244E9ED9001D7C96 /* YCPopoverAnimator.m in Sources */,
+				B9B87483244E9ED9001D7C96 /* YCPresentationController.m in Sources */,
+				B9B8749B244EB10C001D7C96 /* MathForward_GameViewController.m in Sources */,
+				B98A4079246F7EF900371633 /* MASConstraintMaker.m in Sources */,
+				B98AA5C8246D2C4E000DF712 /* NSObject+MJClass.m in Sources */,
+				B9B8746F244E9C67001D7C96 /* MathForward_HomeViewController.m in Sources */,
+				B98A407C246F7EF900371633 /* View+MASAdditions.m in Sources */,
+				B98AA5CA246D2C4E000DF712 /* MJPropertyKey.m in Sources */,
+				B98AA5C2246D2C4E000DF712 /* MJPropertyType.m in Sources */,
+				B98AA5AB246D2784000DF712 /* MathForward_SaveDataHelp.m in Sources */,
+				B98AA5A5246D1A91000DF712 /* MathForward_ThemeTool.m in Sources */,
+				B98A4076246F7EF900371633 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B9B87496244EAB3B001D7C96 /* MathForward_RankingViewController.m in Sources */,
+				B9B87487244EA3E2001D7C96 /* MathForward_AboutViewController.m in Sources */,
+				B9B8748C244EA5C6001D7C96 /* MathForward_TipsViewController.m in Sources */,
+				B9B87452244E9B3D001D7C96 /* ViewController.m in Sources */,
+				B90C320E246E7E4700CD0C14 /* MathForward_PrivacyPolicyViewController.m in Sources */,
+				B98AA5CB246D2C4E000DF712 /* MJFoundation.m in Sources */,
+				B9B87482244E9ED9001D7C96 /* UIViewController+YCPopover.m in Sources */,
+				B98A407B246F7EF900371633 /* NSArray+MASAdditions.m in Sources */,
+				B98AA5C6246D2C4E000DF712 /* MJExtensionConst.m in Sources */,
+				B98AA5C9246D2C4E000DF712 /* NSString+MJExtension.m in Sources */,
+				B98A407D246F7EF900371633 /* MASConstraint.m in Sources */,
+				B98AA5C5246D2C4E000DF712 /* NSObject+MJCoding.m in Sources */,
+				B9B8744C244E9B3D001D7C96 /* AppDelegate.m in Sources */,
+				B9B8745D244E9B41001D7C96 /* main.m in Sources */,
+				B98A4078246F7EF900371633 /* MASCompositeConstraint.m in Sources */,
+				B98A407F246F7EF900371633 /* MASViewAttribute.m in Sources */,
+				B9B8746B244E9C53001D7C96 /* MathForward_navigation.m in Sources */,
+				B98AA5C7246D2C4E000DF712 /* NSObject+MJProperty.m in Sources */,
+				B98AA5A8246D1FF3000DF712 /* Reachability.m in Sources */,
+				B980E2E3244EE56D005300B9 /* MathForward_ItemsView.m in Sources */,
+				B98A407E246F7EF900371633 /* MASViewConstraint.m in Sources */,
+				B98AA5C4246D2C4E000DF712 /* MJProperty.m in Sources */,
+				B98A407A246F7EF900371633 /* MASLayoutConstraint.m in Sources */,
+				B98AA5A2246D1A11000DF712 /* MathForward_ScoreData.m in Sources */,
+				B9B87475244E9DF8001D7C96 /* NSObject+MathForward_helper.m in Sources */,
+				B9B8744F244E9B3D001D7C96 /* SceneDelegate.m in Sources */,
+				B98A4077246F7EF900371633 /* ViewController+MASAdditions.m in Sources */,
+				B98AA59F246D19D4000DF712 /* MathForward_PrivacyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9B87453244E9B3D001D7C96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B87454244E9B3D001D7C96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9B87458244E9B41001D7C96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B87459244E9B41001D7C96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9B8745E244E9B41001D7C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathForward/MathForward_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9B8745F244E9B41001D7C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathForward/MathForward_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9B87461244E9B41001D7C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4267E2A58A043B62918DA7 /* Pods-MathForward.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MathForward/Math Puzzle Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8V5KFSAYX3;
+				INFOPLIST_FILE = MathForward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MathForward/MathForward_lib/APNS",
+					"$(PROJECT_DIR)/MathForward/MathForward_APNS",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renshou.mathpuzzlegame;
+				PRODUCT_NAME = "Rush! Math puzzle game";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9B87462244E9B41001D7C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693122388D8D6CA543DB3F6E /* Pods-MathForward.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MathForward/Math Puzzle Game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8V5KFSAYX3;
+				INFOPLIST_FILE = MathForward/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MathForward/MathForward_lib/APNS",
+					"$(PROJECT_DIR)/MathForward/MathForward_APNS",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renshou.mathpuzzlegame;
+				PRODUCT_NAME = "Rush! Math puzzle game";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9B87442244E9B3D001D7C96 /* Build configuration list for PBXProject "MathForward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B8745E244E9B41001D7C96 /* Debug */,
+				B9B8745F244E9B41001D7C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B87460244E9B41001D7C96 /* Build configuration list for PBXNativeTarget "MathForward" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B87461244E9B41001D7C96 /* Debug */,
+				B9B87462244E9B41001D7C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9B8743F244E9B3D001D7C96 /* Project object */;
+}

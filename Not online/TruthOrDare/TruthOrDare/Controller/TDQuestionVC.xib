@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDQuestionVC">
+            <connections>
+                <outlet property="closedBtn" destination="Msa-6y-HRa" id="uIY-Em-3Mq"/>
+                <outlet property="contentLabel" destination="Fd5-hC-OHY" id="SEY-DJ-6kh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qusetion" translatesAutoresizingMaskIntoConstraints="NO" id="c9x-1h-aKR">
+                    <rect key="frame" x="50.5" y="159" width="274" height="349"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="349" id="o9A-eW-9mo"/>
+                        <constraint firstAttribute="width" constant="274" id="rBc-JJ-pzW"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSN-gd-R97">
+                    <rect key="frame" x="187.5" y="386.5" width="65" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="agS-kz-YQI"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="replace"/>
+                    <connections>
+                        <action selector="replaceAction:" destination="-1" eventType="touchUpInside" id="kvQ-lU-1jc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msa-6y-HRa">
+                    <rect key="frame" x="284.5" y="159" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EXW-uc-CeV"/>
+                        <constraint firstAttribute="width" constant="40" id="ISk-VQ-wqf"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="closed"/>
+                    <connections>
+                        <action selector="closedAction:" destination="-1" eventType="touchUpInside" id="5am-Pc-l0A"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many times have you been in love?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd5-hC-OHY">
+                    <rect key="frame" x="87.5" y="250.5" width="200" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Nne-Ak-ZAq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.90196078431372551" green="0.40000000000000002" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-ne-xSX">
+                    <rect key="frame" x="137.5" y="386.5" width="50" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="434-5T-rhr"/>
+                        <constraint firstAttribute="width" constant="50" id="YgJ-q8-MPI"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czS-gx-x3w">
+                    <rect key="frame" x="118.5" y="386.5" width="19" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="P2F-Qz-wUK"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ok"/>
+                    <connections>
+                        <action selector="okAction:" destination="-1" eventType="touchUpInside" id="GK6-gC-Tne"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AuQ-ne-xSX" firstAttribute="centerX" secondItem="Fd5-hC-OHY" secondAttribute="centerX" constant="-25" id="2s5-wv-EgE"/>
+                <constraint firstItem="Msa-6y-HRa" firstAttribute="trailing" secondItem="c9x-1h-aKR" secondAttribute="trailing" id="2vN-pn-KVe"/>
+                <constraint firstItem="c9x-1h-aKR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3iB-vA-XwF"/>
+                <constraint firstItem="QSN-gd-R97" firstAttribute="leading" secondItem="AuQ-ne-xSX" secondAttribute="trailing" id="4A1-ld-cGI"/>
+                <constraint firstItem="AuQ-ne-xSX" firstAttribute="leading" secondItem="czS-gx-x3w" secondAttribute="trailing" id="4m2-kM-Xsy"/>
+                <constraint firstItem="Fd5-hC-OHY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7CH-bc-sZQ"/>
+                <constraint firstItem="AuQ-ne-xSX" firstAttribute="top" secondItem="Fd5-hC-OHY" secondAttribute="bottom" constant="50" id="AFO-XK-AEQ"/>
+                <constraint firstItem="QSN-gd-R97" firstAttribute="top" secondItem="czS-gx-x3w" secondAttribute="top" id="Mef-Rc-b9v"/>
+                <constraint firstItem="QSN-gd-R97" firstAttribute="bottom" secondItem="czS-gx-x3w" secondAttribute="bottom" id="XQh-TR-GTF"/>
+                <constraint firstItem="Fd5-hC-OHY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="aMW-TS-Iea"/>
+                <constraint firstItem="c9x-1h-aKR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aOM-Cx-7lQ"/>
+                <constraint firstItem="AuQ-ne-xSX" firstAttribute="top" secondItem="czS-gx-x3w" secondAttribute="top" id="gLJ-fz-K1X"/>
+                <constraint firstItem="Msa-6y-HRa" firstAttribute="top" secondItem="c9x-1h-aKR" secondAttribute="top" id="rF7-lE-y41"/>
+                <constraint firstItem="AuQ-ne-xSX" firstAttribute="bottom" secondItem="czS-gx-x3w" secondAttribute="bottom" id="rrn-G3-bFd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closed" width="31" height="31"/>
+        <image name="ok" width="19" height="16"/>
+        <image name="qusetion" width="274" height="349"/>
+        <image name="replace" width="64" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChaparralPro-BoldIt.otf">
+            <string>ChaparralPro-BoldIt</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArithmeticMagicCup_TipPage">
+            <connections>
+                <outlet property="content" destination="hJ5-2u-ksq" id="gDo-GE-kwO"/>
+                <outlet property="icon" destination="X0z-QA-bnt" id="r1H-wg-ToV"/>
+                <outlet property="startBtn" destination="pFM-dS-GNr" id="kM0-Uy-g3j"/>
+                <outlet property="topLayout" destination="wBh-hZ-IoB" id="Y4S-Zh-oef"/>
+                <outlet property="view" destination="iOM-Mt-eQ9" id="ZHL-Iz-p3V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iOM-Mt-eQ9">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decoration2" translatesAutoresizingMaskIntoConstraints="NO" id="X0z-QA-bnt">
+                    <rect key="frame" x="191.5" y="60" width="46.5" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46.5" id="SkX-Vt-En6"/>
+                        <constraint firstAttribute="height" constant="55" id="d9k-ue-shd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Gameplay Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-Qh-mhH">
+                    <rect key="frame" x="246" y="88" width="175" height="27"/>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-2u-ksq">
+                    <rect key="frame" x="50" y="147" width="567" height="96"/>
+                    <string key="text">Look at the numbers on each set of balls and remember the result of adding them up. Put the fourth ball in the cup after the cup exchange to make it the same as the target number.</string>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFM-dS-GNr">
+                    <rect key="frame" x="273.5" y="284" width="120" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Gfv-3m-Cxe"/>
+                        <constraint firstAttribute="width" constant="120" id="bhX-3t-w1b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ChaparralPro-BoldIt" family="Chaparral Pro" pointSize="24"/>
+                    <state key="normal" title="Start">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="d3G-lc-Fgu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pFM-dS-GNr" firstAttribute="centerX" secondItem="iOM-Mt-eQ9" secondAttribute="centerX" id="4rs-be-vfq"/>
+                <constraint firstAttribute="bottom" secondItem="pFM-dS-GNr" secondAttribute="bottom" constant="47" id="8dX-km-pCw"/>
+                <constraint firstItem="NFq-Qh-mhH" firstAttribute="centerX" secondItem="iOM-Mt-eQ9" secondAttribute="centerX" id="Cr3-dz-kdm"/>
+                <constraint firstAttribute="trailing" secondItem="hJ5-2u-ksq" secondAttribute="trailing" constant="50" id="RIJ-qp-INB"/>
+                <constraint firstItem="hJ5-2u-ksq" firstAttribute="top" secondItem="NFq-Qh-mhH" secondAttribute="bottom" constant="32" id="b21-NT-8ee"/>
+                <constraint firstItem="hJ5-2u-ksq" firstAttribute="centerX" secondItem="iOM-Mt-eQ9" secondAttribute="centerX" id="fxG-dU-PvA"/>
+                <constraint firstItem="hJ5-2u-ksq" firstAttribute="leading" secondItem="iOM-Mt-eQ9" secondAttribute="leading" constant="50" id="gKi-dg-kC0"/>
+                <constraint firstItem="NFq-Qh-mhH" firstAttribute="bottom" secondItem="X0z-QA-bnt" secondAttribute="bottom" id="oKZ-mS-Hme"/>
+                <constraint firstItem="NFq-Qh-mhH" firstAttribute="leading" secondItem="X0z-QA-bnt" secondAttribute="trailing" constant="8" id="reM-IY-rfA"/>
+                <constraint firstItem="NFq-Qh-mhH" firstAttribute="top" secondItem="iOM-Mt-eQ9" secondAttribute="top" constant="88" id="wBh-hZ-IoB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="127" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="decoration2" width="46.5" height="55"/>
+    </resources>
+</document>

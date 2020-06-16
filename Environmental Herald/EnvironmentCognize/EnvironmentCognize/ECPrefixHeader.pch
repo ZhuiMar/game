@@ -1,0 +1,50 @@
+//
+//  ECPrefixHeader.pch
+//  EnvironmentCognize
+//
+//  Created by luzhaoyang on 2020/4/7.
+//  Copyright © 2020 xinancaida. All rights reserved.
+//
+
+#ifndef ECPrefixHeader_pch
+#define ECPrefixHeader_pch
+
+
+#define BaseColor        @"#65314C"
+#define TitleColor       @"#65314C"
+#define FontName         @"ChaparralPro-Regular"
+#define FontNameTitle    @"ChaparralPro-BoldIt"
+
+#define isPad        ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define kiPhone5     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+#define kiPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) && !isPad : NO)
+
+
+#define Iphone_Height   [[UIScreen mainScreen ] bounds ].size.height
+#define Iphone_Width    [[UIScreen mainScreen ] bounds ].size.width
+
+#define Privacy_Policy_Address         @"https://ymo.win/app1/query/EnvironmentalHerald/privacy"
+
+// lib
+#import "UIViewController+YCPopover.h"
+#import <AVFoundation/AVFoundation.h>
+#import <SafariServices/SafariServices.h>
+#import "NSObject+tool.h"
+#import "Masonry.h"
+
+//Controller
+#import "ECNavigateViewController.h"
+#import "ECHomeViewController.h"
+#import "ECHomeViewController.h"
+#import "ECTipsViewController.h"
+#import "ECLearnViewController.h"
+#import "ECDrytrashViewController.h"
+#import "ECFindDiffViewController.h"
+#import "ECGameOverUIViewController.h"
+#import "ECAboutViewController.h"
+#import "ECDifferentViewController.h"
+#import "ECItem.h"
+#import "ECPrivacyPolicyTool.h"
+
+#endif /* ECPrefixHeader_pch */

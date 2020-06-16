@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MathForward_HomeViewController">
+            <connections>
+                <outlet property="hOne" destination="05k-aM-M9o" id="glR-I0-gy9"/>
+                <outlet property="hThree" destination="cUd-u4-fAN" id="efE-im-85H"/>
+                <outlet property="hTwo" destination="Il9-rC-YwQ" id="hfJ-DO-si3"/>
+                <outlet property="musicBtn" destination="Nrn-HN-Qn4" id="SZc-6b-4Xb"/>
+                <outlet property="topLayout" destination="GJe-zy-Fwg" id="OcR-pv-27Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wOne" destination="jXg-1n-flQ" id="9kM-Qh-ZLu"/>
+                <outlet property="wThree" destination="ORO-CY-EKJ" id="qUq-fz-Je6"/>
+                <outlet property="wTwo" destination="ycW-qx-16x" id="yya-bn-2s7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="TtL-6A-aqB">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-64-gBt">
+                    <rect key="frame" x="249" y="220" width="169" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Il9-rC-YwQ"/>
+                        <constraint firstAttribute="width" constant="169" id="ycW-qx-16x"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="endless_mode"/>
+                    <connections>
+                        <action selector="endleAction:" destination="-1" eventType="touchUpInside" id="zQ6-zW-P5A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-eO-ano">
+                    <rect key="frame" x="593" y="50" width="54" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="npS-fS-J5Z"/>
+                        <constraint firstAttribute="width" constant="54" id="nso-YT-IED"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="about"/>
+                    <connections>
+                        <action selector="aboutAction:" destination="-1" eventType="touchUpInside" id="Fid-Eg-heR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8z-aX-VXz">
+                    <rect key="frame" x="50" y="180" width="169" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="05k-aM-M9o"/>
+                        <constraint firstAttribute="width" constant="169" id="jXg-1n-flQ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="level_mode"/>
+                    <connections>
+                        <action selector="levelAction:" destination="-1" eventType="touchUpInside" id="oSo-hx-VJ4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ii-8Q-KU7">
+                    <rect key="frame" x="448" y="180" width="169" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="ORO-CY-EKJ"/>
+                        <constraint firstAttribute="height" constant="75" id="cUd-u4-fAN"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ranking"/>
+                    <connections>
+                        <action selector="rankingAction:" destination="-1" eventType="touchUpInside" id="RNI-mK-0gn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrn-HN-Qn4">
+                    <rect key="frame" x="524" y="50" width="54" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="9pe-tM-GEg"/>
+                        <constraint firstAttribute="height" constant="53" id="nzG-cK-gbZ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="music_off"/>
+                    <connections>
+                        <action selector="musicAction:" destination="-1" eventType="touchUpInside" id="M5j-ZZ-dhe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TtL-6A-aqB" secondAttribute="trailing" id="0uU-ga-zWS"/>
+                <constraint firstItem="jaF-64-gBt" firstAttribute="centerY" secondItem="H8z-aX-VXz" secondAttribute="centerY" constant="40" id="2Sd-zM-NUb"/>
+                <constraint firstItem="dbM-eO-ano" firstAttribute="centerY" secondItem="Nrn-HN-Qn4" secondAttribute="centerY" id="4I7-yR-9ds"/>
+                <constraint firstItem="9ii-8Q-KU7" firstAttribute="centerY" secondItem="H8z-aX-VXz" secondAttribute="centerY" id="9qJ-Tx-ggC"/>
+                <constraint firstAttribute="bottom" secondItem="jaF-64-gBt" secondAttribute="bottom" constant="80" id="Bdt-rT-ybd"/>
+                <constraint firstItem="9ii-8Q-KU7" firstAttribute="leading" secondItem="jaF-64-gBt" secondAttribute="trailing" constant="30" id="Cat-40-SCn"/>
+                <constraint firstItem="TtL-6A-aqB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FpY-zs-DRF"/>
+                <constraint firstAttribute="trailing" secondItem="dbM-eO-ano" secondAttribute="trailing" constant="20" id="GAP-2M-NLB"/>
+                <constraint firstItem="dbM-eO-ano" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="GJe-zy-Fwg"/>
+                <constraint firstItem="jaF-64-gBt" firstAttribute="leading" secondItem="H8z-aX-VXz" secondAttribute="trailing" constant="30" id="LJP-qf-KtM"/>
+                <constraint firstItem="jaF-64-gBt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VSa-9g-gzh"/>
+                <constraint firstItem="dbM-eO-ano" firstAttribute="leading" secondItem="Nrn-HN-Qn4" secondAttribute="trailing" constant="15" id="dpf-XQ-by5"/>
+                <constraint firstItem="TtL-6A-aqB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gXS-fr-AA2"/>
+                <constraint firstAttribute="bottom" secondItem="TtL-6A-aqB" secondAttribute="bottom" id="tXu-ge-5r6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about" width="54" height="52.5"/>
+        <image name="background_0" width="667" height="375"/>
+        <image name="endless_mode" width="168.5" height="75"/>
+        <image name="level_mode" width="168.5" height="75"/>
+        <image name="music_off" width="54" height="52.5"/>
+        <image name="ranking" width="168.5" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="BuoyMath_LifeBuoyView">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="FNc-4d-0ef">
+                    <rect key="frame" x="0.0" y="65" width="85" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="VdM-JK-xF8"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="sy4-Go-zu7">
+                    <rect key="frame" x="0.0" y="49" width="85" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Cdq-sJ-JQP"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="HMz-kl-hCh">
+                    <rect key="frame" x="0.0" y="33" width="85" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="AjV-OJ-10F"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Od-p4-yAH">
+                    <rect key="frame" x="0.0" y="17" width="85" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="c3g-Bv-5yG"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="OoK-e1-kSa">
+                    <rect key="frame" x="0.0" y="1" width="85" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Ha7-zs-05m"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7B-eP-nVq">
+                    <rect key="frame" x="0.0" y="0.0" width="85" height="130"/>
+                    <connections>
+                        <action selector="clcikBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="1N7-yh-06C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sy4-Go-zu7" secondAttribute="bottom" constant="16" id="2bG-w8-foP"/>
+                <constraint firstItem="sy4-Go-zu7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="373-Qd-RtH"/>
+                <constraint firstAttribute="trailing" secondItem="5Od-p4-yAH" secondAttribute="trailing" id="7ag-rx-EOV"/>
+                <constraint firstAttribute="trailing" secondItem="OoK-e1-kSa" secondAttribute="trailing" id="8wk-Op-UBc"/>
+                <constraint firstAttribute="trailing" secondItem="i7B-eP-nVq" secondAttribute="trailing" id="Bfj-5t-b4T"/>
+                <constraint firstAttribute="bottom" secondItem="HMz-kl-hCh" secondAttribute="bottom" constant="32" id="CK4-tg-PDF"/>
+                <constraint firstItem="i7B-eP-nVq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GJL-7y-6Uk"/>
+                <constraint firstAttribute="bottom" secondItem="5Od-p4-yAH" secondAttribute="bottom" constant="48" id="HuE-I8-zrb"/>
+                <constraint firstItem="i7B-eP-nVq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Prw-zf-ZcG"/>
+                <constraint firstAttribute="bottom" secondItem="FNc-4d-0ef" secondAttribute="bottom" id="Tvm-CO-PAI"/>
+                <constraint firstItem="5Od-p4-yAH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WFs-L7-r1z"/>
+                <constraint firstAttribute="trailing" secondItem="sy4-Go-zu7" secondAttribute="trailing" id="cYC-HD-Yri"/>
+                <constraint firstItem="HMz-kl-hCh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cdZ-xh-xgh"/>
+                <constraint firstItem="FNc-4d-0ef" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i6w-Ft-Gxu"/>
+                <constraint firstItem="OoK-e1-kSa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iur-dd-4cy"/>
+                <constraint firstAttribute="trailing" secondItem="HMz-kl-hCh" secondAttribute="trailing" id="kpT-Qw-H1G"/>
+                <constraint firstAttribute="bottom" secondItem="OoK-e1-kSa" secondAttribute="bottom" constant="64" id="mMB-XE-5qN"/>
+                <constraint firstAttribute="trailing" secondItem="FNc-4d-0ef" secondAttribute="trailing" id="slQ-e6-ydY"/>
+                <constraint firstAttribute="bottom" secondItem="i7B-eP-nVq" secondAttribute="bottom" id="ybu-Yj-n8c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bouyOne" destination="FNc-4d-0ef" id="aSv-Rv-vPA"/>
+                <outlet property="bouyThree" destination="HMz-kl-hCh" id="FBK-jW-eJS"/>
+                <outlet property="bouyTwo" destination="sy4-Go-zu7" id="dtd-HP-MYd"/>
+                <outlet property="buoyFive" destination="OoK-e1-kSa" id="6ss-c2-Umb"/>
+                <outlet property="buoyFour" destination="5Od-p4-yAH" id="XVR-Ed-ei9"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="89.5" height="69"/>
+        <image name="2" width="89.5" height="69"/>
+        <image name="3" width="89.5" height="69"/>
+        <image name="4" width="89.5" height="69"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cambridgeround-it.otf">
+            <string>CambridgeRound-It</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DEGamePage">
+            <connections>
+                <outlet property="coutDownLabel" destination="NxS-76-hqu" id="cX3-jn-1Mb"/>
+                <outlet property="valueText" destination="dM3-tp-cRO" id="kjJ-f4-mhw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="BnL-XO-cGn">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxS-76-hqu">
+                    <rect key="frame" x="608" y="5" width="19" height="24"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="make the formula satisfy the requirements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-QA-Lhk">
+                    <rect key="frame" x="207" y="310" width="253.5" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="R9B-d4-GZ7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="make the formula satisfy the requirements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyV-NA-Xej">
+                    <rect key="frame" x="181.5" y="287" width="304" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="XG0-dy-aDg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="18"/>
+                    <color key="textColor" red="0.88627450980392153" green="0.45098039215686275" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-4x-ssa">
+                    <rect key="frame" x="242.5" y="207" width="182" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="N5N-NC-PCO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-CE-q7I">
+                    <rect key="frame" x="262.5" y="240" width="76" height="14"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM3-tp-cRO">
+                    <rect key="frame" x="353.5" y="236" width="49" height="28"/>
+                    <fontDescription key="fontDescription" name="CambridgeRound-It" family="Cambridge Round" pointSize="24"/>
+                    <color key="textColor" red="0.70588235294117641" green="0.47450980392156861" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="dM3-tp-cRO" firstAttribute="centerY" secondItem="Leb-CE-q7I" secondAttribute="centerY" constant="3" id="42J-fg-6Bl"/>
+                <constraint firstItem="BnL-XO-cGn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5cQ-D3-RQV"/>
+                <constraint firstItem="dM3-tp-cRO" firstAttribute="leading" secondItem="Leb-CE-q7I" secondAttribute="trailing" constant="15" id="69h-s2-syS"/>
+                <constraint firstAttribute="bottom" secondItem="BnL-XO-cGn" secondAttribute="bottom" id="8ZA-fD-fPk"/>
+                <constraint firstItem="AyV-NA-Xej" firstAttribute="centerX" secondItem="0wh-QA-Lhk" secondAttribute="centerX" id="FsZ-iW-8su"/>
+                <constraint firstItem="AyV-NA-Xej" firstAttribute="top" secondItem="jMW-4x-ssa" secondAttribute="bottom" id="JAI-z3-8wV"/>
+                <constraint firstItem="jMW-4x-ssa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="USI-LM-hUo"/>
+                <constraint firstItem="Leb-CE-q7I" firstAttribute="centerY" secondItem="jMW-4x-ssa" secondAttribute="centerY" id="V6x-fA-QgB"/>
+                <constraint firstItem="Leb-CE-q7I" firstAttribute="leading" secondItem="jMW-4x-ssa" secondAttribute="leading" constant="20" id="XDe-3Q-tH7"/>
+                <constraint firstAttribute="trailing" secondItem="BnL-XO-cGn" secondAttribute="trailing" id="Za3-X6-NDL"/>
+                <constraint firstItem="NxS-76-hqu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="aCR-nV-M8K"/>
+                <constraint firstItem="0wh-QA-Lhk" firstAttribute="top" secondItem="AyV-NA-Xej" secondAttribute="bottom" constant="5" id="ctp-B4-QS0"/>
+                <constraint firstItem="BnL-XO-cGn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rJB-Mv-2HU"/>
+                <constraint firstAttribute="trailing" secondItem="NxS-76-hqu" secondAttribute="trailing" constant="40" id="wlm-Tx-U6F"/>
+                <constraint firstItem="0wh-QA-Lhk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zUc-un-YkE"/>
+                <constraint firstAttribute="bottom" secondItem="0wh-QA-Lhk" secondAttribute="bottom" constant="50" id="zjL-z4-Jbl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="128.90625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_1" width="667" height="375"/>
+        <image name="bg" width="182" height="80"/>
+    </resources>
+</document>

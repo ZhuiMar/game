@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepHelper_AlertViewController">
+            <connections>
+                <outlet property="OkBtn" destination="Gp0-5v-awg" id="JAV-QX-vUL"/>
+                <outlet property="cancelBtn" destination="P6K-6C-Jjo" id="PbF-US-I95"/>
+                <outlet property="contentLabel" destination="wrN-3P-5qd" id="2i4-Wz-Owe"/>
+                <outlet property="tittleLabel" destination="eXP-JS-qGf" id="mek-3J-X6p"/>
+                <outlet property="view" destination="7FX-o9-k5f" id="nhn-eB-2st"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7FX-o9-k5f">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXP-JS-qGf">
+                    <rect key="frame" x="83.5" y="16" width="84.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="dbC-fH-ddX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="23"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This operation will clear all data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrN-3P-5qd">
+                    <rect key="frame" x="11" y="48" width="229" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="A9Q-v4-J4w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPS-xK-z2X">
+                    <rect key="frame" x="0.0" y="95" width="251" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oXc-jq-DN4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6K-6C-Jjo">
+                    <rect key="frame" x="0.0" y="96" width="125" height="34"/>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="22"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="bpG-a9-2Mm"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuH-W1-11S">
+                    <rect key="frame" x="125" y="96" width="1" height="34"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="z6i-27-teI"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp0-5v-awg">
+                    <rect key="frame" x="126" y="96" width="125" height="34"/>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="25"/>
+                    <state key="normal" title="Ok"/>
+                    <connections>
+                        <action selector="OkAction:" destination="-1" eventType="touchUpInside" id="9Aj-Xh-enG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="wrN-3P-5qd" firstAttribute="centerX" secondItem="7FX-o9-k5f" secondAttribute="centerX" id="5rP-zV-DRx"/>
+                <constraint firstAttribute="trailing" secondItem="Gp0-5v-awg" secondAttribute="trailing" id="Ktd-W0-TI7"/>
+                <constraint firstAttribute="bottom" secondItem="TPS-xK-z2X" secondAttribute="bottom" constant="34" id="Lnr-eY-84y"/>
+                <constraint firstAttribute="bottom" secondItem="Gp0-5v-awg" secondAttribute="bottom" id="LqD-cQ-RNq"/>
+                <constraint firstItem="P6K-6C-Jjo" firstAttribute="top" secondItem="TPS-xK-z2X" secondAttribute="bottom" id="May-s1-ntA"/>
+                <constraint firstItem="Gp0-5v-awg" firstAttribute="top" secondItem="TPS-xK-z2X" secondAttribute="bottom" id="PSG-3p-IMY"/>
+                <constraint firstAttribute="trailing" secondItem="TPS-xK-z2X" secondAttribute="trailing" id="REe-lM-Tsh"/>
+                <constraint firstItem="HuH-W1-11S" firstAttribute="centerX" secondItem="7FX-o9-k5f" secondAttribute="centerX" id="Rkd-im-KQC"/>
+                <constraint firstItem="P6K-6C-Jjo" firstAttribute="leading" secondItem="7FX-o9-k5f" secondAttribute="leading" id="XuM-WF-gvV"/>
+                <constraint firstAttribute="bottom" secondItem="P6K-6C-Jjo" secondAttribute="bottom" id="cid-Nb-hlz"/>
+                <constraint firstItem="TPS-xK-z2X" firstAttribute="leading" secondItem="7FX-o9-k5f" secondAttribute="leading" id="f88-ga-cbi"/>
+                <constraint firstItem="Gp0-5v-awg" firstAttribute="leading" secondItem="HuH-W1-11S" secondAttribute="trailing" id="iOq-bC-AMx"/>
+                <constraint firstItem="HuH-W1-11S" firstAttribute="top" secondItem="TPS-xK-z2X" secondAttribute="bottom" id="iSl-04-PKz"/>
+                <constraint firstAttribute="bottom" secondItem="HuH-W1-11S" secondAttribute="bottom" id="n8k-72-9zC"/>
+                <constraint firstItem="eXP-JS-qGf" firstAttribute="centerX" secondItem="7FX-o9-k5f" secondAttribute="centerX" id="nbo-G7-v8b"/>
+                <constraint firstItem="HuH-W1-11S" firstAttribute="leading" secondItem="P6K-6C-Jjo" secondAttribute="trailing" id="npN-I5-YU9"/>
+                <constraint firstItem="wrN-3P-5qd" firstAttribute="top" secondItem="eXP-JS-qGf" secondAttribute="bottom" constant="8" id="s4M-DP-4QR"/>
+                <constraint firstItem="eXP-JS-qGf" firstAttribute="top" secondItem="7FX-o9-k5f" secondAttribute="top" constant="16" id="wcO-2Z-fhN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bqQ-uB-HcM"/>
+            <point key="canvasLocation" x="131.15942028985509" y="147.99107142857142"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mvboli.ttf">
+            <string>MVBoli</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SleepHelper_StarViewController">
+            <connections>
+                <outlet property="btn" destination="40g-gg-T7M" id="t7K-Ea-YCk"/>
+                <outlet property="scoreLabel" destination="AGH-lJ-cbp" id="iEJ-Cb-J4p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="background-2" translatesAutoresizingMaskIntoConstraints="NO" id="bWU-bZ-AKY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGH-lJ-cbp">
+                    <rect key="frame" x="342" y="30" width="13" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Rfr-9C-1yh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MVBoli" family="MV Boli" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40g-gg-T7M">
+                    <rect key="frame" x="137.5" y="557" width="100.5" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100.5" id="7yh-BR-f13"/>
+                        <constraint firstAttribute="height" constant="90" id="sAp-sc-1Ji"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title=" +1" backgroundImage="button-1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="WpN-eK-Xne"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bWU-bZ-AKY" secondAttribute="bottom" id="16D-fD-FFr"/>
+                <constraint firstItem="AGH-lJ-cbp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="2Ad-53-r2W"/>
+                <constraint firstAttribute="bottom" secondItem="40g-gg-T7M" secondAttribute="bottom" constant="20" id="AUs-pu-i75"/>
+                <constraint firstAttribute="trailing" secondItem="AGH-lJ-cbp" secondAttribute="trailing" constant="20" id="Hd4-Zb-CPh"/>
+                <constraint firstItem="bWU-bZ-AKY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fh7-iT-Wjz"/>
+                <constraint firstItem="40g-gg-T7M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sEe-lr-5e4"/>
+                <constraint firstItem="bWU-bZ-AKY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w2T-NR-79y"/>
+                <constraint firstAttribute="trailing" secondItem="bWU-bZ-AKY" secondAttribute="trailing" id="xgK-oP-MYc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background-2" width="375" height="667"/>
+        <image name="button-1" width="109" height="98.5"/>
+    </resources>
+</document>

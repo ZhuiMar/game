@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DEA45B790B067255CCCC85B /* libPods-RushingToCatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C7B31D25A832306AEF1E91 /* libPods-RushingToCatch.a */; };
+		B925510824874A170092D39C /* CatchBall_MathematicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B925510624874A170092D39C /* CatchBall_MathematicsVC.m */; };
+		B925510924874A170092D39C /* CatchBall_MathematicsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B925510724874A170092D39C /* CatchBall_MathematicsVC.xib */; };
+		B9836F192485070E0072445E /* CatchBall_RankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9836F182485070E0072445E /* CatchBall_RankModel.m */; };
+		B9D9EFA42480C72100B38B11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFA32480C72100B38B11 /* AppDelegate.m */; };
+		B9D9EFA72480C72100B38B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFA62480C72100B38B11 /* SceneDelegate.m */; };
+		B9D9EFAA2480C72100B38B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFA92480C72100B38B11 /* ViewController.m */; };
+		B9D9EFAD2480C72100B38B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFAB2480C72100B38B11 /* Main.storyboard */; };
+		B9D9EFAF2480C72600B38B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFAE2480C72600B38B11 /* Assets.xcassets */; };
+		B9D9EFB22480C72600B38B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFB02480C72600B38B11 /* LaunchScreen.storyboard */; };
+		B9D9EFB52480C72600B38B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFB42480C72600B38B11 /* main.m */; };
+		B9D9EFC624849B8500B38B11 /* CatchBall_HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFC424849B8500B38B11 /* CatchBall_HomePageVC.m */; };
+		B9D9EFC724849B8500B38B11 /* CatchBall_HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFC524849B8500B38B11 /* CatchBall_HomePageVC.xib */; };
+		B9D9EFCA24849BB400B38B11 /* CatchBall_Navigatetion.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFC924849BB400B38B11 /* CatchBall_Navigatetion.m */; };
+		B9D9EFDB24849D3D00B38B11 /* NSObject+CatchBall_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFDA24849D3D00B38B11 /* NSObject+CatchBall_Tools.m */; };
+		B9D9EFDE24849F1B00B38B11 /* Chalkboard.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFDD24849F1B00B38B11 /* Chalkboard.ttc */; };
+		B9D9EFE22484A3D000B38B11 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFDF2484A3D000B38B11 /* bgmusic.mp3 */; };
+		B9D9EFE32484A3D000B38B11 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFE02484A3D000B38B11 /* right.mp3 */; };
+		B9D9EFE42484A3D000B38B11 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFE12484A3D000B38B11 /* wrong.mp3 */; };
+		B9D9EFE82484A5CD00B38B11 /* CatchBall_AboutPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFE62484A5CD00B38B11 /* CatchBall_AboutPageVC.m */; };
+		B9D9EFE92484A5CD00B38B11 /* CatchBall_AboutPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFE72484A5CD00B38B11 /* CatchBall_AboutPageVC.xib */; };
+		B9D9EFED2484A7B300B38B11 /* CatchBall_RankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFEB2484A7B300B38B11 /* CatchBall_RankingView.m */; };
+		B9D9EFEE2484A7B300B38B11 /* CatchBall_RankingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFEC2484A7B300B38B11 /* CatchBall_RankingView.xib */; };
+		B9D9EFF22484A95900B38B11 /* CatchBall_RankingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFF02484A95900B38B11 /* CatchBall_RankingCell.m */; };
+		B9D9EFF32484A95900B38B11 /* CatchBall_RankingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9EFF12484A95900B38B11 /* CatchBall_RankingCell.xib */; };
+		B9D9F00E2484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFF62484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B9D9F00F2484ACDD00B38B11 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9EFFF2484ACDD00B38B11 /* ViewController+MASAdditions.m */; };
+		B9D9F0102484ACDD00B38B11 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0032484ACDD00B38B11 /* MASCompositeConstraint.m */; };
+		B9D9F0112484ACDD00B38B11 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0042484ACDD00B38B11 /* MASConstraintMaker.m */; };
+		B9D9F0122484ACDD00B38B11 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0052484ACDD00B38B11 /* MASLayoutConstraint.m */; };
+		B9D9F0132484ACDD00B38B11 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0062484ACDD00B38B11 /* NSArray+MASAdditions.m */; };
+		B9D9F0142484ACDD00B38B11 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0072484ACDD00B38B11 /* View+MASAdditions.m */; };
+		B9D9F0152484ACDD00B38B11 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F00A2484ACDD00B38B11 /* MASConstraint.m */; };
+		B9D9F0162484ACDD00B38B11 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F00C2484ACDD00B38B11 /* MASViewConstraint.m */; };
+		B9D9F0172484ACDD00B38B11 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F00D2484ACDD00B38B11 /* MASViewAttribute.m */; };
+		B9D9F0232484B03500B38B11 /* CatchBall_GameCenterPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0212484B03500B38B11 /* CatchBall_GameCenterPageVC.m */; };
+		B9D9F0242484B03500B38B11 /* CatchBall_GameCenterPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9F0222484B03500B38B11 /* CatchBall_GameCenterPageVC.xib */; };
+		B9D9F0282484B04900B38B11 /* CatchBall_GameOverPageVc.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0262484B04900B38B11 /* CatchBall_GameOverPageVc.m */; };
+		B9D9F0292484B04900B38B11 /* CatchBall_GameOverPageVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D9F0272484B04900B38B11 /* CatchBall_GameOverPageVc.xib */; };
+		B9D9F0322484B0CC00B38B11 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F02B2484B0CC00B38B11 /* YCPresentationController.m */; };
+		B9D9F0332484B0CC00B38B11 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0302484B0CC00B38B11 /* YCPopoverAnimator.m */; };
+		B9D9F0342484B0CC00B38B11 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9F0312484B0CC00B38B11 /* UIViewController+YCPopover.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B9366E35323BA46744680AB /* Pods-RushingToCatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RushingToCatch.debug.xcconfig"; path = "Target Support Files/Pods-RushingToCatch/Pods-RushingToCatch.debug.xcconfig"; sourceTree = "<group>"; };
+		51C7B31D25A832306AEF1E91 /* libPods-RushingToCatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RushingToCatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B925510524874A170092D39C /* CatchBall_MathematicsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_MathematicsVC.h; sourceTree = "<group>"; };
+		B925510624874A170092D39C /* CatchBall_MathematicsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_MathematicsVC.m; sourceTree = "<group>"; };
+		B925510724874A170092D39C /* CatchBall_MathematicsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_MathematicsVC.xib; sourceTree = "<group>"; };
+		B9836F172485070E0072445E /* CatchBall_RankModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_RankModel.h; sourceTree = "<group>"; };
+		B9836F182485070E0072445E /* CatchBall_RankModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_RankModel.m; sourceTree = "<group>"; };
+		B9D9EF9F2480C72100B38B11 /* Fast Catch Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast Catch Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D9EFA22480C72100B38B11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9D9EFA32480C72100B38B11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9D9EFA52480C72100B38B11 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9D9EFA62480C72100B38B11 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9D9EFA82480C72100B38B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9D9EFA92480C72100B38B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9D9EFAC2480C72100B38B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9D9EFAE2480C72600B38B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9D9EFB12480C72600B38B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9D9EFB32480C72600B38B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D9EFB42480C72600B38B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9D9EFC324849B8500B38B11 /* CatchBall_HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_HomePageVC.h; sourceTree = "<group>"; };
+		B9D9EFC424849B8500B38B11 /* CatchBall_HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_HomePageVC.m; sourceTree = "<group>"; };
+		B9D9EFC524849B8500B38B11 /* CatchBall_HomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_HomePageVC.xib; sourceTree = "<group>"; };
+		B9D9EFC824849BB400B38B11 /* CatchBall_Navigatetion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_Navigatetion.h; sourceTree = "<group>"; };
+		B9D9EFC924849BB400B38B11 /* CatchBall_Navigatetion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_Navigatetion.m; sourceTree = "<group>"; };
+		B9D9EFD924849D3D00B38B11 /* NSObject+CatchBall_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CatchBall_Tools.h"; sourceTree = "<group>"; };
+		B9D9EFDA24849D3D00B38B11 /* NSObject+CatchBall_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CatchBall_Tools.m"; sourceTree = "<group>"; };
+		B9D9EFDC24849DB500B38B11 /* Rushing_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rushing_PrefixHeader.pch; sourceTree = "<group>"; };
+		B9D9EFDD24849F1B00B38B11 /* Chalkboard.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chalkboard.ttc; sourceTree = "<group>"; };
+		B9D9EFDF2484A3D000B38B11 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		B9D9EFE02484A3D000B38B11 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		B9D9EFE12484A3D000B38B11 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		B9D9EFE52484A5CD00B38B11 /* CatchBall_AboutPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_AboutPageVC.h; sourceTree = "<group>"; };
+		B9D9EFE62484A5CD00B38B11 /* CatchBall_AboutPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_AboutPageVC.m; sourceTree = "<group>"; };
+		B9D9EFE72484A5CD00B38B11 /* CatchBall_AboutPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_AboutPageVC.xib; sourceTree = "<group>"; };
+		B9D9EFEA2484A7B300B38B11 /* CatchBall_RankingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_RankingView.h; sourceTree = "<group>"; };
+		B9D9EFEB2484A7B300B38B11 /* CatchBall_RankingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_RankingView.m; sourceTree = "<group>"; };
+		B9D9EFEC2484A7B300B38B11 /* CatchBall_RankingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_RankingView.xib; sourceTree = "<group>"; };
+		B9D9EFEF2484A95900B38B11 /* CatchBall_RankingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_RankingCell.h; sourceTree = "<group>"; };
+		B9D9EFF02484A95900B38B11 /* CatchBall_RankingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_RankingCell.m; sourceTree = "<group>"; };
+		B9D9EFF12484A95900B38B11 /* CatchBall_RankingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_RankingCell.xib; sourceTree = "<group>"; };
+		B9D9EFF52484ACDD00B38B11 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B9D9EFF62484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B9D9EFF72484ACDD00B38B11 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B9D9EFF82484ACDD00B38B11 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B9D9EFF92484ACDD00B38B11 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B9D9EFFA2484ACDD00B38B11 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B9D9EFFB2484ACDD00B38B11 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B9D9EFFC2484ACDD00B38B11 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B9D9EFFD2484ACDD00B38B11 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B9D9EFFE2484ACDD00B38B11 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B9D9EFFF2484ACDD00B38B11 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B9D9F0002484ACDD00B38B11 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B9D9F0012484ACDD00B38B11 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B9D9F0022484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B9D9F0032484ACDD00B38B11 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B9D9F0042484ACDD00B38B11 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B9D9F0052484ACDD00B38B11 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B9D9F0062484ACDD00B38B11 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B9D9F0072484ACDD00B38B11 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B9D9F0082484ACDD00B38B11 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B9D9F0092484ACDD00B38B11 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B9D9F00A2484ACDD00B38B11 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B9D9F00B2484ACDD00B38B11 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B9D9F00C2484ACDD00B38B11 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B9D9F00D2484ACDD00B38B11 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		B9D9F0202484B03500B38B11 /* CatchBall_GameCenterPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_GameCenterPageVC.h; sourceTree = "<group>"; };
+		B9D9F0212484B03500B38B11 /* CatchBall_GameCenterPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_GameCenterPageVC.m; sourceTree = "<group>"; };
+		B9D9F0222484B03500B38B11 /* CatchBall_GameCenterPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_GameCenterPageVC.xib; sourceTree = "<group>"; };
+		B9D9F0252484B04900B38B11 /* CatchBall_GameOverPageVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatchBall_GameOverPageVc.h; sourceTree = "<group>"; };
+		B9D9F0262484B04900B38B11 /* CatchBall_GameOverPageVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchBall_GameOverPageVc.m; sourceTree = "<group>"; };
+		B9D9F0272484B04900B38B11 /* CatchBall_GameOverPageVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchBall_GameOverPageVc.xib; sourceTree = "<group>"; };
+		B9D9F02B2484B0CC00B38B11 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9D9F02C2484B0CC00B38B11 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9D9F02D2484B0CC00B38B11 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9D9F02E2484B0CC00B38B11 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9D9F02F2484B0CC00B38B11 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9D9F0302484B0CC00B38B11 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9D9F0312484B0CC00B38B11 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		DD2F04F81896980CF2D9DC7B /* Pods-RushingToCatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RushingToCatch.release.xcconfig"; path = "Target Support Files/Pods-RushingToCatch/Pods-RushingToCatch.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D9EF9C2480C72100B38B11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEA45B790B067255CCCC85B /* libPods-RushingToCatch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B58E7024CD1C9591F6BEED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B9366E35323BA46744680AB /* Pods-RushingToCatch.debug.xcconfig */,
+				DD2F04F81896980CF2D9DC7B /* Pods-RushingToCatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5133EAB7C725B38E8C949B3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51C7B31D25A832306AEF1E91 /* libPods-RushingToCatch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9D9EF962480C72100B38B11 = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFA12480C72100B38B11 /* RushingToCatch */,
+				B9D9EFA02480C72100B38B11 /* Products */,
+				37B58E7024CD1C9591F6BEED /* Pods */,
+				5133EAB7C725B38E8C949B3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D9EFA02480C72100B38B11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EF9F2480C72100B38B11 /* Fast Catch Ball.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D9EFA12480C72100B38B11 /* RushingToCatch */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFCC24849CF800B38B11 /* CatchBallTool */,
+				B9D9EFC02480E0CD00B38B11 /* CatchBallBaseVC */,
+				B9D9EFBF2480E0C600B38B11 /* CatchBallPageVC */,
+				B9D9EFBE2480E0C300B38B11 /* CatchBallViewS */,
+				B9D9EFBD2480E0C000B38B11 /* CatchBallModel */,
+				B9D9EFBC2480E0BD00B38B11 /* CatchBallThird */,
+				B9D9EFBB2480E0BA00B38B11 /* CatchBallOther */,
+				B9D9EFA22480C72100B38B11 /* AppDelegate.h */,
+				B9D9EFA32480C72100B38B11 /* AppDelegate.m */,
+				B9D9EFA52480C72100B38B11 /* SceneDelegate.h */,
+				B9D9EFA62480C72100B38B11 /* SceneDelegate.m */,
+				B9D9EFA82480C72100B38B11 /* ViewController.h */,
+				B9D9EFA92480C72100B38B11 /* ViewController.m */,
+				B9D9EFAB2480C72100B38B11 /* Main.storyboard */,
+				B9D9EFDC24849DB500B38B11 /* Rushing_PrefixHeader.pch */,
+				B9D9EFAE2480C72600B38B11 /* Assets.xcassets */,
+				B9D9EFB02480C72600B38B11 /* LaunchScreen.storyboard */,
+				B9D9EFB32480C72600B38B11 /* Info.plist */,
+				B9D9EFB42480C72600B38B11 /* main.m */,
+			);
+			path = RushingToCatch;
+			sourceTree = "<group>";
+		};
+		B9D9EFBB2480E0BA00B38B11 /* CatchBallOther */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFC22480E16D00B38B11 /* font */,
+				B9D9EFC12480E15D00B38B11 /* music */,
+			);
+			path = CatchBallOther;
+			sourceTree = "<group>";
+		};
+		B9D9EFBC2480E0BD00B38B11 /* CatchBallThird */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9F02A2484B0CC00B38B11 /* RushAlert */,
+				B9D9EFF42484ACDD00B38B11 /* Masonry */,
+			);
+			path = CatchBallThird;
+			sourceTree = "<group>";
+		};
+		B9D9EFBD2480E0C000B38B11 /* CatchBallModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9836F172485070E0072445E /* CatchBall_RankModel.h */,
+				B9836F182485070E0072445E /* CatchBall_RankModel.m */,
+			);
+			path = CatchBallModel;
+			sourceTree = "<group>";
+		};
+		B9D9EFBE2480E0C300B38B11 /* CatchBallViewS */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFEF2484A95900B38B11 /* CatchBall_RankingCell.h */,
+				B9D9EFF02484A95900B38B11 /* CatchBall_RankingCell.m */,
+				B9D9EFF12484A95900B38B11 /* CatchBall_RankingCell.xib */,
+			);
+			path = CatchBallViewS;
+			sourceTree = "<group>";
+		};
+		B9D9EFBF2480E0C600B38B11 /* CatchBallPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFC324849B8500B38B11 /* CatchBall_HomePageVC.h */,
+				B9D9EFC424849B8500B38B11 /* CatchBall_HomePageVC.m */,
+				B9D9EFC524849B8500B38B11 /* CatchBall_HomePageVC.xib */,
+				B9D9EFE52484A5CD00B38B11 /* CatchBall_AboutPageVC.h */,
+				B9D9EFE62484A5CD00B38B11 /* CatchBall_AboutPageVC.m */,
+				B9D9EFE72484A5CD00B38B11 /* CatchBall_AboutPageVC.xib */,
+				B9D9EFEA2484A7B300B38B11 /* CatchBall_RankingView.h */,
+				B9D9EFEB2484A7B300B38B11 /* CatchBall_RankingView.m */,
+				B9D9EFEC2484A7B300B38B11 /* CatchBall_RankingView.xib */,
+				B9D9F0252484B04900B38B11 /* CatchBall_GameOverPageVc.h */,
+				B9D9F0262484B04900B38B11 /* CatchBall_GameOverPageVc.m */,
+				B9D9F0272484B04900B38B11 /* CatchBall_GameOverPageVc.xib */,
+				B9D9F0202484B03500B38B11 /* CatchBall_GameCenterPageVC.h */,
+				B9D9F0212484B03500B38B11 /* CatchBall_GameCenterPageVC.m */,
+				B9D9F0222484B03500B38B11 /* CatchBall_GameCenterPageVC.xib */,
+				B925510524874A170092D39C /* CatchBall_MathematicsVC.h */,
+				B925510624874A170092D39C /* CatchBall_MathematicsVC.m */,
+				B925510724874A170092D39C /* CatchBall_MathematicsVC.xib */,
+			);
+			path = CatchBallPageVC;
+			sourceTree = "<group>";
+		};
+		B9D9EFC02480E0CD00B38B11 /* CatchBallBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFC824849BB400B38B11 /* CatchBall_Navigatetion.h */,
+				B9D9EFC924849BB400B38B11 /* CatchBall_Navigatetion.m */,
+			);
+			path = CatchBallBaseVC;
+			sourceTree = "<group>";
+		};
+		B9D9EFC12480E15D00B38B11 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFDF2484A3D000B38B11 /* bgmusic.mp3 */,
+				B9D9EFE02484A3D000B38B11 /* right.mp3 */,
+				B9D9EFE12484A3D000B38B11 /* wrong.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		B9D9EFC22480E16D00B38B11 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFDD24849F1B00B38B11 /* Chalkboard.ttc */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		B9D9EFCC24849CF800B38B11 /* CatchBallTool */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFD924849D3D00B38B11 /* NSObject+CatchBall_Tools.h */,
+				B9D9EFDA24849D3D00B38B11 /* NSObject+CatchBall_Tools.m */,
+			);
+			path = CatchBallTool;
+			sourceTree = "<group>";
+		};
+		B9D9EFF42484ACDD00B38B11 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9EFF52484ACDD00B38B11 /* MASCompositeConstraint.h */,
+				B9D9EFF62484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B9D9EFF72484ACDD00B38B11 /* MASConstraint+Private.h */,
+				B9D9EFF82484ACDD00B38B11 /* MASLayoutConstraint.h */,
+				B9D9EFF92484ACDD00B38B11 /* NSArray+MASShorthandAdditions.h */,
+				B9D9EFFA2484ACDD00B38B11 /* MASConstraintMaker.h */,
+				B9D9EFFB2484ACDD00B38B11 /* View+MASAdditions.h */,
+				B9D9EFFC2484ACDD00B38B11 /* NSArray+MASAdditions.h */,
+				B9D9EFFD2484ACDD00B38B11 /* MASUtilities.h */,
+				B9D9EFFE2484ACDD00B38B11 /* MASViewAttribute.h */,
+				B9D9EFFF2484ACDD00B38B11 /* ViewController+MASAdditions.m */,
+				B9D9F0002484ACDD00B38B11 /* MASViewConstraint.h */,
+				B9D9F0012484ACDD00B38B11 /* MASConstraint.h */,
+				B9D9F0022484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B9D9F0032484ACDD00B38B11 /* MASCompositeConstraint.m */,
+				B9D9F0042484ACDD00B38B11 /* MASConstraintMaker.m */,
+				B9D9F0052484ACDD00B38B11 /* MASLayoutConstraint.m */,
+				B9D9F0062484ACDD00B38B11 /* NSArray+MASAdditions.m */,
+				B9D9F0072484ACDD00B38B11 /* View+MASAdditions.m */,
+				B9D9F0082484ACDD00B38B11 /* View+MASShorthandAdditions.h */,
+				B9D9F0092484ACDD00B38B11 /* Masonry.h */,
+				B9D9F00A2484ACDD00B38B11 /* MASConstraint.m */,
+				B9D9F00B2484ACDD00B38B11 /* ViewController+MASAdditions.h */,
+				B9D9F00C2484ACDD00B38B11 /* MASViewConstraint.m */,
+				B9D9F00D2484ACDD00B38B11 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B9D9F02A2484B0CC00B38B11 /* RushAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B9D9F02B2484B0CC00B38B11 /* YCPresentationController.m */,
+				B9D9F02C2484B0CC00B38B11 /* YCPopoverAnimator.h */,
+				B9D9F02D2484B0CC00B38B11 /* UIViewController+YCPopover.h */,
+				B9D9F02E2484B0CC00B38B11 /* YCPresentationController.h */,
+				B9D9F02F2484B0CC00B38B11 /* YCPopoverMacro.h */,
+				B9D9F0302484B0CC00B38B11 /* YCPopoverAnimator.m */,
+				B9D9F0312484B0CC00B38B11 /* UIViewController+YCPopover.m */,
+			);
+			path = RushAlert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9D9EF9E2480C72100B38B11 /* RushingToCatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D9EFB82480C72600B38B11 /* Build configuration list for PBXNativeTarget "RushingToCatch" */;
+			buildPhases = (
+				D0CE10C970C6183818BFF337 /* [CP] Check Pods Manifest.lock */,
+				B9D9EF9B2480C72100B38B11 /* Sources */,
+				B9D9EF9C2480C72100B38B11 /* Frameworks */,
+				B9D9EF9D2480C72100B38B11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RushingToCatch;
+			productName = RushingToCatch;
+			productReference = B9D9EF9F2480C72100B38B11 /* Fast Catch Ball.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9D9EF972480C72100B38B11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CatchBall_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = shijicheng;
+				TargetAttributes = {
+					B9D9EF9E2480C72100B38B11 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9D9EF9A2480C72100B38B11 /* Build configuration list for PBXProject "RushingToCatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9D9EF962480C72100B38B11;
+			productRefGroup = B9D9EFA02480C72100B38B11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9D9EF9E2480C72100B38B11 /* RushingToCatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9D9EF9D2480C72100B38B11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D9EFDE24849F1B00B38B11 /* Chalkboard.ttc in Resources */,
+				B9D9F0242484B03500B38B11 /* CatchBall_GameCenterPageVC.xib in Resources */,
+				B9D9EFB22480C72600B38B11 /* LaunchScreen.storyboard in Resources */,
+				B9D9EFC724849B8500B38B11 /* CatchBall_HomePageVC.xib in Resources */,
+				B9D9EFE32484A3D000B38B11 /* right.mp3 in Resources */,
+				B9D9F0292484B04900B38B11 /* CatchBall_GameOverPageVc.xib in Resources */,
+				B9D9EFE42484A3D000B38B11 /* wrong.mp3 in Resources */,
+				B9D9EFAF2480C72600B38B11 /* Assets.xcassets in Resources */,
+				B9D9EFAD2480C72100B38B11 /* Main.storyboard in Resources */,
+				B9D9EFE92484A5CD00B38B11 /* CatchBall_AboutPageVC.xib in Resources */,
+				B925510924874A170092D39C /* CatchBall_MathematicsVC.xib in Resources */,
+				B9D9EFEE2484A7B300B38B11 /* CatchBall_RankingView.xib in Resources */,
+				B9D9EFF32484A95900B38B11 /* CatchBall_RankingCell.xib in Resources */,
+				B9D9EFE22484A3D000B38B11 /* bgmusic.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0CE10C970C6183818BFF337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RushingToCatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9D9EF9B2480C72100B38B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D9F0332484B0CC00B38B11 /* YCPopoverAnimator.m in Sources */,
+				B9D9F00E2484ACDD00B38B11 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B9D9EFED2484A7B300B38B11 /* CatchBall_RankingView.m in Sources */,
+				B9D9F0152484ACDD00B38B11 /* MASConstraint.m in Sources */,
+				B925510824874A170092D39C /* CatchBall_MathematicsVC.m in Sources */,
+				B9836F192485070E0072445E /* CatchBall_RankModel.m in Sources */,
+				B9D9F0322484B0CC00B38B11 /* YCPresentationController.m in Sources */,
+				B9D9F0162484ACDD00B38B11 /* MASViewConstraint.m in Sources */,
+				B9D9F0232484B03500B38B11 /* CatchBall_GameCenterPageVC.m in Sources */,
+				B9D9F00F2484ACDD00B38B11 /* ViewController+MASAdditions.m in Sources */,
+				B9D9F0172484ACDD00B38B11 /* MASViewAttribute.m in Sources */,
+				B9D9EFE82484A5CD00B38B11 /* CatchBall_AboutPageVC.m in Sources */,
+				B9D9F0282484B04900B38B11 /* CatchBall_GameOverPageVc.m in Sources */,
+				B9D9F0102484ACDD00B38B11 /* MASCompositeConstraint.m in Sources */,
+				B9D9F0142484ACDD00B38B11 /* View+MASAdditions.m in Sources */,
+				B9D9EFAA2480C72100B38B11 /* ViewController.m in Sources */,
+				B9D9F0342484B0CC00B38B11 /* UIViewController+YCPopover.m in Sources */,
+				B9D9EFC624849B8500B38B11 /* CatchBall_HomePageVC.m in Sources */,
+				B9D9F0122484ACDD00B38B11 /* MASLayoutConstraint.m in Sources */,
+				B9D9F0112484ACDD00B38B11 /* MASConstraintMaker.m in Sources */,
+				B9D9EFA42480C72100B38B11 /* AppDelegate.m in Sources */,
+				B9D9EFB52480C72600B38B11 /* main.m in Sources */,
+				B9D9EFDB24849D3D00B38B11 /* NSObject+CatchBall_Tools.m in Sources */,
+				B9D9F0132484ACDD00B38B11 /* NSArray+MASAdditions.m in Sources */,
+				B9D9EFA72480C72100B38B11 /* SceneDelegate.m in Sources */,
+				B9D9EFCA24849BB400B38B11 /* CatchBall_Navigatetion.m in Sources */,
+				B9D9EFF22484A95900B38B11 /* CatchBall_RankingCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9D9EFAB2480C72100B38B11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D9EFAC2480C72100B38B11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9D9EFB02480C72600B38B11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D9EFB12480C72600B38B11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9D9EFB62480C72600B38B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RushingToCatch/Rushing_PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9D9EFB72480C72600B38B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RushingToCatch/Rushing_PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9D9EFB92480C72600B38B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B9366E35323BA46744680AB /* Pods-RushingToCatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2Z63XTM797;
+				INFOPLIST_FILE = RushingToCatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijicheng.rushingtocatch;
+				PRODUCT_NAME = "Fast Catch Ball";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9D9EFBA2480C72600B38B11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2F04F81896980CF2D9DC7B /* Pods-RushingToCatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2Z63XTM797;
+				INFOPLIST_FILE = RushingToCatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijicheng.rushingtocatch;
+				PRODUCT_NAME = "Fast Catch Ball";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9D9EF9A2480C72100B38B11 /* Build configuration list for PBXProject "RushingToCatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D9EFB62480C72600B38B11 /* Debug */,
+				B9D9EFB72480C72600B38B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D9EFB82480C72600B38B11 /* Build configuration list for PBXNativeTarget "RushingToCatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D9EFB92480C72600B38B11 /* Debug */,
+				B9D9EFBA2480C72600B38B11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9D9EF972480C72100B38B11 /* Project object */;
+}

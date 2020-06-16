@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B974000024344FD10004A872 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFF024344FD10004A872 /* View+MASAdditions.m */; };
+		B974000124344FD10004A872 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFF324344FD10004A872 /* MASConstraint.m */; };
+		B974000224344FD10004A872 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFF524344FD10004A872 /* MASViewConstraint.m */; };
+		B974000324344FD10004A872 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFF624344FD10004A872 /* MASViewAttribute.m */; };
+		B9740007243450BB0004A872 /* FPNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9740006243450BB0004A872 /* FPNavigation.m */; };
+		B974000A243453460004A872 /* FPHowToPalyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9740008243453460004A872 /* FPHowToPalyPage.swift */; };
+		B974000B243453460004A872 /* FPHowToPalyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9740009243453460004A872 /* FPHowToPalyPage.xib */; };
+		B974000E243453590004A872 /* FPAboutPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974000C243453590004A872 /* FPAboutPageVC.swift */; };
+		B974000F243453590004A872 /* FPAboutPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B974000D243453590004A872 /* FPAboutPageVC.xib */; };
+		B9740012243453770004A872 /* FPRankingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9740010243453770004A872 /* FPRankingPage.swift */; };
+		B9740013243453770004A872 /* FPRankingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9740011243453770004A872 /* FPRankingPage.xib */; };
+		B97400162434538A0004A872 /* FPGamePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97400142434538A0004A872 /* FPGamePageVC.swift */; };
+		B97400172434538A0004A872 /* FPGamePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B97400152434538A0004A872 /* FPGamePageVC.xib */; };
+		B974001A243453B70004A872 /* FPGameOverPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9740018243453B70004A872 /* FPGameOverPageVC.swift */; };
+		B974001B243453B70004A872 /* FPGameOverPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9740019243453B70004A872 /* FPGameOverPageVC.xib */; };
+		B9740048243466530004A872 /* food_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9740045243466530004A872 /* food_right.mp3 */; };
+		B9740049243466530004A872 /* food_bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9740046243466530004A872 /* food_bg.mp3 */; };
+		B974004A243466530004A872 /* food_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9740047243466530004A872 /* food_wrong.mp3 */; };
+		B974FFA024344B790004A872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974FF9F24344B790004A872 /* AppDelegate.swift */; };
+		B974FFA424344B790004A872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974FFA324344B790004A872 /* ViewController.swift */; };
+		B974FFA724344B790004A872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B974FFA524344B790004A872 /* Main.storyboard */; };
+		B974FFA924344B7E0004A872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B974FFA824344B7E0004A872 /* Assets.xcassets */; };
+		B974FFAC24344B7E0004A872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B974FFAA24344B7E0004A872 /* LaunchScreen.storyboard */; };
+		B974FFB624344C560004A872 /* FPHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974FFB424344C560004A872 /* FPHomePage.swift */; };
+		B974FFB724344C560004A872 /* FPHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B974FFB524344C560004A872 /* FPHomePage.xib */; };
+		B974FFBF24344D3D0004A872 /* Rush-hour-demo-3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B974FFBD24344D3D0004A872 /* Rush-hour-demo-3.ttf */; };
+		B974FFC024344D3D0004A872 /* Rush-hour-demo-2.otf in Resources */ = {isa = PBXBuildFile; fileRef = B974FFBE24344D3D0004A872 /* Rush-hour-demo-2.otf */; };
+		B974FFCE24344F730004A872 /* UIImage+tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFC224344F730004A872 /* UIImage+tool.m */; };
+		B974FFCF24344F730004A872 /* NSString+tool.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFC324344F730004A872 /* NSString+tool.m */; };
+		B974FFD024344F730004A872 /* NSString+record.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFC424344F730004A872 /* NSString+record.m */; };
+		B974FFD124344F730004A872 /* NSDate+date.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFC524344F730004A872 /* NSDate+date.m */; };
+		B974FFD224344F730004A872 /* UIFont+font.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFCB24344F730004A872 /* UIFont+font.m */; };
+		B974FFD324344F730004A872 /* UIColor+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFCC24344F730004A872 /* UIColor+hex.m */; };
+		B974FFF724344FD10004A872 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFD624344FD10004A872 /* YCPresentationController.m */; };
+		B974FFF824344FD10004A872 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFDB24344FD10004A872 /* YCPopoverAnimator.m */; };
+		B974FFF924344FD10004A872 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFDC24344FD10004A872 /* UIViewController+YCPopover.m */; };
+		B974FFFA24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFDF24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B974FFFB24344FD10004A872 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFE824344FD10004A872 /* ViewController+MASAdditions.m */; };
+		B974FFFC24344FD10004A872 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFEC24344FD10004A872 /* MASCompositeConstraint.m */; };
+		B974FFFD24344FD10004A872 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFED24344FD10004A872 /* MASConstraintMaker.m */; };
+		B974FFFE24344FD10004A872 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFEE24344FD10004A872 /* MASLayoutConstraint.m */; };
+		B974FFFF24344FD10004A872 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B974FFEF24344FD10004A872 /* NSArray+MASAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9740004243450030004A872 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B9740005243450BB0004A872 /* FPNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPNavigation.h; sourceTree = "<group>"; };
+		B9740006243450BB0004A872 /* FPNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPNavigation.m; sourceTree = "<group>"; };
+		B9740008243453460004A872 /* FPHowToPalyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHowToPalyPage.swift; sourceTree = "<group>"; };
+		B9740009243453460004A872 /* FPHowToPalyPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPHowToPalyPage.xib; sourceTree = "<group>"; };
+		B974000C243453590004A872 /* FPAboutPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPAboutPageVC.swift; sourceTree = "<group>"; };
+		B974000D243453590004A872 /* FPAboutPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPAboutPageVC.xib; sourceTree = "<group>"; };
+		B9740010243453770004A872 /* FPRankingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPRankingPage.swift; sourceTree = "<group>"; };
+		B9740011243453770004A872 /* FPRankingPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPRankingPage.xib; sourceTree = "<group>"; };
+		B97400142434538A0004A872 /* FPGamePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPGamePageVC.swift; sourceTree = "<group>"; };
+		B97400152434538A0004A872 /* FPGamePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPGamePageVC.xib; sourceTree = "<group>"; };
+		B9740018243453B70004A872 /* FPGameOverPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPGameOverPageVC.swift; sourceTree = "<group>"; };
+		B9740019243453B70004A872 /* FPGameOverPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPGameOverPageVC.xib; sourceTree = "<group>"; };
+		B9740045243466530004A872 /* food_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = food_right.mp3; sourceTree = "<group>"; };
+		B9740046243466530004A872 /* food_bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = food_bg.mp3; sourceTree = "<group>"; };
+		B9740047243466530004A872 /* food_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = food_wrong.mp3; sourceTree = "<group>"; };
+		B974FF9C24344B790004A872 /* Price of Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Price of Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B974FF9F24344B790004A872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B974FFA324344B790004A872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B974FFA624344B790004A872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B974FFA824344B7E0004A872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B974FFAB24344B7E0004A872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B974FFAD24344B7E0004A872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B974FFB424344C560004A872 /* FPHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPHomePage.swift; sourceTree = "<group>"; };
+		B974FFB524344C560004A872 /* FPHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPHomePage.xib; sourceTree = "<group>"; };
+		B974FFB924344CDF0004A872 /* foodprice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "foodprice-Bridging-Header.h"; sourceTree = "<group>"; };
+		B974FFBD24344D3D0004A872 /* Rush-hour-demo-3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rush-hour-demo-3.ttf"; sourceTree = "<group>"; };
+		B974FFBE24344D3D0004A872 /* Rush-hour-demo-2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rush-hour-demo-2.otf"; sourceTree = "<group>"; };
+		B974FFC224344F730004A872 /* UIImage+tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+tool.m"; sourceTree = "<group>"; };
+		B974FFC324344F730004A872 /* NSString+tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+tool.m"; sourceTree = "<group>"; };
+		B974FFC424344F730004A872 /* NSString+record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+record.m"; sourceTree = "<group>"; };
+		B974FFC524344F730004A872 /* NSDate+date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+date.m"; sourceTree = "<group>"; };
+		B974FFC624344F730004A872 /* UIColor+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hex.h"; sourceTree = "<group>"; };
+		B974FFC724344F730004A872 /* NSDate+date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+date.h"; sourceTree = "<group>"; };
+		B974FFC824344F730004A872 /* UIFont+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+font.h"; sourceTree = "<group>"; };
+		B974FFC924344F730004A872 /* NSString+tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+tool.h"; sourceTree = "<group>"; };
+		B974FFCA24344F730004A872 /* NSString+record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+record.h"; sourceTree = "<group>"; };
+		B974FFCB24344F730004A872 /* UIFont+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+font.m"; sourceTree = "<group>"; };
+		B974FFCC24344F730004A872 /* UIColor+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hex.m"; sourceTree = "<group>"; };
+		B974FFCD24344F730004A872 /* UIImage+tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+tool.h"; sourceTree = "<group>"; };
+		B974FFD624344FD10004A872 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B974FFD724344FD10004A872 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B974FFD824344FD10004A872 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B974FFD924344FD10004A872 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B974FFDA24344FD10004A872 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B974FFDB24344FD10004A872 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B974FFDC24344FD10004A872 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B974FFDE24344FD10004A872 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		B974FFDF24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		B974FFE024344FD10004A872 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		B974FFE124344FD10004A872 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		B974FFE224344FD10004A872 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B974FFE324344FD10004A872 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		B974FFE424344FD10004A872 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		B974FFE524344FD10004A872 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		B974FFE624344FD10004A872 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		B974FFE724344FD10004A872 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		B974FFE824344FD10004A872 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		B974FFE924344FD10004A872 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		B974FFEA24344FD10004A872 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		B974FFEB24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		B974FFEC24344FD10004A872 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B974FFED24344FD10004A872 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		B974FFEE24344FD10004A872 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		B974FFEF24344FD10004A872 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		B974FFF024344FD10004A872 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		B974FFF124344FD10004A872 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		B974FFF224344FD10004A872 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		B974FFF324344FD10004A872 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		B974FFF424344FD10004A872 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B974FFF524344FD10004A872 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		B974FFF624344FD10004A872 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B974FF9924344B790004A872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B974004B243466620004A872 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9740045243466530004A872 /* food_right.mp3 */,
+				B9740047243466530004A872 /* food_wrong.mp3 */,
+				B9740046243466530004A872 /* food_bg.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B974004C243466790004A872 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFBE24344D3D0004A872 /* Rush-hour-demo-2.otf */,
+				B974FFBD24344D3D0004A872 /* Rush-hour-demo-3.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		B974FF9324344B790004A872 = {
+			isa = PBXGroup;
+			children = (
+				B974FF9E24344B790004A872 /* foodprice */,
+				B974FF9D24344B790004A872 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B974FF9D24344B790004A872 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B974FF9C24344B790004A872 /* Price of Food.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B974FF9E24344B790004A872 /* foodprice */ = {
+			isa = PBXGroup;
+			children = (
+				B974004C243466790004A872 /* Font */,
+				B974004B243466620004A872 /* Resources */,
+				B974FFD424344FA40004A872 /* lib */,
+				B974FFB824344C5C0004A872 /* Base */,
+				B974FFC124344F490004A872 /* Category */,
+				B974FFB324344C260004A872 /* Controller */,
+				B974FF9F24344B790004A872 /* AppDelegate.swift */,
+				B974FFA324344B790004A872 /* ViewController.swift */,
+				B974FFA524344B790004A872 /* Main.storyboard */,
+				B974FFA824344B7E0004A872 /* Assets.xcassets */,
+				B974FFAA24344B7E0004A872 /* LaunchScreen.storyboard */,
+				B974FFAD24344B7E0004A872 /* Info.plist */,
+			);
+			path = foodprice;
+			sourceTree = "<group>";
+		};
+		B974FFB324344C260004A872 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFB424344C560004A872 /* FPHomePage.swift */,
+				B974FFB524344C560004A872 /* FPHomePage.xib */,
+				B9740008243453460004A872 /* FPHowToPalyPage.swift */,
+				B9740009243453460004A872 /* FPHowToPalyPage.xib */,
+				B974000C243453590004A872 /* FPAboutPageVC.swift */,
+				B974000D243453590004A872 /* FPAboutPageVC.xib */,
+				B9740010243453770004A872 /* FPRankingPage.swift */,
+				B9740011243453770004A872 /* FPRankingPage.xib */,
+				B97400142434538A0004A872 /* FPGamePageVC.swift */,
+				B97400152434538A0004A872 /* FPGamePageVC.xib */,
+				B9740018243453B70004A872 /* FPGameOverPageVC.swift */,
+				B9740019243453B70004A872 /* FPGameOverPageVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B974FFB824344C5C0004A872 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFB924344CDF0004A872 /* foodprice-Bridging-Header.h */,
+				B9740004243450030004A872 /* PrefixHeader.pch */,
+				B9740005243450BB0004A872 /* FPNavigation.h */,
+				B9740006243450BB0004A872 /* FPNavigation.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B974FFC124344F490004A872 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFC724344F730004A872 /* NSDate+date.h */,
+				B974FFC524344F730004A872 /* NSDate+date.m */,
+				B974FFCA24344F730004A872 /* NSString+record.h */,
+				B974FFC424344F730004A872 /* NSString+record.m */,
+				B974FFC924344F730004A872 /* NSString+tool.h */,
+				B974FFC324344F730004A872 /* NSString+tool.m */,
+				B974FFC624344F730004A872 /* UIColor+hex.h */,
+				B974FFCC24344F730004A872 /* UIColor+hex.m */,
+				B974FFC824344F730004A872 /* UIFont+font.h */,
+				B974FFCB24344F730004A872 /* UIFont+font.m */,
+				B974FFCD24344F730004A872 /* UIImage+tool.h */,
+				B974FFC224344F730004A872 /* UIImage+tool.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B974FFD424344FA40004A872 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFD524344FD10004A872 /* FMAlert */,
+				B974FFDD24344FD10004A872 /* Masonry */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B974FFD524344FD10004A872 /* FMAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFD624344FD10004A872 /* YCPresentationController.m */,
+				B974FFD724344FD10004A872 /* YCPopoverAnimator.h */,
+				B974FFD824344FD10004A872 /* UIViewController+YCPopover.h */,
+				B974FFD924344FD10004A872 /* YCPresentationController.h */,
+				B974FFDA24344FD10004A872 /* YCPopoverMacro.h */,
+				B974FFDB24344FD10004A872 /* YCPopoverAnimator.m */,
+				B974FFDC24344FD10004A872 /* UIViewController+YCPopover.m */,
+			);
+			path = FMAlert;
+			sourceTree = "<group>";
+		};
+		B974FFDD24344FD10004A872 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B974FFDE24344FD10004A872 /* MASCompositeConstraint.h */,
+				B974FFDF24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B974FFE024344FD10004A872 /* MASConstraint+Private.h */,
+				B974FFE124344FD10004A872 /* MASLayoutConstraint.h */,
+				B974FFE224344FD10004A872 /* NSArray+MASShorthandAdditions.h */,
+				B974FFE324344FD10004A872 /* MASConstraintMaker.h */,
+				B974FFE424344FD10004A872 /* View+MASAdditions.h */,
+				B974FFE524344FD10004A872 /* NSArray+MASAdditions.h */,
+				B974FFE624344FD10004A872 /* MASUtilities.h */,
+				B974FFE724344FD10004A872 /* MASViewAttribute.h */,
+				B974FFE824344FD10004A872 /* ViewController+MASAdditions.m */,
+				B974FFE924344FD10004A872 /* MASViewConstraint.h */,
+				B974FFEA24344FD10004A872 /* MASConstraint.h */,
+				B974FFEB24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				B974FFEC24344FD10004A872 /* MASCompositeConstraint.m */,
+				B974FFED24344FD10004A872 /* MASConstraintMaker.m */,
+				B974FFEE24344FD10004A872 /* MASLayoutConstraint.m */,
+				B974FFEF24344FD10004A872 /* NSArray+MASAdditions.m */,
+				B974FFF024344FD10004A872 /* View+MASAdditions.m */,
+				B974FFF124344FD10004A872 /* View+MASShorthandAdditions.h */,
+				B974FFF224344FD10004A872 /* Masonry.h */,
+				B974FFF324344FD10004A872 /* MASConstraint.m */,
+				B974FFF424344FD10004A872 /* ViewController+MASAdditions.h */,
+				B974FFF524344FD10004A872 /* MASViewConstraint.m */,
+				B974FFF624344FD10004A872 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B974FF9B24344B790004A872 /* foodprice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B974FFB024344B7E0004A872 /* Build configuration list for PBXNativeTarget "foodprice" */;
+			buildPhases = (
+				B974FF9824344B790004A872 /* Sources */,
+				B974FF9924344B790004A872 /* Frameworks */,
+				B974FF9A24344B790004A872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foodprice;
+			productName = foodprice;
+			productReference = B974FF9C24344B790004A872 /* Price of Food.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B974FF9424344B790004A872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = lijingshuxiang.foodprice;
+				TargetAttributes = {
+					B974FF9B24344B790004A872 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = B974FF9724344B790004A872 /* Build configuration list for PBXProject "foodprice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B974FF9324344B790004A872;
+			productRefGroup = B974FF9D24344B790004A872 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B974FF9B24344B790004A872 /* foodprice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B974FF9A24344B790004A872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B974FFAC24344B7E0004A872 /* LaunchScreen.storyboard in Resources */,
+				B9740049243466530004A872 /* food_bg.mp3 in Resources */,
+				B974000F243453590004A872 /* FPAboutPageVC.xib in Resources */,
+				B9740013243453770004A872 /* FPRankingPage.xib in Resources */,
+				B974FFA924344B7E0004A872 /* Assets.xcassets in Resources */,
+				B974FFA724344B790004A872 /* Main.storyboard in Resources */,
+				B9740048243466530004A872 /* food_right.mp3 in Resources */,
+				B97400172434538A0004A872 /* FPGamePageVC.xib in Resources */,
+				B974FFC024344D3D0004A872 /* Rush-hour-demo-2.otf in Resources */,
+				B974000B243453460004A872 /* FPHowToPalyPage.xib in Resources */,
+				B974004A243466530004A872 /* food_wrong.mp3 in Resources */,
+				B974001B243453B70004A872 /* FPGameOverPageVC.xib in Resources */,
+				B974FFBF24344D3D0004A872 /* Rush-hour-demo-3.ttf in Resources */,
+				B974FFB724344C560004A872 /* FPHomePage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B974FF9824344B790004A872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B974FFF824344FD10004A872 /* YCPopoverAnimator.m in Sources */,
+				B974000224344FD10004A872 /* MASViewConstraint.m in Sources */,
+				B974FFFF24344FD10004A872 /* NSArray+MASAdditions.m in Sources */,
+				B974FFD124344F730004A872 /* NSDate+date.m in Sources */,
+				B9740007243450BB0004A872 /* FPNavigation.m in Sources */,
+				B974FFA424344B790004A872 /* ViewController.swift in Sources */,
+				B974000324344FD10004A872 /* MASViewAttribute.m in Sources */,
+				B974FFF724344FD10004A872 /* YCPresentationController.m in Sources */,
+				B974000124344FD10004A872 /* MASConstraint.m in Sources */,
+				B974FFCF24344F730004A872 /* NSString+tool.m in Sources */,
+				B974000A243453460004A872 /* FPHowToPalyPage.swift in Sources */,
+				B974FFA024344B790004A872 /* AppDelegate.swift in Sources */,
+				B974FFCE24344F730004A872 /* UIImage+tool.m in Sources */,
+				B974000024344FD10004A872 /* View+MASAdditions.m in Sources */,
+				B97400162434538A0004A872 /* FPGamePageVC.swift in Sources */,
+				B974FFFD24344FD10004A872 /* MASConstraintMaker.m in Sources */,
+				B974000E243453590004A872 /* FPAboutPageVC.swift in Sources */,
+				B974FFD024344F730004A872 /* NSString+record.m in Sources */,
+				B974FFFA24344FD10004A872 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B974FFD324344F730004A872 /* UIColor+hex.m in Sources */,
+				B9740012243453770004A872 /* FPRankingPage.swift in Sources */,
+				B974FFFB24344FD10004A872 /* ViewController+MASAdditions.m in Sources */,
+				B974FFFC24344FD10004A872 /* MASCompositeConstraint.m in Sources */,
+				B974001A243453B70004A872 /* FPGameOverPageVC.swift in Sources */,
+				B974FFD224344F730004A872 /* UIFont+font.m in Sources */,
+				B974FFB624344C560004A872 /* FPHomePage.swift in Sources */,
+				B974FFFE24344FD10004A872 /* MASLayoutConstraint.m in Sources */,
+				B974FFF924344FD10004A872 /* UIViewController+YCPopover.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B974FFA524344B790004A872 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B974FFA624344B790004A872 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B974FFAA24344B7E0004A872 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B974FFAB24344B7E0004A872 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B974FFAE24344B7E0004A872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/foodprice/Base/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B974FFAF24344B7E0004A872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/foodprice/Base/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B974FFB124344B7E0004A872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH9W2T649Z;
+				INFOPLIST_FILE = foodprice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijingshuxiang.foodprice;
+				PRODUCT_NAME = "Price of Food";
+				SWIFT_OBJC_BRIDGING_HEADER = "foodprice/Base/foodprice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B974FFB224344B7E0004A872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZH9W2T649Z;
+				INFOPLIST_FILE = foodprice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lijingshuxiang.foodprice;
+				PRODUCT_NAME = "Price of Food";
+				SWIFT_OBJC_BRIDGING_HEADER = "foodprice/Base/foodprice-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B974FF9724344B790004A872 /* Build configuration list for PBXProject "foodprice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B974FFAE24344B7E0004A872 /* Debug */,
+				B974FFAF24344B7E0004A872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B974FFB024344B7E0004A872 /* Build configuration list for PBXNativeTarget "foodprice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B974FFB124344B7E0004A872 /* Debug */,
+				B974FFB224344B7E0004A872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B974FF9424344B790004A872 /* Project object */;
+}

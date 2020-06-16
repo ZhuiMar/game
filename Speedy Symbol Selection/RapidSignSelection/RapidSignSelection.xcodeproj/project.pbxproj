@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B97D24C624920EEB0084EBCC /* jcore-noidfa-ios-2.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97D24C424920EEB0084EBCC /* jcore-noidfa-ios-2.2.5.a */; };
+		B97D24C724920EEB0084EBCC /* jpush-ios-3.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97D24C524920EEB0084EBCC /* jpush-ios-3.3.2.a */; };
+		B97D24C824920EFB0084EBCC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DED524920898009B03FA /* CFNetwork.framework */; };
+		B97D24C924920F020084EBCC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DED72492089F009B03FA /* CoreFoundation.framework */; };
+		B97D24CA24920F080084EBCC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DED9249208A6009B03FA /* CoreTelephony.framework */; };
+		B97D24CB24920F0F0084EBCC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEDB249208AC009B03FA /* SystemConfiguration.framework */; };
+		B97D24CC24920F150084EBCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEDD249208B2009B03FA /* CoreGraphics.framework */; };
+		B97D24CD24920F1D0084EBCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEDF249208B9009B03FA /* Foundation.framework */; };
+		B97D24CE24920F230084EBCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEE1249208BF009B03FA /* UIKit.framework */; };
+		B97D24CF24920F2A0084EBCC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEE3249208C5009B03FA /* Security.framework */; };
+		B97D24D024920F300084EBCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEE5249208CB009B03FA /* libz.tbd */; };
+		B97D24D124920F3C0084EBCC /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEE7249208D9009B03FA /* UserNotifications.framework */; };
+		B97D24D224920F430084EBCC /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEE9249208DF009B03FA /* libresolv.tbd */; };
+		B97D24D324920F490084EBCC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7DEEB249208E5009B03FA /* WebKit.framework */; };
+		B97D24D6249211D40084EBCC /* RSSPrivacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24D5249211D40084EBCC /* RSSPrivacyManager.m */; };
+		B97D24D92492122B0084EBCC /* RSSPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24D82492122B0084EBCC /* RSSPrivacyPolicyViewController.m */; };
+		B97D24DD249212770084EBCC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24DC249212770084EBCC /* Reachability.m */; };
+		B97D24E0249212A30084EBCC /* RSSManagerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24DF249212A30084EBCC /* RSSManagerHelper.m */; };
+		B97D24E3249212C70084EBCC /* RSSPrivacyPolicyData.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24E2249212C70084EBCC /* RSSPrivacyPolicyData.m */; };
+		B97D24E7249216F90084EBCC /* RSSSymbolDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B97D24E6249216F90084EBCC /* RSSSymbolDataModel.m */; };
+		B9CBD4602488B2BE00C020E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD45F2488B2BE00C020E5 /* AppDelegate.m */; };
+		B9CBD4632488B2BE00C020E5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4622488B2BE00C020E5 /* SceneDelegate.m */; };
+		B9CBD4662488B2BE00C020E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4652488B2BE00C020E5 /* ViewController.m */; };
+		B9CBD4692488B2BE00C020E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4672488B2BE00C020E5 /* Main.storyboard */; };
+		B9CBD46B2488B2C200C020E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD46A2488B2C200C020E5 /* Assets.xcassets */; };
+		B9CBD46E2488B2C200C020E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD46C2488B2C200C020E5 /* LaunchScreen.storyboard */; };
+		B9CBD4712488B2C200C020E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4702488B2C200C020E5 /* main.m */; };
+		B9CBD4802488FAC500C020E5 /* RSSNavigateController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD47F2488FAC500C020E5 /* RSSNavigateController.m */; };
+		B9CBD4842488FB8900C020E5 /* RSSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4822488FB8900C020E5 /* RSSHomeViewController.m */; };
+		B9CBD4852488FB8900C020E5 /* RSSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4832488FB8900C020E5 /* RSSHomeViewController.xib */; };
+		B9CBD4872488FCCE00C020E5 /* ChalkboardSE.ttc in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4862488FCCE00C020E5 /* ChalkboardSE.ttc */; };
+		B9CBD48E2488FD9500C020E5 /* UIFont+fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD48D2488FD9500C020E5 /* UIFont+fonts.m */; };
+		B9CBD4912488FDC700C020E5 /* UIColor+colors.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4902488FDC700C020E5 /* UIColor+colors.m */; };
+		B9CBD4942488FDFA00C020E5 /* NSArray+arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4932488FDFA00C020E5 /* NSArray+arrays.m */; };
+		B9CBD4972488FE1000C020E5 /* NSString+string.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4962488FE1000C020E5 /* NSString+string.m */; };
+		B9CBD4C32489D61500C020E5 /* RSSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4C12489D61500C020E5 /* RSSAboutViewController.m */; };
+		B9CBD4C42489D61500C020E5 /* RSSAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4C22489D61500C020E5 /* RSSAboutViewController.xib */; };
+		B9CBD4C82489D74300C020E5 /* RSSTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4C62489D74300C020E5 /* RSSTipsViewController.m */; };
+		B9CBD4C92489D74300C020E5 /* RSSTipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4C72489D74300C020E5 /* RSSTipsViewController.xib */; };
+		B9CBD4CD2489D89900C020E5 /* RSSOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4CB2489D89900C020E5 /* RSSOverViewController.m */; };
+		B9CBD4CE2489D89900C020E5 /* RSSOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4CC2489D89900C020E5 /* RSSOverViewController.xib */; };
+		B9CBD4D72489DB2500C020E5 /* YCPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4D02489DB2400C020E5 /* YCPresentationController.m */; };
+		B9CBD4D82489DB2500C020E5 /* YCPopoverAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4D52489DB2400C020E5 /* YCPopoverAnimator.m */; };
+		B9CBD4D92489DB2500C020E5 /* UIViewController+YCPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4D62489DB2400C020E5 /* UIViewController+YCPopover.m */; };
+		B9CBD4DD2489DBCB00C020E5 /* RSSRecodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4DB2489DBCB00C020E5 /* RSSRecodViewController.m */; };
+		B9CBD4DE2489DBCB00C020E5 /* RSSRecodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4DC2489DBCB00C020E5 /* RSSRecodViewController.xib */; };
+		B9CBD4E22489DCD900C020E5 /* RSSRecodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4E02489DCD900C020E5 /* RSSRecodCell.m */; };
+		B9CBD4E32489DCD900C020E5 /* RSSRecodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4E12489DCD900C020E5 /* RSSRecodCell.xib */; };
+		B9CBD4E72489E02B00C020E5 /* RSS_BGMISIC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4E42489E02A00C020E5 /* RSS_BGMISIC.mp3 */; };
+		B9CBD4E82489E02B00C020E5 /* RSSRIGHT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4E52489E02A00C020E5 /* RSSRIGHT.mp3 */; };
+		B9CBD4E92489E02B00C020E5 /* RSSWRONG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4E62489E02A00C020E5 /* RSSWRONG.mp3 */; };
+		B9CBD4ED2489E2C600C020E5 /* RSSGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4EB2489E2C600C020E5 /* RSSGameViewController.m */; };
+		B9CBD4EE2489E2C600C020E5 /* RSSGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4EC2489E2C600C020E5 /* RSSGameViewController.xib */; };
+		B9CBD4F12489EEDB00C020E5 /* RSSAnswerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CBD4F02489EEDB00C020E5 /* RSSAnswerItem.m */; };
+		B9CBD4F32489EEE800C020E5 /* RSSAnswerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CBD4F22489EEE800C020E5 /* RSSAnswerItem.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B97D24C324920EEB0084EBCC /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		B97D24C424920EEB0084EBCC /* jcore-noidfa-ios-2.2.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.2.5.a"; sourceTree = "<group>"; };
+		B97D24C524920EEB0084EBCC /* jpush-ios-3.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.2.a"; sourceTree = "<group>"; };
+		B97D24D4249211D40084EBCC /* RSSPrivacyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSPrivacyManager.h; sourceTree = "<group>"; };
+		B97D24D5249211D40084EBCC /* RSSPrivacyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSPrivacyManager.m; sourceTree = "<group>"; };
+		B97D24D72492122B0084EBCC /* RSSPrivacyPolicyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSPrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		B97D24D82492122B0084EBCC /* RSSPrivacyPolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSPrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		B97D24DB249212770084EBCC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B97D24DC249212770084EBCC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B97D24DE249212A30084EBCC /* RSSManagerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSManagerHelper.h; sourceTree = "<group>"; };
+		B97D24DF249212A30084EBCC /* RSSManagerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSManagerHelper.m; sourceTree = "<group>"; };
+		B97D24E1249212C70084EBCC /* RSSPrivacyPolicyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSPrivacyPolicyData.h; sourceTree = "<group>"; };
+		B97D24E2249212C70084EBCC /* RSSPrivacyPolicyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSPrivacyPolicyData.m; sourceTree = "<group>"; };
+		B97D24E5249216F90084EBCC /* RSSSymbolDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSSymbolDataModel.h; sourceTree = "<group>"; };
+		B97D24E6249216F90084EBCC /* RSSSymbolDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSSymbolDataModel.m; sourceTree = "<group>"; };
+		B9CBD45B2488B2BE00C020E5 /* Speedy Symbol Selection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedy Symbol Selection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CBD45E2488B2BE00C020E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9CBD45F2488B2BE00C020E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9CBD4612488B2BE00C020E5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B9CBD4622488B2BE00C020E5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B9CBD4642488B2BE00C020E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B9CBD4652488B2BE00C020E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B9CBD4682488B2BE00C020E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9CBD46A2488B2C200C020E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9CBD46D2488B2C200C020E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9CBD46F2488B2C200C020E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9CBD4702488B2C200C020E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9CBD47D2488FA0F00C020E5 /* RSSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSPrefixHeader.pch; sourceTree = "<group>"; };
+		B9CBD47E2488FAC500C020E5 /* RSSNavigateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSNavigateController.h; sourceTree = "<group>"; };
+		B9CBD47F2488FAC500C020E5 /* RSSNavigateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSNavigateController.m; sourceTree = "<group>"; };
+		B9CBD4812488FB8900C020E5 /* RSSHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSHomeViewController.h; sourceTree = "<group>"; };
+		B9CBD4822488FB8900C020E5 /* RSSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSHomeViewController.m; sourceTree = "<group>"; };
+		B9CBD4832488FB8900C020E5 /* RSSHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSHomeViewController.xib; sourceTree = "<group>"; };
+		B9CBD4862488FCCE00C020E5 /* ChalkboardSE.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChalkboardSE.ttc; sourceTree = "<group>"; };
+		B9CBD48C2488FD9500C020E5 /* UIFont+fonts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+fonts.h"; sourceTree = "<group>"; };
+		B9CBD48D2488FD9500C020E5 /* UIFont+fonts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+fonts.m"; sourceTree = "<group>"; };
+		B9CBD48F2488FDC700C020E5 /* UIColor+colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+colors.h"; sourceTree = "<group>"; };
+		B9CBD4902488FDC700C020E5 /* UIColor+colors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colors.m"; sourceTree = "<group>"; };
+		B9CBD4922488FDFA00C020E5 /* NSArray+arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+arrays.h"; sourceTree = "<group>"; };
+		B9CBD4932488FDFA00C020E5 /* NSArray+arrays.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+arrays.m"; sourceTree = "<group>"; };
+		B9CBD4952488FE1000C020E5 /* NSString+string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+string.h"; sourceTree = "<group>"; };
+		B9CBD4962488FE1000C020E5 /* NSString+string.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+string.m"; sourceTree = "<group>"; };
+		B9CBD4C02489D61500C020E5 /* RSSAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSAboutViewController.h; sourceTree = "<group>"; };
+		B9CBD4C12489D61500C020E5 /* RSSAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSAboutViewController.m; sourceTree = "<group>"; };
+		B9CBD4C22489D61500C020E5 /* RSSAboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSAboutViewController.xib; sourceTree = "<group>"; };
+		B9CBD4C52489D74300C020E5 /* RSSTipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSTipsViewController.h; sourceTree = "<group>"; };
+		B9CBD4C62489D74300C020E5 /* RSSTipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSTipsViewController.m; sourceTree = "<group>"; };
+		B9CBD4C72489D74300C020E5 /* RSSTipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSTipsViewController.xib; sourceTree = "<group>"; };
+		B9CBD4CA2489D89900C020E5 /* RSSOverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSOverViewController.h; sourceTree = "<group>"; };
+		B9CBD4CB2489D89900C020E5 /* RSSOverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSOverViewController.m; sourceTree = "<group>"; };
+		B9CBD4CC2489D89900C020E5 /* RSSOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSOverViewController.xib; sourceTree = "<group>"; };
+		B9CBD4D02489DB2400C020E5 /* YCPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPresentationController.m; sourceTree = "<group>"; };
+		B9CBD4D12489DB2400C020E5 /* YCPopoverAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverAnimator.h; sourceTree = "<group>"; };
+		B9CBD4D22489DB2400C020E5 /* UIViewController+YCPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCPopover.h"; sourceTree = "<group>"; };
+		B9CBD4D32489DB2400C020E5 /* YCPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPresentationController.h; sourceTree = "<group>"; };
+		B9CBD4D42489DB2400C020E5 /* YCPopoverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPopoverMacro.h; sourceTree = "<group>"; };
+		B9CBD4D52489DB2400C020E5 /* YCPopoverAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPopoverAnimator.m; sourceTree = "<group>"; };
+		B9CBD4D62489DB2400C020E5 /* UIViewController+YCPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCPopover.m"; sourceTree = "<group>"; };
+		B9CBD4DA2489DBCB00C020E5 /* RSSRecodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSRecodViewController.h; sourceTree = "<group>"; };
+		B9CBD4DB2489DBCB00C020E5 /* RSSRecodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSRecodViewController.m; sourceTree = "<group>"; };
+		B9CBD4DC2489DBCB00C020E5 /* RSSRecodViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSRecodViewController.xib; sourceTree = "<group>"; };
+		B9CBD4DF2489DCD900C020E5 /* RSSRecodCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSRecodCell.h; sourceTree = "<group>"; };
+		B9CBD4E02489DCD900C020E5 /* RSSRecodCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSRecodCell.m; sourceTree = "<group>"; };
+		B9CBD4E12489DCD900C020E5 /* RSSRecodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSRecodCell.xib; sourceTree = "<group>"; };
+		B9CBD4E42489E02A00C020E5 /* RSS_BGMISIC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RSS_BGMISIC.mp3; sourceTree = "<group>"; };
+		B9CBD4E52489E02A00C020E5 /* RSSRIGHT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RSSRIGHT.mp3; sourceTree = "<group>"; };
+		B9CBD4E62489E02A00C020E5 /* RSSWRONG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RSSWRONG.mp3; sourceTree = "<group>"; };
+		B9CBD4EA2489E2C600C020E5 /* RSSGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSGameViewController.h; sourceTree = "<group>"; };
+		B9CBD4EB2489E2C600C020E5 /* RSSGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSGameViewController.m; sourceTree = "<group>"; };
+		B9CBD4EC2489E2C600C020E5 /* RSSGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSGameViewController.xib; sourceTree = "<group>"; };
+		B9CBD4EF2489EEDB00C020E5 /* RSSAnswerItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSAnswerItem.h; sourceTree = "<group>"; };
+		B9CBD4F02489EEDB00C020E5 /* RSSAnswerItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSAnswerItem.m; sourceTree = "<group>"; };
+		B9CBD4F22489EEE800C020E5 /* RSSAnswerItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSAnswerItem.xib; sourceTree = "<group>"; };
+		B9F7DED524920898009B03FA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B9F7DED72492089F009B03FA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B9F7DED9249208A6009B03FA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B9F7DEDB249208AC009B03FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B9F7DEDD249208B2009B03FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9F7DEDF249208B9009B03FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9F7DEE1249208BF009B03FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9F7DEE3249208C5009B03FA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B9F7DEE5249208CB009B03FA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B9F7DEE7249208D9009B03FA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B9F7DEE9249208DF009B03FA /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B9F7DEEB249208E5009B03FA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9CBD4582488B2BE00C020E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D24D324920F490084EBCC /* WebKit.framework in Frameworks */,
+				B97D24D224920F430084EBCC /* libresolv.tbd in Frameworks */,
+				B97D24D124920F3C0084EBCC /* UserNotifications.framework in Frameworks */,
+				B97D24D024920F300084EBCC /* libz.tbd in Frameworks */,
+				B97D24CF24920F2A0084EBCC /* Security.framework in Frameworks */,
+				B97D24CE24920F230084EBCC /* UIKit.framework in Frameworks */,
+				B97D24CD24920F1D0084EBCC /* Foundation.framework in Frameworks */,
+				B97D24CC24920F150084EBCC /* CoreGraphics.framework in Frameworks */,
+				B97D24CB24920F0F0084EBCC /* SystemConfiguration.framework in Frameworks */,
+				B97D24CA24920F080084EBCC /* CoreTelephony.framework in Frameworks */,
+				B97D24C924920F020084EBCC /* CoreFoundation.framework in Frameworks */,
+				B97D24C824920EFB0084EBCC /* CFNetwork.framework in Frameworks */,
+				B97D24C624920EEB0084EBCC /* jcore-noidfa-ios-2.2.5.a in Frameworks */,
+				B97D24C724920EEB0084EBCC /* jpush-ios-3.3.2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B97D24E4249216D90084EBCC /* RSS_data */ = {
+			isa = PBXGroup;
+			children = (
+				B97D24E5249216F90084EBCC /* RSSSymbolDataModel.h */,
+				B97D24E6249216F90084EBCC /* RSSSymbolDataModel.m */,
+			);
+			path = RSS_data;
+			sourceTree = "<group>";
+		};
+		B9CBD4522488B2BE00C020E5 = {
+			isa = PBXGroup;
+			children = (
+				B9CBD45D2488B2BE00C020E5 /* RapidSignSelection */,
+				B9CBD45C2488B2BE00C020E5 /* Products */,
+				B9F7DED424920898009B03FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9CBD45C2488B2BE00C020E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD45B2488B2BE00C020E5 /* Speedy Symbol Selection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9CBD45D2488B2BE00C020E5 /* RapidSignSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B97D24E4249216D90084EBCC /* RSS_data */,
+				B9F7DECE24920870009B03FA /* RSS_apns */,
+				B9CBD48B2488FD6E00C020E5 /* RSS_category */,
+				B9CBD47C2488F5A600C020E5 /* RSS_root */,
+				B9CBD47B2488F5A300C020E5 /* RSS_controller */,
+				B9CBD47A2488F5A100C020E5 /* RSS_view */,
+				B9CBD4782488F59C00C020E5 /* RSS_lib */,
+				B9CBD4772488F59A00C020E5 /* RSS_other */,
+				B9CBD45E2488B2BE00C020E5 /* AppDelegate.h */,
+				B9CBD45F2488B2BE00C020E5 /* AppDelegate.m */,
+				B9CBD4612488B2BE00C020E5 /* SceneDelegate.h */,
+				B9CBD4622488B2BE00C020E5 /* SceneDelegate.m */,
+				B9CBD4642488B2BE00C020E5 /* ViewController.h */,
+				B9CBD4652488B2BE00C020E5 /* ViewController.m */,
+				B9CBD4672488B2BE00C020E5 /* Main.storyboard */,
+				B9CBD46A2488B2C200C020E5 /* Assets.xcassets */,
+				B9CBD46C2488B2C200C020E5 /* LaunchScreen.storyboard */,
+				B9CBD46F2488B2C200C020E5 /* Info.plist */,
+				B9CBD4702488B2C200C020E5 /* main.m */,
+				B9CBD47D2488FA0F00C020E5 /* RSSPrefixHeader.pch */,
+			);
+			path = RapidSignSelection;
+			sourceTree = "<group>";
+		};
+		B9CBD4772488F59A00C020E5 /* RSS_other */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD4E42489E02A00C020E5 /* RSS_BGMISIC.mp3 */,
+				B9CBD4E52489E02A00C020E5 /* RSSRIGHT.mp3 */,
+				B9CBD4E62489E02A00C020E5 /* RSSWRONG.mp3 */,
+				B9CBD4862488FCCE00C020E5 /* ChalkboardSE.ttc */,
+			);
+			path = RSS_other;
+			sourceTree = "<group>";
+		};
+		B9CBD4782488F59C00C020E5 /* RSS_lib */ = {
+			isa = PBXGroup;
+			children = (
+				B97D24DB249212770084EBCC /* Reachability.h */,
+				B97D24DC249212770084EBCC /* Reachability.m */,
+				B97D24E1249212C70084EBCC /* RSSPrivacyPolicyData.h */,
+				B97D24E2249212C70084EBCC /* RSSPrivacyPolicyData.m */,
+				B9CBD4CF2489DB2400C020E5 /* Alert */,
+			);
+			path = RSS_lib;
+			sourceTree = "<group>";
+		};
+		B9CBD47A2488F5A100C020E5 /* RSS_view */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD4DF2489DCD900C020E5 /* RSSRecodCell.h */,
+				B9CBD4E02489DCD900C020E5 /* RSSRecodCell.m */,
+				B9CBD4E12489DCD900C020E5 /* RSSRecodCell.xib */,
+				B9CBD4EF2489EEDB00C020E5 /* RSSAnswerItem.h */,
+				B9CBD4F02489EEDB00C020E5 /* RSSAnswerItem.m */,
+				B9CBD4F22489EEE800C020E5 /* RSSAnswerItem.xib */,
+				B97D24D4249211D40084EBCC /* RSSPrivacyManager.h */,
+				B97D24D5249211D40084EBCC /* RSSPrivacyManager.m */,
+			);
+			path = RSS_view;
+			sourceTree = "<group>";
+		};
+		B9CBD47B2488F5A300C020E5 /* RSS_controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD4812488FB8900C020E5 /* RSSHomeViewController.h */,
+				B9CBD4822488FB8900C020E5 /* RSSHomeViewController.m */,
+				B9CBD4832488FB8900C020E5 /* RSSHomeViewController.xib */,
+				B9CBD4C02489D61500C020E5 /* RSSAboutViewController.h */,
+				B9CBD4C12489D61500C020E5 /* RSSAboutViewController.m */,
+				B9CBD4C22489D61500C020E5 /* RSSAboutViewController.xib */,
+				B97D24D72492122B0084EBCC /* RSSPrivacyPolicyViewController.h */,
+				B97D24D82492122B0084EBCC /* RSSPrivacyPolicyViewController.m */,
+				B9CBD4C52489D74300C020E5 /* RSSTipsViewController.h */,
+				B9CBD4C62489D74300C020E5 /* RSSTipsViewController.m */,
+				B9CBD4C72489D74300C020E5 /* RSSTipsViewController.xib */,
+				B9CBD4CA2489D89900C020E5 /* RSSOverViewController.h */,
+				B9CBD4CB2489D89900C020E5 /* RSSOverViewController.m */,
+				B9CBD4CC2489D89900C020E5 /* RSSOverViewController.xib */,
+				B9CBD4DA2489DBCB00C020E5 /* RSSRecodViewController.h */,
+				B9CBD4DB2489DBCB00C020E5 /* RSSRecodViewController.m */,
+				B9CBD4DC2489DBCB00C020E5 /* RSSRecodViewController.xib */,
+				B9CBD4EA2489E2C600C020E5 /* RSSGameViewController.h */,
+				B9CBD4EB2489E2C600C020E5 /* RSSGameViewController.m */,
+				B9CBD4EC2489E2C600C020E5 /* RSSGameViewController.xib */,
+			);
+			path = RSS_controller;
+			sourceTree = "<group>";
+		};
+		B9CBD47C2488F5A600C020E5 /* RSS_root */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD47E2488FAC500C020E5 /* RSSNavigateController.h */,
+				B9CBD47F2488FAC500C020E5 /* RSSNavigateController.m */,
+			);
+			path = RSS_root;
+			sourceTree = "<group>";
+		};
+		B9CBD48B2488FD6E00C020E5 /* RSS_category */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD48C2488FD9500C020E5 /* UIFont+fonts.h */,
+				B9CBD48D2488FD9500C020E5 /* UIFont+fonts.m */,
+				B9CBD48F2488FDC700C020E5 /* UIColor+colors.h */,
+				B9CBD4902488FDC700C020E5 /* UIColor+colors.m */,
+				B9CBD4922488FDFA00C020E5 /* NSArray+arrays.h */,
+				B9CBD4932488FDFA00C020E5 /* NSArray+arrays.m */,
+				B9CBD4952488FE1000C020E5 /* NSString+string.h */,
+				B9CBD4962488FE1000C020E5 /* NSString+string.m */,
+			);
+			path = RSS_category;
+			sourceTree = "<group>";
+		};
+		B9CBD4CF2489DB2400C020E5 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBD4D02489DB2400C020E5 /* YCPresentationController.m */,
+				B9CBD4D12489DB2400C020E5 /* YCPopoverAnimator.h */,
+				B9CBD4D22489DB2400C020E5 /* UIViewController+YCPopover.h */,
+				B9CBD4D32489DB2400C020E5 /* YCPresentationController.h */,
+				B9CBD4D42489DB2400C020E5 /* YCPopoverMacro.h */,
+				B9CBD4D52489DB2400C020E5 /* YCPopoverAnimator.m */,
+				B9CBD4D62489DB2400C020E5 /* UIViewController+YCPopover.m */,
+				B97D24DE249212A30084EBCC /* RSSManagerHelper.h */,
+				B97D24DF249212A30084EBCC /* RSSManagerHelper.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		B9F7DECE24920870009B03FA /* RSS_apns */ = {
+			isa = PBXGroup;
+			children = (
+				B97D24C424920EEB0084EBCC /* jcore-noidfa-ios-2.2.5.a */,
+				B97D24C524920EEB0084EBCC /* jpush-ios-3.3.2.a */,
+				B97D24C324920EEB0084EBCC /* JPUSHService.h */,
+			);
+			path = RSS_apns;
+			sourceTree = "<group>";
+		};
+		B9F7DED424920898009B03FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F7DEEB249208E5009B03FA /* WebKit.framework */,
+				B9F7DEE9249208DF009B03FA /* libresolv.tbd */,
+				B9F7DEE7249208D9009B03FA /* UserNotifications.framework */,
+				B9F7DEE5249208CB009B03FA /* libz.tbd */,
+				B9F7DEE3249208C5009B03FA /* Security.framework */,
+				B9F7DEE1249208BF009B03FA /* UIKit.framework */,
+				B9F7DEDF249208B9009B03FA /* Foundation.framework */,
+				B9F7DEDD249208B2009B03FA /* CoreGraphics.framework */,
+				B9F7DEDB249208AC009B03FA /* SystemConfiguration.framework */,
+				B9F7DED9249208A6009B03FA /* CoreTelephony.framework */,
+				B9F7DED72492089F009B03FA /* CoreFoundation.framework */,
+				B9F7DED524920898009B03FA /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9CBD45A2488B2BE00C020E5 /* RapidSignSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9CBD4742488B2C200C020E5 /* Build configuration list for PBXNativeTarget "RapidSignSelection" */;
+			buildPhases = (
+				B9CBD4572488B2BE00C020E5 /* Sources */,
+				B9CBD4582488B2BE00C020E5 /* Frameworks */,
+				B9CBD4592488B2BE00C020E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapidSignSelection;
+			productName = RapidSignSelection;
+			productReference = B9CBD45B2488B2BE00C020E5 /* Speedy Symbol Selection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9CBD4532488B2BE00C020E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RSS;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = shijicheng;
+				TargetAttributes = {
+					B9CBD45A2488B2BE00C020E5 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B9CBD4562488B2BE00C020E5 /* Build configuration list for PBXProject "RapidSignSelection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9CBD4522488B2BE00C020E5;
+			productRefGroup = B9CBD45C2488B2BE00C020E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9CBD45A2488B2BE00C020E5 /* RapidSignSelection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9CBD4592488B2BE00C020E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CBD4E82489E02B00C020E5 /* RSSRIGHT.mp3 in Resources */,
+				B9CBD4872488FCCE00C020E5 /* ChalkboardSE.ttc in Resources */,
+				B9CBD4F32489EEE800C020E5 /* RSSAnswerItem.xib in Resources */,
+				B9CBD4DE2489DBCB00C020E5 /* RSSRecodViewController.xib in Resources */,
+				B9CBD4E72489E02B00C020E5 /* RSS_BGMISIC.mp3 in Resources */,
+				B9CBD4C42489D61500C020E5 /* RSSAboutViewController.xib in Resources */,
+				B9CBD4EE2489E2C600C020E5 /* RSSGameViewController.xib in Resources */,
+				B9CBD46E2488B2C200C020E5 /* LaunchScreen.storyboard in Resources */,
+				B9CBD4E92489E02B00C020E5 /* RSSWRONG.mp3 in Resources */,
+				B9CBD4E32489DCD900C020E5 /* RSSRecodCell.xib in Resources */,
+				B9CBD46B2488B2C200C020E5 /* Assets.xcassets in Resources */,
+				B9CBD4C92489D74300C020E5 /* RSSTipsViewController.xib in Resources */,
+				B9CBD4CE2489D89900C020E5 /* RSSOverViewController.xib in Resources */,
+				B9CBD4852488FB8900C020E5 /* RSSHomeViewController.xib in Resources */,
+				B9CBD4692488B2BE00C020E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9CBD4572488B2BE00C020E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D24E0249212A30084EBCC /* RSSManagerHelper.m in Sources */,
+				B97D24D92492122B0084EBCC /* RSSPrivacyPolicyViewController.m in Sources */,
+				B9CBD4802488FAC500C020E5 /* RSSNavigateController.m in Sources */,
+				B9CBD4DD2489DBCB00C020E5 /* RSSRecodViewController.m in Sources */,
+				B9CBD4C82489D74300C020E5 /* RSSTipsViewController.m in Sources */,
+				B9CBD4662488B2BE00C020E5 /* ViewController.m in Sources */,
+				B9CBD4CD2489D89900C020E5 /* RSSOverViewController.m in Sources */,
+				B9CBD4842488FB8900C020E5 /* RSSHomeViewController.m in Sources */,
+				B9CBD4D72489DB2500C020E5 /* YCPresentationController.m in Sources */,
+				B9CBD4D92489DB2500C020E5 /* UIViewController+YCPopover.m in Sources */,
+				B9CBD4E22489DCD900C020E5 /* RSSRecodCell.m in Sources */,
+				B97D24D6249211D40084EBCC /* RSSPrivacyManager.m in Sources */,
+				B9CBD4F12489EEDB00C020E5 /* RSSAnswerItem.m in Sources */,
+				B9CBD4C32489D61500C020E5 /* RSSAboutViewController.m in Sources */,
+				B9CBD4942488FDFA00C020E5 /* NSArray+arrays.m in Sources */,
+				B9CBD4602488B2BE00C020E5 /* AppDelegate.m in Sources */,
+				B97D24E3249212C70084EBCC /* RSSPrivacyPolicyData.m in Sources */,
+				B9CBD4712488B2C200C020E5 /* main.m in Sources */,
+				B9CBD4912488FDC700C020E5 /* UIColor+colors.m in Sources */,
+				B97D24DD249212770084EBCC /* Reachability.m in Sources */,
+				B9CBD48E2488FD9500C020E5 /* UIFont+fonts.m in Sources */,
+				B9CBD4D82489DB2500C020E5 /* YCPopoverAnimator.m in Sources */,
+				B9CBD4972488FE1000C020E5 /* NSString+string.m in Sources */,
+				B9CBD4632488B2BE00C020E5 /* SceneDelegate.m in Sources */,
+				B97D24E7249216F90084EBCC /* RSSSymbolDataModel.m in Sources */,
+				B9CBD4ED2489E2C600C020E5 /* RSSGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9CBD4672488B2BE00C020E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CBD4682488B2BE00C020E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9CBD46C2488B2C200C020E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CBD46D2488B2C200C020E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9CBD4722488B2C200C020E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RapidSignSelection/RSSPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9CBD4732488B2C200C020E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RapidSignSelection/RSSPrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9CBD4752488B2C200C020E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RapidSignSelection/Speedy Symbol Selection.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 2Z63XTM797;
+				INFOPLIST_FILE = RapidSignSelection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RapidSignSelection/RSS_apns",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijicheng.speedysymbolselection;
+				PRODUCT_NAME = "Speedy Symbol Selection";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B9CBD4762488B2C200C020E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RapidSignSelection/Speedy Symbol Selection.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 2Z63XTM797;
+				INFOPLIST_FILE = RapidSignSelection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RapidSignSelection/RSS_apns",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijicheng.speedysymbolselection;
+				PRODUCT_NAME = "Speedy Symbol Selection";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9CBD4562488B2BE00C020E5 /* Build configuration list for PBXProject "RapidSignSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CBD4722488B2C200C020E5 /* Debug */,
+				B9CBD4732488B2C200C020E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9CBD4742488B2C200C020E5 /* Build configuration list for PBXNativeTarget "RapidSignSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CBD4752488B2C200C020E5 /* Debug */,
+				B9CBD4762488B2C200C020E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9CBD4532488B2BE00C020E5 /* Project object */;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSSOverViewController">
+            <connections>
+                <outlet property="soreLabel" destination="9w1-se-3f2" id="fMA-iW-9Pd"/>
+                <outlet property="view" destination="ytM-IX-lOV" id="nOk-wc-tfE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytM-IX-lOV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="over" translatesAutoresizingMaskIntoConstraints="NO" id="2dZ-gt-Siy">
+                    <rect key="frame" x="69.5" y="115.5" width="236" height="236"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPk-Lk-WXJ">
+                    <rect key="frame" x="39.5" y="411.5" width="108" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="M6Y-6Y-FMR"/>
+                        <constraint firstAttribute="width" constant="108" id="qbD-sg-a2e"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="Wiz-Wx-AbK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9o-cu-ZIM">
+                    <rect key="frame" x="227.5" y="411.5" width="108" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="N6n-lL-PhQ"/>
+                        <constraint firstAttribute="width" constant="108" id="pa4-K2-9cr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="homAction:" destination="-1" eventType="touchUpInside" id="D1Q-Nu-fvR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-se-3f2">
+                    <rect key="frame" x="173.5" y="198" width="28.5" height="71"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                    <color key="textColor" red="0.87843137250000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2dZ-gt-Siy" firstAttribute="centerY" secondItem="ytM-IX-lOV" secondAttribute="centerY" constant="-100" id="H0g-HX-mNZ"/>
+                <constraint firstItem="j9o-cu-ZIM" firstAttribute="top" secondItem="TPk-Lk-WXJ" secondAttribute="top" id="MPd-V7-uwO"/>
+                <constraint firstItem="9w1-se-3f2" firstAttribute="centerY" secondItem="2dZ-gt-Siy" secondAttribute="centerY" id="XeC-Xw-q2z"/>
+                <constraint firstItem="TPk-Lk-WXJ" firstAttribute="top" secondItem="2dZ-gt-Siy" secondAttribute="bottom" constant="60" id="bp4-8d-duN"/>
+                <constraint firstItem="9w1-se-3f2" firstAttribute="centerX" secondItem="2dZ-gt-Siy" secondAttribute="centerX" id="hOQ-FB-6CZ"/>
+                <constraint firstItem="TPk-Lk-WXJ" firstAttribute="centerX" secondItem="2dZ-gt-Siy" secondAttribute="centerX" constant="-94" id="jIA-Qs-hfX"/>
+                <constraint firstItem="j9o-cu-ZIM" firstAttribute="centerX" secondItem="2dZ-gt-Siy" secondAttribute="centerX" constant="94" id="sIE-uf-0En"/>
+                <constraint firstItem="2dZ-gt-Siy" firstAttribute="centerX" secondItem="ytM-IX-lOV" secondAttribute="centerX" id="znk-lV-RMe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="375-9Z-x4y"/>
+            <point key="canvasLocation" x="132" y="145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="again" width="108" height="75"/>
+        <image name="home" width="108" height="75"/>
+        <image name="over" width="236" height="236"/>
+    </resources>
+</document>

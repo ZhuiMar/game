@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonutNotes_HomeViewController">
+            <connections>
+                <outlet property="H" destination="u0f-4t-a4N" id="hfJ-0E-Xf6"/>
+                <outlet property="W" destination="Bhj-aE-BJ0" id="Gnf-vp-KBI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_home" translatesAutoresizingMaskIntoConstraints="NO" id="F1T-jZ-2xP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RR-ij-zsh">
+                    <rect key="frame" x="236" y="301.5" width="87" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="6h9-dL-z4U"/>
+                        <constraint firstAttribute="width" constant="87" id="uCE-JW-yhb"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="find"/>
+                    <connections>
+                        <action selector="FindAction:" destination="-1" eventType="touchUpInside" id="DsS-8R-0mP"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Donut Notes" translatesAutoresizingMaskIntoConstraints="NO" id="e19-Ad-ZdJ">
+                    <rect key="frame" x="32" y="88" width="311" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="311" id="Bhj-aE-BJ0"/>
+                        <constraint firstAttribute="height" constant="55" id="u0f-4t-a4N"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QD-QC-bNx">
+                    <rect key="frame" x="50" y="217.5" width="114" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3vJ-IS-vnk"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="at3-LT-R9o"/>
+                        <constraint firstAttribute="width" constant="114" id="bCW-or-Kdm"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="ftd-8s-7qr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="learning"/>
+                    <connections>
+                        <action selector="learningAction:" destination="-1" eventType="touchUpInside" id="oIL-Di-qgm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vy5-fS-0n9">
+                    <rect key="frame" x="50" y="429.5" width="153" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="153" id="0bP-nv-fwi"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="62" id="1gq-W6-VWo"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="EKL-ta-cgt"/>
+                        <constraint firstAttribute="height" constant="62" id="RLC-mW-6L3"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="W2C-9n-ACx"/>
+                        <constraint firstAttribute="width" constant="153" id="Ycn-e7-xxf"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="achievement"/>
+                    <connections>
+                        <action selector="achievementAction:" destination="-1" eventType="touchUpInside" id="De1-Zm-ukY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="F1T-jZ-2xP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cnp-hZ-qxt"/>
+                <constraint firstItem="e19-Ad-ZdJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="GHB-kR-Bkx"/>
+                <constraint firstItem="8QD-QC-bNx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="GNl-bb-VCn"/>
+                <constraint firstAttribute="trailing" secondItem="7RR-ij-zsh" secondAttribute="trailing" constant="52" id="ILI-rj-Lgx"/>
+                <constraint firstItem="vy5-fS-0n9" firstAttribute="top" secondItem="7RR-ij-zsh" secondAttribute="bottom" constant="64" id="L8O-OQ-dgU"/>
+                <constraint firstAttribute="bottom" secondItem="F1T-jZ-2xP" secondAttribute="bottom" id="QtQ-DT-DmD"/>
+                <constraint firstItem="7RR-ij-zsh" firstAttribute="top" secondItem="8QD-QC-bNx" secondAttribute="bottom" constant="20" id="WWL-L5-lqZ"/>
+                <constraint firstItem="F1T-jZ-2xP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bCb-yI-sSm"/>
+                <constraint firstItem="vy5-fS-0n9" firstAttribute="leading" secondItem="8QD-QC-bNx" secondAttribute="leading" id="bER-bX-Rpe"/>
+                <constraint firstItem="7RR-ij-zsh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dy0-93-TFD"/>
+                <constraint firstItem="e19-Ad-ZdJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gqQ-hg-Ab7"/>
+                <constraint firstAttribute="trailing" secondItem="F1T-jZ-2xP" secondAttribute="trailing" id="wAT-H3-Hgo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Donut Notes" width="311" height="55"/>
+        <image name="achievement" width="153" height="61.5"/>
+        <image name="background_home" width="375" height="667"/>
+        <image name="find" width="86.5" height="64"/>
+        <image name="learning" width="114" height="63.5"/>
+    </resources>
+</document>

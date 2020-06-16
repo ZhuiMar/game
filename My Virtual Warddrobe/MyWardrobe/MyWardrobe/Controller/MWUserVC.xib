@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MWUserVC">
+            <connections>
+                <outlet property="bgView" destination="kmq-JN-lMg" id="p8C-g1-t2f"/>
+                <outlet property="heightLayout" destination="EPM-QR-ZCm" id="6Uy-Fh-Ki4"/>
+                <outlet property="tableView" destination="Ciz-Bz-naM" id="iTg-9r-6Az"/>
+                <outlet property="topLayout" destination="fDR-yO-ofN" id="As2-dq-KLt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wightLayout" destination="B99-bT-P9Z" id="uVm-H9-QHx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-vW-aUL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-JN-lMg">
+                    <rect key="frame" x="20" y="103.5" width="335" height="460"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uW4-jF-bZR">
+                            <rect key="frame" x="76.5" y="18" width="182" height="84"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="182" id="9IV-o2-qYR"/>
+                                <constraint firstAttribute="height" constant="84" id="G6A-wm-F0P"/>
+                            </constraints>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ciz-Bz-naM">
+                            <rect key="frame" x="0.0" y="117" width="335" height="343"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="9JM-Pk-9uF"/>
+                                <outlet property="delegate" destination="-1" id="NgQ-l5-CwO"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ciz-Bz-naM" secondAttribute="bottom" id="6rv-kV-Qf2"/>
+                        <constraint firstAttribute="width" constant="335" id="B99-bT-P9Z"/>
+                        <constraint firstAttribute="height" constant="460" id="EPM-QR-ZCm"/>
+                        <constraint firstItem="uW4-jF-bZR" firstAttribute="centerX" secondItem="kmq-JN-lMg" secondAttribute="centerX" id="LHH-7s-g9v"/>
+                        <constraint firstItem="uW4-jF-bZR" firstAttribute="top" secondItem="kmq-JN-lMg" secondAttribute="top" constant="18" id="fDR-yO-ofN"/>
+                        <constraint firstItem="Ciz-Bz-naM" firstAttribute="top" secondItem="uW4-jF-bZR" secondAttribute="bottom" constant="15" id="kxg-uZ-qK6"/>
+                        <constraint firstItem="Ciz-Bz-naM" firstAttribute="leading" secondItem="kmq-JN-lMg" secondAttribute="leading" id="mhs-8n-bi7"/>
+                        <constraint firstAttribute="trailing" secondItem="Ciz-Bz-naM" secondAttribute="trailing" id="r1c-da-xkC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UaZ-vW-aUL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="22E-8t-L1A"/>
+                <constraint firstAttribute="trailing" secondItem="UaZ-vW-aUL" secondAttribute="trailing" id="4Wl-Ye-HaX"/>
+                <constraint firstItem="UaZ-vW-aUL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FOV-w3-5bU"/>
+                <constraint firstItem="kmq-JN-lMg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qy0-bX-ydH"/>
+                <constraint firstAttribute="bottom" secondItem="UaZ-vW-aUL" secondAttribute="bottom" id="VEW-3F-3Ic"/>
+                <constraint firstItem="kmq-JN-lMg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ekh-66-p8i"/>
+            </constraints>
+            <point key="canvasLocation" x="130" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="logo" width="182.5" height="87"/>
+    </resources>
+</document>

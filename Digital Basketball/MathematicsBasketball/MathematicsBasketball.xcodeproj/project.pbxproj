@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B91A36F1247BB26A00750171 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A36F0247BB26A00750171 /* AppDelegate.m */; };
+		B91A36F4247BB26A00750171 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A36F3247BB26A00750171 /* SceneDelegate.m */; };
+		B91A36F7247BB26A00750171 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A36F6247BB26A00750171 /* ViewController.m */; };
+		B91A36FA247BB26A00750171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91A36F8247BB26A00750171 /* Main.storyboard */; };
+		B91A36FC247BB26D00750171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91A36FB247BB26D00750171 /* Assets.xcassets */; };
+		B91A36FF247BB26D00750171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91A36FD247BB26D00750171 /* LaunchScreen.storyboard */; };
+		B91A3702247BB26D00750171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3701247BB26D00750171 /* main.m */; };
+		B91A3714247BB35D00750171 /* AMARANTH-BOLD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B91A3710247BB35D00750171 /* AMARANTH-BOLD.TTF */; };
+		B91A3715247BB35D00750171 /* AMARANTH.OTF in Resources */ = {isa = PBXBuildFile; fileRef = B91A3711247BB35D00750171 /* AMARANTH.OTF */; };
+		B91A3716247BB35D00750171 /* AMARANTH-ITALIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B91A3712247BB35D00750171 /* AMARANTH-ITALIC.TTF */; };
+		B91A3717247BB35D00750171 /* AMARANTH BOLD ITALIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B91A3713247BB35D00750171 /* AMARANTH BOLD ITALIC.TTF */; };
+		B91A371A247BB3F100750171 /* MBNavigteController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3719247BB3F100750171 /* MBNavigteController.m */; };
+		B91A371E247CA90B00750171 /* MBBall_HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A371C247CA90B00750171 /* MBBall_HomePageVC.m */; };
+		B91A371F247CA90B00750171 /* MBBall_HomePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A371D247CA90B00750171 /* MBBall_HomePageVC.xib */; };
+		B91A3722247CA9AD00750171 /* UIFont+MBBall_fontName.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3721247CA9AD00750171 /* UIFont+MBBall_fontName.m */; };
+		B91A3726247CAB8700750171 /* UIColor+MBBall_color.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3725247CAB8700750171 /* UIColor+MBBall_color.m */; };
+		B91A372A247CB1F300750171 /* MBBall_DifficultyPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3728247CB1F300750171 /* MBBall_DifficultyPageVC.m */; };
+		B91A372B247CB1F300750171 /* MBBall_DifficultyPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A3729247CB1F300750171 /* MBBall_DifficultyPageVC.xib */; };
+		B91A372F247CB32500750171 /* MBBall_ReadyPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A372D247CB32500750171 /* MBBall_ReadyPageVC.m */; };
+		B91A3730247CB32500750171 /* MBBall_ReadyPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A372E247CB32500750171 /* MBBall_ReadyPageVC.xib */; };
+		B91A3734247CB63B00750171 /* MBBall_GameOverPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3732247CB63B00750171 /* MBBall_GameOverPageVC.m */; };
+		B91A3735247CB63B00750171 /* MBBall_GameOverPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A3733247CB63B00750171 /* MBBall_GameOverPageVC.xib */; };
+		B91A3739247CB6E000750171 /* wrongmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91A3736247CB6E000750171 /* wrongmusic.mp3 */; };
+		B91A373A247CB6E000750171 /* rightmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91A3737247CB6E000750171 /* rightmusic.mp3 */; };
+		B91A373B247CB6E000750171 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B91A3738247CB6E000750171 /* bgmusic.mp3 */; };
+		B91A373F247CB78700750171 /* MBBall_RecordPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A373D247CB78700750171 /* MBBall_RecordPageVC.m */; };
+		B91A3740247CB78700750171 /* MBBall_RecordPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A373E247CB78700750171 /* MBBall_RecordPageVC.xib */; };
+		B91A3744247CB81B00750171 /* MBBall_RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3742247CB81B00750171 /* MBBall_RecordCell.m */; };
+		B91A3745247CB81B00750171 /* MBBall_RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A3743247CB81B00750171 /* MBBall_RecordCell.xib */; };
+		B91A3748247CBAD100750171 /* NSArray+MBBall_rank.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3747247CBAD100750171 /* NSArray+MBBall_rank.m */; };
+		B91A374C247CBB8F00750171 /* MBBall_AboutPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A374A247CBB8F00750171 /* MBBall_AboutPageVC.m */; };
+		B91A374D247CBB8F00750171 /* MBBall_AboutPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A374B247CBB8F00750171 /* MBBall_AboutPageVC.xib */; };
+		B91A3751247CBC9200750171 /* MBBall_GamePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A374F247CBC9200750171 /* MBBall_GamePageVC.m */; };
+		B91A3752247CBC9200750171 /* MBBall_GamePageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91A3750247CBC9200750171 /* MBBall_GamePageVC.xib */; };
+		B91A3755247CF48000750171 /* NSString+MBBall_rammd.m in Sources */ = {isa = PBXBuildFile; fileRef = B91A3754247CF48000750171 /* NSString+MBBall_rammd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B91A36EC247BB26A00750171 /* Digital Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91A36EF247BB26A00750171 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B91A36F0247BB26A00750171 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B91A36F2247BB26A00750171 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B91A36F3247BB26A00750171 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B91A36F5247BB26A00750171 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B91A36F6247BB26A00750171 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B91A36F9247BB26A00750171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B91A36FB247BB26D00750171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B91A36FE247BB26D00750171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B91A3700247BB26D00750171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91A3701247BB26D00750171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B91A3710247BB35D00750171 /* AMARANTH-BOLD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AMARANTH-BOLD.TTF"; sourceTree = "<group>"; };
+		B91A3711247BB35D00750171 /* AMARANTH.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = AMARANTH.OTF; sourceTree = "<group>"; };
+		B91A3712247BB35D00750171 /* AMARANTH-ITALIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AMARANTH-ITALIC.TTF"; sourceTree = "<group>"; };
+		B91A3713247BB35D00750171 /* AMARANTH BOLD ITALIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AMARANTH BOLD ITALIC.TTF"; sourceTree = "<group>"; };
+		B91A3718247BB3F100750171 /* MBNavigteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBNavigteController.h; sourceTree = "<group>"; };
+		B91A3719247BB3F100750171 /* MBNavigteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBNavigteController.m; sourceTree = "<group>"; };
+		B91A371B247CA90B00750171 /* MBBall_HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_HomePageVC.h; sourceTree = "<group>"; };
+		B91A371C247CA90B00750171 /* MBBall_HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_HomePageVC.m; sourceTree = "<group>"; };
+		B91A371D247CA90B00750171 /* MBBall_HomePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_HomePageVC.xib; sourceTree = "<group>"; };
+		B91A3720247CA9AD00750171 /* UIFont+MBBall_fontName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+MBBall_fontName.h"; sourceTree = "<group>"; };
+		B91A3721247CA9AD00750171 /* UIFont+MBBall_fontName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MBBall_fontName.m"; sourceTree = "<group>"; };
+		B91A3723247CAAC900750171 /* MBBallHeaders.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBallHeaders.pch; sourceTree = "<group>"; };
+		B91A3724247CAB8700750171 /* UIColor+MBBall_color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MBBall_color.h"; sourceTree = "<group>"; };
+		B91A3725247CAB8700750171 /* UIColor+MBBall_color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MBBall_color.m"; sourceTree = "<group>"; };
+		B91A3727247CB1F300750171 /* MBBall_DifficultyPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_DifficultyPageVC.h; sourceTree = "<group>"; };
+		B91A3728247CB1F300750171 /* MBBall_DifficultyPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_DifficultyPageVC.m; sourceTree = "<group>"; };
+		B91A3729247CB1F300750171 /* MBBall_DifficultyPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_DifficultyPageVC.xib; sourceTree = "<group>"; };
+		B91A372C247CB32500750171 /* MBBall_ReadyPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_ReadyPageVC.h; sourceTree = "<group>"; };
+		B91A372D247CB32500750171 /* MBBall_ReadyPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_ReadyPageVC.m; sourceTree = "<group>"; };
+		B91A372E247CB32500750171 /* MBBall_ReadyPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_ReadyPageVC.xib; sourceTree = "<group>"; };
+		B91A3731247CB63B00750171 /* MBBall_GameOverPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_GameOverPageVC.h; sourceTree = "<group>"; };
+		B91A3732247CB63B00750171 /* MBBall_GameOverPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_GameOverPageVC.m; sourceTree = "<group>"; };
+		B91A3733247CB63B00750171 /* MBBall_GameOverPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_GameOverPageVC.xib; sourceTree = "<group>"; };
+		B91A3736247CB6E000750171 /* wrongmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongmusic.mp3; sourceTree = "<group>"; };
+		B91A3737247CB6E000750171 /* rightmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rightmusic.mp3; sourceTree = "<group>"; };
+		B91A3738247CB6E000750171 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		B91A373C247CB78700750171 /* MBBall_RecordPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_RecordPageVC.h; sourceTree = "<group>"; };
+		B91A373D247CB78700750171 /* MBBall_RecordPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_RecordPageVC.m; sourceTree = "<group>"; };
+		B91A373E247CB78700750171 /* MBBall_RecordPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_RecordPageVC.xib; sourceTree = "<group>"; };
+		B91A3741247CB81B00750171 /* MBBall_RecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_RecordCell.h; sourceTree = "<group>"; };
+		B91A3742247CB81B00750171 /* MBBall_RecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_RecordCell.m; sourceTree = "<group>"; };
+		B91A3743247CB81B00750171 /* MBBall_RecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_RecordCell.xib; sourceTree = "<group>"; };
+		B91A3746247CBAD100750171 /* NSArray+MBBall_rank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MBBall_rank.h"; sourceTree = "<group>"; };
+		B91A3747247CBAD100750171 /* NSArray+MBBall_rank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MBBall_rank.m"; sourceTree = "<group>"; };
+		B91A3749247CBB8F00750171 /* MBBall_AboutPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_AboutPageVC.h; sourceTree = "<group>"; };
+		B91A374A247CBB8F00750171 /* MBBall_AboutPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_AboutPageVC.m; sourceTree = "<group>"; };
+		B91A374B247CBB8F00750171 /* MBBall_AboutPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_AboutPageVC.xib; sourceTree = "<group>"; };
+		B91A374E247CBC9200750171 /* MBBall_GamePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBBall_GamePageVC.h; sourceTree = "<group>"; };
+		B91A374F247CBC9200750171 /* MBBall_GamePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBBall_GamePageVC.m; sourceTree = "<group>"; };
+		B91A3750247CBC9200750171 /* MBBall_GamePageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBall_GamePageVC.xib; sourceTree = "<group>"; };
+		B91A3753247CF48000750171 /* NSString+MBBall_rammd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MBBall_rammd.h"; sourceTree = "<group>"; };
+		B91A3754247CF48000750171 /* NSString+MBBall_rammd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MBBall_rammd.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B91A36E9247BB26A00750171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B91A36E3247BB26A00750171 = {
+			isa = PBXGroup;
+			children = (
+				B91A36EE247BB26A00750171 /* MathematicsBasketball */,
+				B91A36ED247BB26A00750171 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B91A36ED247BB26A00750171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B91A36EC247BB26A00750171 /* Digital Basketball.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B91A36EE247BB26A00750171 /* MathematicsBasketball */ = {
+			isa = PBXGroup;
+			children = (
+				B91A370D247BB30200750171 /* Resources */,
+				B91A370C247BB2BB00750171 /* Thirdlib */,
+				B91A370B247BB2B800750171 /* RootVc */,
+				B91A370A247BB2B400750171 /* PageVc */,
+				B91A3709247BB2B200750171 /* Category */,
+				B91A3708247BB2AE00750171 /* Views */,
+				B91A36EF247BB26A00750171 /* AppDelegate.h */,
+				B91A36F0247BB26A00750171 /* AppDelegate.m */,
+				B91A36F2247BB26A00750171 /* SceneDelegate.h */,
+				B91A36F3247BB26A00750171 /* SceneDelegate.m */,
+				B91A36F5247BB26A00750171 /* ViewController.h */,
+				B91A36F6247BB26A00750171 /* ViewController.m */,
+				B91A36F8247BB26A00750171 /* Main.storyboard */,
+				B91A36FB247BB26D00750171 /* Assets.xcassets */,
+				B91A36FD247BB26D00750171 /* LaunchScreen.storyboard */,
+				B91A3700247BB26D00750171 /* Info.plist */,
+				B91A3701247BB26D00750171 /* main.m */,
+				B91A3723247CAAC900750171 /* MBBallHeaders.pch */,
+			);
+			path = MathematicsBasketball;
+			sourceTree = "<group>";
+		};
+		B91A3708247BB2AE00750171 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3741247CB81B00750171 /* MBBall_RecordCell.h */,
+				B91A3742247CB81B00750171 /* MBBall_RecordCell.m */,
+				B91A3743247CB81B00750171 /* MBBall_RecordCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B91A3709247BB2B200750171 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3720247CA9AD00750171 /* UIFont+MBBall_fontName.h */,
+				B91A3721247CA9AD00750171 /* UIFont+MBBall_fontName.m */,
+				B91A3724247CAB8700750171 /* UIColor+MBBall_color.h */,
+				B91A3725247CAB8700750171 /* UIColor+MBBall_color.m */,
+				B91A3746247CBAD100750171 /* NSArray+MBBall_rank.h */,
+				B91A3747247CBAD100750171 /* NSArray+MBBall_rank.m */,
+				B91A3753247CF48000750171 /* NSString+MBBall_rammd.h */,
+				B91A3754247CF48000750171 /* NSString+MBBall_rammd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B91A370A247BB2B400750171 /* PageVc */ = {
+			isa = PBXGroup;
+			children = (
+				B91A371B247CA90B00750171 /* MBBall_HomePageVC.h */,
+				B91A371C247CA90B00750171 /* MBBall_HomePageVC.m */,
+				B91A371D247CA90B00750171 /* MBBall_HomePageVC.xib */,
+				B91A3727247CB1F300750171 /* MBBall_DifficultyPageVC.h */,
+				B91A3728247CB1F300750171 /* MBBall_DifficultyPageVC.m */,
+				B91A3729247CB1F300750171 /* MBBall_DifficultyPageVC.xib */,
+				B91A372C247CB32500750171 /* MBBall_ReadyPageVC.h */,
+				B91A372D247CB32500750171 /* MBBall_ReadyPageVC.m */,
+				B91A372E247CB32500750171 /* MBBall_ReadyPageVC.xib */,
+				B91A3731247CB63B00750171 /* MBBall_GameOverPageVC.h */,
+				B91A3732247CB63B00750171 /* MBBall_GameOverPageVC.m */,
+				B91A3733247CB63B00750171 /* MBBall_GameOverPageVC.xib */,
+				B91A373C247CB78700750171 /* MBBall_RecordPageVC.h */,
+				B91A373D247CB78700750171 /* MBBall_RecordPageVC.m */,
+				B91A373E247CB78700750171 /* MBBall_RecordPageVC.xib */,
+				B91A3749247CBB8F00750171 /* MBBall_AboutPageVC.h */,
+				B91A374A247CBB8F00750171 /* MBBall_AboutPageVC.m */,
+				B91A374B247CBB8F00750171 /* MBBall_AboutPageVC.xib */,
+				B91A374E247CBC9200750171 /* MBBall_GamePageVC.h */,
+				B91A374F247CBC9200750171 /* MBBall_GamePageVC.m */,
+				B91A3750247CBC9200750171 /* MBBall_GamePageVC.xib */,
+			);
+			path = PageVc;
+			sourceTree = "<group>";
+		};
+		B91A370B247BB2B800750171 /* RootVc */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3718247BB3F100750171 /* MBNavigteController.h */,
+				B91A3719247BB3F100750171 /* MBNavigteController.m */,
+			);
+			path = RootVc;
+			sourceTree = "<group>";
+		};
+		B91A370C247BB2BB00750171 /* Thirdlib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thirdlib;
+			sourceTree = "<group>";
+		};
+		B91A370D247BB30200750171 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B91A370F247BB34200750171 /* music */,
+				B91A370E247BB33C00750171 /* font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B91A370E247BB33C00750171 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3713247BB35D00750171 /* AMARANTH BOLD ITALIC.TTF */,
+				B91A3710247BB35D00750171 /* AMARANTH-BOLD.TTF */,
+				B91A3712247BB35D00750171 /* AMARANTH-ITALIC.TTF */,
+				B91A3711247BB35D00750171 /* AMARANTH.OTF */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		B91A370F247BB34200750171 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3738247CB6E000750171 /* bgmusic.mp3 */,
+				B91A3737247CB6E000750171 /* rightmusic.mp3 */,
+				B91A3736247CB6E000750171 /* wrongmusic.mp3 */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B91A36EB247BB26A00750171 /* MathematicsBasketball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91A3705247BB26D00750171 /* Build configuration list for PBXNativeTarget "MathematicsBasketball" */;
+			buildPhases = (
+				B91A36E8247BB26A00750171 /* Sources */,
+				B91A36E9247BB26A00750171 /* Frameworks */,
+				B91A36EA247BB26A00750171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathematicsBasketball;
+			productName = MathematicsBasketball;
+			productReference = B91A36EC247BB26A00750171 /* Digital Basketball.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B91A36E4247BB26A00750171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MBBall_;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = zhongba;
+				TargetAttributes = {
+					B91A36EB247BB26A00750171 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B91A36E7247BB26A00750171 /* Build configuration list for PBXProject "MathematicsBasketball" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B91A36E3247BB26A00750171;
+			productRefGroup = B91A36ED247BB26A00750171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B91A36EB247BB26A00750171 /* MathematicsBasketball */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B91A36EA247BB26A00750171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91A3716247BB35D00750171 /* AMARANTH-ITALIC.TTF in Resources */,
+				B91A3735247CB63B00750171 /* MBBall_GameOverPageVC.xib in Resources */,
+				B91A3739247CB6E000750171 /* wrongmusic.mp3 in Resources */,
+				B91A36FF247BB26D00750171 /* LaunchScreen.storyboard in Resources */,
+				B91A372B247CB1F300750171 /* MBBall_DifficultyPageVC.xib in Resources */,
+				B91A373B247CB6E000750171 /* bgmusic.mp3 in Resources */,
+				B91A36FC247BB26D00750171 /* Assets.xcassets in Resources */,
+				B91A3715247BB35D00750171 /* AMARANTH.OTF in Resources */,
+				B91A36FA247BB26A00750171 /* Main.storyboard in Resources */,
+				B91A3717247BB35D00750171 /* AMARANTH BOLD ITALIC.TTF in Resources */,
+				B91A3740247CB78700750171 /* MBBall_RecordPageVC.xib in Resources */,
+				B91A373A247CB6E000750171 /* rightmusic.mp3 in Resources */,
+				B91A371F247CA90B00750171 /* MBBall_HomePageVC.xib in Resources */,
+				B91A3714247BB35D00750171 /* AMARANTH-BOLD.TTF in Resources */,
+				B91A3745247CB81B00750171 /* MBBall_RecordCell.xib in Resources */,
+				B91A374D247CBB8F00750171 /* MBBall_AboutPageVC.xib in Resources */,
+				B91A3730247CB32500750171 /* MBBall_ReadyPageVC.xib in Resources */,
+				B91A3752247CBC9200750171 /* MBBall_GamePageVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B91A36E8247BB26A00750171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91A3722247CA9AD00750171 /* UIFont+MBBall_fontName.m in Sources */,
+				B91A372F247CB32500750171 /* MBBall_ReadyPageVC.m in Sources */,
+				B91A3726247CAB8700750171 /* UIColor+MBBall_color.m in Sources */,
+				B91A372A247CB1F300750171 /* MBBall_DifficultyPageVC.m in Sources */,
+				B91A3734247CB63B00750171 /* MBBall_GameOverPageVC.m in Sources */,
+				B91A371A247BB3F100750171 /* MBNavigteController.m in Sources */,
+				B91A36F7247BB26A00750171 /* ViewController.m in Sources */,
+				B91A3751247CBC9200750171 /* MBBall_GamePageVC.m in Sources */,
+				B91A36F1247BB26A00750171 /* AppDelegate.m in Sources */,
+				B91A374C247CBB8F00750171 /* MBBall_AboutPageVC.m in Sources */,
+				B91A3702247BB26D00750171 /* main.m in Sources */,
+				B91A3744247CB81B00750171 /* MBBall_RecordCell.m in Sources */,
+				B91A371E247CA90B00750171 /* MBBall_HomePageVC.m in Sources */,
+				B91A373F247CB78700750171 /* MBBall_RecordPageVC.m in Sources */,
+				B91A3755247CF48000750171 /* NSString+MBBall_rammd.m in Sources */,
+				B91A3748247CBAD100750171 /* NSArray+MBBall_rank.m in Sources */,
+				B91A36F4247BB26A00750171 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B91A36F8247BB26A00750171 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91A36F9247BB26A00750171 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B91A36FD247BB26D00750171 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B91A36FE247BB26D00750171 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B91A3703247BB26D00750171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathematicsBasketball/MBBallHeaders.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B91A3704247BB26D00750171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MathematicsBasketball/MBBallHeaders.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B91A3706247BB26D00750171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T568ZXZW63;
+				INFOPLIST_FILE = MathematicsBasketball/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongba.digitalbasketball;
+				PRODUCT_NAME = "Digital Basketball";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B91A3707247BB26D00750171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T568ZXZW63;
+				INFOPLIST_FILE = MathematicsBasketball/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongba.digitalbasketball;
+				PRODUCT_NAME = "Digital Basketball";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91A36E7247BB26A00750171 /* Build configuration list for PBXProject "MathematicsBasketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91A3703247BB26D00750171 /* Debug */,
+				B91A3704247BB26D00750171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B91A3705247BB26D00750171 /* Build configuration list for PBXNativeTarget "MathematicsBasketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B91A3706247BB26D00750171 /* Debug */,
+				B91A3707247BB26D00750171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B91A36E4247BB26A00750171 /* Project object */;
+}

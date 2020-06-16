@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SACOverVC">
+            <connections>
+                <outlet property="gameOver" destination="Er7-MG-YoL" id="5OA-Ol-mwA"/>
+                <outlet property="height" destination="dab-eA-16o" id="uCV-08-q86"/>
+                <outlet property="scoreLable" destination="aKS-e3-xbe" id="qGv-ln-QDi"/>
+                <outlet property="view" destination="lrg-4m-3ms" id="UOe-vj-req"/>
+                <outlet property="weight" destination="Uno-Y1-ZUn" id="NC0-Kr-UPp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lrg-4m-3ms">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="Ycd-pf-NF8">
+                    <rect key="frame" x="113.5" y="35.5" width="440" height="304"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="440" id="Uno-Y1-ZUn"/>
+                        <constraint firstAttribute="height" constant="304" id="dab-eA-16o"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er7-MG-YoL">
+                    <rect key="frame" x="213" y="110.5" width="241" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iW2-HJ-Huu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <color key="textColor" red="0.84705882352941175" green="0.11764705882352941" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKS-e3-xbe">
+                    <rect key="frame" x="286.5" y="180.5" width="94" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rHI-i3-ufE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyB-wL-JN8">
+                    <rect key="frame" x="380.5" y="246.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="mlF-Ch-XD2"/>
+                        <constraint firstAttribute="height" constant="50" id="xQM-Eg-v0E"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="3eI-8z-9OE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOP-Qn-MvY">
+                    <rect key="frame" x="236.5" y="246.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="O7N-TB-FRm"/>
+                        <constraint firstAttribute="height" constant="50" id="kli-my-cI5"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="h2q-CC-XPR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oyB-wL-JN8" firstAttribute="top" secondItem="FOP-Qn-MvY" secondAttribute="top" id="6JC-KT-rxL"/>
+                <constraint firstItem="Er7-MG-YoL" firstAttribute="top" secondItem="Ycd-pf-NF8" secondAttribute="top" constant="75" id="8G9-Sp-hwf"/>
+                <constraint firstItem="aKS-e3-xbe" firstAttribute="centerX" secondItem="Er7-MG-YoL" secondAttribute="centerX" id="Cct-3G-aYb"/>
+                <constraint firstItem="Ycd-pf-NF8" firstAttribute="centerY" secondItem="lrg-4m-3ms" secondAttribute="centerY" id="FbS-1H-awq"/>
+                <constraint firstItem="oyB-wL-JN8" firstAttribute="leading" secondItem="aKS-e3-xbe" secondAttribute="trailing" id="Fpz-Od-CRR"/>
+                <constraint firstItem="FOP-Qn-MvY" firstAttribute="top" secondItem="aKS-e3-xbe" secondAttribute="bottom" constant="26" id="GKz-UE-g91"/>
+                <constraint firstItem="Ycd-pf-NF8" firstAttribute="centerX" secondItem="lrg-4m-3ms" secondAttribute="centerX" id="egU-xd-PTh"/>
+                <constraint firstItem="aKS-e3-xbe" firstAttribute="top" secondItem="Er7-MG-YoL" secondAttribute="bottom" constant="20" id="nBw-b2-4wt"/>
+                <constraint firstItem="Er7-MG-YoL" firstAttribute="centerX" secondItem="Ycd-pf-NF8" secondAttribute="centerX" id="z6y-1q-Jhf"/>
+                <constraint firstItem="aKS-e3-xbe" firstAttribute="leading" secondItem="FOP-Qn-MvY" secondAttribute="trailing" id="zzh-9V-Bcf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sNP-Jy-H8W"/>
+            <point key="canvasLocation" x="130.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="again" width="50" height="52"/>
+        <image name="frame" width="440" height="304.5"/>
+        <image name="home" width="50" height="52"/>
+    </resources>
+</document>

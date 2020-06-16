@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BOLDER-2.ttf">
+            <string>BOLDER</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DCTRecordsPageVC">
+            <connections>
+                <outlet property="easyOne" destination="uH2-dR-AeU" id="ls9-c3-CEn"/>
+                <outlet property="easyThree" destination="9th-jV-JD3" id="DgA-AQ-t5W"/>
+                <outlet property="easyTwo" destination="0NP-VM-ikZ" id="7qg-Qr-ml7"/>
+                <outlet property="genOne" destination="1eH-Sv-GaR" id="MVX-Qf-X0u"/>
+                <outlet property="genThree" destination="2zl-DH-iHY" id="DHy-Kx-PQZ"/>
+                <outlet property="genTwo" destination="n0m-ue-mfd" id="Ev4-u2-euP"/>
+                <outlet property="hardOne" destination="1FP-CE-HeU" id="E3T-rK-YWm"/>
+                <outlet property="hardThree" destination="I2B-9T-Qw7" id="XSp-go-saG"/>
+                <outlet property="hardTwo" destination="QoJ-Yo-UIH" id="Kvc-NP-NfH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_0" translatesAutoresizingMaskIntoConstraints="NO" id="ypS-fR-zUI">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="easy_bg" translatesAutoresizingMaskIntoConstraints="NO" id="B26-bV-pPv">
+                    <rect key="frame" x="63" y="50.5" width="180.5" height="274"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lg-8m-H3C">
+                    <rect key="frame" x="123" y="110.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVS-gf-kcq">
+                    <rect key="frame" x="123" y="80.5" width="6" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyv-7j-lML">
+                    <rect key="frame" x="123" y="140.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="hard_bg" translatesAutoresizingMaskIntoConstraints="NO" id="uze-Uv-TVr">
+                    <rect key="frame" x="424" y="52.5" width="179.5" height="270"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="general_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-pX-Rz5">
+                    <rect key="frame" x="243.5" y="114.5" width="180.5" height="246.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRj-tD-qQT">
+                    <rect key="frame" x="303.5" y="174.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cp8-lf-jSK">
+                    <rect key="frame" x="303.5" y="144.5" width="6" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm1-aa-1gC">
+                    <rect key="frame" x="303.5" y="204.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0m-ue-mfd">
+                    <rect key="frame" x="339.5" y="174.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eH-Sv-GaR">
+                    <rect key="frame" x="339.5" y="144.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zl-DH-iHY">
+                    <rect key="frame" x="339.5" y="204.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NP-VM-ikZ">
+                    <rect key="frame" x="159" y="110.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH2-dR-AeU">
+                    <rect key="frame" x="159" y="80.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9th-jV-JD3">
+                    <rect key="frame" x="159" y="140.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy0-Y8-OY4">
+                    <rect key="frame" x="484" y="112.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lg-yt-JgZ">
+                    <rect key="frame" x="484" y="82.5" width="6" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-8y-dJy">
+                    <rect key="frame" x="484" y="142.5" width="9.5" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoJ-Yo-UIH">
+                    <rect key="frame" x="520" y="112.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FP-CE-HeU">
+                    <rect key="frame" x="520" y="82.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-9T-Qw7">
+                    <rect key="frame" x="520" y="142.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" name="BOLDER" family="BOLDER" pointSize="18"/>
+                    <color key="textColor" red="0.67450980392156867" green="0.20784313725490194" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="QoJ-Yo-UIH" firstAttribute="top" secondItem="gy0-Y8-OY4" secondAttribute="top" id="0FB-1E-75d"/>
+                <constraint firstItem="n0m-ue-mfd" firstAttribute="leading" secondItem="1eH-Sv-GaR" secondAttribute="leading" id="0Sf-K8-1qc"/>
+                <constraint firstItem="1eH-Sv-GaR" firstAttribute="top" secondItem="Cp8-lf-jSK" secondAttribute="top" id="4vQ-pd-IxR"/>
+                <constraint firstItem="2zl-DH-iHY" firstAttribute="top" secondItem="wm1-aa-1gC" secondAttribute="top" id="5EU-G7-xou"/>
+                <constraint firstItem="cRj-tD-qQT" firstAttribute="top" secondItem="Cp8-lf-jSK" secondAttribute="bottom" constant="9" id="6sy-jB-wxu"/>
+                <constraint firstItem="hUT-pX-Rz5" firstAttribute="centerY" secondItem="B26-bV-pPv" secondAttribute="centerY" constant="50" id="6uJ-jT-nVe"/>
+                <constraint firstItem="5lg-yt-JgZ" firstAttribute="top" secondItem="uze-Uv-TVr" secondAttribute="top" constant="30" id="AjP-pF-bbP"/>
+                <constraint firstItem="eyv-7j-lML" firstAttribute="top" secondItem="7lg-8m-H3C" secondAttribute="bottom" constant="9" id="AtD-6l-fGv"/>
+                <constraint firstItem="hUT-pX-Rz5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CDt-ft-xhE"/>
+                <constraint firstItem="wm1-aa-1gC" firstAttribute="top" secondItem="cRj-tD-qQT" secondAttribute="bottom" constant="9" id="DjO-ei-BoB"/>
+                <constraint firstItem="uH2-dR-AeU" firstAttribute="top" secondItem="nVS-gf-kcq" secondAttribute="top" id="Dye-fb-scE"/>
+                <constraint firstItem="eyv-7j-lML" firstAttribute="leading" secondItem="nVS-gf-kcq" secondAttribute="leading" id="I4j-ri-M84"/>
+                <constraint firstItem="Cp8-lf-jSK" firstAttribute="leading" secondItem="hUT-pX-Rz5" secondAttribute="leading" constant="60" id="IPI-9V-MKR"/>
+                <constraint firstItem="1FP-CE-HeU" firstAttribute="leading" secondItem="5lg-yt-JgZ" secondAttribute="trailing" constant="30" id="J2l-1l-0yE"/>
+                <constraint firstItem="1jj-8y-dJy" firstAttribute="top" secondItem="gy0-Y8-OY4" secondAttribute="bottom" constant="9" id="JEd-Tk-qqC"/>
+                <constraint firstItem="uze-Uv-TVr" firstAttribute="centerY" secondItem="B26-bV-pPv" secondAttribute="centerY" id="Ln9-fQ-8Jv"/>
+                <constraint firstItem="hUT-pX-Rz5" firstAttribute="leading" secondItem="B26-bV-pPv" secondAttribute="trailing" id="M0q-ea-fIS"/>
+                <constraint firstItem="ypS-fR-zUI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NY7-Vq-xn0"/>
+                <constraint firstItem="n0m-ue-mfd" firstAttribute="top" secondItem="cRj-tD-qQT" secondAttribute="top" id="PyR-w3-vaP"/>
+                <constraint firstItem="Cp8-lf-jSK" firstAttribute="top" secondItem="hUT-pX-Rz5" secondAttribute="top" constant="30" id="QL6-zg-Jav"/>
+                <constraint firstItem="ypS-fR-zUI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R7l-xL-jC1"/>
+                <constraint firstItem="1FP-CE-HeU" firstAttribute="top" secondItem="5lg-yt-JgZ" secondAttribute="top" id="TQD-Cp-lJA"/>
+                <constraint firstItem="1eH-Sv-GaR" firstAttribute="leading" secondItem="Cp8-lf-jSK" secondAttribute="trailing" constant="30" id="Vnj-QO-S6W"/>
+                <constraint firstItem="2zl-DH-iHY" firstAttribute="leading" secondItem="1eH-Sv-GaR" secondAttribute="leading" id="Vpq-u3-dxZ"/>
+                <constraint firstItem="nVS-gf-kcq" firstAttribute="top" secondItem="B26-bV-pPv" secondAttribute="top" constant="30" id="WA7-pJ-q4w"/>
+                <constraint firstItem="hUT-pX-Rz5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="WVh-tc-SDq"/>
+                <constraint firstItem="I2B-9T-Qw7" firstAttribute="top" secondItem="1jj-8y-dJy" secondAttribute="top" id="XsV-NK-Foa"/>
+                <constraint firstItem="0NP-VM-ikZ" firstAttribute="top" secondItem="7lg-8m-H3C" secondAttribute="top" id="Zes-DJ-bJz"/>
+                <constraint firstItem="9th-jV-JD3" firstAttribute="top" secondItem="eyv-7j-lML" secondAttribute="top" id="bTf-RO-K62"/>
+                <constraint firstItem="uze-Uv-TVr" firstAttribute="leading" secondItem="hUT-pX-Rz5" secondAttribute="trailing" id="cOo-MF-zPN"/>
+                <constraint firstItem="wm1-aa-1gC" firstAttribute="leading" secondItem="Cp8-lf-jSK" secondAttribute="leading" id="fTE-7S-oHd"/>
+                <constraint firstItem="QoJ-Yo-UIH" firstAttribute="leading" secondItem="1FP-CE-HeU" secondAttribute="leading" id="fVx-6Q-dNc"/>
+                <constraint firstItem="5lg-yt-JgZ" firstAttribute="leading" secondItem="uze-Uv-TVr" secondAttribute="leading" constant="60" id="gQC-Pf-fcq"/>
+                <constraint firstItem="I2B-9T-Qw7" firstAttribute="leading" secondItem="1FP-CE-HeU" secondAttribute="leading" id="guu-bC-y0x"/>
+                <constraint firstItem="gy0-Y8-OY4" firstAttribute="leading" secondItem="5lg-yt-JgZ" secondAttribute="leading" id="i6g-dv-8Q1"/>
+                <constraint firstItem="uH2-dR-AeU" firstAttribute="leading" secondItem="nVS-gf-kcq" secondAttribute="trailing" constant="30" id="iua-Jg-rkc"/>
+                <constraint firstAttribute="trailing" secondItem="ypS-fR-zUI" secondAttribute="trailing" id="k9E-gs-UhT"/>
+                <constraint firstItem="cRj-tD-qQT" firstAttribute="leading" secondItem="Cp8-lf-jSK" secondAttribute="leading" id="nk4-2D-zto"/>
+                <constraint firstAttribute="bottom" secondItem="ypS-fR-zUI" secondAttribute="bottom" id="oZU-bd-Rzq"/>
+                <constraint firstItem="1jj-8y-dJy" firstAttribute="leading" secondItem="5lg-yt-JgZ" secondAttribute="leading" id="ojx-ao-HyC"/>
+                <constraint firstItem="7lg-8m-H3C" firstAttribute="leading" secondItem="nVS-gf-kcq" secondAttribute="leading" id="p7h-8E-ZJb"/>
+                <constraint firstItem="0NP-VM-ikZ" firstAttribute="leading" secondItem="uH2-dR-AeU" secondAttribute="leading" id="sGD-6q-M63"/>
+                <constraint firstItem="gy0-Y8-OY4" firstAttribute="top" secondItem="5lg-yt-JgZ" secondAttribute="bottom" constant="9" id="tGH-EF-urI"/>
+                <constraint firstItem="7lg-8m-H3C" firstAttribute="top" secondItem="nVS-gf-kcq" secondAttribute="bottom" constant="9" id="uC4-Jd-H2e"/>
+                <constraint firstItem="9th-jV-JD3" firstAttribute="leading" secondItem="uH2-dR-AeU" secondAttribute="leading" id="wD6-aq-Lhg"/>
+                <constraint firstItem="nVS-gf-kcq" firstAttribute="leading" secondItem="B26-bV-pPv" secondAttribute="leading" constant="60" id="yvz-NP-Klf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_0" width="667" height="375"/>
+        <image name="easy_bg" width="180.5" height="273.5"/>
+        <image name="general_bg" width="180.5" height="246.5"/>
+        <image name="hard_bg" width="179.5" height="270"/>
+    </resources>
+</document>

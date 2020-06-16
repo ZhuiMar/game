@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CPGameOverVC">
+            <connections>
+                <outlet property="highScoreLabel" destination="7PI-tD-xbP" id="ouu-Ut-QL5"/>
+                <outlet property="scoreLabel" destination="d9l-EW-0YI" id="vHg-Mq-7uh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Challenge End" translatesAutoresizingMaskIntoConstraints="NO" id="7r3-R6-e3h">
+                    <rect key="frame" x="58.5" y="177.5" width="258" height="232"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="232" id="m0E-Kw-iJA"/>
+                        <constraint firstAttribute="width" constant="258" id="pP4-Ia-DN2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Highest record: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PI-tD-xbP">
+                    <rect key="frame" x="122" y="348.5" width="131" height="21"/>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="15"/>
+                    <color key="textColor" red="0.37647058823529411" green="0.098039215686274508" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-iM-HEB">
+                    <rect key="frame" x="66" y="439.5" width="103" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="aPG-cc-gdV"/>
+                        <constraint firstAttribute="width" constant="103" id="fau-5R-oyt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="again"/>
+                    <connections>
+                        <action selector="againAction:" destination="-1" eventType="touchUpInside" id="NOc-Zl-ptH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abt-C4-v2c">
+                    <rect key="frame" x="206" y="439.5" width="103" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="103" id="FU4-vb-dvw"/>
+                        <constraint firstAttribute="height" constant="46" id="e64-r0-fPr"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="home"/>
+                    <connections>
+                        <action selector="homeAction:" destination="-1" eventType="touchUpInside" id="7cH-RH-xZE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFD-vJ-Cgc">
+                    <rect key="frame" x="126" y="247.5" width="123" height="35"/>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="25"/>
+                    <color key="textColor" red="0.95294117647058818" green="0.2627450980392157" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9l-EW-0YI">
+                    <rect key="frame" x="175.5" y="287" width="24" height="56"/>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="40"/>
+                    <color key="textColor" red="0.95294117647058818" green="0.2627450980392157" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bFD-vJ-Cgc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8EW-1b-X27"/>
+                <constraint firstItem="d9l-EW-0YI" firstAttribute="top" secondItem="bFD-vJ-Cgc" secondAttribute="bottom" constant="4.5" id="AWs-qm-NbX"/>
+                <constraint firstItem="7PI-tD-xbP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cn8-5O-nBy"/>
+                <constraint firstItem="abt-C4-v2c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="70" id="SEM-rf-ica"/>
+                <constraint firstItem="7r3-R6-e3h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WcR-OK-Ji3"/>
+                <constraint firstItem="7PI-tD-xbP" firstAttribute="bottom" secondItem="7r3-R6-e3h" secondAttribute="bottom" constant="-40" id="WdX-vu-ZdE"/>
+                <constraint firstItem="bFD-vJ-Cgc" firstAttribute="top" secondItem="7r3-R6-e3h" secondAttribute="top" constant="70" id="Ztx-wO-JdF"/>
+                <constraint firstItem="d9l-EW-0YI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eRk-Gu-l8s"/>
+                <constraint firstItem="7r3-R6-e3h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="fSQ-1x-xna"/>
+                <constraint firstItem="6lt-iM-HEB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-70" id="m3n-2V-D2V"/>
+                <constraint firstItem="6lt-iM-HEB" firstAttribute="top" secondItem="7r3-R6-e3h" secondAttribute="bottom" constant="30" id="mwy-AZ-EtX"/>
+                <constraint firstItem="abt-C4-v2c" firstAttribute="centerY" secondItem="6lt-iM-HEB" secondAttribute="centerY" id="uSg-cT-jBW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.15942028985509" y="148.99553571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Challenge End" width="258" height="232"/>
+        <image name="again" width="103" height="45.5"/>
+        <image name="home" width="103" height="45.5"/>
+    </resources>
+</document>
